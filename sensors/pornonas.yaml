@@ -1,0 +1,14 @@
+- platform: synologydsm
+  host: 192.168.1.10
+  port: 8080
+  name: PornoNAS
+  username: !secret pornonas_username
+  password: !secret pornonas_password
+  volumes:
+  - volume_1
+  disks:
+  - sda
+  - sdb
+  monitored_conditions:
+  - disk_temp
+  - volume_percentage_used

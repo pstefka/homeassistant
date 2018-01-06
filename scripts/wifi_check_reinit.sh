@@ -26,14 +26,14 @@ if [ "$debug" ]; then
   echo "-"
   sudo arp -d $ip_arp_check
   echo "-"
-  ping -c 1 -t 2 -q $ip_arp_check
+  ping -c 5 -t 2 -q $ip_arp_check
   echo "-"
   arp -a
   echo "-"
   arp -a | grep "($ip_arp_check)" | grep -v incomplete
 else 
   sudo arp -d $ip_arp_check &> /dev/null
-  ping -c 1 -t 2 -q $ip_arp_check &> /dev/null
+  ping -c 5 -t 2 -q $ip_arp_check &> /dev/null
   arp -a | grep "($ip_arp_check)" | grep -v incomplete &> /dev/null
 fi
 

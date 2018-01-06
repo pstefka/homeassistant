@@ -1,2 +1,3 @@
-2018-01-06 12:32:35 WARNING (MainThread) [homeassistant.setup] Setup of media_player is taking over 10 seconds.
-2018-01-06 12:33:04 ERROR (MainThread) [homeassistant.core] Timer got out of sync. Resetting
+2018-01-06 21:14:54 WARNING (MainThread) [homeassistant.setup] Setup of media_player is taking over 10 seconds.
+2018-01-06 21:15:06 WARNING (Thread-18) [netdisco.ssdp] Error fetching description at https://192.168.1.6:8888/capability
+2018-01-06 21:18:01 WARNING (MainThread) [homeassistant.helpers.entity] Update of binary_sensor.wifi is taking over 10 seconds

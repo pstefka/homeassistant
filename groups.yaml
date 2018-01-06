@@ -17,7 +17,7 @@
   status_view:
     view: yes
     name: Status view
-    icon: mdi:monitor-multiple
+    icon: mdi:sd
     entities:
       - group.status
   people:

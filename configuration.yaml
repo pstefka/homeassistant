@@ -38,12 +38,15 @@ http:
   # include_used_components: true
 
 recorder:
+  purge_interval: 1 
+  purge_keep_days: 2 
   exclude:
     entities:
       - group.status
       - group.people3
       - input_boolean.notify_home
       - automation.run_set_viera_volume
+      - automation.set_viera_volume
       - group.people_grp
       - group.people2
 
@@ -51,25 +54,32 @@ recorder:
 history:
   exclude:
     entities:
+      - input_boolean.notify_home
       - group.status
       - group.status_view
       - group.people3
-      - input_boolean.notify_home
-      - automation.run_set_viera_volume
       - group.people_grp
       - group.people2
       - group.default_view
       - group.living_room
       - group.all_automations
-      - automation.set_viera_volume
       - group.people_view
+      - group.living_room_helpers
+      - automation.run_set_viera_volume
+      - automation.set_viera_volume
+      - automation.viera_on
+      - automation.viera_off
+      - automation.new_automation
+      - automation.viera_volume_visible
+      - automation.set_viera_volume_visible
 
-        # Discover some devices automatically
+# Discover some devices automatically
 discovery:
   ignore:
     # set below with proper naming
     - panasonic_viera
     - google_cast
+      #    - spotify_connect # unknown value
 
 # Allows you to issue voice commands from the frontend in enabled browsers
 conversation:
@@ -95,63 +105,10 @@ group: !include groups.yaml
 automation: !include automations.yaml
 script: !include scripts.yaml
 
-sensor:
-  - platform: yr
-  - platform: synologydsm
-    host: 192.168.1.10
-    port: 8080
-    name: PornoNAS
-    username: !secret pornonas_username
-    password: !secret pornonas_password
-    volumes: 
-      - volume_1
-    disks:
-      - sda
-      - sdb
-    monitored_conditions:
-      - disk_temp
-      - volume_percentage_used
-#      - cpu_total_load
-
-binary_sensor:
-  - platform: command_line
-    name: Wifi
-    # raz denne sa spusta job na routeri, ktori reinitializuje wifi tak, aby sa vypla izolacia na wifi a arp prechadzali
-    command: /home/homeassistant/.homeassistant/scripts/wifi_check_reinit.sh 192.168.1.6 2>&1 | tee -a /home/homeassistant/.homeassistant/scripts/wifi_check_reinit.log
-    device_class: connectivity
-    payload_on: OK
-    payload_off: FAIL
-    scan_interval: 60
-
-device_tracker:
-  - platform: luci
-    host: 192.168.1.1
-    username: root
-    password: !secret router_password
-    name: Router
-    new_device_defaults:
-      track_new_devices: False
-      hide_if_away: False
-
-media_player:
-  - platform: panasonic_viera
-    host: 192.168.1.7
-    name: Viera
-    mac: "c0:d9:62:f6:c3:5b"
-  - platform: cast
-    # v customize.yaml premenovane na shield
-    host: 192.168.1.4
-#  - platform: kodi
-#    host: 192.168.1.4
-#    name: Kodi
-#    username: kodi
-#    enable_websocket: false
-#  - platform: spotify
-#    client_id: <your client id>
-#    client_secret: <your client secret>
-#    aliases:
-#      abc123def456: 'Living Room'
-#      9183abas000: 'Bed Room'
+sensor: !include_dir_merge_list sensors/
+binary_sensor: !include_dir_merge_list binary_sensors/
+device_tracker: !include_dir_merge_list device_trackers/
+media_player: !include_dir_merge_list media_players/
 
 notify:
   - platform: nfandroidtv
@@ -173,4 +130,4 @@ input_number:
     max: 1
     step: 0.01
     mode: box
-    #    unit_of_measurement: "%" # robi groupovanie so Synology volume
+#    unit_of_measurement: "%" # robi groupovanie so Synology volume

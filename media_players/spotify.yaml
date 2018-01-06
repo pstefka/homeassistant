@@ -1,0 +1,6 @@
+#- platform: spotify
+#  client_id: <your client id>
+#  client_secret: <your client secret>
+#  aliases:
+#    abc123def456: 'Living Room'
+#    9183abas000: 'Bed Room'
