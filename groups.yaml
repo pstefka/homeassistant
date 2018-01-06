@@ -1,0 +1,34 @@
+  default_view:
+    view: yes
+    icon: mdi:home 
+    entities:
+      - group.living_room
+      - group.living_room_helpers
+      - group.people
+      - sensor.yr_symbol
+      - sun.sun
+      - binary_sensor.wifi
+  people_view:
+    view: yes
+    name: People view
+    icon: mdi:account-multiple
+    entities:
+      - group.people
+  status_view:
+    view: yes
+    name: Status view
+    icon: mdi:monitor-multiple
+    entities:
+      - group.status
+  people:
+    - device_tracker.nikikmi4c
+    - device_tracker.op3
+  living_room:
+    - media_player.viera
+    - media_player.televizia
+  living_room_helpers:
+    - input_number.slider_viera_volume 
+  status:
+    - sensor.volume_used_volume_1
+    - sensor.temperature_sda
+    - sensor.temperature_sdb

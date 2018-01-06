@@ -1,0 +1,121 @@
+op3:
+  hide_if_away: false
+  icon:
+  mac: C0:EE:FB:D8:66:AA
+  name: Peto
+  picture:
+  track: true
+  vendor: unknown
+  consider_home: 180
+  gravatar: www.stefi@gmail.com
+
+nikikmi4c:
+  hide_if_away: false
+  icon:
+  mac: 20:82:C0:63:C2:60
+  name: Nikik
+  picture:
+  track: true
+  vendor: Xiaomi Communications Co Ltd
+  consider_home: 180
+  gravatar: vewe99@gmail.com
+
+
+pornonas:
+  hide_if_away: false
+  icon:
+  mac: 00:11:32:19:DF:7C
+  name: PornoNAS
+  picture:
+  track: false
+  vendor: Synology Incorporated
+
+raspberrywifi:
+  hide_if_away: false
+  icon:
+  mac: B8:27:EB:50:5C:0B
+  name: RaspberryWifi
+  picture:
+  track: false
+  vendor: Raspberry Pi Foundation
+
+klima:
+  hide_if_away: false
+  icon:
+  mac: C0:97:27:12:33:09
+  name: Klima
+  picture:
+  track: false
+  vendor: SAMSUNG ELECTRO-MECHANICS(THAILAND)
+
+shieldtv:
+  hide_if_away: false
+  icon:
+  mac: 00:04:4B:5E:3C:CE
+  name: ShieldTV
+  picture:
+  track: false
+  vendor: unknown
+
+petobook2wifi:
+  hide_if_away: false
+  icon:
+  mac: E4:A7:A0:66:4B:C6
+  name: Petobook2Wifi
+  picture:
+  track: false
+  vendor: unknown
+
+20f17c2ffd1d:
+  hide_if_away: false
+  icon:
+  mac: 20:F1:7C:2F:FD:1D
+  name: 20f17c2ffd1d
+  picture:
+  track: false
+  vendor: unknown
+
+viera:
+  hide_if_away: false
+  icon:
+  mac: C0:D9:62:F6:C3:5B
+  name: Viera
+  picture:
+  track: false
+  vendor: unknown
+
+tabletka:
+  hide_if_away: false
+  icon:
+  mac: AC:22:0B:A3:52:D4
+  name: Tabletka
+  picture:
+  track: false
+  vendor: ASUSTek COMPUTER INC.
+
+000af5125a28:
+  hide_if_away: false
+  icon:
+  mac: 00:0A:F5:12:5A:28
+  name: 000af5125a28
+  picture:
+  track: false
+  vendor: Airgo Networks, Inc.
+
+pc:
+  hide_if_away: false
+  icon:
+  mac: 00:01:29:00:F0:F1
+  name: pc
+  picture:
+  track: false
+  vendor: DFI Inc.
+
+petobook:
+  hide_if_away: false
+  icon:
+  mac: 20:10:7A:08:4F:45
+  name: petobook
+  picture:
+  track: false
+  vendor: Gemtek Technology Co., Ltd.
