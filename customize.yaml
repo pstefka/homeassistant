@@ -2,3 +2,5 @@
     friendly_name: Shield
   group.living_room_helpers:
     friendly_name: Viera
+  sensor.tp_link_current_consumption:
+    friendly_name: Switch consupmtion

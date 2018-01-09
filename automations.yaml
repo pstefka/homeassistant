@@ -32,3 +32,10 @@
     platform: state
     to: 'off'
 
+#- action:
+#  - service: shell_command.restart_wifi
+#  alias: restart_wifi
+#  trigger:
+#  - platform: state
+#    entity_id: binary_sensor.wifi 
+#    to: 'off' 

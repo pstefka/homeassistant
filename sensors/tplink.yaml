@@ -1,0 +1,6 @@
+- platform: template
+  name: switch1sensor
+  sensors:
+    tp_link_current_consumption:
+      value_template: '{{states.switch.switch1.attributes["current_consumption"] | replace(" W", "") | float}}'
+      unit_of_measurement: 'W'

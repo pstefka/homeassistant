@@ -26,7 +26,7 @@ if [ "$debug" ]; then
   echo "-"
   sudo arp -d $ip_arp_check
   echo "-"
-  ping -c 5 -t 2 -q $ip_arp_check
+  ping -c 10 -t 5 -q $ip_arp_check
   echo "-"
   arp -a
   echo "-"

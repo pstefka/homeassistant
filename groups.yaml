@@ -1,13 +1,13 @@
-  default_view:
-    view: yes
-    icon: mdi:home 
-    entities:
-      - group.living_room
-      - group.living_room_helpers
-      - group.people
-      - sensor.yr_symbol
-      - sun.sun
-      - binary_sensor.wifi
+#  default_view:
+#    view: yes
+#    icon: mdi:home 
+#    entities:
+#      - group.living_room
+#      - group.living_room_helpers
+#      - group.people
+#      - sensor.yr_symbol
+#      - sun.sun
+#      - binary_sensor.wifi
   people_view:
     view: yes
     name: People view

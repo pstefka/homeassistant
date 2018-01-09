@@ -119,3 +119,21 @@ petobook:
   picture:
   track: false
   vendor: Gemtek Technology Co., Ltd.
+
+1887965fd1b7:
+  hide_if_away: false
+  icon:
+  mac: 18:87:96:5F:D1:B7
+  name: 1887965fd1b7
+  picture:
+  track: false
+  vendor: HTC Corporation
+
+704f57ff8db1:
+  hide_if_away: false
+  icon:
+  mac: 70:4F:57:FF:8D:B1
+  name: 704f57ff8db1
+  picture:
+  track: false
+  vendor: TP-LINK TECHNOLOGIES CO.,LTD.

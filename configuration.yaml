@@ -42,19 +42,31 @@ recorder:
   purge_keep_days: 2 
   exclude:
     entities:
-      - group.status
-      - group.people3
-      - input_boolean.notify_home
       - automation.run_set_viera_volume
       - automation.set_viera_volume
+      - group.status
+      - group.people3
       - group.people_grp
       - group.people2
+      - input_boolean.notify_home
+      - sensor.tp_link_watts
+      - sensor.wildfires_audio_connections
+      - sensor.wildfires_video_connections
+      - switch.plug1
 
 # Enables support for tracking state changes over time
 history:
   exclude:
     entities:
-      - input_boolean.notify_home
+      - android_ip_webcam.wildfires
+      - automation.run_set_viera_volume
+      - automation.set_viera_volume
+      - automation.viera_on
+      - automation.viera_off
+      - automation.new_automation
+      - automation.viera_volume_visible
+      - automation.set_viera_volume_visible
+      - automation.restart_wifi
       - group.status
       - group.status_view
       - group.people3
@@ -63,15 +75,17 @@ history:
       - group.default_view
       - group.living_room
       - group.all_automations
+      - group.all_switches
       - group.people_view
       - group.living_room_helpers
-      - automation.run_set_viera_volume
-      - automation.set_viera_volume
-      - automation.viera_on
-      - automation.viera_off
-      - automation.new_automation
-      - automation.viera_volume_visible
-      - automation.set_viera_volume_visible
+      - input_boolean.notify_home
+      - input_number.slider_viera_volume
+      - sensor.tp_link_watts
+      - sensor.wildfires_audio_connections
+      - sensor.wildfires_video_connections
+      - switch.wildfires_video_recording
+      - switch.plug1
+      - android_ip_webcam.wildfires
 
 # Discover some devices automatically
 discovery:
@@ -109,6 +123,7 @@ sensor: !include_dir_merge_list sensors/
 binary_sensor: !include_dir_merge_list binary_sensors/
 device_tracker: !include_dir_merge_list device_trackers/
 media_player: !include_dir_merge_list media_players/
+switch: !include_dir_merge_list switches/
 
 notify:
   - platform: nfandroidtv
@@ -131,3 +146,15 @@ input_number:
     step: 0.01
     mode: box
 #    unit_of_measurement: "%" # robi groupovanie so Synology volume
+
+shell_command:
+  restart_wifi: ssh root@192.168.1.1 -p 2222 wifi
+
+android_ip_webcam:
+  - host: 192.168.1.69
+    name: wildfires
+    sensors:
+      - light
+    switches:
+      - torch
+      - video_recording
