@@ -1,0 +1,12 @@
+sensor.eurotronic_unknown_type0003_id0001_sourcenodeid:
+  ignored: true
+  polling_intensity: 0
+zwave.eurotronic_unknown_type0003_id0001:
+  ignored: true
+  polling_intensity: 0
+zwave.eurotronic_unknown_type0003_id0001_2:
+  ignored: true
+  polling_intensity: 0
+zwave.termohlava:
+  ignored: true
+  polling_intensity: 0
