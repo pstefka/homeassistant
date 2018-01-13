@@ -1,2 +1,4 @@
 automation:
   hidden: true
+input_number:
+  hidden: true

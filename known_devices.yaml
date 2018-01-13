@@ -137,3 +137,12 @@ petobook:
   picture:
   track: false
   vendor: TP-LINK TECHNOLOGIES CO.,LTD.
+
+acc1ee2f598a:
+  hide_if_away: false
+  icon:
+  mac: AC:C1:EE:2F:59:8A
+  name: acc1ee2f598a
+  picture:
+  track: false
+  vendor: Xiaomi Communications Co Ltd

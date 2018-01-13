@@ -46,8 +46,7 @@ recorder:
       - automation.set_viera_volume
       - sensor.wildfires_audio_connections
       - sensor.wildfires_video_connections
-      - sensor.termohlava_sourcenodeid # alarm source, not really useful
-      - sensor.termohlava_alarm_type # static info = 0, general, not really useful
+      - sensor.wildfires_video_connections
 
 # Enables support for tracking state changes over time
 history:
@@ -58,6 +57,7 @@ history:
       - automation.viera_on
       - automation.viera_off
       - automation.viera_volume_visible
+      - climate.termohlava_cooling_1
       - group.status_view
       - group.default_view
       - group.living_room
@@ -69,8 +69,6 @@ history:
       - persistent_notification.invalid_config
       - sensor.wildfires_audio_connections
       - sensor.wildfires_video_connections
-      - sensor.termohlava_sourcenodeid
-      - sensor.termohlava_alarm_type
       - switch.wildfires_video_recording
 
 # Discover some devices automatically

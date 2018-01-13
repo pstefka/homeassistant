@@ -1,12 +1,18 @@
-sensor.eurotronic_unknown_type0003_id0001_sourcenodeid:
+sensor.termohlava_alarm_level:
   ignored: true
   polling_intensity: 0
-zwave.eurotronic_unknown_type0003_id0001:
+sensor.termohlava_alarm_type:
   ignored: true
   polling_intensity: 0
-zwave.eurotronic_unknown_type0003_id0001_2:
+climate.termohlava_cooling_1:
   ignored: true
   polling_intensity: 0
-zwave.termohlava:
+sensor.termohlava_power_management:
+  ignored: true
+  polling_intensity: 0
+sensor.termohlava_sourcenodeid:
+  ignored: true
+  polling_intensity: 0
+sensor.termohlava_system:
   ignored: true
   polling_intensity: 0
