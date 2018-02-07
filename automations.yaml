@@ -10,9 +10,9 @@
 
         '
 - action:
-  - service: group.set_visibility
-    entity_id: group.living_room_helpers
+    service: group.set_visibility
     data:
+      entity_id: group.living_room_helpers
       visible: true
   alias: Viera on
   id: '1515235740228'
@@ -21,9 +21,9 @@
     platform: state
     to: 'on'
 - action:
-  - service: group.set_visibility
-    entity_id: group.living_room_helpers
+    service: group.set_visibility
     data:
+      entity_id: group.living_room_helpers
       visible: false
   alias: Viera off
   id: '1515235740229'
@@ -31,11 +31,51 @@
   - entity_id: media_player.viera
     platform: state
     to: 'off'
-
-#- action:
-#  - service: shell_command.restart_wifi
-#  alias: restart_wifi
-#  trigger:
-#  - platform: state
-#    entity_id: binary_sensor.wifi 
-#    to: 'off' 
+- action:
+    service: switch.turn_on
+    data:
+      entity_id: switch.switch1
+  alias: Shield on
+  id: '1517123273109'
+  trigger:
+  - entity_id: binary_sensor.shield_power
+    platform: state
+    to: 'on'
+- action:
+    service: switch.turn_off
+    data:
+      entity_id: switch.switch1
+  id: '1517754543109'
+  trigger:
+  - entity_id: binary_sensor.shield_power
+    platform: state
+    to: 'off'
+  alias: Shield off
+- action:
+  - service: climate.set_operation_mode
+    data:
+      entity_id: climate.termohlava_dry_air
+      operation_mode: Heat
+  alias: Heat up
+  id: '1517769273109'
+  trigger:
+  - at: 06:00
+    platform: time
+  - at: '16:30'
+    platform: time
+  - entity_id: group.people
+    platform: state
+    to: home
+- action:
+  - data:
+      entity_id: climate.termohlava_dry_air
+      operation_mode: Heat Econ
+    service: climate.set_operation_mode
+  alias: Heat down
+  condition: []
+  id: '1517769647601'
+  trigger:
+  - at: '23:00'
+    platform: time
+  - at: 08:00
+    platform: time

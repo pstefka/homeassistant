@@ -8,27 +8,31 @@
 #      - sensor.yr_symbol
 #      - sun.sun
 #      - binary_sensor.wifi
-  people_view:
-    view: yes
-    name: People view
-    icon: mdi:account-multiple
-    entities:
-      - group.people
-  status_view:
-    view: yes
-    name: Status view
-    icon: mdi:sd
-    entities:
-      - group.status
-  people:
+people_view:
+  view: yes
+  name: People view
+  icon: mdi:account-multiple
+  entities:
+    - group.people
+status_view:
+  view: yes
+  name: Status view
+  icon: mdi:sd
+  entities:
+    - group.status
+people:
+  entities:
     - device_tracker.nikikmi4c
     - device_tracker.op3
-  living_room:
+living_room:
+  entities:
     - media_player.viera
     - media_player.televizia
-  living_room_helpers:
+living_room_helpers:
+  entities:
     - input_number.slider_viera_volume 
-  status:
+status:
+  entities:
     - sensor.volume_used_volume_1
     - sensor.temperature_sda
     - sensor.temperature_sdb

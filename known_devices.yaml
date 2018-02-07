@@ -146,3 +146,39 @@ acc1ee2f598a:
   picture:
   track: false
   vendor: Xiaomi Communications Co Ltd
+
+c0eefb4285ce:
+  hide_if_away: false
+  icon:
+  mac: C0:EE:FB:42:85:CE
+  name: c0eefb4285ce
+  picture:
+  track: false
+  vendor: OnePlus Tech (Shenzhen) Ltd
+
+005916f11a61:
+  hide_if_away: false
+  icon:
+  mac: 00:59:16:F1:1A:61
+  name: 005916f11a61
+  picture:
+  track: false
+  vendor: unknown
+
+b04e26545ace:
+  hide_if_away: false
+  icon:
+  mac: B0:4E:26:54:5A:CE
+  name: b04e26545ace
+  picture:
+  track: false
+  vendor: TP-LINK TECHNOLOGIES CO.,LTD.
+
+pi_lan:
+  hide_if_away: false
+  icon:
+  mac: B8:27:EB:05:09:5E
+  name: pi lan
+  picture:
+  track: false
+  vendor: Raspberry Pi Foundation

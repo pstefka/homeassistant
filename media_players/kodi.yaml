@@ -1,5 +1,6 @@
-#- platform: kodi
-#  host: 192.168.1.4
-#  name: Kodi
-#  username: kodi
-#  enable_websocket: false
+- platform: kodi
+  host: 192.168.1.4
+  name: Kodi
+  username: kodi
+  password: !secret kodi_password 
+#  enable_websocket:# false

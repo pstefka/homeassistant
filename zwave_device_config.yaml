@@ -16,3 +16,6 @@ sensor.termohlava_sourcenodeid:
 sensor.termohlava_system:
   ignored: true
   polling_intensity: 0
+sensor.termohlava_temperature:
+  ignored: false
+  polling_intensity: 300
