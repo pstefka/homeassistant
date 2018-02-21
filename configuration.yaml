@@ -34,7 +34,7 @@ http:
 # the developers to assist with development of Home Assistant.
 # For more information, please see:
 # https://home-assistant.io/blog/2016/10/25/explaining-the-updater/
-#updater:
+updater:
   # Optional, allows Home Assistant developers to focus on popular components.
   # include_used_components: true
 
@@ -48,7 +48,7 @@ recorder:
       - sensor.wildfires_video_connections
       - sensor.wildfires_video_connections
 
-#prometheus:
+prometheus:
 
 # Enables support for tracking state changes over time
 history:
@@ -82,7 +82,7 @@ discovery:
       #    - spotify_connect # unknown value
 
 # Allows you to issue voice commands from the frontend in enabled browsers
-conversation:
+#conversation:
 
 # View all events in a logbook
 logbook:
@@ -138,6 +138,17 @@ input_number:
     step: 0.01
     mode: box
 #    unit_of_measurement: "%" # robi groupovanie so Synology volume
+
+input_select:
+  heat:
+    name: Heating
+    options:
+    - Auto
+    - 'Off'
+    - 'On'
+    initial: Auto
+    icon: mdi:air-conditioner
+    
 
 shell_command:
   restart_wifi: ssh root@192.168.1.1 -p 2222 wifi

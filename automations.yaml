@@ -52,18 +52,53 @@
     to: 'off'
   alias: Shield off
 - action:
-  - service: climate.set_operation_mode
-    data:
+  - data:
       entity_id: climate.termohlava_dry_air
       operation_mode: Heat
-  alias: Heat up
+    service: climate.set_operation_mode
+  alias: Heat 06:00 Auto up
   id: '1517769273109'
   trigger:
   - at: 06:00
     platform: time
-  - at: '16:30'
+  condition:
+  - condition: state
+    entity_id: input_select.heat
+    state: Auto
+- action:
+  - data:
+      entity_id: climate.termohlava_dry_air
+      operation_mode: Heat Econ
+    service: climate.set_operation_mode
+  alias: Heat 21:00 not home down
+  condition:
+  - condition: state
+    entity_id: group.people
+    state: not_home
+  id: '1517769647601'
+  trigger:
+  - at: '21:00'
     platform: time
+- action:
+  - data:
+      entity_id: climate.termohlava_dry_air
+      operation_mode: Heat
+    service: climate.set_operation_mode
+  alias: Heat 08:00 - 16:30 Auto up
+  condition:
+  - after: 08:00
+    before: '16:30'
+    condition: time
+  - condition: state
+    entity_id: binary_sensor.workday
+    state: 'on'
+  - condition: state
+    entity_id: input_select.heat
+    state: Auto
+  id: '1519219045865'
+  trigger:
   - entity_id: group.people
+    from: not_home
     platform: state
     to: home
 - action:
@@ -71,11 +106,122 @@
       entity_id: climate.termohlava_dry_air
       operation_mode: Heat Econ
     service: climate.set_operation_mode
-  alias: Heat down
-  condition: []
-  id: '1517769647601'
+  alias: Heat 08:00 - 16:30 Auto down
+  condition:
+  - after: 08:00
+    before: '16:30'
+    condition: time
+  - condition: state
+    entity_id: binary_sensor.workday
+    state: 'on'
+  - condition: state
+    entity_id: input_select.heat
+    state: Auto
+  id: '1519219194083'
   trigger:
-  - at: '23:00'
+  - entity_id: group.people
+    from: home
+    platform: state
+    to: not_home
+- action:
+  - data:
+      entity_id: climate.termohlava_dry_air
+      operation_mode: Heat Econ
+    service: climate.set_operation_mode
+  alias: Heat 24:00 down
+  condition: []
+  id: '1519219354612'
+  trigger:
+  - at: 00:00
     platform: time
+- action:
+  - data:
+      entity_id: climate.termohlava_dry_air
+      operation_mode: Heat Econ
+    service: climate.set_operation_mode
+  alias: Heat 08:00 Auto week down
+  condition:
+  - condition: state
+    entity_id: group.people
+    state: not_home
+  - condition: state
+    entity_id: binary_sensor.workday
+    state: 'on'
+  - condition: state
+    entity_id: input_select.heat
+    state: Auto
+  id: '1519220863285'
+  trigger:
   - at: 08:00
     platform: time
+- action:
+  - data:
+      entity_id: climate.termohlava_dry_air
+      operation_mode: Heat
+    service: climate.set_operation_mode
+  alias: Heat 16:30 Auto week up
+  condition:
+  - condition: state
+    entity_id: binary_sensor.workday
+    state: 'on'
+  - condition: state
+    entity_id: input_select.heat
+    state: Auto
+  id: '1519225405230'
+  trigger:
+  - at: '16:30'
+    platform: time
+- action:
+  - data:
+      entity_id: climate.termohlava_dry_air
+      operation_mode: Heat
+    service: climate.set_operation_mode
+  alias: Heat 06:00 On up
+  condition:
+  - condition: state
+    entity_id: input_select.heat
+    state: 'on'
+  id: '1519225819175'
+  trigger:
+  - at: 06:00
+    platform: time
+- action:
+  - data:
+      entity_id: climate.termohlava_dry_air
+      operation_mode: Heat Econ
+    service: climate.set_operation_mode
+  alias: Heat to Off
+  condition: []
+  id: '1519226982225'
+  trigger:
+  - entity_id: input_select.heat
+    platform: state
+    to: 'Off'
+- action:
+  - data:
+      entity_id: climate.termohlava_dry_air
+      operation_mode: Heat
+    service: climate.set_operation_mode
+  alias: Heat to On
+  condition: []
+  id: '1519227023922'
+  trigger:
+  - entity_id: input_select.heat
+    platform: state
+    to: 'On'
+- action:
+  - data:
+      entity_id: climate.termohlava_dry_air
+      operation_mode: Heat Econ
+    service: climate.set_operation_mode
+  alias: Heat 21:00 - 24:00 not home down
+  condition:
+  - after: '21:00'
+    before: 00:00
+    condition: time
+  id: '1519227677584'
+  trigger:
+  - entity_id: group.people
+    from: home
+    platform: state
+    to: not_home
