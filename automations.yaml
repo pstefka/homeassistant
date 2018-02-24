@@ -70,14 +70,14 @@
       entity_id: climate.termohlava_dry_air
       operation_mode: Heat Econ
     service: climate.set_operation_mode
-  alias: Heat 21:00 not home down
+  alias: Heat 22:00 not home down
   condition:
   - condition: state
     entity_id: group.people
     state: not_home
   id: '1517769647601'
   trigger:
-  - at: '21:00'
+  - at: '22:00'
     platform: time
 - action:
   - data:
@@ -214,9 +214,9 @@
       entity_id: climate.termohlava_dry_air
       operation_mode: Heat Econ
     service: climate.set_operation_mode
-  alias: Heat 21:00 - 24:00 not home down
+  alias: Heat 22:00 - 24:00 not home down
   condition:
-  - after: '21:00'
+  - after: '22:00'
     before: 00:00
     condition: time
   id: '1519227677584'

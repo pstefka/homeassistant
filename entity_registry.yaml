@@ -1,0 +1,3 @@
+climate.termohlava_dry_air:
+  platform: zwave
+  unique_id: 3-72057594093551746

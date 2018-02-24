@@ -3,7 +3,7 @@
   group.living_room_helpers:
     friendly_name: Viera
   sensor.tp_link_current_consumption:
-    friendly_name: Switch consupmtion
+    friendly_name: Switch consumption
   switch.switch1:
     friendly_name: DAC
   switch.switch2:
