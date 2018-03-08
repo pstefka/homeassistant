@@ -32,25 +32,33 @@
     platform: state
     to: 'off'
 - action:
+  - data:
+      entity_id: switch.switch3
     service: switch.turn_on
-    data:
-      entity_id: switch.switch1
   alias: Shield on
   id: '1517123273109'
   trigger:
   - entity_id: binary_sensor.shield_power
     platform: state
     to: 'on'
+  condition:
+  - condition: state
+    entity_id: switch.switch3
+    state: 'off'
 - action:
+  - data:
+      entity_id: switch.switch3
     service: switch.turn_off
-    data:
-      entity_id: switch.switch1
   id: '1517754543109'
   trigger:
   - entity_id: binary_sensor.shield_power
     platform: state
     to: 'off'
   alias: Shield off
+  condition:
+  - condition: state
+    entity_id: switch.switch3
+    state: 'on'
 - action:
   - data:
       entity_id: climate.termohlava_dry_air
@@ -225,3 +233,31 @@
     from: home
     platform: state
     to: not_home
+- action:
+  - data:
+      entity_id: switch.switch3
+    service: switch.turn_off
+  alias: MQTT Shield off
+  condition:
+  - condition: state
+    entity_id: switch.switch3
+    state: 'on'
+  id: '1519561541052'
+  trigger:
+  - entity_id: binary_sensor.shield_power_mqtt
+    platform: state
+    to: 'off'
+- action:
+  - data:
+      entity_id: switch.switch3
+    service: switch.turn_on
+  alias: MQTT Shield on
+  condition:
+  - condition: state
+    entity_id: switch.switch3
+    state: 'off'
+  id: '1519561583777'
+  trigger:
+  - entity_id: binary_sensor.shield_power_mqtt
+    platform: state
+    to: 'on'

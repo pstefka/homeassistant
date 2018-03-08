@@ -1,0 +1,10 @@
+- platform: template
+  sensors:
+    sun_up:
+      entity_id: sun.sun
+      friendly_name: "Sun is up"
+      value_template: >-
+        {{ is_state('sun.sun', 'above_horizon') }}
+
+#Feb 25 13:57:30 raspberrypi hass[21120]: 2018-02-25 13:57:30 INFO (MainThread) [homeassistant.core] Bus:Handling <Event state_changed[L]: entity_id=sun.sun, new_state=<state sun.sun=above_horizon; next_dusk=2018-02-25T16:59:44+00:00, next_noon=2018-02-26T11:04:34+00:00, next_setting=2018-02-25T16:28:18+00:00, elevation=27.92, next_dawn=2018-02-26T05:07:53+00:00, azimuth=211.94, friendly_name=Sun, next_midnight=2018-02-25T23:04:30+00:00, next_rising=2018-02-26T05:39:16+00:00 @ 2018-02-25T06:41:10.612674+01:00>, old_state=<state sun.sun=above_horizon; next_dusk=2018-02-25T16:59:44+00:00, next_noon=2018-02-26T11:04:34+00:00, next_setting=2018-02-25T16:28:18+00:00, elevation=28.0, next_dawn=2018-02-26T05:07:53+00:00, azimuth=211.67, friendly_name=Sun, next_midnight=2018-02-25T23:04:30+00:00, next_rising=2018-02-26T05:39:16+00:00 @ 2018-02-25T06:41:10.612674+01:00>>
+

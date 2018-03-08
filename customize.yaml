@@ -5,6 +5,8 @@
   sensor.tp_link_current_consumption:
     friendly_name: Switch consumption
   switch.switch1:
-    friendly_name: DAC
+    friendly_name: WATT
   switch.switch2:
     friendly_name: Akvarium
+  switch.switch3:
+    friendly_name: DAC

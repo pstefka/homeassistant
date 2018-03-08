@@ -1,6 +1,6 @@
 #!/bin/bash
 
-export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+export PATH="/config/adb:/bin"
 
 ip_check=$1
 debug=$2

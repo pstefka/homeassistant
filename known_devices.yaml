@@ -181,3 +181,21 @@ pi_lan:
   picture:
   track: false
   vendor: Raspberry Pi Foundation
+
+nuc:
+  hide_if_away: false
+  icon:
+  mac: C0:3F:D5:62:B2:0B
+  name: nuc
+  picture:
+  track: false
+  vendor: Elitegroup Computer Systems Co.,Ltd.
+
+b04e2691a797:
+  hide_if_away: false
+  icon:
+  mac: B0:4E:26:91:A7:97
+  name: b04e2691a797
+  picture:
+  track: false
+  vendor: TP-LINK TECHNOLOGIES CO.,LTD.

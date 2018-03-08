@@ -1,6 +1,12 @@
-- platform: command_line
-  name: Shield Power
-  command: /home/homeassistant/.homeassistant/scripts/shield_tv_check.sh 192.168.1.4 2>&1 | tee -a /home/homeassistant/.homeassistant/scripts/shield_tv_check.log
-  payload_on: OK
-  payload_off: FAIL
-  scan_interval: 10
+#- platform: command_line
+#  name: Shield Power
+#  command: /config/scripts/shield_tv_check.sh 192.168.1.4 2>&1 | tee -a /config/scripts/shield_tv_check.log
+#  payload_on: OK
+#  payload_off: FAIL
+#  scan_interval: 20
+- platform: mqtt
+  name: "Shield Power MQTT"
+  state_topic: "hass/shield/state"
+  payload_on: "ON"
+  payload_off: "OFF"
+  qos: 0

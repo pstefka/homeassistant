@@ -1,4 +1,4 @@
 - platform: workday
-  country: CZ
+  country: SK
   name: workday
-  excludes: [ sat, sun ]
+  excludes: [ sat, sun, holiday ]
