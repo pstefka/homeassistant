@@ -75,3 +75,5 @@ Weather view:
     - group.precipation
     - sensor.yr_cloudiness
     - sensor.pws_alerts
+    - climate.termohlava_dry_air
+    - input_select.heat

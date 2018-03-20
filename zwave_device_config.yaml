@@ -19,3 +19,15 @@ sensor.termohlava_system:
 sensor.termohlava_temperature:
   ignored: false
   polling_intensity: 300
+sensor.oko_alarm_level:
+  ignored: true
+  polling_intensity: 0
+sensor.oko_alarm_type:
+  ignored: true
+  polling_intensity: 0
+sensor.oko_sourcenodeid:
+  ignored: true
+  polling_intensity: 0
+sensor.oko_general:
+  ignored: true
+  polling_intensity: 0
