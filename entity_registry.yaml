@@ -1,60 +1,108 @@
 climate.termohlava_dry_air:
+  name:
   platform: zwave
   unique_id: 3-72057594093551746
 media_player.televizia:
+  name:
   platform: cast
   unique_id: d4baa6f2-b602-ab15-16b0-a7085666ee27
 sensor.alarm_type:
+  name:
   platform: zwave
   unique_id: 4-72057594111082497
 sensor.alarm_level:
+  name:
   platform: zwave
   unique_id: 4-72057594111082513
 binary_sensor.sensor:
+  name:
   platform: zwave
   unique_id: 4-72057594110017536
 sensor.fibaro_system_fgms001zw5_motion_sensor_temperature:
+  name:
   platform: zwave
   unique_id: 4-72057594110033938
 sensor.fibaro_system_fgms001zw5_motion_sensor_luminance:
+  name:
   platform: zwave
   unique_id: 4-72057594110033970
 sensor.fibaro_system_fgms001zw5_motion_sensor_seismic_intensity:
+  name:
   platform: zwave
   unique_id: 4-72057594110034322
 sensor.fibaro_system_fgms001zw5_motion_sensor_sourcenodeid:
+  name:
   platform: zwave
   unique_id: 4-72057594111082529
 sensor.fibaro_system_fgms001zw5_motion_sensor_burglar:
+  name:
   platform: zwave
   unique_id: 4-72057594111082657
 sensor.fibaro_system_fgms001zw5_motion_sensor_general:
+  name:
   platform: zwave
   unique_id: 4-72057594111787009
 sensor.alarm_type_2:
+  name:
   platform: zwave
   unique_id: 5-72057594127859713
 sensor.alarm_level_2:
+  name:
   platform: zwave
   unique_id: 5-72057594127859729
 binary_sensor.sensor_2:
+  name:
   platform: zwave
   unique_id: 5-72057594126794752
 sensor.fibaro_system_fgms001zw5_motion_sensor_temperature_2:
+  name:
   platform: zwave
   unique_id: 5-72057594126811154
 sensor.fibaro_system_fgms001zw5_motion_sensor_luminance_2:
+  name:
   platform: zwave
   unique_id: 5-72057594126811186
 sensor.fibaro_system_fgms001zw5_motion_sensor_seismic_intensity_2:
+  name:
   platform: zwave
   unique_id: 5-72057594126811538
 sensor.fibaro_system_fgms001zw5_motion_sensor_sourcenodeid_2:
+  name:
   platform: zwave
   unique_id: 5-72057594127859745
 sensor.fibaro_system_fgms001zw5_motion_sensor_burglar_2:
+  name:
   platform: zwave
   unique_id: 5-72057594127859873
 sensor.fibaro_system_fgms001zw5_motion_sensor_general_2:
+  name:
   platform: zwave
   unique_id: 5-72057594128564225
+sensor.eurotronic_unknown_type0003_id0001_alarm_type:
+  name:
+  platform: zwave
+  unique_id: 3-72057594094305281
+sensor.eurotronic_unknown_type0003_id0001_alarm_level:
+  name:
+  platform: zwave
+  unique_id: 3-72057594094305297
+sensor.eurotronic_unknown_type0003_id0001_temperature:
+  name:
+  platform: zwave
+  unique_id: 3-72057594093256722
+climate.eurotronic_unknown_type0003_id0001_cooling_1:
+  name:
+  platform: zwave
+  unique_id: 3-72057594093551650
+sensor.eurotronic_unknown_type0003_id0001_sourcenodeid:
+  name:
+  platform: zwave
+  unique_id: 3-72057594094305313
+sensor.eurotronic_unknown_type0003_id0001_power_management:
+  name:
+  platform: zwave
+  unique_id: 3-72057594094305457
+sensor.eurotronic_unknown_type0003_id0001_system:
+  name:
+  platform: zwave
+  unique_id: 3-72057594094305473

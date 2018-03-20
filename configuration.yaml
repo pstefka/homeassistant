@@ -44,17 +44,23 @@ recorder:
   exclude:
     entities:
       - automation.set_viera_volume
-      - sensor.wildfires_audio_connections
-      - sensor.wildfires_video_connections
-      - sensor.wildfires_video_connections
 
 prometheus:
+# nefunguje dobre, nie vsetky informacie su posielane -> chyba komponentu
+#  include:
+#    domains: 
+#      - sensor
+#      - binary_sensor
+#      - automation
+#      - zwave
+#    entities:
+#      - group.people_view
+#      - input_select.heat
 
 # Enables support for tracking state changes over time
 history:
   exclude:
     entities:
-      - android_ip_webcam.wildfires
       - automation.set_viera_volume
       - automation.viera_on
       - automation.viera_off
@@ -65,13 +71,9 @@ history:
       - group.living_room
       - group.all_automations
       - group.all_switches
-      - group.people_view
       - group.living_room_helpers
       - input_number.slider_viera_volume
       - persistent_notification.invalid_config
-      - sensor.wildfires_audio_connections
-      - sensor.wildfires_video_connections
-      - switch.wildfires_video_recording
 
 # Discover some devices automatically
 discovery:
@@ -144,15 +146,14 @@ input_select:
   heat:
     name: Heating
     options:
-    - Auto
-    - 'Off'
-    - 'On'
+     - Auto
+     - 'Off'
+     - 'On'
     initial: Auto
     icon: mdi:air-conditioner
-    
 
-shell_command:
-  restart_wifi: ssh root@192.168.1.1 -p 2222 wifi
+#shell_command:
+#  restart_wifi: ssh root@192.168.1.1 -p 2222 wifi
 
 #android_ip_webcam:
 #  - host: 192.168.1.69

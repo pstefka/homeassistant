@@ -199,3 +199,12 @@ b04e2691a797:
   picture:
   track: false
   vendor: TP-LINK TECHNOLOGIES CO.,LTD.
+
+788a20b9662b:
+  hide_if_away: false
+  icon:
+  mac: 78:8A:20:B9:66:2B
+  name: 788a20b9662b
+  picture:
+  track: false
+  vendor: Ubiquiti Networks Inc.

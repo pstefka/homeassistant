@@ -8,31 +8,70 @@
 #      - sensor.yr_symbol
 #      - sun.sun
 #      - binary_sensor.wifi
-people_view:
+People view:
   view: yes
-  name: People view
   icon: mdi:account-multiple
   entities:
     - group.people
-status_view:
+NAS status view:
   view: yes
-  name: Status view
   icon: mdi:sd
   entities:
     - group.status
-people:
+People:
   entities:
     - device_tracker.nikikmi4c
     - device_tracker.op3
-living_room:
+Living room:
   entities:
     - media_player.viera
     - media_player.televizia
-living_room_helpers:
+    - media_player.kodi
+Living room helpers:
   entities:
     - input_number.slider_viera_volume 
-status:
+NAS status:
   entities:
     - sensor.volume_used_volume_1
     - sensor.temperature_sda
     - sensor.temperature_sdb
+Temperature:
+  entities:
+    - sensor.pws_temp_high_record_c
+    - sensor.pws_temp_low_record_c
+    - sensor.yr_temperature
+    - sensor.pws_temp_c
+    - sensor.pws_feelslike_c
+Humidity:
+  entities:
+    - sensor.yr_humidity
+    - sensor.pws_relative_humidity
+Wind:
+  entities:
+    - sensor.yr_wind_speed
+    - sensor.pws_wind_kph
+    - sensor.yr_wind_direction
+    - sensor.pws_wind_degrees
+Presure:
+  entities:
+    - sensor.yr_pressure
+    - sensor.pws_pressure_mb
+Precipation:
+  entities:
+    - sensor.pws_precip_today_metric
+    - sensor.yr_cloudiness
+Weather view:
+  view: yes
+  name: Weather view
+  icon: mdi:weather-partlycloudy
+  entities:
+    - sun.sun
+    - sensor.yr_symbol
+    - group.sun
+    - group.temperature
+    - group.humidity
+    - group.wind
+    - group.pressure
+    - group.precipation
+    - sensor.yr_cloudiness
+    - sensor.pws_alerts

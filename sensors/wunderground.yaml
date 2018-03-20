@@ -1,0 +1,14 @@
+- platform: wunderground
+  api_key: cf443dc7d56ccd80
+  lang: SK
+  monitored_conditions:
+    - temp_c
+    - feelslike_c
+    - relative_humidity
+    - wind_kph
+    - wind_degrees
+    - pressure_mb
+    - precip_today_metric
+    - alerts
+    - temp_high_record_c
+    - temp_low_record_c

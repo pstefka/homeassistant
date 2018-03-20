@@ -1,7 +1,5 @@
   media_player.televizia:
     friendly_name: Shield
-  group.living_room_helpers:
-    friendly_name: Viera
   sensor.tp_link_current_consumption:
     friendly_name: Switch consumption
   switch.switch1:
@@ -10,3 +8,7 @@
     friendly_name: Akvarium
   switch.switch3:
     friendly_name: DAC
+  group.living_room_helpers:
+    hidden: true
+#  input_number.slider_viera_volume:
+#    hidden: true
