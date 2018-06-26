@@ -1,8 +1,0 @@
-#- platform: command_line
-#  name: Wifi
-#  # raz denne sa spusta job na routeri, ktori reinitializuje wifi tak, aby sa vypla izolacia na wifi a arp prechadzali
-#  command: /config/scripts/wifi_check_reinit.sh 192.168.1.6 2>&1 | tee -a /config/scripts/wifi_check_reinit.log
-#  device_class: connectivity
-#  payload_on: OK
-#  payload_off: FAIL
-#  scan_interval: 60

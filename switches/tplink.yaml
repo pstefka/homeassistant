@@ -1,9 +1,9 @@
 - platform: tplink
-  host: 192.168.1.130
+  host: 192.168.3.101
   name: switch1
 - platform: tplink
-  host: 192.168.1.131
+  host: 192.168.3.102
   name: switch2
 - platform: tplink
-  host: 192.168.1.132
+  host: 192.168.3.103
   name: switch3

@@ -120,10 +120,10 @@ zwave:
   network_key: "0x22, 0x50, 0xA1, 0xBC, 0x62, 0x87, 0xBD, 0x00, 0xFC, 0x9D, 0x5C, 0xCC, 0xAC, 0xA8, 0x2D, 0xFA"
   device_config: !include zwave_device_config.yaml
 
-notify:
-  - platform: nfandroidtv
-    name: ShieldTV
-    host: 192.168.1.4
+#notify:
+#  - platform: nfandroidtv
+#    name: ShieldTV
+#    host: 192.168.1.4
     
 # nemalo by byt treba - malo by stacit panasonic_viera, podla vsetkeho nefunguje WOL na europskych modeloch TV >:-(
 #switch:

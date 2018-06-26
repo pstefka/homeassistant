@@ -208,3 +208,38 @@ b04e2691a797:
   picture:
   track: false
   vendor: Ubiquiti Networks Inc.
+
+dc094c83fa8b:
+  hide_if_away: false
+  icon:
+  mac: DC:09:4C:83:FA:8B
+  name: dc094c83fa8b
+  picture:
+  track: false
+  vendor: HUAWEI TECHNOLOGIES CO.,LTD
+
+78625656783b:
+  hide_if_away: false
+  icon:
+  mac: 78:62:56:56:78:3B
+  name: 78625656783b
+  picture:
+  track: false
+  vendor: HUAWEI TECHNOLOGIES CO.,LTD
+
+0024e4609082:
+  hide_if_away: false
+  icon:
+  mac: 00:24:E4:60:90:82
+  name: 0024e4609082
+  picture:
+  track: false
+  vendor: Withings
+
+64db4350d106:
+  hide_if_away: false
+  icon:
+  mac: 64:DB:43:50:D1:06
+  name: 64db4350d106
+  picture:
+  track: false
