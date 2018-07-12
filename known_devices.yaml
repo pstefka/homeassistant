@@ -243,3 +243,19 @@ dc094c83fa8b:
   name: 64db4350d106
   picture:
   track: false
+
+788a20b96630:
+  hide_if_away: false
+  icon:
+  mac: 78:8A:20:B9:66:30
+  name: 788a20b96630
+  picture:
+  track: false
+
+e4115b311339:
+  hide_if_away: false
+  icon:
+  mac: E4:11:5B:31:13:39
+  name: e4115b311339
+  picture:
+  track: false

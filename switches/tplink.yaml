@@ -1,6 +1,7 @@
 - platform: tplink
   host: 192.168.3.101
   name: switch1
+#  enable_leds: true
 - platform: tplink
   host: 192.168.3.102
   name: switch2

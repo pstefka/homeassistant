@@ -1,9 +1,9 @@
   media_player.televizia:
     friendly_name: Shield
-  sensor.tp_link_current_consumption:
-    friendly_name: Switch consumption
   switch.switch1:
     friendly_name: WATT
+  sensor.switch1_consumption:
+    friendly_name: WATT consumption
   switch.switch2:
     friendly_name: Akvarium
   switch.switch3:
