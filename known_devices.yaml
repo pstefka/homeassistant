@@ -259,3 +259,22 @@ e4115b311339:
   name: e4115b311339
   picture:
   track: false
+
+op3_ping:
+  hide_if_away: false
+  icon:
+  mac:
+  name: Peto
+  picture:
+  track: true
+  gravatar: www.stefi@gmail.com
+
+
+nikikmi4c_ping:
+  hide_if_away: false
+  icon:
+  mac:
+  name: Nikik
+  picture:
+  track: true
+  gravatar: vewe99@gmail.com

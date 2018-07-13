@@ -20,8 +20,10 @@ NAS status view:
     - group.status
 People:
   entities:
-    - device_tracker.nikikmi4c
-    - device_tracker.op3
+#    - device_tracker.nikikmi4c
+    - device_tracker.nikikmi4c_ping
+#    - device_tracker.op3
+    - device_tracker.op3_ping
 Living room:
   entities:
     - media_player.viera

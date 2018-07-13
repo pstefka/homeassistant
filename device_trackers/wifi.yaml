@@ -1,0 +1,11 @@
+# doesn't work anymore :( as all DHCP is handled on the routerx
+# needs rework -> probably send events from routerx
+#- platform: luci
+#  host: 192.168.11.10
+#  username: root
+#  password: !secret router_password
+#  name: wifi
+#  new_device_defaults:
+#    track_new_devices: False
+#    hide_if_away: False
+                                            
