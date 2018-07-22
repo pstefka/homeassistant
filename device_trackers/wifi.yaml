@@ -3,7 +3,7 @@
 #- platform: luci
 #  host: 192.168.11.10
 #  username: root
-#  password: !secret router_password
+#  password: !secret wifi_password
 #  name: wifi
 #  new_device_defaults:
 #    track_new_devices: False
