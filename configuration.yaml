@@ -43,7 +43,7 @@ recorder:
   purge_keep_days: 2 
   exclude:
     entities:
-      - automation.set_viera_volume
+#      - automation.set_viera_volume
 
 prometheus:
 # nefunguje dobre, nie vsetky informacie su posielane -> chyba komponentu
@@ -61,10 +61,10 @@ prometheus:
 history:
   exclude:
     entities:
-      - automation.set_viera_volume
-      - automation.viera_on
-      - automation.viera_off
-      - automation.viera_volume_visible
+#      - automation.set_viera_volume
+#      - automation.viera_on
+#      - automation.viera_off
+#      - automation.viera_volume_visible
       - climate.termohlava_cooling_1
       - group.status_view
       - group.default_view
@@ -72,7 +72,7 @@ history:
       - group.all_automations
       - group.all_switches
       - group.living_room_helpers
-      - input_number.slider_viera_volume
+#      - input_number.slider_viera_volume
       - persistent_notification.invalid_config
 
 # Discover some devices automatically
@@ -81,7 +81,7 @@ discovery:
     # set below with proper naming
     - panasonic_viera
     - google_cast
-      #    - spotify_connect # unknown value
+#    - spotify_connect # unknown value
 
 remote:
   - platform: harmony
@@ -137,15 +137,15 @@ zwave:
 #    host: 192.168.1.7
 #    mac_address: "c0-d9-62-f6-c3-5b
 
-input_number:
-  slider_viera_volume:
-    name: Volume
-    initial: 0.25
-    min: 0
-    max: 1
-    step: 0.01
-    mode: box
-#    unit_of_measurement: "%" # robi groupovanie so Synology volume
+#input_number:
+#  slider_viera_volume:
+#    name: Volume
+#    initial: 0.25
+#    min: 0
+#    max: 1
+#    step: 0.01
+#    mode: box
+##    unit_of_measurement: "%" # robi groupovanie so Synology volume
 
 input_select:
   heat:

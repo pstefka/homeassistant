@@ -1,36 +1,36 @@
-- alias: Set Viera volume
-  trigger:
-  - entity_id: input_number.slider_viera_volume
-    platform: state
-  action:
-  - service: media_player.volume_set
-    entity_id: media_player.viera
-    data_template:
-      volume_level: '{{ states(''input_number.slider_viera_volume'') | float }}
-
-        '
-- action:
-    service: group.set_visibility
-    data:
-      entity_id: group.living_room_helpers
-      visible: true
-  alias: Viera on
-  id: '1515235740228'
-  trigger:
-  - entity_id: media_player.viera
-    platform: state
-    to: 'on'
-- action:
-    service: group.set_visibility
-    data:
-      entity_id: group.living_room_helpers
-      visible: false
-  alias: Viera off
-  id: '1515235740229'
-  trigger:
-  - entity_id: media_player.viera
-    platform: state
-    to: 'off'
+#- alias: Set Viera volume
+#  trigger:
+#  - entity_id: input_number.slider_viera_volume
+#    platform: state
+#  action:
+#  - service: media_player.volume_set
+#    entity_id: media_player.viera
+#    data_template:
+#      volume_level: '{{ states(''input_number.slider_viera_volume'') | float }}
+#
+#        '
+#- action:
+#    service: group.set_visibility
+#    data:
+#      entity_id: group.living_room_helpers
+#      visible: true
+#  alias: Viera on
+#  id: '1515235740228'
+#  trigger:
+#  - entity_id: media_player.viera
+#    platform: state
+#    to: 'on'
+#- action:
+#    service: group.set_visibility
+#    data:
+#      entity_id: group.living_room_helpers
+#      visible: false
+#  alias: Viera off
+#  id: '1515235740229'
+#  trigger:
+#  - entity_id: media_player.viera
+#    platform: state
+#    to: 'off'
 - action:
   - data:
       entity_id: switch.switch3

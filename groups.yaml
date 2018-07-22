@@ -17,7 +17,7 @@ NAS status view:
   view: yes
   icon: mdi:sd
   entities:
-    - group.status
+    - group.NAS_status
 People:
   entities:
 #    - device_tracker.nikikmi4c

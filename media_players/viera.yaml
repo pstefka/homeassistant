@@ -1,5 +1,6 @@
-- platform: panasonic_viera
-  host: 192.168.1.7
-  name: Viera
-  mac: "c0:d9:62:f6:c3:5b"
+#disabled, send to isolation -> can be controled using Harmony hub
+#- platform: panasonic_viera
+#  host: 192.168.1.7
+#  name: Viera
+#  mac: "c0:d9:62:f6:c3:5b"
                 
