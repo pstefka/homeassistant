@@ -83,6 +83,11 @@ discovery:
     - google_cast
       #    - spotify_connect # unknown value
 
+remote:
+  - platform: harmony
+    name: Living Room
+    host: 192.168.1.5
+
 # Allows you to issue voice commands from the frontend in enabled browsers
 #conversation:
 
