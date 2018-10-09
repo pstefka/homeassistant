@@ -1,6 +1,6 @@
 - platform: ping
   interval_seconds: 30
-  consider_home: 180
+  consider_home: 600 
   new_device_defaults:
     track_new_devices: False
     hide_if_away: False

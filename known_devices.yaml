@@ -4,7 +4,7 @@ op3:
   mac: C0:EE:FB:D8:66:AA
   name: Peto
   picture:
-  track: false
+  track: true
   vendor: unknown
   consider_home: 180
   gravatar: www.stefi@gmail.com
@@ -15,7 +15,7 @@ nikikmi4c:
   mac: 20:82:C0:63:C2:60
   name: Nikik
   picture:
-  track: false
+  track: true
   vendor: Xiaomi Communications Co Ltd
   consider_home: 180
   gravatar: vewe99@gmail.com
@@ -264,7 +264,7 @@ op3_ping:
   hide_if_away: false
   icon:
   mac:
-  name: Peto
+  name: PetoP
   picture:
   track: true
   gravatar: www.stefi@gmail.com
@@ -274,7 +274,15 @@ nikikmi4c_ping:
   hide_if_away: false
   icon:
   mac:
-  name: Nikik
+  name: NikikP
   picture:
   track: true
   gravatar: vewe99@gmail.com
+
+c8db2606a1c6:
+  hide_if_away: false
+  icon:
+  mac: C8:DB:26:06:A1:C6
+  name: c8db2606a1c6
+  picture:
+  track: false

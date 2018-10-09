@@ -1,0 +1,404 @@
+{
+    "data": {
+        "entities": [
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "climate.termohlava_dry_air",
+                "name": "termohlava",
+                "platform": "zwave",
+                "unique_id": "3-72057594093551746"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "media_player.televizia",
+                "name": null,
+                "platform": "cast",
+                "unique_id": "d4baa6f2-b602-ab15-16b0-a7085666ee27"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.oko_alarm_type",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "4-72057594111082497"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.oko_alarm_level",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "4-72057594111082513"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "binary_sensor.oko_sensor",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "4-72057594110017536"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.oko_temperature",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "4-72057594110033938"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.oko_luminance",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "4-72057594110033970"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.oko_seismic_intensity",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "4-72057594110034322"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.oko_sourcenodeid",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "4-72057594111082529"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.oko_burglar",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "4-72057594111082657"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.oko_general",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "4-72057594111787009"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.oko_alarm_type_2",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "5-72057594127859713"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.oko_alarm_level_2",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "5-72057594127859729"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "binary_sensor.oko_sensor_2",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "5-72057594126794752"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.oko_temperature_2",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "5-72057594126811154"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.oko_luminance_2",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "5-72057594126811186"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.oko_seismic_intensity_2",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "5-72057594126811538"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.oko_sourcenodeid_2",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "5-72057594127859745"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.oko_burglar_2",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "5-72057594127859873"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.oko_general_2",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "5-72057594128564225"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.termohlava_alarm_type",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "3-72057594094305281"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.termohlava_alarm_level",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "3-72057594094305297"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.termohlava_temperature",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "3-72057594093256722"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "climate.termohlava_cooling_1",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "3-72057594093551650"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.termohlava_sourcenodeid",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "3-72057594094305313"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.termohlava_power_management",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "3-72057594094305457"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.termohlava_system",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "3-72057594094305473"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.pws_temp_high_record_c",
+                "name": null,
+                "platform": "wunderground",
+                "unique_id": "@17.099390,48.102260,temp_high_record_c"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.pws_temp_low_record_c",
+                "name": null,
+                "platform": "wunderground",
+                "unique_id": "@17.099390,48.102260,temp_low_record_c"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.pws_temp_c",
+                "name": null,
+                "platform": "wunderground",
+                "unique_id": "@17.099390,48.102260,temp_c"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.pws_feelslike_c",
+                "name": null,
+                "platform": "wunderground",
+                "unique_id": "@17.099390,48.102260,feelslike_c"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.pws_relative_humidity",
+                "name": null,
+                "platform": "wunderground",
+                "unique_id": "@17.099390,48.102260,relative_humidity"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.pws_wind_kph",
+                "name": null,
+                "platform": "wunderground",
+                "unique_id": "@17.099390,48.102260,wind_kph"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.pws_wind_degrees",
+                "name": null,
+                "platform": "wunderground",
+                "unique_id": "@17.099390,48.102260,wind_degrees"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.pws_pressure_mb",
+                "name": null,
+                "platform": "wunderground",
+                "unique_id": "@17.099390,48.102260,pressure_mb"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.pws_precip_today_metric",
+                "name": null,
+                "platform": "wunderground",
+                "unique_id": "@17.099390,48.102260,precip_today_metric"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.pws_alerts",
+                "name": null,
+                "platform": "wunderground",
+                "unique_id": "@17.099390,48.102260,alerts"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "zwave.aeotec_zw090_zstick_gen5_eu",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "node-1"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "zwave.termohlava",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "node-3"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "zwave.oko",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "node-5"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.pws_wind_gust_1d_kph",
+                "name": null,
+                "platform": "wunderground",
+                "unique_id": "@17.099390,48.102260,wind_gust_1d_kph"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.pws_wind_1d_kph",
+                "name": null,
+                "platform": "wunderground",
+                "unique_id": "@17.099390,48.102260,wind_1d_kph"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.pws_wind_gust_2d_kph",
+                "name": null,
+                "platform": "wunderground",
+                "unique_id": "@17.099390,48.102260,wind_gust_2d_kph"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.pws_wind_2d_kph",
+                "name": null,
+                "platform": "wunderground",
+                "unique_id": "@17.099390,48.102260,wind_2d_kph"
+            }
+        ]
+    },
+    "key": "core.entity_registry",
+    "version": 1
+}

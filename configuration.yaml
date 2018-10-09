@@ -25,9 +25,13 @@ config:
 
 http:
   # Secrets are defined in the file secrets.yaml
-  # api_password: !secret http_password
+  api_password: !secret api_password
   # Uncomment this if you are using SSL/TLS, running in Docker container, etc.
   # base_url: example.duckdns.org:8123
+  trusted_networks:
+    - 127.0.0.1
+    - 192.168.1.0/24
+    - 172.17.0.0/16
 
 # Checks for available updates
 # Note: This component will send some information about your system to
@@ -41,8 +45,8 @@ updater:
 recorder:
   purge_interval: 1 
   purge_keep_days: 2 
-  exclude:
-    entities:
+#  exclude:
+#    entities:
 #      - automation.set_viera_volume
 
 prometheus:
@@ -61,10 +65,6 @@ prometheus:
 history:
   exclude:
     entities:
-#      - automation.set_viera_volume
-#      - automation.viera_on
-#      - automation.viera_off
-#      - automation.viera_volume_visible
       - climate.termohlava_cooling_1
       - group.status_view
       - group.default_view
@@ -72,16 +72,24 @@ history:
       - group.all_automations
       - group.all_switches
       - group.living_room_helpers
-#      - input_number.slider_viera_volume
       - persistent_notification.invalid_config
+#      - input_number.slider_viera_volume
+#      - automation.set_viera_volume
+#      - automation.viera_on
+#      - automation.viera_off
+#      - automation.viera_volume_visible
 
 # Discover some devices automatically
 discovery:
   ignore:
-    # set below with proper naming
     - panasonic_viera
-    - google_cast
+#    - google_cast
 #    - spotify_connect # unknown value
+
+# doesn't work somehow
+cast:
+  televizia:
+  - host: 192.168.1.4
 
 remote:
   - platform: harmony
@@ -120,8 +128,8 @@ switch: !include_dir_merge_list switches/
 
 zwave:
   # ls -ltr /dev/tty*|tail -n 1
-#  usb_path: /dev/serial/by-id/usb-0658_0200-if00
-  usb_path: /dev/ttyUSB0
+  usb_path: /dev/serial/by-id/usb-0658_0200-if00
+#  usb_path: /dev/ttyUSB0
   network_key: "0x22, 0x50, 0xA1, 0xBC, 0x62, 0x87, 0xBD, 0x00, 0xFC, 0x9D, 0x5C, 0xCC, 0xAC, 0xA8, 0x2D, 0xFA"
   device_config: !include zwave_device_config.yaml
 

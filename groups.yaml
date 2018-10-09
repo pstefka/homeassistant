@@ -27,8 +27,9 @@ People:
 Living room:
   entities:
     - media_player.viera
-    - media_player.televizia
+    - cast.televizia
     - media_player.kodi
+    - media_player.televizia
 Living room helpers:
   entities:
     - input_number.slider_viera_volume 
@@ -44,6 +45,8 @@ Temperature:
     - sensor.yr_temperature
     - sensor.pws_temp_c
     - sensor.pws_feelslike_c
+    - sensor.pws_wind_gust_1d_kph
+    - sensor.pws_wind_1d_kph
 Humidity:
   entities:
     - sensor.yr_humidity
@@ -54,6 +57,8 @@ Wind:
     - sensor.pws_wind_kph
     - sensor.yr_wind_direction
     - sensor.pws_wind_degrees
+    - sensor.pws_wind_gust_2d_kph
+    - sensor.pws_wind_2d_kph
 Presure:
   entities:
     - sensor.yr_pressure

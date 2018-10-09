@@ -1,5 +1,7 @@
   media_player.televizia:
     friendly_name: Shield
+  cast.televizia:
+    friendly_name: Shield
   switch.switch1:
     friendly_name: WATT
   sensor.switch1_consumption:

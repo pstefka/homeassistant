@@ -1,0 +1,13 @@
+{
+    "data": {
+        "salt": "c06e00fb8d569990e42563abb254b578969fdf32017565a7d15db6f5dd7980f8",
+        "users": [
+            {
+                "password": "JDJiJDEyJGVJQkJrUVZxRC5MTkRQOEVTZHhWN3Vnc1BkZ1YwY00xQ3hPMkNhSVNDZVlhRFc3emFCSW9P",
+                "username": "peto"
+            }
+        ]
+    },
+    "key": "auth_provider.homeassistant",
+    "version": 1
+}

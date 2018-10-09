@@ -1,0 +1,9 @@
+  - platform: wake_on_lan
+    name: "PornoNAS"
+    mac_address: "00-11-32-19-df-7c"
+    host: 192.168.1.10
+#    turn_off:
+#      service: shell_command.turn_off_TARGET
+#
+#shell_command:
+#  turn_off_TARGET: 'ssh hass@TARGET sudo pm-suspend'
