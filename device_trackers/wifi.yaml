@@ -1,5 +1,6 @@
 # doesn't work anymore :( as all DHCP is handled on the routerx
 # needs rework -> probably send events from routerx
+# events from the router sent using https://github.com/mueslo/openwrt_hass_devicetracker
 #- platform: luci
 #  host: 192.168.11.10
 #  username: root
