@@ -130,6 +130,7 @@ zwave:
   # ls -ltr /dev/tty*|tail -n 1
   usb_path: /dev/serial/by-id/usb-0658_0200-if00
 #  usb_path: /dev/ttyUSB0
+  config_path: /config/open-zwave/config
   network_key: "0x22, 0x50, 0xA1, 0xBC, 0x62, 0x87, 0xBD, 0x00, 0xFC, 0x9D, 0x5C, 0xCC, 0xAC, 0xA8, 0x2D, 0xFA"
   device_config: !include zwave_device_config.yaml
 

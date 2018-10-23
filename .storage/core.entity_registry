@@ -396,6 +396,96 @@
                 "name": null,
                 "platform": "wunderground",
                 "unique_id": "@17.099390,48.102260,wind_2d_kph"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.eurotronic_eur_spiritz_wall_radiator_thermostat_alarm_type",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "6-72057594144636929"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.eurotronic_eur_spiritz_wall_radiator_thermostat_alarm_level",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "6-72057594144636945"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "zwave.eurotronic_eur_spiritz_wall_radiator_thermostat",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "node-6"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "climate.eurotronic_eur_spiritz_wall_radiator_thermostat_heat",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "6-72057594143883282"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "climate.eurotronic_eur_spiritz_wall_radiator_thermostat_heat_eco",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "6-72057594143883442"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.eurotronic_eur_spiritz_wall_radiator_thermostat_temperature",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "6-72057594143588370"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "climate.eurotronic_eur_spiritz_wall_radiator_thermostat_furnace",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "6-72057594143883378"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.eurotronic_eur_spiritz_wall_radiator_thermostat_sourcenodeid",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "6-72057594144636961"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.eurotronic_eur_spiritz_wall_radiator_thermostat_power_management",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "6-72057594144637105"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.eurotronic_eur_spiritz_wall_radiator_thermostat_system",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "6-72057594144637121"
             }
         ]
     },

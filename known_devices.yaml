@@ -266,7 +266,7 @@ op3_ping:
   mac:
   name: PetoP
   picture:
-  track: true
+  track: false
   gravatar: www.stefi@gmail.com
 
 
@@ -276,7 +276,7 @@ nikikmi4c_ping:
   mac:
   name: NikikP
   picture:
-  track: true
+  track: false
   gravatar: vewe99@gmail.com
 
 c8db2606a1c6:
