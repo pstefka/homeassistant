@@ -429,7 +429,7 @@
                 "device_id": null,
                 "disabled_by": null,
                 "entity_id": "climate.eurotronic_eur_spiritz_wall_radiator_thermostat_heat",
-                "name": null,
+                "name": "Thermostat",
                 "platform": "zwave",
                 "unique_id": "6-72057594143883282"
             },
@@ -438,7 +438,7 @@
                 "device_id": null,
                 "disabled_by": null,
                 "entity_id": "climate.eurotronic_eur_spiritz_wall_radiator_thermostat_heat_eco",
-                "name": null,
+                "name": "Thermostat Eco",
                 "platform": "zwave",
                 "unique_id": "6-72057594143883442"
             },
@@ -456,7 +456,7 @@
                 "device_id": null,
                 "disabled_by": null,
                 "entity_id": "climate.eurotronic_eur_spiritz_wall_radiator_thermostat_furnace",
-                "name": null,
+                "name": "Thermostat Furnace",
                 "platform": "zwave",
                 "unique_id": "6-72057594143883378"
             },
