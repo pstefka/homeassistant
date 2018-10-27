@@ -1,4 +1,4 @@
-#change to pure cast
-- platform: cast
-  #v customize.yaml premenovane na shield
-  host: 192.168.1.4
+#changed to native integration
+#- platform: cast
+#  #v customize.yaml premenovane na shield
+#  host: 192.168.1.4

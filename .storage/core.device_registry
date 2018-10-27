@@ -1,0 +1,26 @@
+{
+    "data": {
+        "devices": [
+            {
+                "config_entries": [
+                    "8ded91d1ebd94c28b5232a90fda3cb77"
+                ],
+                "connections": [],
+                "hub_device_id": null,
+                "id": "e0cb93d68f764a13afcc1872b0200f9b",
+                "identifiers": [
+                    [
+                        "cast",
+                        "d4baa6f2b602ab1516b0a7085666ee27"
+                    ]
+                ],
+                "manufacturer": "NVIDIA",
+                "model": "SHIELD Android TV",
+                "name": "Telev\u00edzia",
+                "sw_version": null
+            }
+        ]
+    },
+    "key": "core.device_registry",
+    "version": 1
+}

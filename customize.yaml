@@ -10,6 +10,16 @@
     friendly_name: Akvarium
   switch.switch3:
     friendly_name: DAC
+  sensor.yr_wind_speed:
+    hidden: true
+  sensor.oko_sourcenodeid_2:
+    hidden: true
+  sensor.eurotronic_eur_spiritz_wall_radiator_thermostat_sourcenodeid:
+    hidden: true
+  climate.eurotronic_eur_spiritz_wall_radiator_thermostat_heat_eco:
+    hidden: true
+  climate.eurotronic_eur_spiritz_wall_radiator_thermostat_furnace:
+    hidden: true
   group.living_room_helpers:
     hidden: true
 #  input_number.slider_viera_volume:

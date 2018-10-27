@@ -38,7 +38,7 @@ NAS status:
     - sensor.volume_used_volume_1
     - sensor.temperature_sda
     - sensor.temperature_sdb
-Temperature:
+Temperature outside:
   entities:
     - sensor.pws_temp_high_record_c
     - sensor.pws_temp_low_record_c

@@ -1,6 +1,6 @@
   - platform: mitemp_bt
     mac: '4C:65:A8:D2:01:0D'
-    name: teplomer
+    name: Teplomer
     force_update: true
     timeout: 20
     median: 1
