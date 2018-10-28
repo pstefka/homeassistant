@@ -179,3 +179,14 @@ mqtt:
   discovery: true
   discovery_prefix: hass
 
+telegram_bot:
+  - platform: polling
+    api_key: !secret telegram_api_key
+    allowed_chat_ids:
+      - 698188355
+
+# Example configuration.yaml entry for the notifier
+notify:
+  - name: peto
+    platform: telegram
+    chat_id: 698188355
