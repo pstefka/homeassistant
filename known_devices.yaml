@@ -286,3 +286,19 @@ c8db2606a1c6:
   name: c8db2606a1c6
   picture:
   track: false
+
+panasonic_viera:
+  hide_if_away: false
+  icon:
+  mac: BT_60:02:B4:45:71:91
+  name: Panasonic Viera
+  picture:
+  track: false
+
+televizia:
+  hide_if_away: false
+  icon:
+  mac: BT_00:04:4B:5E:3C:CD
+  name: Televízia
+  picture:
+  track: false

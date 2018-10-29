@@ -187,6 +187,6 @@ telegram_bot:
 
 # Example configuration.yaml entry for the notifier
 notify:
-  - name: peto
+  - name: peto_telegram
     platform: telegram
     chat_id: 698188355
