@@ -18,6 +18,42 @@
                 "model": "SHIELD Android TV",
                 "name": "Telev\u00edzia",
                 "sw_version": null
+            },
+            {
+                "config_entries": [
+                    "7796ef4883864d1b9531a547badfc551"
+                ],
+                "connections": [],
+                "hub_device_id": null,
+                "id": "30283abdeff04d3da30bd700ec638af0",
+                "identifiers": [
+                    [
+                        "zwave",
+                        5
+                    ]
+                ],
+                "manufacturer": "FIBARO System",
+                "model": "FGMS001-ZW5 Motion Sensor",
+                "name": "FIBARO System FGMS001-ZW5 Motion Sensor",
+                "sw_version": null
+            },
+            {
+                "config_entries": [
+                    "7796ef4883864d1b9531a547badfc551"
+                ],
+                "connections": [],
+                "hub_device_id": null,
+                "id": "ae6ec2628eff4917bcc6bb5ebcff6ec3",
+                "identifiers": [
+                    [
+                        "zwave",
+                        6
+                    ]
+                ],
+                "manufacturer": "EUROtronic",
+                "model": "EUR_SPIRITZ Wall Radiator Thermostat",
+                "name": "EUROtronic EUR_SPIRITZ Wall Radiator Thermostat",
+                "sw_version": null
             }
         ]
     },

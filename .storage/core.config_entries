@@ -12,15 +12,6 @@
             },
             {
                 "connection_class": "local_push",
-                "data": {},
-                "domain": "mqtt",
-                "entry_id": "eead61de9aae4ec09735875db1f70fa7",
-                "source": "import",
-                "title": "configuration.yaml",
-                "version": 1
-            },
-            {
-                "connection_class": "local_push",
                 "data": {
                     "network_key": "0x22, 0x50, 0xA1, 0xBC, 0x62, 0x87, 0xBD, 0x00, 0xFC, 0x9D, 0x5C, 0xCC, 0xAC, 0xA8, 0x2D, 0xFA",
                     "usb_path": "/dev/serial/by-id/usb-0658_0200-if00"
@@ -29,6 +20,19 @@
                 "entry_id": "7796ef4883864d1b9531a547badfc551",
                 "source": "import",
                 "title": "Z-Wave (import from configuration.yaml)",
+                "version": 1
+            },
+            {
+                "connection_class": "local_push",
+                "data": {
+                    "broker": "192.168.1.6",
+                    "discovery": true,
+                    "port": 1883
+                },
+                "domain": "mqtt",
+                "entry_id": "af91324dbb7c4ab58360e20db79c9b15",
+                "source": "user",
+                "title": "192.168.1.6",
                 "version": 1
             }
         ]

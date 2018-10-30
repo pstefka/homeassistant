@@ -101,8 +101,8 @@
                 "unique_id": "4-72057594111787009"
             },
             {
-                "config_entry_id": null,
-                "device_id": null,
+                "config_entry_id": "7796ef4883864d1b9531a547badfc551",
+                "device_id": "30283abdeff04d3da30bd700ec638af0",
                 "disabled_by": null,
                 "entity_id": "sensor.oko_alarm_type_2",
                 "name": "Oko Alarm Type",
@@ -110,8 +110,8 @@
                 "unique_id": "5-72057594127859713"
             },
             {
-                "config_entry_id": null,
-                "device_id": null,
+                "config_entry_id": "7796ef4883864d1b9531a547badfc551",
+                "device_id": "30283abdeff04d3da30bd700ec638af0",
                 "disabled_by": null,
                 "entity_id": "sensor.oko_alarm_level_2",
                 "name": "Oko Alarm Level",
@@ -119,8 +119,8 @@
                 "unique_id": "5-72057594127859729"
             },
             {
-                "config_entry_id": null,
-                "device_id": null,
+                "config_entry_id": "7796ef4883864d1b9531a547badfc551",
+                "device_id": "30283abdeff04d3da30bd700ec638af0",
                 "disabled_by": null,
                 "entity_id": "binary_sensor.oko_sensor_2",
                 "name": "Oko Motion",
@@ -128,8 +128,8 @@
                 "unique_id": "5-72057594126794752"
             },
             {
-                "config_entry_id": null,
-                "device_id": null,
+                "config_entry_id": "7796ef4883864d1b9531a547badfc551",
+                "device_id": "30283abdeff04d3da30bd700ec638af0",
                 "disabled_by": null,
                 "entity_id": "sensor.oko_temperature_2",
                 "name": "Oko Temperature",
@@ -137,8 +137,8 @@
                 "unique_id": "5-72057594126811154"
             },
             {
-                "config_entry_id": null,
-                "device_id": null,
+                "config_entry_id": "7796ef4883864d1b9531a547badfc551",
+                "device_id": "30283abdeff04d3da30bd700ec638af0",
                 "disabled_by": null,
                 "entity_id": "sensor.oko_luminance_2",
                 "name": "Oko Luminance",
@@ -146,8 +146,8 @@
                 "unique_id": "5-72057594126811186"
             },
             {
-                "config_entry_id": null,
-                "device_id": null,
+                "config_entry_id": "7796ef4883864d1b9531a547badfc551",
+                "device_id": "30283abdeff04d3da30bd700ec638af0",
                 "disabled_by": null,
                 "entity_id": "sensor.oko_seismic_intensity_2",
                 "name": "Oko Seismic",
@@ -155,8 +155,8 @@
                 "unique_id": "5-72057594126811538"
             },
             {
-                "config_entry_id": null,
-                "device_id": null,
+                "config_entry_id": "7796ef4883864d1b9531a547badfc551",
+                "device_id": "30283abdeff04d3da30bd700ec638af0",
                 "disabled_by": null,
                 "entity_id": "sensor.oko_sourcenodeid_2",
                 "name": "Oko SourceNodeID",
@@ -164,8 +164,8 @@
                 "unique_id": "5-72057594127859745"
             },
             {
-                "config_entry_id": null,
-                "device_id": null,
+                "config_entry_id": "7796ef4883864d1b9531a547badfc551",
+                "device_id": "30283abdeff04d3da30bd700ec638af0",
                 "disabled_by": null,
                 "entity_id": "sensor.oko_burglar_2",
                 "name": "Oko Burglar",
@@ -173,8 +173,8 @@
                 "unique_id": "5-72057594127859873"
             },
             {
-                "config_entry_id": null,
-                "device_id": null,
+                "config_entry_id": "7796ef4883864d1b9531a547badfc551",
+                "device_id": "30283abdeff04d3da30bd700ec638af0",
                 "disabled_by": null,
                 "entity_id": "sensor.oko_general_2",
                 "name": "Oko General",
@@ -398,8 +398,8 @@
                 "unique_id": "@17.099390,48.102260,wind_2d_kph"
             },
             {
-                "config_entry_id": null,
-                "device_id": null,
+                "config_entry_id": "7796ef4883864d1b9531a547badfc551",
+                "device_id": "ae6ec2628eff4917bcc6bb5ebcff6ec3",
                 "disabled_by": null,
                 "entity_id": "sensor.eurotronic_eur_spiritz_wall_radiator_thermostat_alarm_type",
                 "name": "Termohlava Alarm Type",
@@ -407,8 +407,8 @@
                 "unique_id": "6-72057594144636929"
             },
             {
-                "config_entry_id": null,
-                "device_id": null,
+                "config_entry_id": "7796ef4883864d1b9531a547badfc551",
+                "device_id": "ae6ec2628eff4917bcc6bb5ebcff6ec3",
                 "disabled_by": null,
                 "entity_id": "sensor.eurotronic_eur_spiritz_wall_radiator_thermostat_alarm_level",
                 "name": "Termohlava Alarm Level",
@@ -425,8 +425,8 @@
                 "unique_id": "node-6"
             },
             {
-                "config_entry_id": null,
-                "device_id": null,
+                "config_entry_id": "7796ef4883864d1b9531a547badfc551",
+                "device_id": "ae6ec2628eff4917bcc6bb5ebcff6ec3",
                 "disabled_by": null,
                 "entity_id": "climate.eurotronic_eur_spiritz_wall_radiator_thermostat_heat",
                 "name": "Thermostat",
@@ -434,8 +434,8 @@
                 "unique_id": "6-72057594143883282"
             },
             {
-                "config_entry_id": null,
-                "device_id": null,
+                "config_entry_id": "7796ef4883864d1b9531a547badfc551",
+                "device_id": "ae6ec2628eff4917bcc6bb5ebcff6ec3",
                 "disabled_by": null,
                 "entity_id": "climate.eurotronic_eur_spiritz_wall_radiator_thermostat_heat_eco",
                 "name": "Thermostat Eco",
@@ -443,8 +443,8 @@
                 "unique_id": "6-72057594143883442"
             },
             {
-                "config_entry_id": null,
-                "device_id": null,
+                "config_entry_id": "7796ef4883864d1b9531a547badfc551",
+                "device_id": "ae6ec2628eff4917bcc6bb5ebcff6ec3",
                 "disabled_by": null,
                 "entity_id": "sensor.eurotronic_eur_spiritz_wall_radiator_thermostat_temperature",
                 "name": "Termohlava Temperature",
@@ -452,8 +452,8 @@
                 "unique_id": "6-72057594143588370"
             },
             {
-                "config_entry_id": null,
-                "device_id": null,
+                "config_entry_id": "7796ef4883864d1b9531a547badfc551",
+                "device_id": "ae6ec2628eff4917bcc6bb5ebcff6ec3",
                 "disabled_by": null,
                 "entity_id": "climate.eurotronic_eur_spiritz_wall_radiator_thermostat_furnace",
                 "name": "Thermostat Furnace",
@@ -461,8 +461,8 @@
                 "unique_id": "6-72057594143883378"
             },
             {
-                "config_entry_id": null,
-                "device_id": null,
+                "config_entry_id": "7796ef4883864d1b9531a547badfc551",
+                "device_id": "ae6ec2628eff4917bcc6bb5ebcff6ec3",
                 "disabled_by": null,
                 "entity_id": "sensor.eurotronic_eur_spiritz_wall_radiator_thermostat_sourcenodeid",
                 "name": "Termohlava SourceNodeID",
@@ -470,8 +470,8 @@
                 "unique_id": "6-72057594144636961"
             },
             {
-                "config_entry_id": null,
-                "device_id": null,
+                "config_entry_id": "7796ef4883864d1b9531a547badfc551",
+                "device_id": "ae6ec2628eff4917bcc6bb5ebcff6ec3",
                 "disabled_by": null,
                 "entity_id": "sensor.eurotronic_eur_spiritz_wall_radiator_thermostat_power_management",
                 "name": "Termohlava Power Management",
@@ -479,8 +479,8 @@
                 "unique_id": "6-72057594144637105"
             },
             {
-                "config_entry_id": null,
-                "device_id": null,
+                "config_entry_id": "7796ef4883864d1b9531a547badfc551",
+                "device_id": "ae6ec2628eff4917bcc6bb5ebcff6ec3",
                 "disabled_by": null,
                 "entity_id": "sensor.eurotronic_eur_spiritz_wall_radiator_thermostat_system",
                 "name": "Termohlava System",
