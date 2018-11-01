@@ -14,12 +14,12 @@
                 "connection_class": "local_push",
                 "data": {
                     "network_key": "0x22, 0x50, 0xA1, 0xBC, 0x62, 0x87, 0xBD, 0x00, 0xFC, 0x9D, 0x5C, 0xCC, 0xAC, 0xA8, 0x2D, 0xFA",
-                    "usb_path": "/dev/serial/by-id/usb-0658_0200-if00"
+                    "usb_path": "/zwaveusbstick"
                 },
                 "domain": "zwave",
-                "entry_id": "7796ef4883864d1b9531a547badfc551",
-                "source": "import",
-                "title": "Z-Wave (import from configuration.yaml)",
+                "entry_id": "b373b17d98564ef6a2da583bd6d6f7ce",
+                "source": "user",
+                "title": "Z-Wave",
                 "version": 1
             },
             {
@@ -30,7 +30,7 @@
                     "port": 1883
                 },
                 "domain": "mqtt",
-                "entry_id": "af91324dbb7c4ab58360e20db79c9b15",
+                "entry_id": "57557f98f6ca4dc18dfb58b76cd0b8da",
                 "source": "user",
                 "title": "192.168.1.6",
                 "version": 1

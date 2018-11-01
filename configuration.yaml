@@ -17,6 +17,9 @@ homeassistant:
 # Show links to resources in log and frontend
 #introduction:
 
+logger:
+  logs:
+    homeassistant.components.api: info
 # Enables the frontend
 frontend:
 
@@ -32,6 +35,12 @@ http:
     - 127.0.0.1
     - 192.168.1.0/24
     - 172.17.0.0/16
+
+zones:
+  - name: Work
+    latitude: 48.157588
+    longitude: 17.1289508
+    icon: mdi:worker
 
 # Checks for available updates
 # Note: This component will send some information about your system to
@@ -126,13 +135,13 @@ device_tracker: !include_dir_merge_list device_trackers/
 media_player: !include_dir_merge_list media_players/
 switch: !include_dir_merge_list switches/
 
-zwave:
-  # ls -ltr /dev/tty*|tail -n 1
-  usb_path: /dev/serial/by-id/usb-0658_0200-if00
-#  usb_path: /dev/ttyUSB0
-  config_path: /config/open-zwave/config
-  network_key: "0x22, 0x50, 0xA1, 0xBC, 0x62, 0x87, 0xBD, 0x00, 0xFC, 0x9D, 0x5C, 0xCC, 0xAC, 0xA8, 0x2D, 0xFA"
-  device_config: !include zwave_device_config.yaml
+#zwave:
+## ls -ltr /dev/tty*|tail -n 1
+  #  usb_path: /dev/serial/by-id/usb-0658_0200-if00
+  ##  usb_path: /dev/ttyUSB0
+#  config_path: /config/open-zwave/config
+#  network_key: "0x22, 0x50, 0xA1, 0xBC, 0x62, 0x87, 0xBD, 0x00, 0xFC, 0x9D, 0x5C, 0xCC, 0xAC, 0xA8, 0x2D, 0xFA"
+#  device_config: !include zwave_device_config.yaml
 
 #notify:
 #  - platform: nfandroidtv
