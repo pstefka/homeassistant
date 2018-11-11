@@ -1,0 +1,5 @@
+- platform: ping
+  name: viera_ping
+  host: 192.168.3.11
+  count: 2
+  scan_interval: 30

@@ -25,7 +25,7 @@
 			</CommandClass>
 			<CommandClass id="48" name="COMMAND_CLASS_SENSOR_BINARY" version="1" request_flags="4" innif="true">
 				<Instance index="1" />
-				<Value type="bool" genre="user" instance="1" index="0" label="Sensor" units="" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="True" />
+				<Value type="bool" genre="user" instance="1" index="0" label="Sensor" units="" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="False" />
 				<SensorMap index="0" type="48" />
 				<SensorMap index="0" type="56" />
 				<SensorMap index="0" type="199" />
@@ -33,8 +33,8 @@
 			</CommandClass>
 			<CommandClass id="49" name="COMMAND_CLASS_SENSOR_MULTILEVEL" version="8" innif="true">
 				<Instance index="1" />
-				<Value type="decimal" genre="user" instance="1" index="1" label="Temperature" units="C" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="22.9" />
-				<Value type="decimal" genre="user" instance="1" index="3" label="Luminance" units="lux" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="7" />
+				<Value type="decimal" genre="user" instance="1" index="1" label="Temperature" units="C" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="22.6" />
+				<Value type="decimal" genre="user" instance="1" index="3" label="Luminance" units="lux" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="2" />
 				<Value type="decimal" genre="user" instance="1" index="25" label="Seismic Intensity" units="" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="0.0" />
 			</CommandClass>
 			<CommandClass id="86" name="COMMAND_CLASS_CRC_16_ENCAP" version="1" request_flags="4" innif="true">
@@ -54,7 +54,7 @@
 				<Value type="byte" genre="config" instance="1" index="1" label="Motion detection - sensitivity" units="" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="255" value="15">
 					<Help>The lower the value, the more sensitive the PIR sensor is. Available settings: 8 - 255 Default setting: 15</Help>
 				</Value>
-				<Value type="byte" genre="config" instance="1" index="2" label="Motion detection - blind time" units="" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="15" value="3">
+				<Value type="byte" genre="config" instance="1" index="2" label="Motion detection - blind time" units="" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="15" value="9">
 					<Help>PIR sensor is blind (insensitive) to motion after last detection for the amount of time specified in this parameter. Shorter time periods allow to detect motion more frequently, but the battery will be drained faster. Available settings: 0 - 15 (0.5-8 seconds). Formula to calculate the time: time [s] = 0.5 x (value+1)) Default setting: 3</Help>
 				</Value>
 				<Value type="list" genre="config" instance="1" index="3" label="Motion detection - pulse counter" units="" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="3" vindex="1" size="1">
@@ -74,13 +74,13 @@
 				<Value type="short" genre="config" instance="1" index="6" label="Motion detection - alarm cancellation delay" units="seconds" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="1" max="65535" value="30">
 					<Help>Time period after which the motion alarm will be cancelled in the main controller and associated devices. Any motion detected during this period resets the timer. Available settings: 1 - 65535 Default setting: 30 (30 seconds)</Help>
 				</Value>
-				<Value type="list" genre="config" instance="1" index="8" label="Motion detection - operating mode" units="" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="2" vindex="0" size="1">
+				<Value type="list" genre="config" instance="1" index="8" label="Motion detection - operating mode" units="" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="2" vindex="2" size="1">
 					<Help>This parameter determines in which part of day the PIR sensor will be active. This parameter influences only the motion reports and associations. Tamper, light intensity and temperature measurements will be still active, regardless of this parameter settings. Default setting: 0 (always active)</Help>
 					<Item label="PIR sensor always active" value="0" />
 					<Item label="PIR sensor active during the day only" value="1" />
 					<Item label="PIR sensor active during the night only" value="2" />
 				</Value>
-				<Value type="short" genre="config" instance="1" index="9" label="Motion detection - night/day" units="lux" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="1" max="65535" value="200">
+				<Value type="short" genre="config" instance="1" index="9" label="Motion detection - night/day" units="lux" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="1" max="65535" value="100">
 					<Help>This parameter defines the difference between night and day in terms of light intensity, used in parameter 8. Available settings: 1 - 65535 Default setting: 200 (200 lux)</Help>
 				</Value>
 				<Value type="list" genre="config" instance="1" index="12" label="BASIC command class configuration" units="" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="2" vindex="0" size="1">
@@ -125,16 +125,16 @@
 					<Item label="Backward compatible tamper alarm sent to 5th association group" value="0" />
 					<Item label="Backward compatible tamper alarm sent in broadcast mode" value="1" />
 				</Value>
-				<Value type="short" genre="config" instance="1" index="40" label="Luminance report - threshold" units="lux" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="32767" value="200">
+				<Value type="short" genre="config" instance="1" index="40" label="Luminance report - threshold" units="lux" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="32767" value="100">
 					<Help>This parameter determines the change in light intensity level resulting in luminance report being sent to the main controller. Available settings: 0 - reports are not sent. 1-32767 (luminance in lux). Default setting: 200 (200 lux).</Help>
 				</Value>
 				<Value type="short" genre="config" instance="1" index="42" label="Luminance reports - interval" units="seconds" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="32767" value="0">
 					<Help>Time interval between consecutive luminance reports. The reports are sent even if there is no change in the light intensity. Available settings: 0 - 32767. 0 - periodical reports are not sent. 1-32767 (in seconds).</Help>
 				</Value>
-				<Value type="short" genre="config" instance="1" index="60" label="Temperature report - threshold" units="" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="255" value="10">
+				<Value type="short" genre="config" instance="1" index="60" label="Temperature report - threshold" units="" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="255" value="1">
 					<Help>This parameter determines the change in measured temperature that will result in new temperature report being sent to the main controller. Available settings: 0 - 255 (0.1 - 25.5C; 0 = reports are not sent) Default setting: 10 (1C)</Help>
 				</Value>
-				<Value type="short" genre="config" instance="1" index="62" label="Temperature measuring - interval" units="seconds" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="32767" value="900">
+				<Value type="short" genre="config" instance="1" index="62" label="Temperature measuring - interval" units="seconds" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="32767" value="300">
 					<Help>Time interval between consecutive temperature measurements. The shorter the time, the more frequently the temperature will be measured, but the battery life will shorten. Available settings: 0 - 32767 (1 - 32767 seconds; 0 = temperature is not measured) Default setting: 900 (900 seconds).</Help>
 				</Value>
 				<Value type="short" genre="config" instance="1" index="64" label="Temperature report - interval" units="seconds" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="32767" value="0">
@@ -143,7 +143,7 @@
 				<Value type="short" genre="config" instance="1" index="66" label="Temperature offset" units="" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="65535" value="0">
 					<Help>The value to be added to the actual temperature, measured by the sensor (temperature compensation). Available settings: 0 - 100 (0 to 100C) or 64536 - 65535 (-100 to -0.10C) Default setting: 0</Help>
 				</Value>
-				<Value type="list" genre="config" instance="1" index="80" label="Visual LED indicator - signalling mode" units="" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="26" vindex="10" size="1">
+				<Value type="list" genre="config" instance="1" index="80" label="Visual LED indicator - signalling mode" units="" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="26" vindex="1" size="1">
 					<Help>This parameter determines the way in which visual indicator behaves after motion has been detected. Default setting: 10 (Flashlight mode)</Help>
 					<Item label="LED inactive." value="0" />
 					<Item label="1 long blink, LED colour depends on the temperature. Set by parameters 86 and 87." value="1" />
@@ -199,7 +199,7 @@
 				<Value type="byte" genre="user" instance="1" index="0" label="Alarm Type" units="" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="255" value="0" />
 				<Value type="byte" genre="user" instance="1" index="1" label="Alarm Level" units="" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="255" value="0" />
 				<Value type="byte" genre="user" instance="1" index="2" label="SourceNodeId" units="" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="255" value="0" />
-				<Value type="byte" genre="user" instance="1" index="10" label="Burglar" units="" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="255" value="8" />
+				<Value type="byte" genre="user" instance="1" index="10" label="Burglar" units="" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="255" value="0" />
 			</CommandClass>
 			<CommandClass id="114" name="COMMAND_CLASS_MANUFACTURER_SPECIFIC" version="1" request_flags="4" innif="true">
 				<Instance index="1" />
@@ -313,7 +313,7 @@
 			</CommandClass>
 			<CommandClass id="38" name="COMMAND_CLASS_SWITCH_MULTILEVEL" version="1" innif="true">
 				<Instance index="1" />
-				<Value type="byte" genre="user" instance="1" index="0" label="Level" units="" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="255" value="1" />
+				<Value type="byte" genre="user" instance="1" index="0" label="Level" units="" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="255" value="18" />
 				<Value type="button" genre="user" instance="1" index="1" label="Bright" units="" read_only="false" write_only="true" verify_changes="false" poll_intensity="0" min="0" max="0" />
 				<Value type="button" genre="user" instance="1" index="2" label="Dim" units="" read_only="false" write_only="true" verify_changes="false" poll_intensity="0" min="0" max="0" />
 				<Value type="bool" genre="system" instance="1" index="3" label="Ignore Start Level" units="" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="True" />
@@ -325,7 +325,7 @@
 			</CommandClass>
 			<CommandClass id="64" name="COMMAND_CLASS_THERMOSTAT_MODE" version="1" request_flags="4" innif="true">
 				<Instance index="1" />
-				<Value type="list" genre="user" instance="1" index="0" label="Mode" units="" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" vindex="1" size="0">
+				<Value type="list" genre="user" instance="1" index="0" label="Mode" units="" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" vindex="2" size="0">
 					<Help>Off: No heating, only frost protection. Heat: Room temperature will be kept at the configured setpoint. Heat Eco: Energy save heating mode. Room temperature will be lowered to the configured eco setpoint in order to save energy. Full Power: Full power heating. This mode is left automatically after 5 minutes. Manufacturer Specific: Direct valve control mode. The valve opening percentage can be controlled using the switch multilevel command class.</Help>
 					<Item label="Off" value="0" />
 					<Item label="Heat" value="1" />
@@ -379,7 +379,7 @@
 				<Value type="byte" genre="config" instance="1" index="5" label="Temperature Report Threshold" units="0.1°C" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="50" value="5">
 					<Help>0: Don&apos;t send temperature automatically. 1-50: Report temperature at 0.1-5.0°C temperature difference. Default: 5 (Delta = 0.5°C)</Help>
 				</Value>
-				<Value type="byte" genre="config" instance="1" index="6" label="Valve Opening Percentage Report" units="" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="100" value="0">
+				<Value type="byte" genre="config" instance="1" index="6" label="Valve Opening Percentage Report" units="" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="100" value="1">
 					<Help>0: Don&apos;t send Valve opening percentage automatically. 1-100: Report valve opening percentage at a delta of 1-100%. Default: 0</Help>
 				</Value>
 				<Value type="list" genre="config" instance="1" index="7" label="Open Window Detection" units="" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="3" vindex="2" size="1">

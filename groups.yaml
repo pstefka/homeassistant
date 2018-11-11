@@ -24,15 +24,19 @@ People:
 #    - device_tracker.nikikmi4c_ping
     - device_tracker.op3
 #    - device_tracker.op3_ping
+Peto presence:
+  entities:
+    - device_tracker.op3
+    - device_tracker.JednaPlusTri      
 Living room:
   entities:
     - media_player.viera
     - cast.televizia
     - media_player.kodi
     - media_player.televizia
-Living room helpers:
-  entities:
-    - input_number.slider_viera_volume 
+      #Living room helpers:
+      #  entities:
+      #    - input_number.slider_viera_volume 
 NAS status:
   entities:
     - sensor.volume_used_volume_1

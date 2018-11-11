@@ -3,22 +3,22 @@ op3:
   icon:
   mac: C0:EE:FB:D8:66:AA
   name: Peto
-  picture:
+  picture: https://lh3.googleusercontent.com/-zbkXCVr1pao/AAAAAAAAAAI/AAAAAAAAAAA/AGDgw-iG9pCgGHoMLPdwSpC8IirLaRJL8A/mo/photo.jpg?sz=64
   track: true
-  vendor: unknown
+  vendor: OnePlus
   consider_home: 180
-  gravatar: www.stefi@gmail.com
+  #  gravatar: www.stefi@gmail.com
 
 nikikmi4c:
   hide_if_away: false
   icon:
   mac: 20:82:C0:63:C2:60
   name: Nikik
-  picture:
+  picture: https://lh3.googleusercontent.com/-oIVJny0ctkI/AAAAAAAAAAI/AAAAAAAAAAA/AGDgw-jKHK2e2OvRsolYNYLgquSbBC_DVA/mo/photo.jpg?sz=64
   track: true
   vendor: Xiaomi Communications Co Ltd
   consider_home: 180
-  gravatar: vewe99@gmail.com
+  #gravatar: vewe99@gmail.com
 
 pornonas:
   hide_if_away: false
@@ -300,5 +300,23 @@ televizia:
   icon:
   mac: BT_00:04:4B:5E:3C:CD
   name: Televízia
+  picture:
+  track: false
+
+jednaplustri:
+  hide_if_away: false
+  icon:
+  mac: BT_C0:EE:FB:D8:66:AA
+  name: JednaPlusTri
+  #  gravatar: www.stefi@gmail.com
+  picture: https://lh3.googleusercontent.com/-zbkXCVr1pao/AAAAAAAAAAI/AAAAAAAAAAA/AGDgw-iG9pCgGHoMLPdwSpC8IirLaRJL8A/mo/photo.jpg?sz=64
+  consider_home: 60
+  track: true
+
+huawei_p9_lite_2017:
+  hide_if_away: false
+  icon:
+  mac: BT_1C:15:1F:4F:04:E0
+  name: HUAWEI P9 lite 2017
   picture:
   track: false

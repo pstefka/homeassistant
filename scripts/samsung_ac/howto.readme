@@ -1,0 +1,8 @@
+1) download certificates from pastebin
+   pastebin.com/MKTbFnK5
+2) base64 -d < file.b64 > all.pem
+3) python homebridge-samsung-airconditioner/Server8889.py
+4) curl -s -k -H 'Content-Type: application/json' -H 'Authorization: Bearer 3E29WItMSX' --cert all.pem --insecure -X GET https://192.168.1.250:8888/devices
+5) turn on AC
+6) extract {"DeviceToken":"xxxxxxxxxxx"} from call back server
+7) use as a bearer    

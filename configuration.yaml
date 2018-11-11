@@ -36,7 +36,7 @@ http:
     - 192.168.1.0/24
     - 172.17.0.0/16
 
-zones:
+zone:
   - name: Work
     latitude: 48.157588
     longitude: 17.1289508
@@ -91,14 +91,10 @@ history:
 # Discover some devices automatically
 discovery:
   ignore:
+    - google_cast
     - panasonic_viera
-#    - google_cast
-#    - spotify_connect # unknown value
-
-# doesn't work somehow
-#cast:
-#  televizia:
-#  - host: 192.168.1.4
+#  enable:
+#    - dlna_dmr
 
 remote:
   - platform: harmony
@@ -193,6 +189,7 @@ telegram_bot:
     api_key: !secret telegram_api_key
     allowed_chat_ids:
       - 698188355
+      - -262852350
 
 # Example configuration.yaml entry for the notifier
 notify:
