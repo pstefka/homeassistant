@@ -1,0 +1,20 @@
+  - platform: template
+    switches:
+      radiofm:
+        friendly_name: Radio FM
+        entity_id: media_player.televizia
+        value_template: "{{ is_state_attr('media_player.televizia', 'media_content_id', 'http://live.slovakradio.sk:8000/FM_256.mp3') }}"
+        turn_on:
+          - service: remote.turn_on
+            data:
+              entity_id: remote.living_room
+              activity: Watch a Movie                
+          -  service: media_player.play_media
+             data:
+               entity_id: media_player.televizia
+               media_content_id: http://live.slovakradio.sk:8000/FM_256.mp3
+               media_content_type: music
+        turn_off:
+          service: media_player.turn_off
+          data:
+            entity_id: media_player.televizia
