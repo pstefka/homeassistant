@@ -27,7 +27,7 @@ People:
 Peto presence:
   entities:
     - device_tracker.op3
-    - device_tracker.JednaPlusTri      
+    - device_tracker.nut_peto
 Living room:
   entities:
     - media_player.viera

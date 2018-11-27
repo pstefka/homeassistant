@@ -311,12 +311,44 @@ jednaplustri:
   #  gravatar: www.stefi@gmail.com
   picture: https://lh3.googleusercontent.com/-zbkXCVr1pao/AAAAAAAAAAI/AAAAAAAAAAA/AGDgw-iG9pCgGHoMLPdwSpC8IirLaRJL8A/mo/photo.jpg?sz=64
   consider_home: 60
-  track: true
+  track: false
 
 huawei_p9_lite_2017:
   hide_if_away: false
   icon:
   mac: BT_1C:15:1F:4F:04:E0
   name: HUAWEI P9 lite 2017
+  picture:
+  track: false
+
+ble_509c9e2fb1a6:
+  hide_if_away: false
+  icon:
+  mac: BLE_50:9C:9E:2F:B1:A6
+  name: ble 509c9e2fb1a6
+  picture:
+  track: false
+
+mj_ht_v1:
+  hide_if_away: false
+  icon:
+  mac: BLE_4C:65:A8:D2:01:0D
+  name: MJ HT V1
+  picture:
+  track: false
+
+nut_peto:
+  hide_if_away: false
+  icon:
+  mac: BLE_FF:FF:98:00:C6:2D
+  name: Peto nut
+  picture:
+  track: true
+
+ble_6aa9a68cfdb7:
+  hide_if_away: false
+  icon:
+  mac: BLE_6A:A9:A6:8C:FD:B7
+  name: ble 6aa9a68cfdb7
   picture:
   track: false

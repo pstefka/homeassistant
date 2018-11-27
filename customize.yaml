@@ -24,3 +24,6 @@
     hidden: true
 #  input_number.slider_viera_volume:
 #    hidden: true
+  binary_sensor.viera_ping:
+    device_class: None
+    friendly_name: TV ON
