@@ -345,10 +345,19 @@ nut_peto:
   picture:
   track: true
 
-ble_6aa9a68cfdb7:
+
+4c57ca926ffc:
   hide_if_away: false
   icon:
-  mac: BLE_6A:A9:A6:8C:FD:B7
-  name: ble 6aa9a68cfdb7
+  mac: 4C:57:CA:92:6F:FC
+  name: 4c57ca926ffc
+  picture:
+  track: false
+
+e4e4ab4e70b3:
+  hide_if_away: false
+  icon:
+  mac: E4:E4:AB:4E:70:B3
+  name: e4e4ab4e70b3
   picture:
   track: false

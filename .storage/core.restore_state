@@ -1,0 +1,140 @@
+{
+    "data": [
+        {
+            "last_seen": "2018-12-18T21:13:37.004661+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Vacation",
+                    "icon": "mdi:home",
+                    "options": [
+                        "Off",
+                        "On"
+                    ]
+                },
+                "context": {
+                    "id": "d8be27d42ecc47c0bd9fea178b5ea965",
+                    "user_id": null
+                },
+                "entity_id": "input_select.vacation",
+                "last_changed": "2018-12-18T20:58:35.797416+00:00",
+                "last_updated": "2018-12-18T20:58:35.797416+00:00",
+                "state": "Off"
+            }
+        },
+        {
+            "last_seen": "2018-12-18T21:13:37.004661+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Heating",
+                    "icon": "mdi:air-conditioner",
+                    "options": [
+                        "Auto",
+                        "Off",
+                        "On"
+                    ]
+                },
+                "context": {
+                    "id": "3593e05dded74dc29cbfd6cbdf23c17c",
+                    "user_id": null
+                },
+                "entity_id": "input_select.heat",
+                "last_changed": "2018-12-18T20:58:35.798231+00:00",
+                "last_updated": "2018-12-18T20:58:35.798231+00:00",
+                "state": "Auto"
+            }
+        },
+        {
+            "last_seen": "2018-12-18T21:13:37.004661+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "MQTT Shield off",
+                    "hidden": true,
+                    "id": "1519561541052",
+                    "last_triggered": "2018-12-18T19:53:44.355821+00:00"
+                },
+                "context": {
+                    "id": "abdf47a858dd4e14b0ab79dc915a6796",
+                    "user_id": null
+                },
+                "entity_id": "automation.mqtt_shield_off",
+                "last_changed": "2018-12-18T20:58:36.993196+00:00",
+                "last_updated": "2018-12-18T20:58:36.993196+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2018-12-18T21:13:37.004661+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "MQTT Shield on",
+                    "hidden": true,
+                    "id": "1519561583777",
+                    "last_triggered": "2018-12-18T12:39:52.152537+00:00"
+                },
+                "context": {
+                    "id": "9e47176efda04868936808a53d654bec",
+                    "user_id": null
+                },
+                "entity_id": "automation.mqtt_shield_on",
+                "last_changed": "2018-12-18T20:58:36.994508+00:00",
+                "last_updated": "2018-12-18T20:58:36.994508+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2018-12-18T21:13:37.004661+00:00",
+            "state": {
+                "attributes": {
+                    "entity_picture": "https://lh3.googleusercontent.com/-zbkXCVr1pao/AAAAAAAAAAI/AAAAAAAAAAA/AGDgw-iG9pCgGHoMLPdwSpC8IirLaRJL8A/mo/photo.jpg?sz=64",
+                    "friendly_name": "Peto",
+                    "source_type": "router"
+                },
+                "context": {
+                    "id": "a58bd8bb243247d3b90ae60244a3c76a",
+                    "user_id": null
+                },
+                "entity_id": "device_tracker.op3",
+                "last_changed": "2018-12-18T20:58:36.728359+00:00",
+                "last_updated": "2018-12-18T20:58:36.728359+00:00",
+                "state": "home"
+            }
+        },
+        {
+            "last_seen": "2018-12-18T21:13:37.004661+00:00",
+            "state": {
+                "attributes": {
+                    "entity_picture": "https://lh3.googleusercontent.com/-oIVJny0ctkI/AAAAAAAAAAI/AAAAAAAAAAA/AGDgw-jKHK2e2OvRsolYNYLgquSbBC_DVA/mo/photo.jpg?sz=64",
+                    "friendly_name": "Nikik",
+                    "source_type": "router"
+                },
+                "context": {
+                    "id": "76e12ffef78246f5afa950d963331cf9",
+                    "user_id": null
+                },
+                "entity_id": "device_tracker.nikikmi4c",
+                "last_changed": "2018-12-18T20:58:36.729198+00:00",
+                "last_updated": "2018-12-18T20:58:36.729198+00:00",
+                "state": "not_home"
+            }
+        },
+        {
+            "last_seen": "2018-12-18T21:13:37.004661+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Peto nut",
+                    "source_type": null
+                },
+                "context": {
+                    "id": "aeb5948c13fc44e2b214a720060ab623",
+                    "user_id": null
+                },
+                "entity_id": "device_tracker.nut_peto",
+                "last_changed": "2018-12-18T20:58:36.730537+00:00",
+                "last_updated": "2018-12-18T20:58:36.730537+00:00",
+                "state": "not_home"
+            }
+        }
+    ],
+    "key": "core.restore_state",
+    "version": 1
+}
