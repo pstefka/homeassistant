@@ -123,8 +123,8 @@ tts:
 
 group: !include groups.yaml
 automation: !include automations.yaml
-script: !include scripts.yaml
 
+script: !include_dir_merge_list scripts/
 sensor: !include_dir_merge_list sensors/
 binary_sensor: !include_dir_merge_list binary_sensors/
 device_tracker: !include_dir_merge_list device_trackers/
@@ -165,6 +165,15 @@ input_select:
      - 'Off'
      - 'On'
     icon: mdi:home
+
+
+input_boolean:
+  light_bowl:
+    name: Svetielka Gula
+    icon: mdi:lightbulb
+  light_christmas:
+    name: Svetielka vianocne
+    icon: mdi:lightbulb
 
 #shell_command:
 #  restart_wifi: ssh root@192.168.1.1 -p 2222 wifi

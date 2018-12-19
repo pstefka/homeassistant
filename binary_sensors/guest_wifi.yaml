@@ -1,6 +1,6 @@
 #- platform: command_line
 #  name: Guest wifi
 #  device_class: connectivity
-#  command: /config/scripts/guest_wifi_check.sh 
+#  command: /config/shell_scripts/guest_wifi_check.sh 
 #  payload_on: enabled
 #  payload_off: disabled

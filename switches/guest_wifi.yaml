@@ -3,8 +3,8 @@
   switches:
     guest_wifi:
       friendly_name: Guest wifi
-      command_on: /config/scripts/guest_wifi_add.sh
-      command_off: /config/scripts/guest_wifi_remove.sh
-      command_state: /config/scripts/guest_wifi_check.sh 
+      command_on: /config/shell_scripts/guest_wifi_add.sh
+      command_off: /config/shell_scripts/guest_wifi_remove.sh
+      command_state: /config/shell_scripts/guest_wifi_check.sh 
       value_template: '{{ value == "enabled" }}'
 

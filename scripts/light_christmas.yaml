@@ -1,0 +1,16 @@
+  light_christmas_on:
+    sequence:
+      - service: remote.send_command
+        entity_id: remote.living_room
+        data:
+          entity_id: remote.living_room
+          device: 59413425
+          command: PowerOn
+  light_christmas_off:
+    sequence:
+      - service: remote.send_command
+        entity_id: remote.living_room
+        data:
+          entity_id: remote.living_room
+          device: 59413425
+          command: PowerOff
