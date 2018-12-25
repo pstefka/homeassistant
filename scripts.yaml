@@ -1,0 +1,44 @@
+light_bowl_on:
+  sequence:
+    - service: remote.send_command
+      data:
+        entity_id: remote.living_room
+        device: 56026507
+        command: PowerOn
+        num_repeats: 2
+    - service: input_boolean.turn_on
+      data:
+        entity_id: input_boolean.light_bowl
+light_bowl_off:
+  sequence:
+    - service: remote.send_command
+      data:
+        entity_id: remote.living_room
+        device: 56026507
+        command: PowerOff
+        num_repeats: 2
+    - service: input_boolean.turn_off
+      data:
+        entity_id: input_boolean.light_bowl
+light_christmas_on:
+  sequence:
+    - service: remote.send_command
+      data:
+        entity_id: remote.living_room
+        device: 59413425
+        command: PowerOn
+        num_repeats: 2
+    - service: input_boolean.turn_on
+      data:
+        entity_id: input_boolean.light_christmas
+light_christmas_off:
+  sequence:
+    - service: remote.send_command
+      data:
+        entity_id: remote.living_room
+        device: 59413425
+        command: PowerOff
+        num_repeats: 2
+    - service: input_boolean.turn_off
+      data:
+        entity_id: input_boolean.light_christmas

@@ -54,6 +54,101 @@
                 "model": "EUR_SPIRITZ Wall Radiator Thermostat",
                 "name": "EUROtronic EUR_SPIRITZ Wall Radiator Thermostat",
                 "sw_version": null
+            },
+            {
+                "config_entries": [
+                    "8ded91d1ebd94c28b5232a90fda3cb77"
+                ],
+                "connections": [],
+                "hub_device_id": null,
+                "id": "32e4050acd0e43f8ab75e3433491adce",
+                "identifiers": [
+                    [
+                        "cast",
+                        "8b7a5faf6ca4122f43adf06e1cd602ec"
+                    ]
+                ],
+                "manufacturer": "Google Inc.",
+                "model": "Google Home Mini",
+                "name": "Mini",
+                "sw_version": null
+            },
+            {
+                "config_entries": [
+                    "d5b412333a29442abbfc54a39a6ed3bb"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "00:17:88:ae:c3:b7"
+                    ]
+                ],
+                "hub_device_id": null,
+                "id": "8a09c40050b249669a6e606cdbd7767c",
+                "identifiers": [
+                    [
+                        "hue",
+                        "001788FFFEAEC3B7"
+                    ]
+                ],
+                "manufacturer": "Signify",
+                "model": "BSB002",
+                "name": "Philips hue",
+                "sw_version": "1810251352"
+            },
+            {
+                "config_entries": [
+                    "d5b412333a29442abbfc54a39a6ed3bb"
+                ],
+                "connections": [],
+                "hub_device_id": "8a09c40050b249669a6e606cdbd7767c",
+                "id": "326bf84ad2ae4359b4808833026af7ec",
+                "identifiers": [
+                    [
+                        "hue",
+                        "00:17:88:01:04:c9:2e:a9-0b"
+                    ]
+                ],
+                "manufacturer": "Philips",
+                "model": "Hue white lamp",
+                "name": "Hue white lamp 2",
+                "sw_version": "1.29.0_r21169"
+            },
+            {
+                "config_entries": [
+                    "d5b412333a29442abbfc54a39a6ed3bb"
+                ],
+                "connections": [],
+                "hub_device_id": "8a09c40050b249669a6e606cdbd7767c",
+                "id": "00e93efd86e040399140a50cc57597a1",
+                "identifiers": [
+                    [
+                        "hue",
+                        "00:17:88:01:04:a4:25:13-0b"
+                    ]
+                ],
+                "manufacturer": "Philips",
+                "model": "Hue white lamp",
+                "name": "Hue white lamp 3",
+                "sw_version": "1.29.0_r21169"
+            },
+            {
+                "config_entries": [
+                    "d5b412333a29442abbfc54a39a6ed3bb"
+                ],
+                "connections": [],
+                "hub_device_id": "8a09c40050b249669a6e606cdbd7767c",
+                "id": "0c2bc9a241da417db2423293668b6caa",
+                "identifiers": [
+                    [
+                        "hue",
+                        "00:17:88:01:04:23:f4:65-0b"
+                    ]
+                ],
+                "manufacturer": "Philips",
+                "model": "Hue white lamp",
+                "name": "Hue white lamp 1",
+                "sw_version": "1.29.0_r21169"
             }
         ]
     },

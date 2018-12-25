@@ -8,54 +8,96 @@
 #      - sensor.yr_symbol
 #      - sun.sun
 #      - binary_sensor.wifi
-People view:
+people_view:
   view: yes
   icon: mdi:account-multiple
+  name: People view 
   entities:
     - group.people
-NAS status view:
+nas_status_view:
   view: yes
   icon: mdi:sd
+  name: NAS status view
   entities:
-    - group.NAS_status
-People:
+    - group.nas_status
+weather_view:
+  view: yes
+  name: Weather view
+  icon: mdi:weather-partlycloudy
   entities:
-    - device_tracker.nikikmi4c
-#    - device_tracker.nikikmi4c_ping
-    - device_tracker.op3
-#    - device_tracker.op3_ping
-Peto presence:
+    - sun.sun
+    - sensor.yr_symbol
+    - sensor.yr_cloudiness
+    - sensor.pws_alerts
+    - group.weather_temperature
+    - group.weather_humidity
+    - group.weather_wind
+    - group.weather_pressure
+    - group.weather_precipation
+people:
+  name: People 
   entities:
-    - device_tracker.op3
+    - device_tracker.presence_nikik
+    - device_tracker.presence_peto
+          #    - device_tracker.nikikmi4c
+      #    - device_tracker.op3
+presence_peto:
+  name: Peto
+  entities:
+    - device_tracker.presence_peto
     - device_tracker.nut_peto
-Living room:
+      #    - device_tracker.op3
+presence_custom:
+  name: Custom presence
   entities:
-    - media_player.viera
-    - cast.televizia
+    - sensor.presence_peto
+    - sensor.presence_nikik
+entertainment:
+  control: hidden
+  name: Entertainment
+  entities:
     - media_player.kodi
     - media_player.televizia
-      #Living room helpers:
-      #  entities:
-      #    - input_number.slider_viera_volume 
-NAS status:
+    - switch.radiofm
+    - remote.living_room
+    - sensor.living_room
+lights:
+  name: Lights
   entities:
+    - input_boolean.light_bowl 
+    - input_boolean.light_christmas 
+    - switch.switch2
+thermostat:
+  name: Thermostat
+  entities:
+    - input_select.heat
+    - input_select.vacation
+    - climate.eurotronic_eur_spiritz_wall_radiator_thermostat_heat
+      #    - climate.eurotronic_eur_spiritz_wall_radiator_thermostat_furnace
+      #    - climate.eurotronic_eur_spiritz_wall_radiator_thermostat_heat_eco
+nas_status:
+  name: NAS status
+  entities:
+    - switch.pornonas 
     - sensor.volume_used_volume_1
     - sensor.temperature_sda
     - sensor.temperature_sdb
-Temperature outside:
+weather_temperature:
+  name: Temperature outside 
   entities:
     - sensor.pws_temp_high_record_c
     - sensor.pws_temp_low_record_c
     - sensor.yr_temperature
     - sensor.pws_temp_c
     - sensor.pws_feelslike_c
-Humidity:
+weather_humidity:
+  name: Humidity
   entities:
     - sensor.yr_humidity
     - sensor.pws_relative_humidity
-Wind:
+weather_wind:
+  name: Wind
   entities:
-#    - sensor.yr_wind_speed
     - sensor.yr_wind_speed_kph
     - sensor.pws_wind_kph
     - sensor.yr_wind_direction
@@ -64,28 +106,37 @@ Wind:
     - sensor.pws_wind_1d_kph
     - sensor.pws_wind_gust_2d_kph
     - sensor.pws_wind_2d_kph
-Presure:
+#    - sensor.yr_wind_speed
+weather_pressure:
+  name: Pressure
   entities:
     - sensor.yr_pressure
     - sensor.pws_pressure_mb
-Precipation:
+weather_precipation:
+  name: Precipation
   entities:
     - sensor.pws_precip_today_metric
     - sensor.yr_cloudiness
-Weather view:
-  view: yes
-  name: Weather view
-  icon: mdi:weather-partlycloudy
+oko:
+  name: Oko
   entities:
-    - sun.sun
-    - sensor.yr_symbol
-    - group.sun
-    - group.temperature
-    - group.humidity
-    - group.wind
-    - group.pressure
-    - group.precipation
-    - sensor.yr_cloudiness
-    - sensor.pws_alerts
-    - climate.termohlava_dry_air
-    - input_select.heat
+    - zwave.oko
+    - binary_sensor.oko_sensor_2
+    - sensor.oko_alarm_type_2
+    - sensor.oko_alarm_level_2
+    - sensor.oko_burglar_2
+    - sensor.oko_general_2
+    - sensor.oko_luminance_2
+    - sensor.oko_seismic_intensity_2
+    - sensor.oko_sourcenodeid_2
+    - sensor.oko_temperature_2
+termohlava:
+  name: Termohlava
+  entities:
+    - zwave.eurotronic_eur_spiritz_wall_radiator_thermostat
+    - sensor.eurotronic_eur_spiritz_wall_radiator_thermostat_alarm_level
+    - sensor.eurotronic_eur_spiritz_wall_radiator_thermostat_alarm_type
+    - sensor.eurotronic_eur_spiritz_wall_radiator_thermostat_power_management 
+    - sensor.eurotronic_eur_spiritz_wall_radiator_thermostat_sourcenodeid 
+    - sensor.eurotronic_eur_spiritz_wall_radiator_thermostat_system
+    - sensor.eurotronic_eur_spiritz_wall_radiator_thermostat_temperature 

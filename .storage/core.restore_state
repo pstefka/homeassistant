@@ -1,7 +1,108 @@
 {
     "data": [
         {
-            "last_seen": "2018-12-19T12:52:33.944494+00:00",
+            "last_seen": "2018-12-25T23:47:19.008064+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Svetielka vianocne",
+                    "icon": "mdi:lightbulb"
+                },
+                "context": {
+                    "id": "6035df61c65f4083a89c01e32d9222f2",
+                    "user_id": null
+                },
+                "entity_id": "input_boolean.light_christmas",
+                "last_changed": "2018-12-25T23:02:15.455400+00:00",
+                "last_updated": "2018-12-25T23:02:15.455400+00:00",
+                "state": "off"
+            }
+        },
+        {
+            "last_seen": "2018-12-25T23:47:19.008064+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Svetielka gula",
+                    "icon": "mdi:lightbulb"
+                },
+                "context": {
+                    "id": "e0cba951ff3043268412fb7c38e2148d",
+                    "user_id": null
+                },
+                "entity_id": "input_boolean.light_bowl",
+                "last_changed": "2018-12-25T23:02:15.456425+00:00",
+                "last_updated": "2018-12-25T23:02:15.456425+00:00",
+                "state": "off"
+            }
+        },
+        {
+            "last_seen": "2018-12-25T23:47:19.008064+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Vacation",
+                    "icon": "mdi:home",
+                    "options": [
+                        "Off",
+                        "On"
+                    ]
+                },
+                "context": {
+                    "id": "c8f6a9244a354c65b3b3b2066851761a",
+                    "user_id": null
+                },
+                "entity_id": "input_select.vacation",
+                "last_changed": "2018-12-25T23:02:15.458352+00:00",
+                "last_updated": "2018-12-25T23:02:15.458352+00:00",
+                "state": "Off"
+            }
+        },
+        {
+            "last_seen": "2018-12-25T23:47:19.008064+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Nikik",
+                    "hidden": true,
+                    "options": [
+                        "Home",
+                        "Asleep",
+                        "Away",
+                        "Extended Away"
+                    ]
+                },
+                "context": {
+                    "id": "b8012d8aefb74d0f8707902c2bb7f847",
+                    "user_id": null
+                },
+                "entity_id": "input_select.presence_nikik",
+                "last_changed": "2018-12-25T23:02:15.459957+00:00",
+                "last_updated": "2018-12-25T23:02:15.459957+00:00",
+                "state": "Home"
+            }
+        },
+        {
+            "last_seen": "2018-12-25T23:47:19.008064+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Peto",
+                    "hidden": true,
+                    "options": [
+                        "Home",
+                        "Asleep",
+                        "Away",
+                        "Extended Away"
+                    ]
+                },
+                "context": {
+                    "id": "961ff9094dec4b83a9963ba975f60427",
+                    "user_id": "6bb7046373244cbe9c013e91ef608c6b"
+                },
+                "entity_id": "input_select.presence_peto",
+                "last_changed": "2018-12-25T23:35:44.934385+00:00",
+                "last_updated": "2018-12-25T23:35:44.934385+00:00",
+                "state": "Asleep"
+            }
+        },
+        {
+            "last_seen": "2018-12-25T23:47:19.008064+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "Heating",
@@ -13,110 +114,55 @@
                     ]
                 },
                 "context": {
-                    "id": "530d56620e66474682e7f897d0d1a3d1",
+                    "id": "fafa8fdaf5f347e7813529472d102a26",
                     "user_id": null
                 },
                 "entity_id": "input_select.heat",
-                "last_changed": "2018-12-19T12:52:32.828126+00:00",
-                "last_updated": "2018-12-19T12:52:32.828126+00:00",
+                "last_changed": "2018-12-25T23:02:15.462354+00:00",
+                "last_updated": "2018-12-25T23:02:15.462354+00:00",
                 "state": "Auto"
             }
         },
         {
-            "last_seen": "2018-12-19T12:52:33.944494+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "Vacation",
-                    "icon": "mdi:home",
-                    "options": [
-                        "Off",
-                        "On"
-                    ]
-                },
-                "context": {
-                    "id": "2037a33c1fc34ecdb37e4875c9e4f71a",
-                    "user_id": null
-                },
-                "entity_id": "input_select.vacation",
-                "last_changed": "2018-12-19T12:52:32.828926+00:00",
-                "last_updated": "2018-12-19T12:52:32.828926+00:00",
-                "state": "Off"
-            }
-        },
-        {
-            "last_seen": "2018-12-19T12:52:33.944494+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "Svetielka vianocne",
-                    "icon": "mdi:lightbulb"
-                },
-                "context": {
-                    "id": "2ededfd70d0f48a7b89d99795118700c",
-                    "user_id": null
-                },
-                "entity_id": "input_boolean.light_christmas",
-                "last_changed": "2018-12-19T12:52:32.829884+00:00",
-                "last_updated": "2018-12-19T12:52:32.829884+00:00",
-                "state": "on"
-            }
-        },
-        {
-            "last_seen": "2018-12-19T12:52:33.944494+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "Svetielka Gula",
-                    "icon": "mdi:lightbulb"
-                },
-                "context": {
-                    "id": "6f2995a8035044619fe29baa0ea94557",
-                    "user_id": null
-                },
-                "entity_id": "input_boolean.light_bowl",
-                "last_changed": "2018-12-19T12:52:32.830876+00:00",
-                "last_updated": "2018-12-19T12:52:32.830876+00:00",
-                "state": "off"
-            }
-        },
-        {
-            "last_seen": "2018-12-19T12:52:33.944494+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "MQTT Shield off",
-                    "hidden": true,
-                    "id": "1519561541052",
-                    "last_triggered": "2018-12-18T19:53:44.355821+00:00"
-                },
-                "context": {
-                    "id": "cfabee2003bd43d18b7491db9d33de97",
-                    "user_id": null
-                },
-                "entity_id": "automation.mqtt_shield_off",
-                "last_changed": "2018-12-19T12:52:33.032751+00:00",
-                "last_updated": "2018-12-19T12:52:33.032751+00:00",
-                "state": "off"
-            }
-        },
-        {
-            "last_seen": "2018-12-19T12:52:33.944494+00:00",
+            "last_seen": "2018-12-25T23:47:19.008064+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "MQTT Shield on",
                     "hidden": true,
                     "id": "1519561583777",
-                    "last_triggered": "2018-12-18T12:39:52.152537+00:00"
+                    "last_triggered": "2018-12-25T21:12:41.849609+00:00"
                 },
                 "context": {
-                    "id": "425b52604122446e898732bfed78b3dd",
+                    "id": "7fd54eb612014e708ba1544534dd610a",
                     "user_id": null
                 },
                 "entity_id": "automation.mqtt_shield_on",
-                "last_changed": "2018-12-19T12:52:33.034638+00:00",
-                "last_updated": "2018-12-19T12:52:33.034638+00:00",
-                "state": "off"
+                "last_changed": "2018-12-25T23:02:17.672567+00:00",
+                "last_updated": "2018-12-25T23:02:17.672567+00:00",
+                "state": "on"
             }
         },
         {
-            "last_seen": "2018-12-19T12:52:33.944494+00:00",
+            "last_seen": "2018-12-25T23:47:19.008064+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "MQTT Shield off",
+                    "hidden": true,
+                    "id": "1519561541052",
+                    "last_triggered": "2018-12-25T21:13:35.346847+00:00"
+                },
+                "context": {
+                    "id": "4cf35ed1c3ad49bb974c18effa4b95f5",
+                    "user_id": null
+                },
+                "entity_id": "automation.mqtt_shield_off",
+                "last_changed": "2018-12-25T23:02:17.673911+00:00",
+                "last_updated": "2018-12-25T23:02:17.673911+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2018-12-25T23:47:19.008064+00:00",
             "state": {
                 "attributes": {
                     "entity_picture": "https://lh3.googleusercontent.com/-zbkXCVr1pao/AAAAAAAAAAI/AAAAAAAAAAA/AGDgw-iG9pCgGHoMLPdwSpC8IirLaRJL8A/mo/photo.jpg?sz=64",
@@ -124,17 +170,116 @@
                     "source_type": "router"
                 },
                 "context": {
-                    "id": "b6c146bc78b048fdbe29bfc23e4b7d83",
+                    "id": "985c2fa984bb45aba51cba75e295553e",
                     "user_id": null
                 },
-                "entity_id": "device_tracker.op3",
-                "last_changed": "2018-12-19T12:52:33.661858+00:00",
-                "last_updated": "2018-12-19T12:52:33.661858+00:00",
+                "entity_id": "device_tracker.presence_peto",
+                "last_changed": "2018-12-25T23:38:45.002098+00:00",
+                "last_updated": "2018-12-25T23:38:45.002098+00:00",
+                "state": "not_home"
+            }
+        },
+        {
+            "last_seen": "2018-12-25T23:47:19.008064+00:00",
+            "state": {
+                "attributes": {
+                    "entity_picture": "https://lh3.googleusercontent.com/-oIVJny0ctkI/AAAAAAAAAAI/AAAAAAAAAAA/AGDgw-jKHK2e2OvRsolYNYLgquSbBC_DVA/mo/photo.jpg?sz=64",
+                    "friendly_name": "Nikik",
+                    "source_type": null
+                },
+                "context": {
+                    "id": "a3832e31bb78411494c0d149b337fd6e",
+                    "user_id": null
+                },
+                "entity_id": "device_tracker.presence_nikik",
+                "last_changed": "2018-12-25T23:02:16.348119+00:00",
+                "last_updated": "2018-12-25T23:02:16.348119+00:00",
+                "state": "not_home"
+            }
+        },
+        {
+            "last_seen": "2018-12-25T23:47:19.008064+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Peto nut",
+                    "source_type": null
+                },
+                "context": {
+                    "id": "2afa544cfd0443fda972acf0db1b2c70",
+                    "user_id": null
+                },
+                "entity_id": "device_tracker.nut_peto",
+                "last_changed": "2018-12-25T23:02:16.349280+00:00",
+                "last_updated": "2018-12-25T23:02:16.349280+00:00",
+                "state": "not_home"
+            }
+        },
+        {
+            "last_seen": "2018-12-25T23:02:02.181170+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Nikik",
+                    "hidden": true,
+                    "options": [
+                        "Home",
+                        "Asleep",
+                        "Away",
+                        "Extended Away"
+                    ]
+                },
+                "context": {
+                    "id": "a26c8ed8e06841739308e8702ef9079c",
+                    "user_id": null
+                },
+                "entity_id": "input_select.nikik_status",
+                "last_changed": "2018-12-25T22:23:21.420025+00:00",
+                "last_updated": "2018-12-25T22:23:21.420025+00:00",
+                "state": "Away"
+            }
+        },
+        {
+            "last_seen": "2018-12-25T23:02:02.181170+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Peto",
+                    "hidden": true,
+                    "options": [
+                        "Home",
+                        "Asleep",
+                        "Away",
+                        "Extended Away"
+                    ]
+                },
+                "context": {
+                    "id": "dd4fb1d999444c089891fa58967fdede",
+                    "user_id": "6bb7046373244cbe9c013e91ef608c6b"
+                },
+                "entity_id": "input_select.peto_status",
+                "last_changed": "2018-12-25T23:00:05.747687+00:00",
+                "last_updated": "2018-12-25T23:00:05.747687+00:00",
+                "state": "Asleep"
+            }
+        },
+        {
+            "last_seen": "2018-12-25T23:02:02.181170+00:00",
+            "state": {
+                "attributes": {
+                    "entity_picture": "https://lh3.googleusercontent.com/-zbkXCVr1pao/AAAAAAAAAAI/AAAAAAAAAAA/AGDgw-iG9pCgGHoMLPdwSpC8IirLaRJL8A/mo/photo.jpg?sz=64",
+                    "friendly_name": "Peto",
+                    "source_type": "router"
+                },
+                "context": {
+                    "id": "3b0678aa3b7c425da9718c67fb9fbc14",
+                    "user_id": null
+                },
+                "entity_id": "device_tracker.peto_status",
+                "last_changed": "2018-12-25T22:53:23.280338+00:00",
+                "last_updated": "2018-12-25T22:53:23.280338+00:00",
                 "state": "home"
             }
         },
         {
-            "last_seen": "2018-12-19T12:52:33.944494+00:00",
+            "last_seen": "2018-12-25T23:02:02.181170+00:00",
             "state": {
                 "attributes": {
                     "entity_picture": "https://lh3.googleusercontent.com/-oIVJny0ctkI/AAAAAAAAAAI/AAAAAAAAAAA/AGDgw-jKHK2e2OvRsolYNYLgquSbBC_DVA/mo/photo.jpg?sz=64",
@@ -142,29 +287,126 @@
                     "source_type": "router"
                 },
                 "context": {
-                    "id": "ab5420bdfec849aca2e3bbc11e3b32e9",
+                    "id": "84151c155a7b49dcbe02e70823b3325c",
                     "user_id": null
                 },
-                "entity_id": "device_tracker.nikikmi4c",
-                "last_changed": "2018-12-19T12:52:33.662759+00:00",
-                "last_updated": "2018-12-19T12:52:33.662759+00:00",
+                "entity_id": "device_tracker.nikik_status",
+                "last_changed": "2018-12-25T22:23:22.291351+00:00",
+                "last_updated": "2018-12-25T22:23:22.291351+00:00",
                 "state": "not_home"
             }
         },
         {
-            "last_seen": "2018-12-19T12:52:33.944494+00:00",
+            "last_seen": "2018-12-22T21:11:48.597109+00:00",
             "state": {
                 "attributes": {
-                    "friendly_name": "Peto nut",
+                    "friendly_name": "Nikik",
+                    "options": [
+                        "Home",
+                        "Away",
+                        "Asleep"
+                    ]
+                },
+                "context": {
+                    "id": "08e3238cbb6e4fefbb2f27e3c7e5b27f",
+                    "user_id": null
+                },
+                "entity_id": "input_select.nikik",
+                "last_changed": "2018-12-22T21:04:01.450216+00:00",
+                "last_updated": "2018-12-22T21:04:01.450216+00:00",
+                "state": "Home"
+            }
+        },
+        {
+            "last_seen": "2018-12-22T21:11:48.597109+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Peto",
+                    "options": [
+                        "Home",
+                        "Away",
+                        "Asleep"
+                    ]
+                },
+                "context": {
+                    "id": "4d324ac9710c4c87801efe8222d178a3",
+                    "user_id": null
+                },
+                "entity_id": "input_select.peto",
+                "last_changed": "2018-12-22T21:04:01.451793+00:00",
+                "last_updated": "2018-12-22T21:04:01.451793+00:00",
+                "state": "Home"
+            }
+        },
+        {
+            "last_seen": "2018-12-22T21:11:48.597109+00:00",
+            "state": {
+                "attributes": {
+                    "entity_picture": "https://lh3.googleusercontent.com/-zbkXCVr1pao/AAAAAAAAAAI/AAAAAAAAAAA/AGDgw-iG9pCgGHoMLPdwSpC8IirLaRJL8A/mo/photo.jpg?sz=64",
+                    "friendly_name": "Peto",
                     "source_type": null
                 },
                 "context": {
-                    "id": "30e537cac910478ab1bca80277ad6a9d",
+                    "id": "9ce51e15a39a422fa29e32384811804c",
                     "user_id": null
                 },
-                "entity_id": "device_tracker.nut_peto",
-                "last_changed": "2018-12-19T12:52:33.663862+00:00",
-                "last_updated": "2018-12-19T12:52:33.663862+00:00",
+                "entity_id": "device_tracker.peto",
+                "last_changed": "2018-12-22T21:04:02.298615+00:00",
+                "last_updated": "2018-12-22T21:04:02.298615+00:00",
+                "state": "not_home"
+            }
+        },
+        {
+            "last_seen": "2018-12-22T21:11:48.597109+00:00",
+            "state": {
+                "attributes": {
+                    "entity_picture": "https://lh3.googleusercontent.com/-oIVJny0ctkI/AAAAAAAAAAI/AAAAAAAAAAA/AGDgw-jKHK2e2OvRsolYNYLgquSbBC_DVA/mo/photo.jpg?sz=64",
+                    "friendly_name": "Nikik",
+                    "source_type": null
+                },
+                "context": {
+                    "id": "f1ea2b0d5ca04dc39869bebef7177ec5",
+                    "user_id": null
+                },
+                "entity_id": "device_tracker.nikik",
+                "last_changed": "2018-12-22T21:04:02.299263+00:00",
+                "last_updated": "2018-12-22T21:04:02.299263+00:00",
+                "state": "not_home"
+            }
+        },
+        {
+            "last_seen": "2018-12-22T21:03:48.404494+00:00",
+            "state": {
+                "attributes": {
+                    "entity_picture": "https://lh3.googleusercontent.com/-zbkXCVr1pao/AAAAAAAAAAI/AAAAAAAAAAA/AGDgw-iG9pCgGHoMLPdwSpC8IirLaRJL8A/mo/photo.jpg?sz=64",
+                    "friendly_name": "Peto",
+                    "source_type": "router"
+                },
+                "context": {
+                    "id": "fdfac65f39364e4390573758db0cd6f5",
+                    "user_id": null
+                },
+                "entity_id": "device_tracker.op3",
+                "last_changed": "2018-12-22T20:50:35.824996+00:00",
+                "last_updated": "2018-12-22T20:50:35.824996+00:00",
+                "state": "home"
+            }
+        },
+        {
+            "last_seen": "2018-12-22T21:03:48.404494+00:00",
+            "state": {
+                "attributes": {
+                    "entity_picture": "https://lh3.googleusercontent.com/-oIVJny0ctkI/AAAAAAAAAAI/AAAAAAAAAAA/AGDgw-jKHK2e2OvRsolYNYLgquSbBC_DVA/mo/photo.jpg?sz=64",
+                    "friendly_name": "Nikik",
+                    "source_type": "router"
+                },
+                "context": {
+                    "id": "5dea7c9f8c034848beec66d6a4f7992d",
+                    "user_id": null
+                },
+                "entity_id": "device_tracker.nikikmi4c",
+                "last_changed": "2018-12-22T20:50:35.825906+00:00",
+                "last_updated": "2018-12-22T20:50:35.825906+00:00",
                 "state": "not_home"
             }
         }

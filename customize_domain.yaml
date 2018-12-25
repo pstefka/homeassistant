@@ -1,4 +1,6 @@
 automation:
   hidden: true
+script:
+  hidden: true
 input_number:
   hidden: false

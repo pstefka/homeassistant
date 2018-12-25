@@ -486,6 +486,42 @@
                 "name": "Termohlava System",
                 "platform": "zwave",
                 "unique_id": "6-72057594144637121"
+            },
+            {
+                "config_entry_id": "8ded91d1ebd94c28b5232a90fda3cb77",
+                "device_id": "32e4050acd0e43f8ab75e3433491adce",
+                "disabled_by": null,
+                "entity_id": "media_player.living_room_speaker",
+                "name": null,
+                "platform": "cast",
+                "unique_id": "8b7a5faf-6ca4-122f-43ad-f06e1cd602ec"
+            },
+            {
+                "config_entry_id": "d5b412333a29442abbfc54a39a6ed3bb",
+                "device_id": "326bf84ad2ae4359b4808833026af7ec",
+                "disabled_by": null,
+                "entity_id": "light.hue_white_lamp_2",
+                "name": null,
+                "platform": "hue",
+                "unique_id": "00:17:88:01:04:c9:2e:a9-0b"
+            },
+            {
+                "config_entry_id": "d5b412333a29442abbfc54a39a6ed3bb",
+                "device_id": "00e93efd86e040399140a50cc57597a1",
+                "disabled_by": null,
+                "entity_id": "light.hue_white_lamp_3",
+                "name": null,
+                "platform": "hue",
+                "unique_id": "00:17:88:01:04:a4:25:13-0b"
+            },
+            {
+                "config_entry_id": "d5b412333a29442abbfc54a39a6ed3bb",
+                "device_id": "0c2bc9a241da417db2423293668b6caa",
+                "disabled_by": null,
+                "entity_id": "light.hue_white_lamp_1",
+                "name": null,
+                "platform": "hue",
+                "unique_id": "00:17:88:01:04:23:f4:65-0b"
             }
         ]
     },

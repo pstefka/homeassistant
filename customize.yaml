@@ -10,6 +10,7 @@
     friendly_name: Akvarium
   switch.switch3:
     friendly_name: DAC
+  # hide, so only a converted value is shown (kph)
   sensor.yr_wind_speed:
     hidden: true
   sensor.oko_sourcenodeid_2:
@@ -20,10 +21,14 @@
     hidden: true
   climate.eurotronic_eur_spiritz_wall_radiator_thermostat_furnace:
     hidden: true
-  group.living_room_helpers:
-    hidden: true
-#  input_number.slider_viera_volume:
-#    hidden: true
   binary_sensor.viera_ping:
     device_class: None
     friendly_name: TV ON
+  sensor.presence_peto:
+    entity_picture: https://lh3.googleusercontent.com/-zbkXCVr1pao/AAAAAAAAAAI/AAAAAAAAAAA/AGDgw-iG9pCgGHoMLPdwSpC8IirLaRJL8A/mo/photo.jpg?sz=64
+  sensor.presence_nikik:
+    entity_picture: https://lh3.googleusercontent.com/-oIVJny0ctkI/AAAAAAAAAAI/AAAAAAAAAAA/AGDgw-jKHK2e2OvRsolYNYLgquSbBC_DVA/mo/photo.jpg?sz=64
+  input_select.presence_peto:
+    hidden: true
+  input_select.presence_nikik:
+    hidden: true

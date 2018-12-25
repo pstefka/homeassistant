@@ -34,6 +34,19 @@
                 "source": "user",
                 "title": "192.168.1.6",
                 "version": 1
+            },
+            {
+                "connection_class": "local_poll",
+                "data": {
+                    "bridge_id": "001788FFFEAEC3B7",
+                    "host": "192.168.1.235",
+                    "username": "YJIWBMhZyYkJk63PcWtbNar98Ro2fKTnJ340SznD"
+                },
+                "domain": "hue",
+                "entry_id": "d5b412333a29442abbfc54a39a6ed3bb",
+                "source": "discovery",
+                "title": "Philips hue",
+                "version": 1
             }
         ]
     },

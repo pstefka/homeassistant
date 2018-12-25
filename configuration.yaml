@@ -51,6 +51,9 @@ updater:
   # Optional, allows Home Assistant developers to focus on popular components.
   # include_used_components: true
 
+prometheus:
+# nefunguje dobre, nie vsetky informacie su posielane -> chyba komponentu
+
 recorder:
   purge_interval: 1 
   purge_keep_days: 2 
@@ -58,35 +61,25 @@ recorder:
 #    entities:
 #      - automation.set_viera_volume
 
-prometheus:
-# nefunguje dobre, nie vsetky informacie su posielane -> chyba komponentu
-#  include:
-#    domains: 
-#      - sensor
-#      - binary_sensor
-#      - automation
-#      - zwave
-#    entities:
-#      - group.people_view
-#      - input_select.heat
-
 # Enables support for tracking state changes over time
 history:
   exclude:
     entities:
-      - climate.termohlava_cooling_1
-      - group.status_view
       - group.default_view
-      - group.living_room
-      - group.all_automations
-      - group.all_switches
-      - group.living_room_helpers
+      - group.people_view
+      - group.nas_status_view
+      - group.presence_peto
+      - group.presence_custom
+      - group.entertainment
+      - group.thermostat
+      - group.nas_status
+      - group.weather_temperature
+      - group.weather_humidity
+      - group.weather_wind
+      - group.weather_pressure
+      - group.weather_precipation
+      - group.weather_view
       - persistent_notification.invalid_config
-#      - input_number.slider_viera_volume
-#      - automation.set_viera_volume
-#      - automation.viera_on
-#      - automation.viera_off
-#      - automation.viera_volume_visible
 
 # Discover some devices automatically
 discovery:
@@ -123,8 +116,8 @@ tts:
 
 group: !include groups.yaml
 automation: !include automations.yaml
+script: !include scripts.yaml
 
-script: !include_dir_merge_list scripts/
 sensor: !include_dir_merge_list sensors/
 binary_sensor: !include_dir_merge_list binary_sensors/
 device_tracker: !include_dir_merge_list device_trackers/
@@ -165,11 +158,24 @@ input_select:
      - 'Off'
      - 'On'
     icon: mdi:home
-
+  presence_peto:
+    name: Peto
+    options:
+     - 'Home'
+     - 'Asleep'
+     - 'Away'
+     - 'Extended Away'
+  presence_nikik:
+    name: Nikik
+    options:
+     - 'Home'
+     - 'Asleep'
+     - 'Away'
+     - 'Extended Away'
 
 input_boolean:
   light_bowl:
-    name: Svetielka Gula
+    name: Svetielka gula
     icon: mdi:lightbulb
   light_christmas:
     name: Svetielka vianocne
