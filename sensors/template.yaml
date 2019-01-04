@@ -12,3 +12,6 @@
     presence_nikik:
       value_template: '{{ states.input_select.presence_nikik.state }}'
       friendly_name: 'Nikik'      
+    presence:
+      value_template: '{{ states.input_select.presence.state }}'
+      friendly_name: 'People'      

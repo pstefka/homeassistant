@@ -2,5 +2,7 @@
 #  new_device_defaults:
 #    track_new_devices: False
 #    hide_if_away: False
-- platform: bluetooth_le_tracker
-  track_new_devices: False
+
+# nie je mozne pouzivat naraz bt aj ble => bt @ hass, ble @ pi
+#- platform: bluetooth_le_tracker
+#  track_new_devices: False

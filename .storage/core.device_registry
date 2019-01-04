@@ -75,7 +75,7 @@
             },
             {
                 "config_entries": [
-                    "d5b412333a29442abbfc54a39a6ed3bb"
+                    "f3bd18bfc8324eecbb5e32a1ddeeda01"
                 ],
                 "connections": [
                     [
@@ -98,7 +98,7 @@
             },
             {
                 "config_entries": [
-                    "d5b412333a29442abbfc54a39a6ed3bb"
+                    "f3bd18bfc8324eecbb5e32a1ddeeda01"
                 ],
                 "connections": [],
                 "hub_device_id": "8a09c40050b249669a6e606cdbd7767c",
@@ -111,12 +111,12 @@
                 ],
                 "manufacturer": "Philips",
                 "model": "Hue white lamp",
-                "name": "Hue white lamp 2",
-                "sw_version": "1.29.0_r21169"
+                "name": "Ceiling Left",
+                "sw_version": "1.46.13_r26312"
             },
             {
                 "config_entries": [
-                    "d5b412333a29442abbfc54a39a6ed3bb"
+                    "f3bd18bfc8324eecbb5e32a1ddeeda01"
                 ],
                 "connections": [],
                 "hub_device_id": "8a09c40050b249669a6e606cdbd7767c",
@@ -129,12 +129,12 @@
                 ],
                 "manufacturer": "Philips",
                 "model": "Hue white lamp",
-                "name": "Hue white lamp 3",
-                "sw_version": "1.29.0_r21169"
+                "name": "Hue other",
+                "sw_version": "1.46.13_r26312"
             },
             {
                 "config_entries": [
-                    "d5b412333a29442abbfc54a39a6ed3bb"
+                    "f3bd18bfc8324eecbb5e32a1ddeeda01"
                 ],
                 "connections": [],
                 "hub_device_id": "8a09c40050b249669a6e606cdbd7767c",
@@ -147,7 +147,7 @@
                 ],
                 "manufacturer": "Philips",
                 "model": "Hue white lamp",
-                "name": "Hue white lamp 1",
+                "name": "Ceiling Right",
                 "sw_version": "1.29.0_r21169"
             }
         ]

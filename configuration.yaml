@@ -172,6 +172,14 @@ input_select:
      - 'Asleep'
      - 'Away'
      - 'Extended Away'
+  presence:
+    name: People
+    options:
+     - 'Home'
+     - 'Asleep'
+     - 'Away'
+     - 'Extended Away'
+     - 'Error'
 
 input_boolean:
   light_bowl:

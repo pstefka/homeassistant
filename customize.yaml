@@ -32,3 +32,7 @@
     hidden: true
   input_select.presence_nikik:
     hidden: true
+  input_select.presence:
+    hidden: true
+  sensor.presence_peto_ble:
+    friendly_name: Peto BLE

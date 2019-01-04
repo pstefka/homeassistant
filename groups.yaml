@@ -41,17 +41,15 @@ people:
     - device_tracker.presence_peto
           #    - device_tracker.nikikmi4c
       #    - device_tracker.op3
-presence_peto:
-  name: Peto
-  entities:
-    - device_tracker.presence_peto
-    - device_tracker.nut_peto
-      #    - device_tracker.op3
 presence_custom:
   name: Custom presence
   entities:
-    - sensor.presence_peto
+    - input_select.presence_peto
+    - input_select.presence_nikik
+    - sensor.presence
     - sensor.presence_nikik
+    - sensor.presence_peto
+    - sensor.presence_peto_ble
 entertainment:
   control: hidden
   name: Entertainment
