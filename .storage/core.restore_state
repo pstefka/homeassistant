@@ -1,65 +1,32 @@
 {
     "data": [
         {
-            "last_seen": "2019-01-04T23:37:26.499261+00:00",
+            "last_seen": "2019-01-15T08:07:21.175436+00:00",
             "state": {
                 "attributes": {
-                    "friendly_name": "Svetielka gula",
-                    "icon": "mdi:lightbulb"
-                },
-                "context": {
-                    "id": "6fe76d2ca86d4bea83c2712486059658",
-                    "user_id": null
-                },
-                "entity_id": "input_boolean.light_bowl",
-                "last_changed": "2019-01-04T23:37:24.398266+00:00",
-                "last_updated": "2019-01-04T23:37:24.398266+00:00",
-                "state": "off"
-            }
-        },
-        {
-            "last_seen": "2019-01-04T23:37:26.499261+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "Svetielka vianocne",
-                    "icon": "mdi:lightbulb"
-                },
-                "context": {
-                    "id": "98d48682ca6d4000b085fe030fee1d82",
-                    "user_id": null
-                },
-                "entity_id": "input_boolean.light_christmas",
-                "last_changed": "2019-01-04T23:37:24.399068+00:00",
-                "last_updated": "2019-01-04T23:37:24.399068+00:00",
-                "state": "off"
-            }
-        },
-        {
-            "last_seen": "2019-01-04T23:37:26.499261+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "Vacation",
-                    "icon": "mdi:home",
+                    "friendly_name": "Heating",
+                    "icon": "mdi:air-conditioner",
                     "options": [
+                        "Auto",
                         "Off",
                         "On"
                     ]
                 },
                 "context": {
-                    "id": "ecf6cd8bacbf48189dddc1a47ffb0ab7",
+                    "id": "d5d115381a2b4a2e902a6538f9537e26",
                     "user_id": null
                 },
-                "entity_id": "input_select.vacation",
-                "last_changed": "2019-01-04T23:37:24.400058+00:00",
-                "last_updated": "2019-01-04T23:37:24.400058+00:00",
-                "state": "Off"
+                "entity_id": "input_select.heat",
+                "last_changed": "2019-01-15T08:07:18.668138+00:00",
+                "last_updated": "2019-01-15T08:07:18.668138+00:00",
+                "state": "Auto"
             }
         },
         {
-            "last_seen": "2019-01-04T23:37:26.499261+00:00",
+            "last_seen": "2019-01-15T08:07:21.175436+00:00",
             "state": {
                 "attributes": {
-                    "friendly_name": "Nikik",
+                    "friendly_name": "Peto",
                     "hidden": true,
                     "options": [
                         "Home",
@@ -69,17 +36,17 @@
                     ]
                 },
                 "context": {
-                    "id": "8f73340b50b44700a137af72e6122311",
+                    "id": "4fc9fd57781a4fe2abed97ddaa48f536",
                     "user_id": null
                 },
-                "entity_id": "input_select.presence_nikik",
-                "last_changed": "2019-01-04T23:37:24.401086+00:00",
-                "last_updated": "2019-01-04T23:37:24.401086+00:00",
-                "state": "Asleep"
+                "entity_id": "input_select.presence_peto",
+                "last_changed": "2019-01-15T08:07:18.668893+00:00",
+                "last_updated": "2019-01-15T08:07:18.668893+00:00",
+                "state": "Away"
             }
         },
         {
-            "last_seen": "2019-01-04T23:37:26.499261+00:00",
+            "last_seen": "2019-01-15T08:07:21.175436+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "People",
@@ -93,20 +60,20 @@
                     ]
                 },
                 "context": {
-                    "id": "a23a842bb6b647bfbd9ab1002fe0dd55",
+                    "id": "b0258383a4e6453b96777234f57f1521",
                     "user_id": null
                 },
                 "entity_id": "input_select.presence",
-                "last_changed": "2019-01-04T23:37:24.402201+00:00",
-                "last_updated": "2019-01-04T23:37:24.402201+00:00",
-                "state": "Asleep"
+                "last_changed": "2019-01-15T08:07:18.669808+00:00",
+                "last_updated": "2019-01-15T08:07:18.669808+00:00",
+                "state": "Home"
             }
         },
         {
-            "last_seen": "2019-01-04T23:37:26.499261+00:00",
+            "last_seen": "2019-01-15T08:07:21.175436+00:00",
             "state": {
                 "attributes": {
-                    "friendly_name": "Peto",
+                    "friendly_name": "Nikik",
                     "hidden": true,
                     "options": [
                         "Home",
@@ -116,77 +83,157 @@
                     ]
                 },
                 "context": {
-                    "id": "a1905f5ef9314e959f7a5123dbcd0d4f",
+                    "id": "90ddcdb85eba41e387c8b9be27409bdf",
                     "user_id": null
                 },
-                "entity_id": "input_select.presence_peto",
-                "last_changed": "2019-01-04T23:37:24.403390+00:00",
-                "last_updated": "2019-01-04T23:37:24.403390+00:00",
-                "state": "Asleep"
+                "entity_id": "input_select.presence_nikik",
+                "last_changed": "2019-01-15T08:07:18.670745+00:00",
+                "last_updated": "2019-01-15T08:07:18.670745+00:00",
+                "state": "Home"
             }
         },
         {
-            "last_seen": "2019-01-04T23:37:26.499261+00:00",
+            "last_seen": "2019-01-15T08:07:21.175436+00:00",
             "state": {
                 "attributes": {
-                    "friendly_name": "Heating",
-                    "icon": "mdi:air-conditioner",
-                    "options": [
-                        "Auto",
-                        "Off",
-                        "On"
-                    ]
+                    "friendly_name": "Svetielka vianocne",
+                    "icon": "mdi:lightbulb"
                 },
                 "context": {
-                    "id": "d1fe74c2fbc5496f825e1d520e1bd5f6",
+                    "id": "f528394aa1ae4de7b2351ac2423297ef",
                     "user_id": null
                 },
-                "entity_id": "input_select.heat",
-                "last_changed": "2019-01-04T23:37:24.404510+00:00",
-                "last_updated": "2019-01-04T23:37:24.404510+00:00",
-                "state": "Auto"
+                "entity_id": "input_boolean.light_christmas",
+                "last_changed": "2019-01-15T08:07:18.671906+00:00",
+                "last_updated": "2019-01-15T08:07:18.671906+00:00",
+                "state": "off"
             }
         },
         {
-            "last_seen": "2019-01-04T23:37:26.499261+00:00",
+            "last_seen": "2019-01-15T08:07:21.175436+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Vianoce",
+                    "icon": "mdi:pine-tree"
+                },
+                "context": {
+                    "id": "6c5090c79234484198a0823bca92171f",
+                    "user_id": null
+                },
+                "entity_id": "input_boolean.is_christmas",
+                "last_changed": "2019-01-15T08:07:18.672901+00:00",
+                "last_updated": "2019-01-15T08:07:18.672901+00:00",
+                "state": "off"
+            }
+        },
+        {
+            "last_seen": "2019-01-15T08:07:21.175436+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Homeoffice",
+                    "icon": "mdi:home-account"
+                },
+                "context": {
+                    "id": "570c132c65704e9bad1ece6f3ce8474e",
+                    "user_id": null
+                },
+                "entity_id": "input_boolean.homeoffice",
+                "last_changed": "2019-01-15T08:07:18.673622+00:00",
+                "last_updated": "2019-01-15T08:07:18.673622+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2019-01-15T08:07:21.175436+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Presence detail",
+                    "icon": "mdi:android-debug-bridge"
+                },
+                "context": {
+                    "id": "3f8c036dbfe74183844e03c3102d9fa0",
+                    "user_id": null
+                },
+                "entity_id": "input_boolean.presence_debug",
+                "last_changed": "2019-01-15T08:07:18.674513+00:00",
+                "last_updated": "2019-01-15T08:07:18.674513+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2019-01-15T08:07:21.175436+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Svetielka gula",
+                    "icon": "mdi:lightbulb"
+                },
+                "context": {
+                    "id": "2ce4c019b9cd476f9d29458039899bd9",
+                    "user_id": null
+                },
+                "entity_id": "input_boolean.light_bowl",
+                "last_changed": "2019-01-15T08:07:18.675735+00:00",
+                "last_updated": "2019-01-15T08:07:18.675735+00:00",
+                "state": "off"
+            }
+        },
+        {
+            "last_seen": "2019-01-15T08:07:21.175436+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Vacation",
+                    "icon": "mdi:home"
+                },
+                "context": {
+                    "id": "e98128f0b54d468487967a2fb30afeb7",
+                    "user_id": null
+                },
+                "entity_id": "input_boolean.vacation",
+                "last_changed": "2019-01-15T08:07:18.676966+00:00",
+                "last_updated": "2019-01-15T08:07:18.676966+00:00",
+                "state": "off"
+            }
+        },
+        {
+            "last_seen": "2019-01-15T08:07:21.175436+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "MQTT Shield on",
                     "hidden": true,
                     "id": "1519561583777",
-                    "last_triggered": "2019-01-04T23:13:46.088726+00:00"
+                    "last_triggered": "2019-01-14T10:56:12.306876+00:00"
                 },
                 "context": {
-                    "id": "c3f1d6fc333244a1917d1aa44c43ff8a",
+                    "id": "1d9e7c4ba35643a7bd3255e508a25699",
                     "user_id": null
                 },
                 "entity_id": "automation.mqtt_shield_on",
-                "last_changed": "2019-01-04T23:37:24.635953+00:00",
-                "last_updated": "2019-01-04T23:37:24.635953+00:00",
+                "last_changed": "2019-01-15T08:07:18.940302+00:00",
+                "last_updated": "2019-01-15T08:07:18.940302+00:00",
                 "state": "off"
             }
         },
         {
-            "last_seen": "2019-01-04T23:37:26.499261+00:00",
+            "last_seen": "2019-01-15T08:07:21.175436+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "MQTT Shield off",
                     "hidden": true,
                     "id": "1519561541052",
-                    "last_triggered": "2019-01-04T23:14:01.475342+00:00"
+                    "last_triggered": "2019-01-14T11:25:49.242377+00:00"
                 },
                 "context": {
-                    "id": "c5934ca2f4b4496ebad9de04dcddbaff",
+                    "id": "bb00160074474fce831bb4ed25844b39",
                     "user_id": null
                 },
                 "entity_id": "automation.mqtt_shield_off",
-                "last_changed": "2019-01-04T23:37:24.637059+00:00",
-                "last_updated": "2019-01-04T23:37:24.637059+00:00",
+                "last_changed": "2019-01-15T08:07:18.943713+00:00",
+                "last_updated": "2019-01-15T08:07:18.943713+00:00",
                 "state": "off"
             }
         },
         {
-            "last_seen": "2019-01-04T23:37:26.499261+00:00",
+            "last_seen": "2019-01-15T08:07:21.175436+00:00",
             "state": {
                 "attributes": {
                     "entity_picture": "https://lh3.googleusercontent.com/-zbkXCVr1pao/AAAAAAAAAAI/AAAAAAAAAAA/AGDgw-iG9pCgGHoMLPdwSpC8IirLaRJL8A/mo/photo.jpg?sz=64",
@@ -194,17 +241,17 @@
                     "source_type": "router"
                 },
                 "context": {
-                    "id": "129fef97735e418cb19225731d98a085",
+                    "id": "f1f58c91b52d4835bba3a6b1261ce6e9",
                     "user_id": null
                 },
                 "entity_id": "device_tracker.presence_peto",
-                "last_changed": "2019-01-04T23:37:24.656342+00:00",
-                "last_updated": "2019-01-04T23:37:24.656342+00:00",
+                "last_changed": "2019-01-15T08:07:18.962550+00:00",
+                "last_updated": "2019-01-15T08:07:18.962550+00:00",
                 "state": "not_home"
             }
         },
         {
-            "last_seen": "2019-01-04T23:37:26.499261+00:00",
+            "last_seen": "2019-01-15T08:07:21.175436+00:00",
             "state": {
                 "attributes": {
                     "entity_picture": "https://lh3.googleusercontent.com/-oIVJny0ctkI/AAAAAAAAAAI/AAAAAAAAAAA/AGDgw-jKHK2e2OvRsolYNYLgquSbBC_DVA/mo/photo.jpg?sz=64",
@@ -212,30 +259,34 @@
                     "source_type": "router"
                 },
                 "context": {
-                    "id": "be16f8754e6b4679a776ac130ae28260",
+                    "id": "ecabd288ebad4a11a9797d1066ca426b",
                     "user_id": null
                 },
                 "entity_id": "device_tracker.presence_nikik",
-                "last_changed": "2019-01-04T23:37:24.657680+00:00",
-                "last_updated": "2019-01-04T23:37:24.657680+00:00",
-                "state": "not_home"
+                "last_changed": "2019-01-15T08:07:18.963214+00:00",
+                "last_updated": "2019-01-15T08:07:18.963214+00:00",
+                "state": "home"
             }
         },
         {
-            "last_seen": "2019-01-04T23:37:15.277920+00:00",
+            "last_seen": "2019-01-15T08:07:08.675118+00:00",
             "state": {
                 "attributes": {
-                    "friendly_name": "Peto nut",
-                    "source_type": null
+                    "friendly_name": "Vacation",
+                    "icon": "mdi:home",
+                    "options": [
+                        "Off",
+                        "On"
+                    ]
                 },
                 "context": {
-                    "id": "b10b19cbd9404d82a24fa8b86899a0b7",
+                    "id": "d515e0b5d117462bb2c05be9733614d5",
                     "user_id": null
                 },
-                "entity_id": "device_tracker.nut_peto",
-                "last_changed": "2019-01-04T23:36:32.633586+00:00",
-                "last_updated": "2019-01-04T23:36:32.633586+00:00",
-                "state": "not_home"
+                "entity_id": "input_select.vacation",
+                "last_changed": "2019-01-15T07:59:16.467093+00:00",
+                "last_updated": "2019-01-15T07:59:16.467093+00:00",
+                "state": "Off"
             }
         }
     ],

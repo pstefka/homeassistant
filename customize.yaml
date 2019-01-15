@@ -36,3 +36,4 @@
     hidden: true
   sensor.presence_peto_ble:
     friendly_name: Peto BLE
+    icon: mdi:tag-faces

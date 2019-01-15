@@ -39,17 +39,19 @@ people:
   entities:
     - device_tracker.presence_nikik
     - device_tracker.presence_peto
+    - sensor.presence_peto_ble
           #    - device_tracker.nikikmi4c
       #    - device_tracker.op3
 presence_custom:
   name: Custom presence
+  control: hidden
   entities:
     - input_select.presence_peto
     - input_select.presence_nikik
     - sensor.presence
     - sensor.presence_nikik
     - sensor.presence_peto
-    - sensor.presence_peto_ble
+    - input_boolean.presence_debug
 entertainment:
   control: hidden
   name: Entertainment
@@ -65,11 +67,15 @@ lights:
     - input_boolean.light_bowl 
     - input_boolean.light_christmas 
     - switch.switch2
-thermostat:
-  name: Thermostat
+home:
+  name: Home
+  control: hidden
   entities:
     - input_select.heat
     - input_select.vacation
+    - input_boolean.vacation
+    - input_boolean.homeoffice
+    - input_boolean.is_christmas
     - climate.eurotronic_eur_spiritz_wall_radiator_thermostat_heat
       #    - climate.eurotronic_eur_spiritz_wall_radiator_thermostat_furnace
       #    - climate.eurotronic_eur_spiritz_wall_radiator_thermostat_heat_eco

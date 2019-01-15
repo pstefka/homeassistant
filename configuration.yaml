@@ -152,12 +152,6 @@ input_select:
      - 'Off'
      - 'On'
     icon: mdi:air-conditioner
-  vacation:
-    name: Vacation
-    options:
-     - 'Off'
-     - 'On'
-    icon: mdi:home
   presence_peto:
     name: Peto
     options:
@@ -180,6 +174,12 @@ input_select:
      - 'Away'
      - 'Extended Away'
      - 'Error'
+#  vacation:
+#    name: Vacation
+#    options:
+#      - 'Off'
+#      - 'On'
+#    icon: mdi:home
 
 input_boolean:
   light_bowl:
@@ -188,6 +188,18 @@ input_boolean:
   light_christmas:
     name: Svetielka vianocne
     icon: mdi:lightbulb
+  is_christmas:
+    name: Vianoce
+    icon: mdi:pine-tree
+  homeoffice:
+    name: Homeoffice
+    icon: mdi:home-account
+  presence_debug:
+    name: Presence detail
+    icon: mdi:android-debug-bridge
+  vacation:
+    name: Vacation
+    icon: mdi:home
 
 #shell_command:
 #  restart_wifi: ssh root@192.168.1.1 -p 2222 wifi

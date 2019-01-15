@@ -13,5 +13,6 @@
       value_template: '{{ states.input_select.presence_nikik.state }}'
       friendly_name: 'Nikik'      
     presence:
+      icon_template: mdi:account-group
       value_template: '{{ states.input_select.presence.state }}'
       friendly_name: 'People'      
