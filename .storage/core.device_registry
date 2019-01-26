@@ -75,7 +75,7 @@
             },
             {
                 "config_entries": [
-                    "07d479b27d5c4215aafd5930b69b9895"
+                    "64e9599abb804d87ab2452b8e1064026"
                 ],
                 "connections": [
                     [
@@ -94,11 +94,11 @@
                 "manufacturer": "Signify",
                 "model": "BSB002",
                 "name": "Philips hue",
-                "sw_version": "1810251352"
+                "sw_version": "1811120916"
             },
             {
                 "config_entries": [
-                    "07d479b27d5c4215aafd5930b69b9895"
+                    "64e9599abb804d87ab2452b8e1064026"
                 ],
                 "connections": [],
                 "hub_device_id": "8a09c40050b249669a6e606cdbd7767c",
@@ -116,7 +116,7 @@
             },
             {
                 "config_entries": [
-                    "07d479b27d5c4215aafd5930b69b9895"
+                    "64e9599abb804d87ab2452b8e1064026"
                 ],
                 "connections": [],
                 "hub_device_id": "8a09c40050b249669a6e606cdbd7767c",
@@ -134,7 +134,7 @@
             },
             {
                 "config_entries": [
-                    "07d479b27d5c4215aafd5930b69b9895"
+                    "64e9599abb804d87ab2452b8e1064026"
                 ],
                 "connections": [],
                 "hub_device_id": "8a09c40050b249669a6e606cdbd7767c",

@@ -16,3 +16,13 @@
       icon_template: mdi:account-group
       value_template: '{{ states.input_select.presence.state }}'
       friendly_name: 'People'      
+    googlesk_ping:
+      value_template: "{{ state_attr('binary_sensor.googlesk_ping', 'round_trip_time_avg') }}"
+      unit_of_measurement: 'ms'
+    googlecom_ping:
+      value_template: "{{ state_attr('binary_sensor.googlecom_ping', 'round_trip_time_avg') }}"
+      unit_of_measurement: 'ms'
+    facebook_ping:
+      value_template: "{{ state_attr('binary_sensor.facebook_ping', 'round_trip_time_avg') }}"
+      unit_of_measurement: 'ms'
+

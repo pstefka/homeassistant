@@ -3,3 +3,12 @@
   host: 192.168.3.11
   count: 2
   scan_interval: 30
+- platform: ping
+  name: googlesk_ping
+  host: www.google.sk
+- platform: ping
+  name: googlecom_ping
+  host: www.google.com
+- platform: ping
+  name: facebook_ping
+  host: www.facebook.com

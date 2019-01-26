@@ -37,3 +37,9 @@
   sensor.presence_peto_ble:
     friendly_name: Peto BLE
     icon: mdi:tag-faces
+  binary_sensor.googlesk_ping:
+    hidden: true
+  binary_sensor.googlecom_ping:
+    hidden: true
+  binary_sensor.facebook_ping:
+    hidden: true

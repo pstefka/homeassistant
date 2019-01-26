@@ -36,6 +36,7 @@ weather_view:
     - group.weather_precipation
 people:
   name: People 
+  control: hidden
   entities:
     - device_tracker.presence_nikik
     - device_tracker.presence_peto
@@ -46,8 +47,6 @@ presence_custom:
   name: Custom presence
   control: hidden
   entities:
-    - input_select.presence_peto
-    - input_select.presence_nikik
     - sensor.presence
     - sensor.presence_nikik
     - sensor.presence_peto
@@ -72,7 +71,6 @@ home:
   control: hidden
   entities:
     - input_select.heat
-    - input_select.vacation
     - input_boolean.vacation
     - input_boolean.homeoffice
     - input_boolean.is_christmas
@@ -81,13 +79,24 @@ home:
       #    - climate.eurotronic_eur_spiritz_wall_radiator_thermostat_heat_eco
 nas_status:
   name: NAS status
+  control: hidden
   entities:
     - switch.pornonas 
     - sensor.volume_used_volume_1
     - sensor.temperature_sda
     - sensor.temperature_sdb
+speedtest:
+  name: Speedtest
+  entities:
+    - sensor.speedtest_ping
+    - sensor.speedtest_download
+    - sensor.speedtest_upload
+    - sensor.googlesk_ping
+    - sensor.googlecom_ping
+    - sensor.facebook_ping
 weather_temperature:
   name: Temperature outside 
+  control: hidden
   entities:
     - sensor.pws_temp_high_record_c
     - sensor.pws_temp_low_record_c
@@ -96,11 +105,13 @@ weather_temperature:
     - sensor.pws_feelslike_c
 weather_humidity:
   name: Humidity
+  control: hidden
   entities:
     - sensor.yr_humidity
     - sensor.pws_relative_humidity
 weather_wind:
   name: Wind
+  control: hidden
   entities:
     - sensor.yr_wind_speed_kph
     - sensor.pws_wind_kph
@@ -113,16 +124,19 @@ weather_wind:
 #    - sensor.yr_wind_speed
 weather_pressure:
   name: Pressure
+  control: hidden
   entities:
     - sensor.yr_pressure
     - sensor.pws_pressure_mb
 weather_precipation:
   name: Precipation
+  control: hidden
   entities:
     - sensor.pws_precip_today_metric
     - sensor.yr_cloudiness
 oko:
   name: Oko
+  control: hidden
   entities:
     - zwave.oko
     - binary_sensor.oko_sensor_2
@@ -136,6 +150,7 @@ oko:
     - sensor.oko_temperature_2
 termohlava:
   name: Termohlava
+  control: hidden
   entities:
     - zwave.eurotronic_eur_spiritz_wall_radiator_thermostat
     - sensor.eurotronic_eur_spiritz_wall_radiator_thermostat_alarm_level
@@ -143,4 +158,11 @@ termohlava:
     - sensor.eurotronic_eur_spiritz_wall_radiator_thermostat_power_management 
     - sensor.eurotronic_eur_spiritz_wall_radiator_thermostat_sourcenodeid 
     - sensor.eurotronic_eur_spiritz_wall_radiator_thermostat_system
-    - sensor.eurotronic_eur_spiritz_wall_radiator_thermostat_temperature 
+    - sensor.eurotronic_eur_spiritz_wall_radiator_thermostat_temperature
+teplomer:
+  name: Teplomer
+  control: hidden
+  entities:
+    - sensor.teplomer_temperature
+    - sensor.teplomer_humidity
+    - sensor.teplomer_battery  

@@ -9,16 +9,25 @@ presence_peto:
   consider_home: 180
   #  gravatar: www.stefi@gmail.com
 
-presence_nikik:
+legacy_presence_nikik:
   hide_if_away: false
   icon:
   mac: 20:82:C0:63:C2:60
-  name: Nikik
+  name: Nikik MI4c
   picture: https://lh3.googleusercontent.com/-oIVJny0ctkI/AAAAAAAAAAI/AAAAAAAAAAA/AGDgw-jKHK2e2OvRsolYNYLgquSbBC_DVA/mo/photo.jpg?sz=64
-  track: true
+  track: false
   vendor: Xiaomi Communications Co Ltd
   consider_home: 180
   #gravatar: vewe99@gmail.com
+
+presence_nikik:
+  hide_if_away: false
+  icon:
+  mac: 90:2B:D2:47:06:8B
+  name: Nikik
+  picture: https://lh3.googleusercontent.com/-oIVJny0ctkI/AAAAAAAAAAI/AAAAAAAAAAA/AGDgw-jKHK2e2OvRsolYNYLgquSbBC_DVA/mo/photo.jpg?sz=64
+  track: true
+  consider_home: 180
 
 pornonas:
   hide_if_away: false
@@ -344,3 +353,12 @@ e4e4ab4e70b3:
   name: 20dfb972624d
   picture:
   track: false
+
+74_eb_80_b1_95_da:
+  hide_if_away: false
+  icon:
+  mac: 74:EB:80:B1:95:DA
+  name: 74 eb 80 b1 95 da
+  picture:
+  track: false
+

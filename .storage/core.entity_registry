@@ -497,7 +497,7 @@
                 "unique_id": "8b7a5faf-6ca4-122f-43ad-f06e1cd602ec"
             },
             {
-                "config_entry_id": "07d479b27d5c4215aafd5930b69b9895",
+                "config_entry_id": "64e9599abb804d87ab2452b8e1064026",
                 "device_id": "326bf84ad2ae4359b4808833026af7ec",
                 "disabled_by": null,
                 "entity_id": "light.hue_white_lamp_2",
@@ -506,7 +506,7 @@
                 "unique_id": "00:17:88:01:04:c9:2e:a9-0b"
             },
             {
-                "config_entry_id": "07d479b27d5c4215aafd5930b69b9895",
+                "config_entry_id": "64e9599abb804d87ab2452b8e1064026",
                 "device_id": "00e93efd86e040399140a50cc57597a1",
                 "disabled_by": null,
                 "entity_id": "light.hue_white_lamp_3",
@@ -515,7 +515,7 @@
                 "unique_id": "00:17:88:01:04:a4:25:13-0b"
             },
             {
-                "config_entry_id": "07d479b27d5c4215aafd5930b69b9895",
+                "config_entry_id": "64e9599abb804d87ab2452b8e1064026",
                 "device_id": "0c2bc9a241da417db2423293668b6caa",
                 "disabled_by": null,
                 "entity_id": "light.hue_white_lamp_1",

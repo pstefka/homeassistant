@@ -1,0 +1,13 @@
+docker exec into container
+cd /data
+npm install / update + upgrade
+restart container
+
+
+---
+
+if latest is not installed = npm outdated still lists the package as not latest
+npm i -g npm-check-updates
+ncu -u
+npm install
+

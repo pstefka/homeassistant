@@ -39,12 +39,12 @@
                 "connection_class": "local_poll",
                 "data": {
                     "bridge_id": "001788FFFEAEC3B7",
-                    "host": "192.168.1.234",
-                    "username": "T9sYtjpZoTDMllRURQ1TYOpzIaY3peiXoRtoZNv9"
+                    "host": "192.168.1.8",
+                    "username": "3PldF3GM0HzkGxz2u-J8dsTCg6RA7MmX2EA1owQ-"
                 },
                 "domain": "hue",
-                "entry_id": "07d479b27d5c4215aafd5930b69b9895",
-                "source": "discovery",
+                "entry_id": "64e9599abb804d87ab2452b8e1064026",
+                "source": "user",
                 "title": "Philips hue",
                 "version": 1
             }

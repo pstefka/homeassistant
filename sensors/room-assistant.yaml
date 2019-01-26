@@ -1,4 +1,4 @@
   - platform: mqtt_room
     device_id: ffff9800c62d
-    away_timeout: 45
+    away_timeout: 60
     name: presence_peto_ble
