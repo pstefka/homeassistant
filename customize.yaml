@@ -43,3 +43,9 @@
     hidden: true
   binary_sensor.facebook_ping:
     hidden: true
+  device_tracker.presence_nikik:
+    hidden: true
+  device_tracker.presence_peto:
+    hidden: true
+  sensor.presence_peto_ble:
+    hidden: true

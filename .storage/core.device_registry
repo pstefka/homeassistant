@@ -2,6 +2,7 @@
     "data": {
         "devices": [
             {
+                "area_id": null,
                 "config_entries": [
                     "8ded91d1ebd94c28b5232a90fda3cb77"
                 ],
@@ -20,6 +21,7 @@
                 "sw_version": null
             },
             {
+                "area_id": null,
                 "config_entries": [
                     "b373b17d98564ef6a2da583bd6d6f7ce"
                 ],
@@ -38,6 +40,7 @@
                 "sw_version": null
             },
             {
+                "area_id": null,
                 "config_entries": [
                     "b373b17d98564ef6a2da583bd6d6f7ce"
                 ],
@@ -56,6 +59,7 @@
                 "sw_version": null
             },
             {
+                "area_id": null,
                 "config_entries": [
                     "8ded91d1ebd94c28b5232a90fda3cb77"
                 ],
@@ -74,6 +78,7 @@
                 "sw_version": null
             },
             {
+                "area_id": null,
                 "config_entries": [
                     "64e9599abb804d87ab2452b8e1064026"
                 ],
@@ -97,6 +102,7 @@
                 "sw_version": "1811120916"
             },
             {
+                "area_id": null,
                 "config_entries": [
                     "64e9599abb804d87ab2452b8e1064026"
                 ],
@@ -111,10 +117,11 @@
                 ],
                 "manufacturer": "Philips",
                 "model": "Hue white lamp",
-                "name": "Ceiling Left",
+                "name": "Left Ceiling",
                 "sw_version": "1.46.13_r26312"
             },
             {
+                "area_id": null,
                 "config_entries": [
                     "64e9599abb804d87ab2452b8e1064026"
                 ],
@@ -129,10 +136,11 @@
                 ],
                 "manufacturer": "Philips",
                 "model": "Hue white lamp",
-                "name": "Hue other",
+                "name": "TV",
                 "sw_version": "1.46.13_r26312"
             },
             {
+                "area_id": null,
                 "config_entries": [
                     "64e9599abb804d87ab2452b8e1064026"
                 ],
@@ -147,7 +155,7 @@
                 ],
                 "manufacturer": "Philips",
                 "model": "Hue white lamp",
-                "name": "Ceiling Right",
+                "name": "Right Ceiling",
                 "sw_version": "1.46.13_r26312"
             }
         ]

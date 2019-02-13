@@ -14,6 +14,7 @@ people_view:
   name: People view 
   entities:
     - group.people
+    - group.presence_custom
 nas_status_view:
   view: yes
   icon: mdi:sd
@@ -34,13 +35,13 @@ weather_view:
     - group.weather_wind
     - group.weather_pressure
     - group.weather_precipation
-people:
-  name: People 
-  control: hidden
-  entities:
-    - device_tracker.presence_nikik
-    - device_tracker.presence_peto
-    - sensor.presence_peto_ble
+#people:
+#  name: People 
+#  control: hidden
+#  entities:
+#    - device_tracker.presence_nikik
+#    - device_tracker.presence_peto
+#    - sensor.presence_peto_ble
           #    - device_tracker.nikikmi4c
       #    - device_tracker.op3
 presence_custom:
@@ -57,7 +58,6 @@ entertainment:
   entities:
     - media_player.kodi
     - media_player.televizia
-    - switch.radiofm
     - remote.living_room
     - sensor.living_room
 lights:

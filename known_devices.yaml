@@ -362,3 +362,11 @@ e4e4ab4e70b3:
   picture:
   track: false
 
+
+00_5a_13_0b_89_df:
+  hide_if_away: false
+  icon:
+  mac: 00:5A:13:0B:89:DF
+  name: 00 5a 13 0b 89 df
+  picture:
+  track: false
