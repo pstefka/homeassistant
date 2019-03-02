@@ -16,6 +16,34 @@
       icon_template: mdi:account-group
       value_template: '{{ states.input_select.presence.state }}'
       friendly_name: 'People'      
+    presence_peto_wifi:
+      friendly_name: 'Peto Wifi'
+      value_template: >-
+        {% if is_state('input_select.presence_peto_wifi', 'home') %}
+          Connected
+        {% else %}
+          Not connected
+        {% endif %}
+      icon_template: >-
+        {% if is_state('input_select.presence_peto_wifi', 'home') %}
+          mdi:wifi
+        {% else %}
+          mdi:wifi-off
+        {% endif %}
+    presence_nikik_wifi:
+      friendly_name: 'Nikik Wifi'
+      value_template: >-
+        {% if is_state('input_select.presence_nikik_wifi', 'home') %}
+          Connected
+        {% else %}
+          Not connected
+        {% endif %}
+      icon_template: >-
+        {% if is_state('input_select.presence_nikik_wifi', 'home') %}
+          mdi:wifi
+        {% else %}
+          mdi:wifi-off
+        {% endif %}
     googlesk_ping:
       value_template: "{{ state_attr('binary_sensor.googlesk_ping', 'round_trip_time_avg') }}"
       unit_of_measurement: 'ms'

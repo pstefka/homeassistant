@@ -3,7 +3,6 @@ presence_peto:
   icon:
   mac: C0:EE:FB:D8:66:AA
   name: Peto
-  picture: https://lh3.googleusercontent.com/-zbkXCVr1pao/AAAAAAAAAAI/AAAAAAAAAAA/AGDgw-iG9pCgGHoMLPdwSpC8IirLaRJL8A/mo/photo.jpg?sz=64
   track: true
   vendor: OnePlus
   consider_home: 180
@@ -25,7 +24,6 @@ presence_nikik:
   icon:
   mac: 90:2B:D2:47:06:8B
   name: Nikik
-  picture: https://lh3.googleusercontent.com/-oIVJny0ctkI/AAAAAAAAAAI/AAAAAAAAAAA/AGDgw-jKHK2e2OvRsolYNYLgquSbBC_DVA/mo/photo.jpg?sz=64
   track: true
   consider_home: 180
 
@@ -269,25 +267,6 @@ e4115b311339:
   picture:
   track: false
 
-op3_ping:
-  hide_if_away: false
-  icon:
-  mac:
-  name: PetoP
-  picture:
-  track: false
-  gravatar: www.stefi@gmail.com
-
-
-nikikmi4c_ping:
-  hide_if_away: false
-  icon:
-  mac:
-  name: NikikP
-  picture:
-  track: false
-  gravatar: vewe99@gmail.com
-
 c8db2606a1c6:
   hide_if_away: false
   icon:
@@ -370,3 +349,19 @@ e4e4ab4e70b3:
   name: 00 5a 13 0b 89 df
   picture:
   track: false
+
+presence_pico:
+  hide_if_away: true
+  icon:
+  mac: 58:E6:BA:00:63:0F
+  name: Pico
+  picture:
+  track: true
+
+presence_marcela:
+  hide_if_away: true
+  icon:
+  mac: D0:7F:A0:4C:1C:65
+  name: Marcela
+  picture:
+  track: true

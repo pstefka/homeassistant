@@ -2,7 +2,7 @@
     "data": {
         "devices": [
             {
-                "area_id": null,
+                "area_id": "7e10682420a944149f4bb03223232bff",
                 "config_entries": [
                     "8ded91d1ebd94c28b5232a90fda3cb77"
                 ],
@@ -21,7 +21,7 @@
                 "sw_version": null
             },
             {
-                "area_id": null,
+                "area_id": "7e10682420a944149f4bb03223232bff",
                 "config_entries": [
                     "b373b17d98564ef6a2da583bd6d6f7ce"
                 ],
@@ -40,7 +40,7 @@
                 "sw_version": null
             },
             {
-                "area_id": null,
+                "area_id": "7e10682420a944149f4bb03223232bff",
                 "config_entries": [
                     "b373b17d98564ef6a2da583bd6d6f7ce"
                 ],
@@ -59,7 +59,7 @@
                 "sw_version": null
             },
             {
-                "area_id": null,
+                "area_id": "7e10682420a944149f4bb03223232bff",
                 "config_entries": [
                     "8ded91d1ebd94c28b5232a90fda3cb77"
                 ],
@@ -78,7 +78,7 @@
                 "sw_version": null
             },
             {
-                "area_id": null,
+                "area_id": "7e10682420a944149f4bb03223232bff",
                 "config_entries": [
                     "64e9599abb804d87ab2452b8e1064026"
                 ],
@@ -99,10 +99,10 @@
                 "manufacturer": "Signify",
                 "model": "BSB002",
                 "name": "Philips hue",
-                "sw_version": "1811120916"
+                "sw_version": "1901181309"
             },
             {
-                "area_id": null,
+                "area_id": "7e10682420a944149f4bb03223232bff",
                 "config_entries": [
                     "64e9599abb804d87ab2452b8e1064026"
                 ],
@@ -121,7 +121,7 @@
                 "sw_version": "1.46.13_r26312"
             },
             {
-                "area_id": null,
+                "area_id": "7e10682420a944149f4bb03223232bff",
                 "config_entries": [
                     "64e9599abb804d87ab2452b8e1064026"
                 ],
@@ -140,7 +140,7 @@
                 "sw_version": "1.46.13_r26312"
             },
             {
-                "area_id": null,
+                "area_id": "7e10682420a944149f4bb03223232bff",
                 "config_entries": [
                     "64e9599abb804d87ab2452b8e1064026"
                 ],

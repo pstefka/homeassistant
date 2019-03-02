@@ -1,4 +1,10 @@
   - platform: mqtt_room
+    state_topic: room_presence
     device_id: ffff9800c62d
     away_timeout: 60
     name: presence_peto_ble
+  - platform: mqtt_room
+    state_topic: room_presence
+    device_id: ffff200091e1
+    away_timeout: 60
+    name: presence_nikik_ble

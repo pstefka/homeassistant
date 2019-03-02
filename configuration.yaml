@@ -18,10 +18,15 @@ homeassistant:
 #introduction:
 
 logger:
+  default: info
   logs:
     homeassistant.components.api: info
+
+system_health:
+    
 # Enables the frontend
 frontend:
+
 
 # Enables configuration UI
 config:
@@ -174,6 +179,17 @@ input_select:
      - 'Away'
      - 'Extended Away'
      - 'Error'
+  presence_peto_wifi:
+    name: Peto Wifi
+    options:
+     - 'home'
+     - 'not_home'
+  presence_nikik_wifi:
+    name: Nikik Wifi
+    options:
+     - 'home'
+     - 'not_home'
+
 #  vacation:
 #    name: Vacation
 #    options:
@@ -201,6 +217,16 @@ input_boolean:
     name: Vacation
     icon: mdi:home
 
+camera:
+  - platform: local_file
+    file_path: /config/empty.jpg
+    name: Google Photos
+    #    file_path: /photos/IMG_20190218_192718.jpg
+#  - platform: yi
+#    name: Camera
+#    host: '192.168.1.252'
+#    password: !secret camera_password
+
 #shell_command:
 #  restart_wifi: ssh root@192.168.1.1 -p 2222 wifi
 
@@ -218,6 +244,13 @@ input_boolean:
 #  port: 1883
 #  discovery: true
 #  discovery_prefix: hass
+
+speedtestdotnet:
+  server_id: 3902
+  monitored_conditions:
+    - ping
+    - download
+    - upload
 
 telegram_bot:
   - platform: polling

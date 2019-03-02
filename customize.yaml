@@ -23,7 +23,10 @@
     hidden: true
   binary_sensor.viera_ping:
     device_class: None
-    friendly_name: TV ON
+    friendly_name: TV
+  binary_sensor.shield_power_mqtt:
+    device_class: None
+    friendly_name: Shield
   sensor.presence_peto:
     entity_picture: https://lh3.googleusercontent.com/-zbkXCVr1pao/AAAAAAAAAAI/AAAAAAAAAAA/AGDgw-iG9pCgGHoMLPdwSpC8IirLaRJL8A/mo/photo.jpg?sz=64
   sensor.presence_nikik:
@@ -34,18 +37,25 @@
     hidden: true
   input_select.presence:
     hidden: true
+  input_select.presence_nikik_wifi:
+    hidden: true
+  input_select.presence_peto_wifi:
+    hidden: true
   sensor.presence_peto_ble:
     friendly_name: Peto BLE
     icon: mdi:tag-faces
+    hidden: false
+  sensor.presence_nikik_ble:
+    friendly_name: Nikik BLE
+    icon: mdi:tag-faces
+    hidden: false
+  device_tracker.presence_nikik:
+    hidden: true
+  device_tracker.presence_peto:
+    hidden: true
   binary_sensor.googlesk_ping:
     hidden: true
   binary_sensor.googlecom_ping:
     hidden: true
   binary_sensor.facebook_ping:
-    hidden: true
-  device_tracker.presence_nikik:
-    hidden: true
-  device_tracker.presence_peto:
-    hidden: true
-  sensor.presence_peto_ble:
     hidden: true

@@ -1,5 +1,5 @@
 automation:
-  hidden: true
+  hidden: false
 script:
   hidden: true
 input_number:

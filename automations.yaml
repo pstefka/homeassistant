@@ -2,6 +2,7 @@
   - data:
       entity_id: switch.switch3
     service: switch.turn_off
+  initial_state: true 
   alias: MQTT Shield off
   condition:
   - condition: state
@@ -16,6 +17,7 @@
   - data:
       entity_id: switch.switch3
     service: switch.turn_on
+  initial_state: true 
   alias: MQTT Shield on
   condition:
   - condition: state
@@ -26,3 +28,51 @@
   - entity_id: binary_sensor.shield_power_mqtt
     platform: state
     to: 'on'
+- id: '1551386746983'
+  initial_state: true 
+  alias: 'Presence Peto Wifi - to home'
+  trigger:
+  - entity_id: device_tracker.presence_peto
+    platform: state
+    to: 'home'
+  action:
+  - data:
+      entity_id: input_select.presence_peto_wifi
+      option: 'home'
+    service: input_select.select_option
+- id: '1551386850844'
+  initial_state: true 
+  alias: 'Presence Peto Wifi - to not_home'
+  trigger:
+  - entity_id: device_tracker.presence_peto
+    platform: state
+    to: 'not_home'
+  action:
+  - data:
+      entity_id: input_select.presence_peto_wifi
+      option: 'not_home'
+    service: input_select.select_option
+- id: '1551386998548'
+  initial_state: true 
+  alias: 'Presence Nikik Wifi - to home'
+  trigger:
+  - entity_id: device_tracker.presence_nikik
+    platform: state
+    to: 'home'
+  action:
+  - data:
+      entity_id: input_select.presence_nikik_wifi
+      option: 'home'
+    service: input_select.select_option
+- id: '1551387048129'
+  initial_state: true 
+  alias: 'Presence Nikik Wifi - to not home'
+  trigger:
+  - entity_id: device_tracker.presence_nikik
+    platform: state
+    to: 'not_home'
+  action:
+  - data:
+      entity_id: input_select.presence_nikik+wifi
+      option: 'not_home'
+    service: input_select.select_option

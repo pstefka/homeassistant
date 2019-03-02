@@ -1,5 +1,4 @@
 - platform: template
-  name: switch1sensor
   sensors:
     switch1_consumption:
 # 0.60.1
