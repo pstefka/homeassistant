@@ -42,13 +42,13 @@
   input_select.presence_peto_wifi:
     hidden: true
   sensor.presence_peto_ble:
-    friendly_name: Peto BLE
-    icon: mdi:tag-faces
-    hidden: false
+    hidden: true
+#    friendly_name: Peto BLE
+#    icon: mdi:tag-faces
   sensor.presence_nikik_ble:
-    friendly_name: Nikik BLE
-    icon: mdi:tag-faces
-    hidden: false
+    hidden: true
+#    friendly_name: Nikik BLE
+#    icon: mdi:tag-faces
   device_tracker.presence_nikik:
     hidden: true
   device_tracker.presence_peto:

@@ -20,7 +20,9 @@ homeassistant:
 logger:
   default: info
   logs:
-    homeassistant.components.api: info
+    homeassistant.components.device_tracker: debug
+    homeassistant.components.http.view: warn
+    homeassistant.components.websocket_api.http.connection: info
 
 system_health:
     
@@ -52,7 +54,8 @@ zone:
 # the developers to assist with development of Home Assistant.
 # For more information, please see:
 # https://home-assistant.io/blog/2016/10/25/explaining-the-updater/
-updater:
+
+    updater:
   # Optional, allows Home Assistant developers to focus on popular components.
   # include_used_components: true
 
@@ -244,6 +247,10 @@ camera:
 #  port: 1883
 #  discovery: true
 #  discovery_prefix: hass
+
+weather:
+  - platform: darksky
+    api_key: ade4656f857c75c148f280af97652fa7
 
 speedtestdotnet:
   server_id: 3902

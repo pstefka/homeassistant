@@ -1,7 +1,117 @@
 {
     "data": [
         {
-            "last_seen": "2019-03-02T22:02:16.682202+00:00",
+            "last_seen": "2019-03-07T19:45:52.790388+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Peto Wifi",
+                    "hidden": true,
+                    "options": [
+                        "home",
+                        "not_home"
+                    ]
+                },
+                "context": {
+                    "id": "52d1a6a27124404dac807589f1ba1a2b",
+                    "user_id": null
+                },
+                "entity_id": "input_select.presence_peto_wifi",
+                "last_changed": "2019-03-07T19:45:40.671510+00:00",
+                "last_updated": "2019-03-07T19:45:40.671510+00:00",
+                "state": "not_home"
+            }
+        },
+        {
+            "last_seen": "2019-03-07T19:45:52.790388+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Heating",
+                    "icon": "mdi:air-conditioner",
+                    "options": [
+                        "Auto",
+                        "Off",
+                        "On"
+                    ]
+                },
+                "context": {
+                    "id": "f780dd7369244563a2a866becea199bf",
+                    "user_id": null
+                },
+                "entity_id": "input_select.heat",
+                "last_changed": "2019-03-07T19:45:40.671749+00:00",
+                "last_updated": "2019-03-07T19:45:40.671749+00:00",
+                "state": "Auto"
+            }
+        },
+        {
+            "last_seen": "2019-03-07T19:45:52.790388+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Nikik",
+                    "hidden": true,
+                    "options": [
+                        "Home",
+                        "Asleep",
+                        "Away",
+                        "Extended Away"
+                    ]
+                },
+                "context": {
+                    "id": "59ad6c4ae40a41019bbaaf576a90c8e6",
+                    "user_id": null
+                },
+                "entity_id": "input_select.presence_nikik",
+                "last_changed": "2019-03-07T19:45:40.671997+00:00",
+                "last_updated": "2019-03-07T19:45:40.671997+00:00",
+                "state": "Away"
+            }
+        },
+        {
+            "last_seen": "2019-03-07T19:45:52.790388+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Nikik Wifi",
+                    "hidden": true,
+                    "options": [
+                        "home",
+                        "not_home"
+                    ]
+                },
+                "context": {
+                    "id": "8eefdd689a9f43b8b20aae4fb9d9b793",
+                    "user_id": null
+                },
+                "entity_id": "input_select.presence_nikik_wifi",
+                "last_changed": "2019-03-07T19:45:40.672247+00:00",
+                "last_updated": "2019-03-07T19:45:40.672247+00:00",
+                "state": "home"
+            }
+        },
+        {
+            "last_seen": "2019-03-07T19:45:52.790388+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Peto",
+                    "hidden": true,
+                    "options": [
+                        "Home",
+                        "Asleep",
+                        "Away",
+                        "Extended Away"
+                    ]
+                },
+                "context": {
+                    "id": "f38630f121074cd58754171d09340537",
+                    "user_id": null
+                },
+                "entity_id": "input_select.presence_peto",
+                "last_changed": "2019-03-07T19:45:40.672475+00:00",
+                "last_updated": "2019-03-07T19:45:40.672475+00:00",
+                "state": "Away"
+            }
+        },
+        {
+            "last_seen": "2019-03-07T19:45:52.790388+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "People",
@@ -15,324 +125,119 @@
                     ]
                 },
                 "context": {
-                    "id": "3bad20eda85c4d7c98b2ecc37b43984d",
+                    "id": "e0891514ab894eb08bef12efe19bf22f",
                     "user_id": null
                 },
                 "entity_id": "input_select.presence",
-                "last_changed": "2019-03-02T22:02:14.952398+00:00",
-                "last_updated": "2019-03-02T22:02:14.952398+00:00",
+                "last_changed": "2019-03-07T19:45:40.672712+00:00",
+                "last_updated": "2019-03-07T19:45:40.672712+00:00",
                 "state": "Away"
             }
         },
         {
-            "last_seen": "2019-03-02T22:02:16.682202+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "Peto Wifi",
-                    "hidden": true,
-                    "options": [
-                        "home",
-                        "not_home"
-                    ]
-                },
-                "context": {
-                    "id": "eeb9168e705945a980eea4ad2f0faadf",
-                    "user_id": null
-                },
-                "entity_id": "input_select.presence_peto_wifi",
-                "last_changed": "2019-03-02T22:02:14.952833+00:00",
-                "last_updated": "2019-03-02T22:02:14.952833+00:00",
-                "state": "not_home"
-            }
-        },
-        {
-            "last_seen": "2019-03-02T22:02:16.682202+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "Heating",
-                    "icon": "mdi:air-conditioner",
-                    "options": [
-                        "Auto",
-                        "Off",
-                        "On"
-                    ]
-                },
-                "context": {
-                    "id": "eac7b2b0c7114674be8562a1cbc15539",
-                    "user_id": null
-                },
-                "entity_id": "input_select.heat",
-                "last_changed": "2019-03-02T22:02:14.953232+00:00",
-                "last_updated": "2019-03-02T22:02:14.953232+00:00",
-                "state": "Auto"
-            }
-        },
-        {
-            "last_seen": "2019-03-02T22:02:16.682202+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "Peto",
-                    "hidden": true,
-                    "options": [
-                        "Home",
-                        "Asleep",
-                        "Away",
-                        "Extended Away"
-                    ]
-                },
-                "context": {
-                    "id": "7482c98af9154838977fc69cf3cd6597",
-                    "user_id": null
-                },
-                "entity_id": "input_select.presence_peto",
-                "last_changed": "2019-03-02T22:02:14.953473+00:00",
-                "last_updated": "2019-03-02T22:02:14.953473+00:00",
-                "state": "Away"
-            }
-        },
-        {
-            "last_seen": "2019-03-02T22:02:16.682202+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "Nikik Wifi",
-                    "hidden": true,
-                    "options": [
-                        "home",
-                        "not_home"
-                    ]
-                },
-                "context": {
-                    "id": "e2d628664ac449efa07e2ccee4b8717c",
-                    "user_id": null
-                },
-                "entity_id": "input_select.presence_nikik_wifi",
-                "last_changed": "2019-03-02T22:02:14.953736+00:00",
-                "last_updated": "2019-03-02T22:02:14.953736+00:00",
-                "state": "not_home"
-            }
-        },
-        {
-            "last_seen": "2019-03-02T22:02:16.682202+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "Nikik",
-                    "hidden": true,
-                    "options": [
-                        "Home",
-                        "Asleep",
-                        "Away",
-                        "Extended Away"
-                    ]
-                },
-                "context": {
-                    "id": "d285e712fb554aa3860a149712da06da",
-                    "user_id": null
-                },
-                "entity_id": "input_select.presence_nikik",
-                "last_changed": "2019-03-02T22:02:14.953971+00:00",
-                "last_updated": "2019-03-02T22:02:14.953971+00:00",
-                "state": "Away"
-            }
-        },
-        {
-            "last_seen": "2019-03-02T22:02:16.682202+00:00",
+            "last_seen": "2019-03-07T19:45:52.790388+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "Homeoffice",
                     "icon": "mdi:home-account"
                 },
                 "context": {
-                    "id": "75e1b90f3c4e48e1bc103fee30ef37e5",
+                    "id": "648fa21035214b4288da886c4336fb33",
                     "user_id": null
                 },
                 "entity_id": "input_boolean.homeoffice",
-                "last_changed": "2019-03-02T22:02:14.954235+00:00",
-                "last_updated": "2019-03-02T22:02:14.954235+00:00",
+                "last_changed": "2019-03-07T19:45:40.673038+00:00",
+                "last_updated": "2019-03-07T19:45:40.673038+00:00",
                 "state": "on"
             }
         },
         {
-            "last_seen": "2019-03-02T22:02:16.682202+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "Presence detail",
-                    "icon": "mdi:android-debug-bridge"
-                },
-                "context": {
-                    "id": "640f9e6ff9c346c39b38afd3a1ca570d",
-                    "user_id": null
-                },
-                "entity_id": "input_boolean.presence_debug",
-                "last_changed": "2019-03-02T22:02:14.954460+00:00",
-                "last_updated": "2019-03-02T22:02:14.954460+00:00",
-                "state": "on"
-            }
-        },
-        {
-            "last_seen": "2019-03-02T22:02:16.682202+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "Svetielka vianocne",
-                    "icon": "mdi:lightbulb"
-                },
-                "context": {
-                    "id": "2406debbeaec433593026db04a5a7ab2",
-                    "user_id": null
-                },
-                "entity_id": "input_boolean.light_christmas",
-                "last_changed": "2019-03-02T22:02:14.954705+00:00",
-                "last_updated": "2019-03-02T22:02:14.954705+00:00",
-                "state": "off"
-            }
-        },
-        {
-            "last_seen": "2019-03-02T22:02:16.682202+00:00",
+            "last_seen": "2019-03-07T19:45:52.790388+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "Svetielka gula",
                     "icon": "mdi:lightbulb"
                 },
                 "context": {
-                    "id": "b5cfbe428a314112becf734f0b170a4b",
+                    "id": "f0ec584471d848218066c8c8a169c666",
                     "user_id": null
                 },
                 "entity_id": "input_boolean.light_bowl",
-                "last_changed": "2019-03-02T22:02:14.954930+00:00",
-                "last_updated": "2019-03-02T22:02:14.954930+00:00",
+                "last_changed": "2019-03-07T19:45:40.673269+00:00",
+                "last_updated": "2019-03-07T19:45:40.673269+00:00",
                 "state": "off"
             }
         },
         {
-            "last_seen": "2019-03-02T22:02:16.682202+00:00",
+            "last_seen": "2019-03-07T19:45:52.790388+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "Vacation",
                     "icon": "mdi:home"
                 },
                 "context": {
-                    "id": "5770c371f77449d29cc00cf424752d4e",
+                    "id": "595348a528b447a78c91a13a2d7d3c24",
                     "user_id": null
                 },
                 "entity_id": "input_boolean.vacation",
-                "last_changed": "2019-03-02T22:02:14.955173+00:00",
-                "last_updated": "2019-03-02T22:02:14.955173+00:00",
+                "last_changed": "2019-03-07T19:45:40.673520+00:00",
+                "last_updated": "2019-03-07T19:45:40.673520+00:00",
                 "state": "off"
             }
         },
         {
-            "last_seen": "2019-03-02T22:02:16.682202+00:00",
+            "last_seen": "2019-03-07T19:45:52.790388+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Presence detail",
+                    "icon": "mdi:android-debug-bridge"
+                },
+                "context": {
+                    "id": "ed3325dd76904aa2890a28c218999ffd",
+                    "user_id": null
+                },
+                "entity_id": "input_boolean.presence_debug",
+                "last_changed": "2019-03-07T19:45:40.673759+00:00",
+                "last_updated": "2019-03-07T19:45:40.673759+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2019-03-07T19:45:52.790388+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Svetielka vianocne",
+                    "icon": "mdi:lightbulb"
+                },
+                "context": {
+                    "id": "72dee3247f99410aaa06eea9475e56ac",
+                    "user_id": null
+                },
+                "entity_id": "input_boolean.light_christmas",
+                "last_changed": "2019-03-07T19:45:40.674333+00:00",
+                "last_updated": "2019-03-07T19:45:40.674333+00:00",
+                "state": "off"
+            }
+        },
+        {
+            "last_seen": "2019-03-07T19:45:52.790388+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "Vianoce",
                     "icon": "mdi:pine-tree"
                 },
                 "context": {
-                    "id": "754175a4aeeb496099514f12998d9fe9",
+                    "id": "95e0ca03e6084ec7b53e247f5cfc13d8",
                     "user_id": null
                 },
                 "entity_id": "input_boolean.is_christmas",
-                "last_changed": "2019-03-02T22:02:14.955391+00:00",
-                "last_updated": "2019-03-02T22:02:14.955391+00:00",
+                "last_changed": "2019-03-07T19:45:40.674601+00:00",
+                "last_updated": "2019-03-07T19:45:40.674601+00:00",
                 "state": "off"
             }
         },
         {
-            "last_seen": "2019-03-02T22:02:16.682202+00:00",
-            "state": {
-                "attributes": {
-                    "attribution": "Data retrieved from Speedtest.net by Ookla",
-                    "friendly_name": "Speedtest Upload",
-                    "icon": "mdi:speedometer",
-                    "unit_of_measurement": "Mbit/s"
-                },
-                "context": {
-                    "id": "d1ae106060a2438495f1724a6c61ffee",
-                    "user_id": null
-                },
-                "entity_id": "sensor.speedtest_upload",
-                "last_changed": "2019-03-02T22:02:15.003524+00:00",
-                "last_updated": "2019-03-02T22:02:15.003524+00:00",
-                "state": "253.85"
-            }
-        },
-        {
-            "last_seen": "2019-03-02T22:02:16.682202+00:00",
-            "state": {
-                "attributes": {
-                    "attribution": "Data retrieved from Speedtest.net by Ookla",
-                    "friendly_name": "Speedtest Download",
-                    "icon": "mdi:speedometer",
-                    "unit_of_measurement": "Mbit/s"
-                },
-                "context": {
-                    "id": "f0b9537298fb42139b272c5e63d4730e",
-                    "user_id": null
-                },
-                "entity_id": "sensor.speedtest_download",
-                "last_changed": "2019-03-02T22:02:15.004165+00:00",
-                "last_updated": "2019-03-02T22:02:15.004165+00:00",
-                "state": "254.12"
-            }
-        },
-        {
-            "last_seen": "2019-03-02T22:02:16.682202+00:00",
-            "state": {
-                "attributes": {
-                    "attribution": "Data retrieved from Speedtest.net by Ookla",
-                    "friendly_name": "Speedtest Ping",
-                    "icon": "mdi:speedometer",
-                    "unit_of_measurement": "ms"
-                },
-                "context": {
-                    "id": "c58945e6c3d042e0a869d6f5035731a9",
-                    "user_id": null
-                },
-                "entity_id": "sensor.speedtest_ping",
-                "last_changed": "2019-03-02T22:02:15.004440+00:00",
-                "last_updated": "2019-03-02T22:02:15.004440+00:00",
-                "state": "5.761"
-            }
-        },
-        {
-            "last_seen": "2019-03-02T22:02:16.682202+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "MQTT Shield off",
-                    "hidden": false,
-                    "id": "1519561541052",
-                    "last_triggered": null
-                },
-                "context": {
-                    "id": "aee39845cbc34068b3a49d99f8ba1892",
-                    "user_id": null
-                },
-                "entity_id": "automation.mqtt_shield_off",
-                "last_changed": "2019-03-02T22:02:15.136069+00:00",
-                "last_updated": "2019-03-02T22:02:15.136069+00:00",
-                "state": "off"
-            }
-        },
-        {
-            "last_seen": "2019-03-02T22:02:16.682202+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "Presence Peto Wifi - to home",
-                    "hidden": false,
-                    "id": "1551386746983",
-                    "last_triggered": null
-                },
-                "context": {
-                    "id": "1bc7c791c75f4be1b27d24edfc35c8a1",
-                    "user_id": null
-                },
-                "entity_id": "automation.presence_peto_wifi_to_home",
-                "last_changed": "2019-03-02T22:02:15.136444+00:00",
-                "last_updated": "2019-03-02T22:02:15.136444+00:00",
-                "state": "off"
-            }
-        },
-        {
-            "last_seen": "2019-03-02T22:02:16.682202+00:00",
+            "last_seen": "2019-03-07T19:45:52.790388+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "Presence Peto Wifi - to not_home",
@@ -341,55 +246,17 @@
                     "last_triggered": null
                 },
                 "context": {
-                    "id": "5d7e2f79a7da4c2fab88a1fbfe4cee70",
+                    "id": "c99272af23124167bbf4a8fc74f0b5f1",
                     "user_id": null
                 },
                 "entity_id": "automation.presence_peto_wifi_to_not_home",
-                "last_changed": "2019-03-02T22:02:15.136791+00:00",
-                "last_updated": "2019-03-02T22:02:15.136791+00:00",
+                "last_changed": "2019-03-07T19:45:40.842323+00:00",
+                "last_updated": "2019-03-07T19:45:40.842323+00:00",
                 "state": "off"
             }
         },
         {
-            "last_seen": "2019-03-02T22:02:16.682202+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "Presence Nikik Wifi - to not home",
-                    "hidden": false,
-                    "id": "1551387048129",
-                    "last_triggered": null
-                },
-                "context": {
-                    "id": "67b8e6c16cef48ffbc34917bce0c07ed",
-                    "user_id": null
-                },
-                "entity_id": "automation.presence_nikik_wifi_to_not_home",
-                "last_changed": "2019-03-02T22:02:15.137115+00:00",
-                "last_updated": "2019-03-02T22:02:15.137115+00:00",
-                "state": "off"
-            }
-        },
-        {
-            "last_seen": "2019-03-02T22:02:16.682202+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "MQTT Shield on",
-                    "hidden": false,
-                    "id": "1519561583777",
-                    "last_triggered": null
-                },
-                "context": {
-                    "id": "c7df66584e7b4a8f9e9a60177fd328c5",
-                    "user_id": null
-                },
-                "entity_id": "automation.mqtt_shield_on",
-                "last_changed": "2019-03-02T22:02:15.137432+00:00",
-                "last_updated": "2019-03-02T22:02:15.137432+00:00",
-                "state": "off"
-            }
-        },
-        {
-            "last_seen": "2019-03-02T22:02:16.682202+00:00",
+            "last_seen": "2019-03-07T19:45:52.790388+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "Presence Nikik Wifi - to home",
@@ -398,17 +265,93 @@
                     "last_triggered": null
                 },
                 "context": {
-                    "id": "e3753315f3f04e28ac9082d322b16610",
+                    "id": "6ec357aacb5747b8813ad23496d28235",
                     "user_id": null
                 },
                 "entity_id": "automation.presence_nikik_wifi_to_home",
-                "last_changed": "2019-03-02T22:02:15.137752+00:00",
-                "last_updated": "2019-03-02T22:02:15.137752+00:00",
+                "last_changed": "2019-03-07T19:45:40.842664+00:00",
+                "last_updated": "2019-03-07T19:45:40.842664+00:00",
                 "state": "off"
             }
         },
         {
-            "last_seen": "2019-03-02T22:02:16.682202+00:00",
+            "last_seen": "2019-03-07T19:45:52.790388+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "MQTT Shield on",
+                    "hidden": false,
+                    "id": "1519561583777",
+                    "last_triggered": null
+                },
+                "context": {
+                    "id": "4ec03f1d95cf4e499eba3ba7cceebe4f",
+                    "user_id": null
+                },
+                "entity_id": "automation.mqtt_shield_on",
+                "last_changed": "2019-03-07T19:45:40.842998+00:00",
+                "last_updated": "2019-03-07T19:45:40.842998+00:00",
+                "state": "off"
+            }
+        },
+        {
+            "last_seen": "2019-03-07T19:45:52.790388+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "MQTT Shield off",
+                    "hidden": false,
+                    "id": "1519561541052",
+                    "last_triggered": null
+                },
+                "context": {
+                    "id": "be19ecfac077462ca7222d43f3210909",
+                    "user_id": null
+                },
+                "entity_id": "automation.mqtt_shield_off",
+                "last_changed": "2019-03-07T19:45:40.843324+00:00",
+                "last_updated": "2019-03-07T19:45:40.843324+00:00",
+                "state": "off"
+            }
+        },
+        {
+            "last_seen": "2019-03-07T19:45:52.790388+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Presence Nikik Wifi - to not home",
+                    "hidden": false,
+                    "id": "1551387048129",
+                    "last_triggered": null
+                },
+                "context": {
+                    "id": "949bed87da6c45a7b515814b2dc1dbe1",
+                    "user_id": null
+                },
+                "entity_id": "automation.presence_nikik_wifi_to_not_home",
+                "last_changed": "2019-03-07T19:45:40.843653+00:00",
+                "last_updated": "2019-03-07T19:45:40.843653+00:00",
+                "state": "off"
+            }
+        },
+        {
+            "last_seen": "2019-03-07T19:45:52.790388+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Presence Peto Wifi - to home",
+                    "hidden": false,
+                    "id": "1551386746983",
+                    "last_triggered": null
+                },
+                "context": {
+                    "id": "0763f9dc75c04510abcfc4676f17d8fa",
+                    "user_id": null
+                },
+                "entity_id": "automation.presence_peto_wifi_to_home",
+                "last_changed": "2019-03-07T19:45:40.843980+00:00",
+                "last_updated": "2019-03-07T19:45:40.843980+00:00",
+                "state": "off"
+            }
+        },
+        {
+            "last_seen": "2019-03-07T19:45:52.790388+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "Peto",
@@ -416,17 +359,17 @@
                     "source_type": "router"
                 },
                 "context": {
-                    "id": "b831c71935ab48009e31a0fbf62982bb",
+                    "id": "9d77b83b81b64efc8e3d629bd70d6be7",
                     "user_id": null
                 },
                 "entity_id": "device_tracker.presence_peto",
-                "last_changed": "2019-03-02T22:02:15.158982+00:00",
-                "last_updated": "2019-03-02T22:02:15.158982+00:00",
+                "last_changed": "2019-03-07T19:45:40.849061+00:00",
+                "last_updated": "2019-03-07T19:45:40.849061+00:00",
                 "state": "not_home"
             }
         },
         {
-            "last_seen": "2019-03-02T22:02:16.682202+00:00",
+            "last_seen": "2019-03-07T19:45:52.790388+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "Nikik",
@@ -434,17 +377,17 @@
                     "source_type": "router"
                 },
                 "context": {
-                    "id": "5d3de8baf526484fa831ad15302dbd56",
+                    "id": "a8b79467e0f24afa841faf13b7c95cf4",
                     "user_id": null
                 },
                 "entity_id": "device_tracker.presence_nikik",
-                "last_changed": "2019-03-02T22:02:15.159344+00:00",
-                "last_updated": "2019-03-02T22:02:15.159344+00:00",
+                "last_changed": "2019-03-07T19:45:40.849393+00:00",
+                "last_updated": "2019-03-07T19:45:40.849393+00:00",
                 "state": "not_home"
             }
         },
         {
-            "last_seen": "2019-03-02T22:02:16.682202+00:00",
+            "last_seen": "2019-03-07T19:45:52.790388+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "Pico",
@@ -452,31 +395,88 @@
                     "source_type": null
                 },
                 "context": {
-                    "id": "06b067c2c1504abd8df1e80c3e27de99",
+                    "id": "dd812e09027f4a99b039a0dcd3d987e3",
                     "user_id": null
                 },
                 "entity_id": "device_tracker.presence_pico",
-                "last_changed": "2019-03-02T22:02:15.159676+00:00",
-                "last_updated": "2019-03-02T22:02:15.159676+00:00",
+                "last_changed": "2019-03-07T19:45:40.849705+00:00",
+                "last_updated": "2019-03-07T19:45:40.849705+00:00",
                 "state": "not_home"
             }
         },
         {
-            "last_seen": "2019-03-02T22:02:16.682202+00:00",
+            "last_seen": "2019-03-07T19:45:52.790388+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "Marcela",
                     "hidden": true,
-                    "source_type": null
+                    "source_type": "router"
                 },
                 "context": {
-                    "id": "269fde20918049c5bb6f2970f2ba8894",
+                    "id": "ab78171bd8204d95890f2a5dbe3ea42e",
                     "user_id": null
                 },
                 "entity_id": "device_tracker.presence_marcela",
-                "last_changed": "2019-03-02T22:02:15.159983+00:00",
-                "last_updated": "2019-03-02T22:02:15.159983+00:00",
+                "last_changed": "2019-03-07T19:45:40.850003+00:00",
+                "last_updated": "2019-03-07T19:45:40.850003+00:00",
                 "state": "not_home"
+            }
+        },
+        {
+            "last_seen": "2019-03-07T19:45:52.790388+00:00",
+            "state": {
+                "attributes": {
+                    "attribution": "Data retrieved from Speedtest.net by Ookla",
+                    "friendly_name": "Speedtest Upload",
+                    "icon": "mdi:speedometer",
+                    "unit_of_measurement": "Mbit/s"
+                },
+                "context": {
+                    "id": "4fd0a14df9524a6c9c3dd64abe13ce0d",
+                    "user_id": null
+                },
+                "entity_id": "sensor.speedtest_upload",
+                "last_changed": "2019-03-07T19:45:41.141150+00:00",
+                "last_updated": "2019-03-07T19:45:41.141150+00:00",
+                "state": "17.08"
+            }
+        },
+        {
+            "last_seen": "2019-03-07T19:45:52.790388+00:00",
+            "state": {
+                "attributes": {
+                    "attribution": "Data retrieved from Speedtest.net by Ookla",
+                    "friendly_name": "Speedtest Ping",
+                    "icon": "mdi:speedometer",
+                    "unit_of_measurement": "ms"
+                },
+                "context": {
+                    "id": "a8d28b295187453b95d3cd66590267e6",
+                    "user_id": null
+                },
+                "entity_id": "sensor.speedtest_ping",
+                "last_changed": "2019-03-07T19:45:41.141505+00:00",
+                "last_updated": "2019-03-07T19:45:41.141505+00:00",
+                "state": "4.194"
+            }
+        },
+        {
+            "last_seen": "2019-03-07T19:45:52.790388+00:00",
+            "state": {
+                "attributes": {
+                    "attribution": "Data retrieved from Speedtest.net by Ookla",
+                    "friendly_name": "Speedtest Download",
+                    "icon": "mdi:speedometer",
+                    "unit_of_measurement": "Mbit/s"
+                },
+                "context": {
+                    "id": "940267c3200240ae95c41693c3dfa35f",
+                    "user_id": null
+                },
+                "entity_id": "sensor.speedtest_download",
+                "last_changed": "2019-03-07T19:45:41.141841+00:00",
+                "last_updated": "2019-03-07T19:45:41.141841+00:00",
+                "state": "10.32"
             }
         },
         {

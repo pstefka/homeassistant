@@ -29,7 +29,6 @@ weather_view:
     - sun.sun
     - sensor.yr_symbol
     - sensor.yr_cloudiness
-    - sensor.pws_alerts
     - group.weather_temperature
     - group.weather_humidity
     - group.weather_wind
@@ -51,10 +50,10 @@ presence_custom:
     - sensor.presence
     - sensor.presence_nikik
     - sensor.presence_nikik_wifi
-    - sensor.presence_nikik_ble
+    - sensor.presence_nikik_ble_friendly
     - sensor.presence_peto
     - sensor.presence_peto_wifi
-    - sensor.presence_peto_ble
+    - sensor.presence_peto_ble_friendly
     - input_boolean.presence_debug
 entertainment:
   control: hidden
@@ -106,41 +105,28 @@ weather_temperature:
   name: Temperature outside 
   control: hidden
   entities:
-    - sensor.pws_temp_high_record_c
-    - sensor.pws_temp_low_record_c
     - sensor.yr_temperature
-    - sensor.pws_temp_c
-    - sensor.pws_feelslike_c
 weather_humidity:
   name: Humidity
   control: hidden
   entities:
     - sensor.yr_humidity
-    - sensor.pws_relative_humidity
 weather_wind:
   name: Wind
   control: hidden
   entities:
     - sensor.yr_wind_speed_kph
-    - sensor.pws_wind_kph
     - sensor.yr_wind_direction
-    - sensor.pws_wind_degrees
-    - sensor.pws_wind_gust_1d_kph
-    - sensor.pws_wind_1d_kph
-    - sensor.pws_wind_gust_2d_kph
-    - sensor.pws_wind_2d_kph
 #    - sensor.yr_wind_speed
 weather_pressure:
   name: Pressure
   control: hidden
   entities:
     - sensor.yr_pressure
-    - sensor.pws_pressure_mb
 weather_precipation:
   name: Precipation
   control: hidden
   entities:
-    - sensor.pws_precip_today_metric
     - sensor.yr_cloudiness
 oko:
   name: Oko
