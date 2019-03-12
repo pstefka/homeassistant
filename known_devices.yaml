@@ -27,7 +27,7 @@ presence_nikik:
   track: true
   consider_home: 180
 
-pornonas:
+synology_nas:
   hide_if_away: false
   icon:
   mac: 00:11:32:19:DF:7C
@@ -36,16 +36,16 @@ pornonas:
   track: false
   vendor: Synology Incorporated
 
-raspberrywifi:
+raspberry_pi_wifi:
   hide_if_away: false
   icon:
   mac: B8:27:EB:50:5C:0B
-  name: RaspberryWifi
+  name: PI wifi
   picture:
   track: false
   vendor: Raspberry Pi Foundation
 
-klima:
+samsung_ar9000:
   hide_if_away: false
   icon:
   mac: C0:97:27:12:33:09
@@ -54,11 +54,11 @@ klima:
   track: false
   vendor: SAMSUNG ELECTRO-MECHANICS(THAILAND)
 
-shieldtv:
+nvidia_shield:
   hide_if_away: false
   icon:
   mac: 00:04:4B:5E:3C:CE
-  name: ShieldTV
+  name: Shield
   picture:
   track: false
   vendor: unknown
@@ -81,7 +81,7 @@ petobook2wifi:
   track: false
   vendor: unknown
 
-viera:
+panasonic_viera_wifi:
   hide_if_away: false
   icon:
   mac: C0:D9:62:F6:C3:5B
@@ -90,7 +90,7 @@ viera:
   track: false
   vendor: unknown
 
-tabletka:
+google_nexus7:
   hide_if_away: false
   icon:
   mac: AC:22:0B:A3:52:D4
@@ -112,16 +112,16 @@ pc:
   hide_if_away: false
   icon:
   mac: 00:01:29:00:F0:F1
-  name: pc
+  name: PC
   picture:
   track: false
   vendor: DFI Inc.
 
-petobook:
+hp_petobook_wifi:
   hide_if_away: false
   icon:
   mac: 20:10:7A:08:4F:45
-  name: petobook
+  name: Petobook wifi
   picture:
   track: false
   vendor: Gemtek Technology Co., Ltd.
@@ -135,11 +135,11 @@ petobook:
   track: false
   vendor: HTC Corporation
 
-704f57ff8db1:
+tplink_switch1:
   hide_if_away: false
   icon:
   mac: 70:4F:57:FF:8D:B1
-  name: 704f57ff8db1
+  name: Switch1
   picture:
   track: false
   vendor: TP-LINK TECHNOLOGIES CO.,LTD.
@@ -171,20 +171,20 @@ c0eefb4285ce:
   track: false
   vendor: unknown
 
-b04e26545ace:
+tplink_switch2:
   hide_if_away: false
   icon:
   mac: B0:4E:26:54:5A:CE
-  name: b04e26545ace
+  name: Switch2
   picture:
   track: false
   vendor: TP-LINK TECHNOLOGIES CO.,LTD.
 
-pi_lan:
+raspberry_pi_lan:
   hide_if_away: false
   icon:
   mac: B8:27:EB:05:09:5E
-  name: pi lan
+  name: PI lan
   picture:
   track: false
   vendor: Raspberry Pi Foundation
@@ -198,20 +198,20 @@ nuc:
   track: false
   vendor: Elitegroup Computer Systems Co.,Ltd.
 
-b04e2691a797:
+tplink_switch3:
   hide_if_away: false
   icon:
   mac: B0:4E:26:91:A7:97
-  name: b04e2691a797
+  name: Switch3
   picture:
   track: false
   vendor: TP-LINK TECHNOLOGIES CO.,LTD.
 
-788a20b9662b:
+ubiquiti_routerx:
   hide_if_away: false
   icon:
   mac: 78:8A:20:B9:66:2B
-  name: 788a20b9662b
+  name: RouterX
   picture:
   track: false
   vendor: Ubiquiti Networks Inc.
@@ -229,16 +229,16 @@ dc094c83fa8b:
   hide_if_away: false
   icon:
   mac: 78:62:56:56:78:3B
-  name: 78625656783b
+  name: Nikik work
   picture:
   track: false
   vendor: HUAWEI TECHNOLOGIES CO.,LTD
 
-0024e4609082:
+withings_weight:
   hide_if_away: false
   icon:
   mac: 00:24:E4:60:90:82
-  name: 0024e4609082
+  name: Withings Weight
   picture:
   track: false
   vendor: Withings
@@ -259,19 +259,19 @@ dc094c83fa8b:
   picture:
   track: false
 
-e4115b311339:
+hp_petobook:
   hide_if_away: false
   icon:
   mac: E4:11:5B:31:13:39
-  name: e4115b311339
+  name: Petobook
   picture:
   track: false
 
-c8db2606a1c6:
+harmony_hub:
   hide_if_away: false
   icon:
   mac: C8:DB:26:06:A1:C6
-  name: c8db2606a1c6
+  name: Harmony
   picture:
   track: false
 
@@ -325,11 +325,11 @@ e4e4ab4e70b3:
   picture:
   track: false
 
-20dfb972624d:
+google_home_mini:
   hide_if_away: false
   icon:
   mac: 20:DF:B9:72:62:4D
-  name: 20dfb972624d
+  name: Home mini
   picture:
   track: false
 
@@ -365,3 +365,11 @@ presence_marcela:
   name: Marcela
   picture:
   track: true
+
+reolink_c1pro:
+  hide_if_away: false
+  icon:
+  mac: B0:41:1D:76:C2:8E
+  name: C1pro
+  picture:
+  track: false

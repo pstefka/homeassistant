@@ -10,6 +10,8 @@ homeassistant:
   unit_system: metric
   # Pick yours from here: http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
   time_zone: Europe/Bratislava
+  whitelist_external_dirs:
+    - /shared
   # Customization file
   customize: !include customize.yaml
   customize_domain: !include customize_domain.yaml
@@ -220,15 +222,51 @@ input_boolean:
     name: Vacation
     icon: mdi:home
 
+ffmpeg:
+    
 camera:
   - platform: local_file
     file_path: /config/empty.jpg
     name: Google Photos
-    #    file_path: /photos/IMG_20190218_192718.jpg
-#  - platform: yi
-#    name: Camera
-#    host: '192.168.1.252'
-#    password: !secret camera_password
+  # funguje
+#  - platform: ffmpeg
+#    input: !secret camera_ffmpeg_rtmp
+#    name: C1pro-ffmpeg-rtmp
+#    #extra_arguments: -q:v 2
+#    extra_arguments: -pred 1
+#  # funguje    
+#  - platform: ffmpeg
+#    input: !secret camera_ffmpeg_rtsp
+#    name: C1pro-ffmpeg-rtsp
+#    #extra_arguments: -q:v 2
+#    extra_arguments: -pred 1
+  - platform: generic
+    still_image_url: !secret camera_generic
+    #http://192.168.1.253/cgi-bin/api.cgi?cmd=Snap&channel=0&rs=20190307095401&user=!secret "camera_username"&password=!secret camera_password
+    name: C1pro-generic
+# 400 - bad request! Unauthorized -> potrebna zmena onvif.py (existuje PR)
+  - platform: onvif
+    host: 192.168.1.253
+    name: C1pro-onvif
+    username: !secret camera_username
+    password: !secret camera_password
+    port: 8000
+    profile: 0
+
+# works, but I don't like ;)
+#  - platform: synology
+#    name: C1pro-syno
+#    url: http://192.168.1.10:8080
+#    username: !secret pornonas_username
+#    password: !secret pornonas_password
+#    verify_ssl: false
+    
+    # https://reolink.com/wp-content/uploads/2017/01/Reolink-CGI-command-v1.61.pdf
+    # http://192.168.1.253/cgi-bin/api.cgi?cmd=Snap&channel=0&rs=20190307095401&user=aaaaa&password=bbbbb
+    # rtsp://aaaaa:bbbbb@192.168.1.253:554//h264Preview_01_sub
+    # rtmp://192.168.1.253/bcs/channel0_main.bcs?channel=0&stream=0&user=aaaaa&password=bbbbb
+    # rtmp://192.168.1.253/bcs/channel0_sub.bcs?channel=0&stream=1&user=aaaaa&password=bbbbb
+    # rtmp://192.168.1.253/bcs/channel0_ext.bcs?channel=0&stream=2&user=aaaaa&password=bbbbb
 
 #shell_command:
 #  restart_wifi: ssh root@192.168.1.1 -p 2222 wifi
