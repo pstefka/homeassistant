@@ -11,15 +11,6 @@
                 "unique_id": "3-72057594093551746"
             },
             {
-                "config_entry_id": "8ded91d1ebd94c28b5232a90fda3cb77",
-                "device_id": "e0cb93d68f764a13afcc1872b0200f9b",
-                "disabled_by": null,
-                "entity_id": "media_player.televizia",
-                "name": null,
-                "platform": "cast",
-                "unique_id": "d4baa6f2-b602-ab15-16b0-a7085666ee27"
-            },
-            {
                 "config_entry_id": null,
                 "device_id": null,
                 "disabled_by": null,
@@ -488,15 +479,6 @@
                 "unique_id": "6-72057594144637121"
             },
             {
-                "config_entry_id": "8ded91d1ebd94c28b5232a90fda3cb77",
-                "device_id": "32e4050acd0e43f8ab75e3433491adce",
-                "disabled_by": null,
-                "entity_id": "media_player.living_room_speaker",
-                "name": null,
-                "platform": "cast",
-                "unique_id": "8b7a5faf-6ca4-122f-43ad-f06e1cd602ec"
-            },
-            {
                 "config_entry_id": "64e9599abb804d87ab2452b8e1064026",
                 "device_id": "326bf84ad2ae4359b4808833026af7ec",
                 "disabled_by": null,
@@ -522,6 +504,51 @@
                 "name": null,
                 "platform": "hue",
                 "unique_id": "00:17:88:01:04:23:f4:65-0b"
+            },
+            {
+                "config_entry_id": "e0233d8e576b41298a67b994507dbc7a",
+                "device_id": "8986bde6e3054fd7acd43a8b5cb9ba86",
+                "disabled_by": null,
+                "entity_id": "switch.switch3",
+                "name": null,
+                "platform": "tplink",
+                "unique_id": "B0:4E:26:91:A7:97"
+            },
+            {
+                "config_entry_id": "e0233d8e576b41298a67b994507dbc7a",
+                "device_id": "28fb9644521a4db7abde584a15dfa518",
+                "disabled_by": null,
+                "entity_id": "switch.switch2",
+                "name": null,
+                "platform": "tplink",
+                "unique_id": "B0:4E:26:54:5A:CE"
+            },
+            {
+                "config_entry_id": "e0233d8e576b41298a67b994507dbc7a",
+                "device_id": "8ad0487cdfe140378c687cb5b57583a6",
+                "disabled_by": null,
+                "entity_id": "switch.switch1",
+                "name": null,
+                "platform": "tplink",
+                "unique_id": "70:4F:57:FF:8D:B1"
+            },
+            {
+                "config_entry_id": "8ded91d1ebd94c28b5232a90fda3cb77",
+                "device_id": "e0cb93d68f764a13afcc1872b0200f9b",
+                "disabled_by": null,
+                "entity_id": "media_player.shield",
+                "name": null,
+                "platform": "cast",
+                "unique_id": "d4baa6f2-b602-ab15-16b0-a7085666ee27"
+            },
+            {
+                "config_entry_id": "8ded91d1ebd94c28b5232a90fda3cb77",
+                "device_id": "32e4050acd0e43f8ab75e3433491adce",
+                "disabled_by": null,
+                "entity_id": "media_player.mini",
+                "name": null,
+                "platform": "cast",
+                "unique_id": "8b7a5faf-6ca4-122f-43ad-f06e1cd602ec"
             }
         ]
     },

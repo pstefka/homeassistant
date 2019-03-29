@@ -18,6 +18,7 @@
                 "manufacturer": "NVIDIA",
                 "model": "SHIELD Android TV",
                 "name": "Shield",
+                "name_by_user": null,
                 "sw_version": null
             },
             {
@@ -37,6 +38,7 @@
                 "manufacturer": "FIBARO System",
                 "model": "FGMS001-ZW5 Motion Sensor",
                 "name": "FIBARO System FGMS001-ZW5 Motion Sensor",
+                "name_by_user": null,
                 "sw_version": null
             },
             {
@@ -56,6 +58,7 @@
                 "manufacturer": "EUROtronic",
                 "model": "EUR_SPIRITZ Wall Radiator Thermostat",
                 "name": "EUROtronic EUR_SPIRITZ Wall Radiator Thermostat",
+                "name_by_user": null,
                 "sw_version": null
             },
             {
@@ -75,6 +78,7 @@
                 "manufacturer": "Google Inc.",
                 "model": "Google Home Mini",
                 "name": "Mini",
+                "name_by_user": null,
                 "sw_version": null
             },
             {
@@ -99,6 +103,7 @@
                 "manufacturer": "Signify",
                 "model": "BSB002",
                 "name": "Philips hue",
+                "name_by_user": null,
                 "sw_version": "1901181309"
             },
             {
@@ -118,6 +123,7 @@
                 "manufacturer": "Philips",
                 "model": "Hue white lamp",
                 "name": "Left Ceiling",
+                "name_by_user": null,
                 "sw_version": "1.46.13_r26312"
             },
             {
@@ -136,7 +142,8 @@
                 ],
                 "manufacturer": "Philips",
                 "model": "Hue white lamp",
-                "name": "TV",
+                "name": "some light",
+                "name_by_user": null,
                 "sw_version": "1.46.13_r26312"
             },
             {
@@ -156,7 +163,68 @@
                 "manufacturer": "Philips",
                 "model": "Hue white lamp",
                 "name": "Right Ceiling",
+                "name_by_user": null,
                 "sw_version": "1.46.13_r26312"
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "e0233d8e576b41298a67b994507dbc7a"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "b0:4e:26:91:a7:97"
+                    ]
+                ],
+                "hub_device_id": null,
+                "id": "8986bde6e3054fd7acd43a8b5cb9ba86",
+                "identifiers": [],
+                "manufacturer": "TP-Link",
+                "model": "HS100(EU)",
+                "name": "switch3",
+                "name_by_user": null,
+                "sw_version": "1.2.5 Build 171213 Rel.101415"
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "e0233d8e576b41298a67b994507dbc7a"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "b0:4e:26:54:5a:ce"
+                    ]
+                ],
+                "hub_device_id": null,
+                "id": "28fb9644521a4db7abde584a15dfa518",
+                "identifiers": [],
+                "manufacturer": "TP-Link",
+                "model": "HS100(EU)",
+                "name": "switch2",
+                "name_by_user": null,
+                "sw_version": "1.2.5 Build 171213 Rel.101415"
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "e0233d8e576b41298a67b994507dbc7a"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "70:4f:57:ff:8d:b1"
+                    ]
+                ],
+                "hub_device_id": null,
+                "id": "8ad0487cdfe140378c687cb5b57583a6",
+                "identifiers": [],
+                "manufacturer": "TP-Link",
+                "model": "HS110(EU)",
+                "name": "switch1",
+                "name_by_user": null,
+                "sw_version": "1.2.5 Build 171213 Rel.101523"
             }
         ]
     },

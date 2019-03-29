@@ -42,3 +42,15 @@ light_christmas_off:
     - service: input_boolean.turn_off
       data:
         entity_id: input_boolean.light_christmas
+google_photos_next:
+  sequence:
+    - service: mqtt.publish
+      data:
+        topic: "hass/google_photos/command"
+        payload: "next"
+google_photos_previous:
+  sequence:
+    - service: mqtt.publish
+      data:
+        topic: "hass/google_photos/command"
+        payload: "previous"

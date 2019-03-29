@@ -6,6 +6,7 @@
                 "data": {},
                 "domain": "cast",
                 "entry_id": "8ded91d1ebd94c28b5232a90fda3cb77",
+                "options": {},
                 "source": "import",
                 "title": "Google Cast",
                 "version": 1
@@ -18,6 +19,7 @@
                 },
                 "domain": "zwave",
                 "entry_id": "b373b17d98564ef6a2da583bd6d6f7ce",
+                "options": {},
                 "source": "user",
                 "title": "Z-Wave",
                 "version": 1
@@ -31,6 +33,7 @@
                 },
                 "domain": "mqtt",
                 "entry_id": "57557f98f6ca4dc18dfb58b76cd0b8da",
+                "options": {},
                 "source": "user",
                 "title": "192.168.1.6",
                 "version": 1
@@ -44,8 +47,19 @@
                 },
                 "domain": "hue",
                 "entry_id": "64e9599abb804d87ab2452b8e1064026",
+                "options": {},
                 "source": "user",
                 "title": "Philips hue",
+                "version": 1
+            },
+            {
+                "connection_class": "local_poll",
+                "data": {},
+                "domain": "tplink",
+                "entry_id": "e0233d8e576b41298a67b994507dbc7a",
+                "options": {},
+                "source": "import",
+                "title": "TP-Link Smart Home",
                 "version": 1
             }
         ]

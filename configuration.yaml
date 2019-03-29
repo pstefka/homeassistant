@@ -15,6 +15,12 @@ homeassistant:
   # Customization file
   customize: !include customize.yaml
   customize_domain: !include customize_domain.yaml
+  auth_providers:
+  - type: trusted_networks
+    trusted_networks:
+    - 127.0.0.1
+    - 192.168.1.0/24
+    - 172.17.0.0/16
 
 # Show links to resources in log and frontend
 #introduction:
@@ -31,7 +37,6 @@ system_health:
 # Enables the frontend
 frontend:
 
-
 # Enables configuration UI
 config:
 
@@ -39,11 +44,7 @@ http:
   # Secrets are defined in the file secrets.yaml
   api_password: !secret api_password
   # Uncomment this if you are using SSL/TLS, running in Docker container, etc.
-  # base_url: example.duckdns.org:8123
-  trusted_networks:
-    - 127.0.0.1
-    - 192.168.1.0/24
-    - 172.17.0.0/16
+  base_url: http://nuc.local:8123
 
 zone:
   - name: Work
@@ -56,10 +57,9 @@ zone:
 # the developers to assist with development of Home Assistant.
 # For more information, please see:
 # https://home-assistant.io/blog/2016/10/25/explaining-the-updater/
-
-    updater:
-  # Optional, allows Home Assistant developers to focus on popular components.
-  # include_used_components: true
+updater:
+# Optional, allows Home Assistant developers to focus on popular components.
+#  include_used_components: true
 
 prometheus:
 # nefunguje dobre, nie vsetky informacie su posielane -> chyba komponentu
@@ -119,6 +119,7 @@ sun:
 # Text to speech
 tts:
   - platform: google
+    base_url: http://192.168.1.6:8123
 
 # Cloud
 # PSPS - len pre alexu, resp. ineho voice asistenta?
@@ -221,9 +222,22 @@ input_boolean:
   vacation:
     name: Vacation
     icon: mdi:home
+  timelapse:
+    name: Timelapse
+    icon: mdi:timelapse
+  camera_motion:
+    name: Motion
+    icon: mdi:cctv 
 
+input_text:
+  tts_input:
+    name: Text
+        
 ffmpeg:
-    
+
+stream:    
+#  extra_arguments: -bsf:v h264_mp4toannexb
+
 camera:
   - platform: local_file
     file_path: /config/empty.jpg
@@ -242,7 +256,7 @@ camera:
 #    extra_arguments: -pred 1
   - platform: generic
     still_image_url: !secret camera_generic
-    #http://192.168.1.253/cgi-bin/api.cgi?cmd=Snap&channel=0&rs=20190307095401&user=!secret "camera_username"&password=!secret camera_password
+    stream_source: !secret camera_generic_stream
     name: C1pro-generic
 # 400 - bad request! Unauthorized -> potrebna zmena onvif.py (existuje PR)
   - platform: onvif
@@ -252,6 +266,16 @@ camera:
     password: !secret camera_password
     port: 8000
     profile: 0
+  - platform: mjpeg
+    mjpeg_url: http://192.168.1.36:2971/camera/stream
+    name: WallPanel Camera
+
+tplink:
+  discovery: false
+  switch:
+    - host: 192.168.3.101
+    - host: 192.168.3.102
+    - host: 192.168.3.103
 
 # works, but I don't like ;)
 #  - platform: synology
@@ -289,6 +313,7 @@ camera:
 weather:
   - platform: darksky
     api_key: ade4656f857c75c148f280af97652fa7
+#    mode: daily
 
 speedtestdotnet:
   server_id: 3902

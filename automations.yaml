@@ -73,6 +73,6 @@
     to: 'not_home'
   action:
   - data:
-      entity_id: input_select.presence_nikik+wifi
+      entity_id: input_select.presence_nikik_wifi
       option: 'not_home'
     service: input_select.select_option

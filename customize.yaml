@@ -3,7 +3,7 @@
   cast.televizia:
     friendly_name: Shield
   switch.switch1:
-    friendly_name: WATT
+    friendly_name: Ambilight
   sensor.switch1_consumption:
     friendly_name: WATT consumption
   switch.switch2:
@@ -59,3 +59,5 @@
     hidden: true
   binary_sensor.facebook_ping:
     hidden: true
+  sensor.wallpanel_light:
+    friendly_name: Wallpanel light

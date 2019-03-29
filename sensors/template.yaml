@@ -9,9 +9,29 @@
     presence_peto:
       value_template: '{{ states.input_select.presence_peto.state }}'
       friendly_name: 'Peto'
+      icon_template: >-
+        {% if is_state('input_select.presence_peto', 'Home') %}
+          mdi:home-account
+        {% elif is_state('input_select.presence_peto', 'Away') %}
+          mdi:image-filter-hdr
+        {% elif is_state('input_select.presence_peto', 'Asleep') %}
+          mdi:sleep
+        {% elif is_state('input_select.presence_peto', 'Extended Away') %}
+          mdi:briefcase
+        {% endif %}
     presence_nikik:
       value_template: '{{ states.input_select.presence_nikik.state }}'
       friendly_name: 'Nikik'      
+      icon_template: >-
+        {% if is_state('input_select.presence_nikik', 'Home') %}
+          mdi:home-account
+        {% elif is_state('input_select.presence_nikik', 'Away') %}
+          mdi:image-filter-hdr
+        {% elif is_state('input_select.presence_nikik', 'Asleep') %}
+          mdi:sleep
+        {% elif is_state('input_select.presence_nikik', 'Extended Away') %}
+          mdi:briefcase
+        {% endif %}
     presence:
       icon_template: mdi:account-group
       value_template: '{{ states.input_select.presence.state }}'

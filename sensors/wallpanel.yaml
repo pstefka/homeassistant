@@ -1,0 +1,7 @@
+  - platform: mqtt
+    state_topic: "wallpanel/mywallpanel/sensor/light"
+    unit_of_measurement: lux
+    value_template: "{{ value_json.value }}" 
+    name: wallpanel_light
+    device:
+      identifiers: google_nexus7 
