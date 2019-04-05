@@ -48,11 +48,11 @@
                             "camera_image": "camera.c1pro_generic",
                             "entity": "input_boolean.camera_motion",
                             "hold_action": {
-                                "action": "navigate",
-                                "navigation_path": "fullscreen-camera"
+                                "action": "toggle"
                             },
                             "tap_action": {
-                                "action": "toggle"
+                                "action": "navigate",
+                                "navigation_path": "fullscreen-camera"
                             },
                             "type": "picture-entity"
                         },
@@ -227,7 +227,9 @@
                                 "sensor.teplomer_temperature",
                                 "sensor.eurotronic_eur_spiritz_wall_radiator_thermostat_temperature",
                                 "sensor.yr_temperature",
-                                "sensor.oko_luminance_2"
+                                "sensor.dark_sky_temperature",
+                                "sensor.oko_luminance_2",
+                                "sensor.wallpanel_light"
                             ],
                             "hours_to_show": 24,
                             "title": "Teperature",
@@ -252,6 +254,9 @@
                                 },
                                 {
                                     "entity": "sensor.yr_wind_direction"
+                                },
+                                {
+                                    "entity": "sensor.yr_precipitation"
                                 }
                             ],
                             "show_header_toggle": false,
@@ -280,6 +285,34 @@
                             ],
                             "show_header_toggle": false,
                             "title": "Termohlava",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "sensor.dark_sky_temperature"
+                                },
+                                {
+                                    "entity": "sensor.dark_sky_apparent_temperature"
+                                },
+                                {
+                                    "entity": "sensor.dark_sky_cloud_coverage"
+                                },
+                                {
+                                    "entity": "sensor.dark_sky_wind_speed"
+                                },
+                                {
+                                    "entity": "sensor.dark_sky_wind_gust"
+                                },
+                                {
+                                    "entity": "sensor.dark_sky_precip_probability"
+                                },
+                                {
+                                    "entity": "sensor.dark_sky_precip_intensity"
+                                }
+                            ],
+                            "show_header_toggle": false,
+                            "title": "Darksky",
                             "type": "entities"
                         }
                     ],
@@ -525,6 +558,10 @@
                                 }
                             ],
                             "type": "horizontal-stack"
+                        },
+                        {
+                            "entity": "climate.ac",
+                            "type": "thermostat"
                         }
                     ],
                     "title": "Other"

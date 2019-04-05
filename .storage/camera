@@ -1,0 +1,9 @@
+{
+    "data": {
+        "camera.c1pro_generic": {
+            "preload_stream": true
+        }
+    },
+    "key": "camera",
+    "version": 1
+}

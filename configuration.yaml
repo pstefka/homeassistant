@@ -269,14 +269,6 @@ camera:
   - platform: mjpeg
     mjpeg_url: http://192.168.1.36:2971/camera/stream
     name: WallPanel Camera
-
-tplink:
-  discovery: false
-  switch:
-    - host: 192.168.3.101
-    - host: 192.168.3.102
-    - host: 192.168.3.103
-
 # works, but I don't like ;)
 #  - platform: synology
 #    name: C1pro-syno
@@ -284,13 +276,24 @@ tplink:
 #    username: !secret pornonas_username
 #    password: !secret pornonas_password
 #    verify_ssl: false
-    
-    # https://reolink.com/wp-content/uploads/2017/01/Reolink-CGI-command-v1.61.pdf
-    # http://192.168.1.253/cgi-bin/api.cgi?cmd=Snap&channel=0&rs=20190307095401&user=aaaaa&password=bbbbb
-    # rtsp://aaaaa:bbbbb@192.168.1.253:554//h264Preview_01_sub
-    # rtmp://192.168.1.253/bcs/channel0_main.bcs?channel=0&stream=0&user=aaaaa&password=bbbbb
-    # rtmp://192.168.1.253/bcs/channel0_sub.bcs?channel=0&stream=1&user=aaaaa&password=bbbbb
-    # rtmp://192.168.1.253/bcs/channel0_ext.bcs?channel=0&stream=2&user=aaaaa&password=bbbbb
+
+#image_processing:
+#  - platform: dlib_face_detect
+#    source:
+#      - entity_id: camera.C1pro-generic
+# - platform: dlib_face_identify
+#   source:
+#    - entity_id: camera.C1pro-generic
+#   faces:
+#     Nikik: www/nikik.jpg
+#     Peto: www/peto.jpg
+
+tplink:
+  discovery: false
+  switch:
+    - host: 192.168.3.101
+    - host: 192.168.3.102
+    - host: 192.168.3.103
 
 #shell_command:
 #  restart_wifi: ssh root@192.168.1.1 -p 2222 wifi
@@ -309,6 +312,14 @@ tplink:
 #  port: 1883
 #  discovery: true
 #  discovery_prefix: hass
+
+climate:
+- platform: climate_ip
+  config_file: 'samsungrac.yaml'
+  ip_address: '192.168.1.250'
+  token: '3E29WItMSX'
+  cert: 'ac14k_m.pem'
+  friendly_name: 'AC'
 
 weather:
   - platform: darksky

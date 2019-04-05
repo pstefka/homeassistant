@@ -1,0 +1,534 @@
+/lib/ld-uClibc.so.0
+libpthread.so.0
+pthread_create
+pthread_mutex_unlock
+pthread_mutex_lock
+__errno_location
+libstdc++.so.6
+_ZNSt13runtime_errorC1ERKSs
+_ZNSt19basic_ostringstreamIcSt11char_traitsIcESaIcEED1Ev
+__register_frame_info
+__cxa_free_exception
+_ZNKSt15basic_stringbufIcSt11char_traitsIcESaIcEE3strEv
+__cxa_begin_catch
+_ZNSs4_Rep10_M_destroyERKSaIcE
+_ZSt28_Rb_tree_rebalance_for_erasePSt18_Rb_tree_node_baseRS_
+_ZNSt15basic_stringbufIcSt11char_traitsIcESaIcEEC1ESt13_Ios_Openmode
+_ZTVSt19basic_ostringstreamIcSt11char_traitsIcESaIcEE
+_Jv_RegisterClasses
+_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc
+_ZSt7getlineIcSt11char_traitsIcESaIcEERSt13basic_istreamIT_T0_ES7_RSbIS4_S5_T1_ES4_
+_ZSt20__throw_length_errorPKc
+__cxa_guard_release
+_ZSt18_Rb_tree_decrementPKSt18_Rb_tree_node_base
+_ZNSs4_Rep9_S_createEjjRKSaIcE
+_ZNSsC1EPKcRKSaIcE
+_ZNSs6resizeEj
+_ZTVSt15basic_stringbufIcSt11char_traitsIcESaIcEE
+_ZNSt15basic_stringbufIcSt11char_traitsIcESaIcEED1Ev
+_ZNSs13_S_copy_charsEPcPKcS1_
+__cxa_pure_virtual
+_ZNSs7reserveEj
+__cxa_allocate_exception
+_ZStlsIcSt11char_traitsIcESaIcEERSt13basic_ostreamIT_T0_ES7_RKSbIS4_S5_T1_E
+_ZStlsIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_St8_SetfillIS3_E
+__gxx_personality_v0
+_ZNSs4_Rep20_S_empty_rep_storageE
+_ZSt29_Rb_tree_insert_and_rebalancebPSt18_Rb_tree_node_baseS0_RS_
+_ZNSsC1EjcRKSaIcE
+_ZNSs6appendEPKcj
+_ZSt17__throw_bad_allocv
+_ZNSs6appendERKSs
+__cxa_end_cleanup
+_ZNSt8ios_base4InitD1Ev
+_ZNSs6appendEPKc
+_ZNSt9basic_iosIcSt11char_traitsIcEEC2Ev
+_ZSt18_Rb_tree_incrementPKSt18_Rb_tree_node_base
+__cxa_end_catch
+__cxa_guard_acquire
+_ZNSolsEPFRSt8ios_baseS0_E
+_ZTVN10__cxxabiv117__class_type_infoE
+_ZNSs9push_backEc
+_ZNSs7_M_leakEv
+_ZNSt15basic_streambufIcSt11char_traitsIcEED2Ev
+_ZTTSt19basic_ostringstreamIcSt11char_traitsIcESaIcEE
+_ZNSt8ios_base4InitC1Ev
+_ZStplIcSt11char_traitsIcESaIcEESbIT_T0_T1_EPKS3_RKS6_
+_ZTISt13runtime_error
+_ZSt19__throw_logic_errorPKc
+_ZSt18_Rb_tree_incrementPSt18_Rb_tree_node_base
+_ZSt18_Rb_tree_decrementPSt18_Rb_tree_node_base
+_ZNSt9basic_iosIcSt11char_traitsIcEE4initEPSt15basic_streambufIcS1_E
+_ZNSs6assignERKSs
+_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_i
+_ZNSt13runtime_errorD1Ev
+__cxa_rethrow
+_ZNSt9basic_iosIcSt11char_traitsIcEED2Ev
+_ZNSsC1ERKSs
+_ZTVN10__cxxabiv120__si_class_type_infoE
+_ZNSs6assignEPKcj
+_ZSt9terminatev
+__deregister_frame_info
+libgcc_s.so.1
+__aeabi_dcmple
+__aeabi_unwind_cpp_pr0
+__aeabi_ui2d
+__aeabi_dcmplt
+__aeabi_idiv
+__aeabi_dcmpge
+__aeabi_uidiv
+__aeabi_d2uiz
+__aeabi_uidivmod
+__aeabi_dcmpeq
+__aeabi_d2iz
+__aeabi_unwind_cpp_pr1
+__uClibc_main
+gethostbyname
+__cxa_atexit
+__bss_start__
+GLIBCXX_3.4.9
+### cgi_get_mdstate_j2s in,pMdstate->iChannel = %d 
+cgi_get_mdstate_s2j in,len = %d,pSession->iChannel = %d
+cgi_get_mdstate_s2j in,mdsatte = %d
+cgi_set_alarm_check in, len = %d , line %d
+cgi_set_alarm_check ok,chnl=%d, len = %d , line %d
+cgi_get_alarm_j2s err,len = %d , line %d
+cgi_get_alarm_j2s ok, channel=%d,len = %d
+cgi_set_alarm_j2s in,len = %d , line %d
+cgi_set_alarm_j2s err,len = %d , line %d
+_cgi_alarm_md_j2s in line %d
+_cgi_alarm_md_j2s err line %d
+_cgi_alarm_j2s scope exist, line %d
+_cgi_alarm_j2s err line %d
+_cgi_alarm_j2s sens exist, line %d
+_cgi_alarm_j2s err,size=%d, line = %d
+_cgi_alarm_j2s err, line = %d
+_cgi_alarm_j2s schedule line %d
+_cgi_alarm_j2s action line %d
+_cgi_alarm_j2s recChannel line %d, size=5d
+_cgi_alarm_j2s ok line %d
+cgi_set_alarm_j2s ok,len = %d
+cgi_get_alarm_s2j in,len = %d
+cgi_get_alarm_s2j ok
+cgi_rtmp_auth_j2s ok, token=%s, len=%d
+cgi_rtmp_parse in, payload="%s"
+cgi_get_cmd_and_param , token=%s
+cgi_get_cmd_and_param , channel=%d
+cgi_get_cmd_and_param , stream=%d
+cgi_get_cmd_and_param , userName=%s
+cgi_get_cmd_and_param , pSession->sUserName=%s
+cgi_get_cmd_and_param , password=%s
+cgi_rtp_parse , payload="%s"
+cgi_snap_prepare ret=%d, line %d.
+/mnt/tmp/snap.jpg
+Content-Type:image/jpeg;name="snap.jpg"
+cgi_snap ok 
+cgi_snap failed 
+cgi_set_enc_check in, len = %d , line %d
+cgi_set_enc_check ok,chnl=%d, len = %d , line %d
+cgi_get_enc_j2s ok, channel=%d,len = %d
+cgi_set_enc_j2s in,len = %d , line %d
+cgi_set_enc_j2s err,len = %d , line %d
+cgi_set_enc_j2s ok,len = %d
+cgi_preview_j2s ok, channel=%d, enable=%d,type=%d,len=%d
+cgi_get_enc_s2j in,len = %d
+cgi_get_enc_s2j ok
+Content-type: text/html
+Content-Disposition: attachment;filename=%s
+Content-type: apolication/octet-stream
+X-Accel-Redirect:/downloadfile/%s
+X-Accel-Buffering:yes
+cgi_rsp len=%d: 
+Content-type: text/html
+Content-type: text/html
+Content-type: text/html
+cgi read data malloc err:  line %d
+cgi read data err:  line %d
+cgi_load data:
+/mnt/app/www/test/%s
+cgi_load_test err line %d
+cgi_load_test cmd:
+cgi_load_test cmd %s , no test file
+cgi_get_client_ip ok, REMOTE_ADDR=%s
+cgi_get_cookie , param=%s, %d
+cgi_get_cookie token=%s
+cgi_get_cookie, new token=%s, old=%s
+cgi_get_cookie, token=%s
+CONTENT_LENGTH
+cgi_get_content_len ok, len=%d
+QUERY_STRING
+cgi_get_cmd_and_param , QUERY_STRING="%s"
+cgi_get_cmd_and_param , cmd=%d(%s)
+cgi_get_cmd_and_param , no cmd exist, set butt first
+cgi_get_cmd_and_param , file=%s
+cgi_get_cmd_and_param , sFileOutput=%d
+cgi_get_cmd_and_param , file=%d
+cgi_get_cmd_and_param , token=%d
+cgi_get_cmd_and_param , get token failed
+cgi_get_cmd_and_param , clearConfig=%d
+cgi_load err %d,  line %d
+cgi_make_rsp in, cmd=%d,rsp_code=%d,info = %s
+cgi_make_rsp in, cmd=%d,rsp_code=%d,info = NULL
+please login first
+login failed
+fcgi read failed
+get config failed
+set config failed
+malloc failed
+create socket failed
+The length of the string exceeds the limit
+missing param
+error command
+internal error
+ability error
+invalid user
+user already exist
+maximum number of users
+same version
+cgi_proc_one_json_cmd, line %d
+cgi_proc check failed, line %d
+cgi_s2j failed, line %d
+cgi_j2s failed, line %d
+cgi_proc_one_json_cmd failed, line %d
+cgi_proc no cmd, line %d
+cgi_proc_one_json_cmd, code=%d,pSession->iDatalen=%d, line %d
+cgi_proc get cmd failed, drop only, line %d
+cgi_proc_one_cmd, code=%d,pSession->iDatalen=%d, line %d
+cgi_proc parse err, datelen=%d, drop only, line %d
+Content-type: text/html
+json parse err
+cgi_get_p2p_s2j in,len = %d
+cgi_get_p2p_s2j ok
+cgi_scan_wifi_s2j in,len = %d
+cgi_scan_wifi_s2j ok
+cgi_test_wifi_j2s ok,len = %d
+cgi_set_wifi_j2s ok,len = %d
+cgi_get_wifi_s2j in,len = %d
+cgi_get_wifi_s2j ok
+cgi_get_3g_s2j in,len = %d
+cgi_get_3g_s2j ok
+cgi_get_push_s2j in,len = %d
+cgi_get_push_s2j ok
+cgi_set_upnp_j2s ok,len = %d
+cgi_set_p2p_j2s ok,len = %d
+cgi_set_3g_j2s ok,len = %d
+cgi_set_push_j2s exist line %d
+cgi_set_push_j2s ok,len = %d
+cgi_set_ddns_j2s ok,len = %d
+cgi_set_locallink_j2s ok,len = %d
+cgi_set_netport_j2s ok,len = %d
+cgi_set_ntp_j2s ok,len = %d
+cgi_set_ftp_j2s ok,len = %d
+cgi_set_ftp_j2s exist line %d
+cgi_test_email_j2s in,line=%d
+cgi_set_email_j2s,CGI_ERR_PARAM,line=%d
+cgi_test_email_j2s ok,len = %d
+cgi_set_email_j2s ok,len = %d
+cgi_get_netport_s2j in,len = %d
+cgi_get_netport_s2j ok
+cgi_get_ntp_s2j in,len = %d
+cgi_get_ntp_s2j ok
+cgi_get_ftp_s2j in,len = %d
+cgi_get_ftp_s2j ok
+cgi_get_email_s2j in,len = %d
+cgi_get_email_s2j ok
+cgi_get_ddns_s2j in,len = %d
+cgi_get_ddns_s2j ok
+cgi_get_locallink_s2j in,len = %d
+GetLocalLink
+cgi_get_locallink_s2j ok
+cgi_ptzctrl_j2s ok,len = %d
+cgi_get_ptzpatrol_j2s ok,len = %d
+cgi_get_ptzpreset_j2s ok,len = %d
+cgi_set_ptzpatrol_check ok,len = %d
+cgi_set_ptzpatrol_j2s ok,len = %d
+GetPtzPatrol
+cgi_get_ptzpatrol_s2j,keypos num = %d
+cgi_get_ptzpatrol_s2j,keypos %d:id=%d,dwellTime=%d,speed=%d
+cgi_get_ptzpatrol_s2j ok,len = %d
+cgi_get_ptzpreset_s2j in,line = %d
+cgi_get_ptzpreset_s2j,count = %d
+GetPtzPreset
+cgi_get_ptzpreset_s2j,line = %d
+cgi_get_ptzpreset_s2j ok,len = %d
+cgi_set_rec_check in
+cgi_set_rec_check err
+cgi_set_rec_check in channel = %d
+cgi_get_rec_j2s ok, channel=%d,len = %d
+cgi_rec_find  get time1 err
+cgi_rec_find  get time2 err
+cgi_rec_find err line %d
+cgi_find_j2s ok, channel=%d, status=%d,start=%d.%d.%d.%d.%d.%d, end=%d.%d.%d.%d.%d.%d,len=%d
+cgi_find_s2j in,len = %d
+cgi_find_s2j ok, total_file=%d, total_mon=%d
+SearchResult
+_cgi_set_rec_j2s channel=============>%d  line %d
+_cgi_set_rec_j2s err line %d
+cgi_set_rec_j2s ok,len = %d
+cgi_get_rec_s2j in,len = %d
+cgi_get_rec_s2j ok
+cgi_set_auth_j2s ok, enable=%d,len = %d
+cgi_logout_j2s ok
+cgi_logout_s2j ok
+cgi_login_check ok, line %d
+cgi_get_auth_s2j in,len = %d
+cgi_get_auth_s2j ok
+cgi_disconnect_j2s ok, user=%s,len = %d
+cgi_del_user_j2s ok, user=%s, password=%s,len = %d
+cgi_get_online_s2j in,len = %d
+cgi_get_user_s2j i:%d, user:%s
+_cgi_online_s2j  line %d
+canbeDisconn
+cgi_get_online_s2j ok
+cgi_modify_user_j2s CGI_ERR_PARAM,line=%d
+cgi_modify_user_j2s ok, user=%s, password=%s, leve=%s,len = %d
+cgi_add_user_j2s ok, user=%s, password=%s, level=%s, len = %d
+cgi_get_user_s2j in,len = %d
+_cgi_user_s2j  line %d
+cgi_get_user_s2j ok
+cgi_login_j2s ok, user=%s, password=%s,len = %d
+cgi_login_s2j in,len = %d
+cgi_login_s2j ok
+cgi_write_file
+cgi_importcfg
+cgi_export_prepare ret=%d, line %d.
+cgi_upgrade_transok ret=%d, line %d.
+cgi_upgrade total lenght = %d.
+CONTENT_TYPE
+cgi_upgrade, CONTENT_TYPE=%s
+cgi_upgrade boundary = %s(%d).
+cgi_upgrade read_len = %d.
+cgi_upgrade line = %d.
+Content-Disposition
+upgrade-package
+cgi_upgrade filename=%s.
+cgi_upgrade get file info failed, line %d.
+cgi_upgrade file %s, offset=%d,boundary_len=%d,file_len = %d.
+cgi_upgrade payload 
+cgi_upgrade_prepare failed , ret=%d.
+cgi_upgrade_prepare timeout, device will reboot ret=%d.
+cgi_upgrade_prepare ok, file_len=%d.
+mount -o remount -t tmpfs -o size=%dm  tmpfs /mnt/tmp
+/mnt/tmp/img
+Func(%s) line %d failed.
+cgi_upgrade read err, write_len=%d,trans_len=%d, remains=%d.
+cgi_upgrade write err, write_len=%d,trans_len=%d, remains=%d.
+cgi_upgrade write ok7, write_len=%d,trans_len=%d, remains=%d, filesize= %d.
+cgi_upgrade trans_len check =%d.
+cgi_upgrade trans  ret=%d.
+cgi_upgrade trans failed, trans_len=%d, file_len=%d.
+cgi_importcfg total lenght = %d.
+cgi_importcfg, CONTENT_TYPE=%s
+cgi_importcfg boundary = %s(%d).
+cgi_importcfg read_len = %d.
+cgi_importcfg buf:
+cgi_importcfg line = %d.
+cgi_importcfg filename=%s.
+cgi_importcfg get file info failed, line %d.
+cgi_importcfg file %s, offset=%d,boundary_len=%d,file_len = %d.
+cgi_importcfg payload 
+/mnt/tmp/cgi_configfile.tgz
+the file is busy. please try again later.
+cgi_import write err, write_len=%d,trans_len=%d, remains=%d.
+cgi_import write ok7, write_len=%d,trans_len=%d, remains=%d, filesize= %d.
+cgi_import trans_len check =%d.
+cgi_import trans ok,  ret=%d.
+write file ok.
+cgi_import trans failed, trans_len=%d, file_len=%d.
+/mnt/tmp/cgi_config.tgz
+CONTENT_TYPE=application/oct-stream
+Content-Disposition: attachment;filename="config.tgz"
+cgi_export ok 
+cgi_export failed 
+cgi_export_cfg_j2s ok, filename=%s, len=%d
+cgi_format_j2s ok,size=%d,id = %d
+cgi_format_j2s ok,size=%d,len = %d
+cgi_get_hdd_s2j in,len = %d
+cgi_get_hdd_s2j ok
+cgi_get_performance_s2j in,len = %d
+netThroughput
+GetPerformance
+cgi_get_performance_s2j ok
+cgi_set_automaint_j2s ok,len = %d
+cgi_set_time_j2s timeFmt=%s
+startWeekday
+cgi_set_time_j2s ok,len = %d
+cgi_get_devinfo_s2j in,len = %d
+cgi_get_devinfo_s2j ,firmVer = %s, buildDay=%s
+cgi_get_devinfo_s2j ok ChnNum:%d
+cgi_get_automaint_s2j in,len = %d
+GetAutoMaint
+cgi_get_automaint_s2j ok
+cgi_get_time_s2j in,len = %d
+cgi_get_time_s2j ok
+cgi_get_ablity_j2s userName=%s,headlen=%d
+cgi_get_ablity_j2s ok,len = %d
+cgi_get_ablity_check in, line %d
+cgi_get_ablity_s2j in,len = %d
+_cgi_ability_s2j channelnum=%d, line %d
+emailSchedule
+pushSchedule
+alarmHddFull
+alarmDisconnet
+alarmIpConflict
+cgi_get_ablity_s2j ok
+whiteBalance
+Anti-Smearing
+BackLightControl
+DynamicRangeControl
+cgi_set_isp_j2s ok,len = %d
+cgi_set_isp_check in
+cgi_get_isp_j2s ok, channel=%d ,len = %d
+cgi_set_shelter_check in
+cgi_get_mask_j2s ok, channel=%d ,len = %d
+########## cgi_set_osd_j2s CGI_ERR_PARAM.
+cgi_set_osd_j2s ok,len = %d
+cgi_set_osd_check in
+cgi_get_osd_j2s ok, channel=%d ,len = %d
+cgi_set_image_j2s ok,len = %d
+###############  cgi_set_image_s2j in.
+cgi_set_image_s2j ok,len = %d
+cgi_set_image_check in
+cgi_get_image_j2s ok, channel=%d ,len = %d
+cgi_get_isp_s2j in,len = %d
+cgi_get_isp_s2j  line %d
+cgi_get_isp_s2j ok
+cgi_get_norm_s2j in,len = %d
+cgi_set_mask_j2s err,size=%d, line = %d
+cgi_set_mask_j2s err, line = %d
+area(%d.%d.%d.%d -- %d.%d)
+cgi_set_mask_j2s ok,len = %d
+cgi_get_shelter_s2j in,len = %d
+cgi_get_shelter_s2j line %d
+cgi_get_image_s2j ok
+cgi_get_osd_s2j in,len = %d
+cgi_get_osd_s2j ok
+cgi_set_norm_j2s ok,len = %d
+void Json::Reader::addComment(const char*, const char*, Json::CommentPlacement)
+Line %d, Column %d
+ for detail.
+deque::_M_new_elements_at_front
+deque::_M_new_elements_at_back
+Bad unicode escape sequence in string: four digits expected.
+Bad unicode escape sequence in string: hexadecimal digit expected.
+additional six characters expected to parse unicode surrogate pair.
+expecting another \u token to begin the second half of a unicode surrogate pair
+Empty escape sequence in string
+Bad escape sequence in string
+basic_string::_S_construct NULL not valid
+' is not a number.
+collectComments_
+/home/mdq/hisi_nvr/bc_others/libjson/src/json_reader.cpp
+lastValue_ != 0
+Missing ':' after object member name
+Missing ',' or '}' in object declaration
+Missing '}' or object member name
+Syntax error: value, object or array expected.
+Missing ',' or ']' in array declaration
+A valid JSON document must be either an array or an object value.
+N4Json21DefaultValueAllocatorE
+bool Json::Value::isConvertibleTo(Json::ValueType) const
+bool Json::Value::asBool() const
+const char* Json::Value::asCString() const
+Json::Value::Value(Json::ValueType)
+std::vector<std::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::basic_string<char, std::char_traits<char>, std::allocator<char> > > > Json::Value::getMemberNames() const
+Json::UInt Json::Value::size() const
+double Json::Value::asDouble() const
+Json::UInt Json::Value::asUInt() const
+Json::Int Json::Value::asInt() const
+std::string Json::Value::asString() const
+void Json::Value::CommentInfo::setComment(const char*)
+bool Json::Value::operator==(const Json::Value&) const
+const Json::Value& Json::Value::operator[](const char*) const
+const Json::Value& Json::Value::operator[](Json::UInt) const
+bool Json::Value::operator<(const Json::Value&) const
+Json::Value::~Value()
+void Json::Value::clear()
+Json::Value::Value(const Json::Value&)
+Json::Value Json::Value::removeMember(const char*)
+Json::Value& Json::Value::operator[](Json::UInt)
+void Json::Value::resize(Json::UInt)
+Json::Value& Json::Value::resolveReference(const char*, bool)
+N4Json14ValueAllocatorE
+vector::reserve
+/home/mdq/hisi_nvr/bc_others/libjson/src/json_value.cpp
+type_ == stringValue
+type_ == nullValue || type_ == objectValue
+Type is not convertible to double
+Negative integer can not be converted to unsigned integer
+Real out of unsigned integer range
+Type is not convertible to uint
+integer out of signed integer range
+Real out of signed integer range
+Type is not convertible to int
+Type is not convertible to string
+Comments must start with /
+type_ == nullValue || type_ == arrayValue
+type_ == nullValue || type_ == arrayValue || type_ == objectValue
+size() == newSize
+std::string Json::valueToString(Json::UInt)
+std::string Json::valueToString(Json::Int)
+void Json::StyledStreamWriter::unindent()
+void Json::StyledWriter::unindent()
+void Json::StyledWriter::writeArrayValue(const Json::Value&)
+void Json::StyledStreamWriter::writeArrayValue(const Json::Value&)
+N4Json12StyledWriterE
+N4Json10FastWriterE
+N4Json6WriterE
+current >= buffer
+/home/mdq/hisi_nvr/bc_others/libjson/src/json_writer.cpp
+indentString_.size() >= indentation_.size()
+int(indentString_.size()) >= indentSize_
+childValues_.size() == size
+SetReaderType
+FCGX_PutChar
+FCGX_GetChar
+FillBuffProc
+FCGX_VFPrintF
+stream->isReader
+contentLength >= 0 && contentLength <= 0xffff
+paddingLength >= 0 && paddingLength <= 0xff
+stream->isClosed
+size == 0 || result != ((void *)0)
+FCGI_MAX_CONNS
+FCGI_MAX_REQS
+FCGI_MPXS_CONNS
+FCGI_WEB_SERVER_ADDRS
+FCGI_ROLE=AUTHORIZER
+FCGI_ROLE=RESPONDER
+FCGI_ROLE=FILTER
+fmtBuffPtr - fmtBuff < 25
+buffCount < buffLen
+OS_AsyncReadStdin
+OS_AsyncWrite
+OS_AsyncRead
+OS_FcgiConnect
+asyncIoTable[index].inUse == 0
+asyncIoTable != ((void *)0)
+Unknown host: %s
+Listening socket's path name is too long.
+resultSock >= 0
+Cannot resolve host name %s -- exiting!
+Host %s has multiple addresses ---
+you must choose one explicitly!!!
+Can't set SO_REUSEADDR.
+GetAutoMaint
+SetAutoMaint
+GetPerformance
+GetLocalLink
+SetLocalLink
+GetPtzSerial
+SetPtzSerial
+GetPtzPreset
+SetPtzPreset
+GetPtzPatrol
+SetPtzPatrol
+GetPtzTattern
+SetPtzTattern
+GCC: (GNU) 3.3.2 20031005 (Debian prerelease)
+GCC: (Buildroot 2012.02) 4.4.0 20100318 (experimental)
+.gnu.version
+.gnu.version_r
+.eh_frame_hdr
+.ARM.attributes
+

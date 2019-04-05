@@ -1,0 +1,17 @@
+- platform: darksky
+  api_key: ade4656f857c75c148f280af97652fa7
+  forecast:
+    - 1
+  monitored_conditions:
+    - wind_speed
+    - wind_gust
+  scan_interval: 01:00
+- platform: darksky
+  api_key: ade4656f857c75c148f280af97652fa7
+  monitored_conditions:
+    - temperature
+    - precip_intensity
+    - precip_probability
+    - apparent_temperature
+    - cloud_cover
+  scan_interval: 00:03
