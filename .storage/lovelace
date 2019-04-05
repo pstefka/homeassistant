@@ -260,6 +260,7 @@
                                 }
                             ],
                             "show_header_toggle": false,
+                            "theme": "Backend-selected",
                             "title": "YR.no",
                             "type": "entities"
                         },
