@@ -325,6 +325,7 @@ climate:
 weather:
   - platform: darksky
     api_key: ade4656f857c75c148f280af97652fa7
+    units: si
 #    mode: daily
 
 speedtestdotnet:

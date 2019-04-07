@@ -1,5 +1,6 @@
 - platform: darksky
   api_key: ade4656f857c75c148f280af97652fa7
+  units: si
   forecast:
     - 1
   monitored_conditions:
@@ -8,6 +9,7 @@
   scan_interval: 01:00
 - platform: darksky
   api_key: ade4656f857c75c148f280af97652fa7
+  units: si 
   monitored_conditions:
     - temperature
     - precip_intensity

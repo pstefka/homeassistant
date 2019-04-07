@@ -61,7 +61,7 @@
                             "type": "weather-forecast"
                         },
                         {
-                            "columns": 6,
+                            "columns": 5,
                             "entities": [
                                 {
                                     "entity": "input_boolean.light_bowl",
@@ -76,7 +76,7 @@
                                     }
                                 },
                                 {
-                                    "entity": "light.living_room",
+                                    "entity": "light.ceiling",
                                     "tap_action": {
                                         "action": "toggle"
                                     }
@@ -89,12 +89,6 @@
                                 },
                                 {
                                     "entity": "light.hue_white_lamp_1",
-                                    "tap_action": {
-                                        "action": "toggle"
-                                    }
-                                },
-                                {
-                                    "entity": "light.ceiling",
                                     "tap_action": {
                                         "action": "toggle"
                                     }

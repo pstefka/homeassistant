@@ -1,7 +1,7 @@
 {
     "data": {
         "camera.c1pro_generic": {
-            "preload_stream": true
+            "preload_stream": false
         }
     },
     "key": "camera",
