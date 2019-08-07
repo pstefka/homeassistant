@@ -54,3 +54,16 @@ google_photos_previous:
       data:
         topic: "hass/google_photos/command"
         payload: "previous"
+camera_mode_toggle:
+  sequence:
+    - service: input_select.select_option
+      data_template:
+        entity_id: input_select.camera_mode
+        option: >- 
+          {% if is_state('input_select.camera_mode', 'Baby monitor') %}
+            Timelapse
+          {% else %}
+            Baby monitor
+          {% endif %}
+
+

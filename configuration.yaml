@@ -16,12 +16,14 @@ homeassistant:
   customize: !include customize.yaml
   customize_domain: !include customize_domain.yaml
   auth_providers:
-  - type: trusted_networks
-    trusted_networks:
-    - 127.0.0.1
-    - 192.168.1.0/24
-    - 172.17.0.0/16
-
+    - type: trusted_networks
+      trusted_networks:
+      - 127.0.0.1
+      - 192.168.1.0/24
+      - 172.17.0.0/16
+      - 172.16.0.0/16
+    - type: legacy_api_password
+      api_password: !secret api_password
 # Show links to resources in log and frontend
 #introduction:
 
@@ -42,10 +44,13 @@ frontend:
 config:
 
 http:
-  # Secrets are defined in the file secrets.yaml
-  api_password: !secret api_password
-  # Uncomment this if you are using SSL/TLS, running in Docker container, etc.
   base_url: http://nuc.local:8123
+  #base_url: https://nuc.local:8123
+  #ssl_certificate: /config/certificate.pem
+  #ssl_key: /config/certificate.key
+  # Secrets are defined in the file secrets.yaml
+  #api_password: !secret api_password
+  # Uncomment this if you are using SSL/TLS, running in Docker container, etc.
 
 zone:
   - name: Work
@@ -119,7 +124,8 @@ sun:
 
 # Text to speech
 tts:
-  - platform: google
+  - platform: google_translate
+    service_name: google_say
     base_url: http://192.168.1.6:8123
 
 # Cloud
@@ -156,84 +162,13 @@ switch: !include_dir_merge_list switches/
 #    host: 192.168.1.7
 #    mac_address: "c0-d9-62-f6-c3-5b
 
-input_select:
-  heat:
-    name: Heating
-    options:
-     - Auto
-     - 'Off'
-     - 'On'
-    icon: mdi:air-conditioner
-  presence_peto:
-    name: Peto
-    options:
-     - 'Home'
-     - 'Asleep'
-     - 'Away'
-     - 'Extended Away'
-  presence_nikik:
-    name: Nikik
-    options:
-     - 'Home'
-     - 'Asleep'
-     - 'Away'
-     - 'Extended Away'
-  presence:
-    name: People
-    options:
-     - 'Home'
-     - 'Asleep'
-     - 'Away'
-     - 'Extended Away'
-     - 'Error'
-  presence_peto_wifi:
-    name: Peto Wifi
-    options:
-     - 'home'
-     - 'not_home'
-  presence_nikik_wifi:
-    name: Nikik Wifi
-    options:
-     - 'home'
-     - 'not_home'
-
-#  vacation:
-#    name: Vacation
-#    options:
-#      - 'Off'
-#      - 'On'
-#    icon: mdi:home
-
-input_boolean:
-  light_bowl:
-    name: Svetielka gula
-    icon: mdi:lightbulb
-  light_christmas:
-    name: Svetielka vianocne
-    icon: mdi:lightbulb
-  is_christmas:
-    name: Vianoce
-    icon: mdi:pine-tree
-  homeoffice:
-    name: Homeoffice
-    icon: mdi:home-account
-  presence_debug:
-    name: Presence detail
-    icon: mdi:android-debug-bridge
-  vacation:
-    name: Vacation
-    icon: mdi:home
-  timelapse:
-    name: Timelapse
-    icon: mdi:timelapse
-  camera_motion:
-    name: Motion
-    icon: mdi:cctv 
+input_select: !include input_select.yaml
+input_boolean: !include input_boolean.yaml
 
 input_text:
   tts_input:
     name: Text
-        
+    
 ffmpeg:
 
 stream:    
@@ -260,23 +195,16 @@ camera:
     stream_source: !secret camera_generic_stream
     name: C1pro-generic
 # 400 - bad request! Unauthorized -> potrebna zmena onvif.py (existuje PR)
-  - platform: onvif
-    host: 192.168.1.253
-    name: C1pro-onvif
-    username: !secret camera_username
-    password: !secret camera_password
-    port: 8000
-    profile: 0
-  - platform: mjpeg
-    mjpeg_url: http://192.168.1.36:2971/camera/stream
-    name: WallPanel Camera
-# works, but I don't like ;)
-#  - platform: synology
-#    name: C1pro-syno
-#    url: http://192.168.1.10:8080
-#    username: !secret pornonas_username
-#    password: !secret pornonas_password
-#    verify_ssl: false
+#  - platform: onvif
+#    host: 192.168.1.253
+#    name: C1pro-onvif
+#    username: !secret camera_username
+#    password: !secret camera_password
+#    port: 8000
+#    profile: 0
+#  - platform: mjpeg
+#    mjpeg_url: http://192.168.1.36:2971/camera/stream
+#    name: WallPanel Camera
 
 #image_processing:
 #  - platform: dlib_face_detect
@@ -320,7 +248,7 @@ climate:
   ip_address: '192.168.1.250'
   token: '3E29WItMSX'
   cert: 'ac14k_m.pem'
-  friendly_name: 'AC'
+  #  friendly_name: 'AC'
 
 weather:
   - platform: darksky
@@ -328,12 +256,12 @@ weather:
     units: si
 #    mode: daily
 
-speedtestdotnet:
-  server_id: 3902
-  monitored_conditions:
-    - ping
-    - download
-    - upload
+#speedtestdotnet:
+#  server_id: 3902
+#  monitored_conditions:
+#    - ping
+#    - download
+#    - upload
 
 telegram_bot:
   - platform: polling

@@ -373,3 +373,19 @@ reolink_c1pro:
   name: C1pro
   picture:
   track: false
+
+94_65_2d_a5_41_db:
+  hide_if_away: false
+  icon:
+  mac: 94:65:2D:A5:41:DB
+  name: 94 65 2d a5 41 db
+  picture:
+  track: true
+
+58_fb_84_4f_bd_02:
+  hide_if_away: false
+  icon:
+  mac: 58:FB:84:4F:BD:02
+  name: 58 fb 84 4f bd 02
+  picture:
+  track: true

@@ -1,0 +1,49 @@
+  heat:
+    name: Heating
+    options:
+     - Auto
+     - 'Off'
+     - 'On'
+    icon: mdi:air-conditioner
+  presence_peto:
+    name: Peto
+    options:
+     - 'Home'
+     - 'Asleep'
+     - 'Just Left'
+     - 'Away'
+     - 'Extended Away'
+  presence_nikik:
+    name: Nikik
+    options:
+     - 'Home'
+     - 'Asleep'
+     - 'Just Left'
+     - 'Away'
+     - 'Extended Away'
+  presence:
+    name: People
+    options:
+     - 'Home'
+     - 'Asleep'
+     - 'Just Left'
+     - 'Away'
+     - 'Extended Away'
+     - 'Error'
+  presence_peto_wifi:
+    name: Peto Wifi
+    options:
+     - 'home'
+     - 'not_home'
+  presence_nikik_wifi:
+    name: Nikik Wifi
+    options:
+     - 'home'
+     - 'not_home'
+  camera_mode:
+    name: Camera Mode
+    options:
+     - 'Timelapse'
+     - 'Baby monitor'
+     - 'Off'
+

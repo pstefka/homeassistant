@@ -92,6 +92,26 @@
         {% else %}
           mdi:wifi-off
         {% endif %}
+    camera_mode_is_baby_monitor:
+      entity_id: input_select.camera_mode
+      value_template: >-
+        {% if is_state('input_select.camera_mode', 'Baby monitor') %}
+          on
+        {% else %}
+          off
+        {% endif %}
+#    camera_mode:
+#      friendly_name: 'Camera Mode'
+#      entity_id: input_select.camera_mode
+#      value_template: '{{ states.input_select.camera_mode.state }}'
+#      icon_template: >-
+#        {% if is_state('input_select.camera_mode', 'Timelapse') %}
+#          mdi:cctv
+#        {% elif is_state('input_select.camera_mode', 'Off') %}
+#          mdi:close-circle-outline
+#        {% else %}
+#          mdi:baby
+#        {% endif %}
     googlesk_ping:
       value_template: "{{ state_attr('binary_sensor.googlesk_ping', 'round_trip_time_avg') }}"
       unit_of_measurement: 'ms'
@@ -101,4 +121,3 @@
     facebook_ping:
       value_template: "{{ state_attr('binary_sensor.facebook_ping', 'round_trip_time_avg') }}"
       unit_of_measurement: 'ms'
-

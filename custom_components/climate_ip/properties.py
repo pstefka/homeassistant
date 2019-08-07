@@ -16,7 +16,7 @@ from homeassistant.const import (
 CLIMATE_IP_PROPERTIES = []
 CLIMATE_IP_STATUS_GETTER = []
 
-PROPERTY_TYPE_MODE = 'list'
+PROPERTY_TYPE_MODE = 'modes'
 PROPERTY_TYPE_SWITCH = 'switch'
 PROPERTY_TYPE_NUMBER = 'number'
 PROPERTY_TYPE_TEMP = 'temperature'
@@ -159,7 +159,7 @@ class GetJsonStatus(DeviceProperty):
         return type == STATUS_GETTER_JSON
 
     def update_state(self, device_state, debug):
-        device_state = self.get_connection(None).execute(None, None)
+        device_state = self.get_connection(None).execute(self.connection_template, None)
         self._value = device_state
         self._json_status = device_state
         if device_state is not None:
@@ -263,7 +263,7 @@ class ModeOperation(BasicDeviceOperation):
         """Return dictionary with property attributes."""
         data = {}
         data[self.id] = self.value
-        data[self.name + '_list'] = self.values
+        data[self.name + '_modes'] = self.values
         return data
 
 @register_property
@@ -304,7 +304,7 @@ class BasicNumericOperation(DeviceOperation):
 
     @property
     def config_validation_type(self):
-        return cv.small_float
+        return cv.positive_int
 
     def match_value(self, value):
         """Check if value match to operation. True if value is correct."""

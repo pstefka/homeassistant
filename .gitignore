@@ -7,3 +7,5 @@ home-assistant_v2.db-wal
 home-assistant.log
 pyozw.sqlite
 OZW_Log.txt
+*.key
+*key.pem

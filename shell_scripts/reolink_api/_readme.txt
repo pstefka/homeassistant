@@ -18,6 +18,23 @@ curl -m 1 -d '[{"cmd":"Login","action":0,"param":{"User":{"userName":"admin","pa
 
 -> name = token
 
+# position
+# set position
+curl -d '[{"cmd":"PtzCtrl","action":0,"param":{"channel":0,"op":"ToPos","speed":32,"id":2}}]' http://192.168.1.253/cgi-bin/api.cgi?cmd=PtzCtrl&token=b29107d43ea5156
+
+# email
+"interval" [30 Seconds,1 Minute,5 Minutes,10 Minutes,30 Minutes]
+"attachment" [picture,video,onlyPicture]
+
+# get email state
+curl -d '[{"cmd":"GetEmail","action":1,"param":{}}]' http://192.168.1.253/cgi-bin/api.cgi?cmd=GetEmail&token=b29107d43ea5156
+
+# set email state
+curl -d '[{"cmd":"SetEmail","action":0,"param":{"Email":{"smtpServer":"smtp.gmail.com","nickName":"BudaBuda","smtpPort":465,"userName":"budabudabot@gmail.com","password":"5T0*^hQJhG9kuhPd","addr1":"budabudabot@gmail.com","addr2":"","addr3":"","interval":"5 Minutes","ssl":1,"attachment":"picture","schedule":{"enable":1,"table":"111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111"}}}}]' http://192.168.1.253/cgi-bin/api.cgi?cmd=SetEmail&token=b29107d43ea5156
+
+curl -d '[{"cmd":"SetEmail","action":0,"param":{"Email":{{"addr1":"budabudabot@gmail.com","addr2":"","addr3":"","attachment":"picture","interval":"10 Minutes","nickName":"BudaBuda","password":"5T0*^hQJhG9kuhPd","schedule":{"enable":1,"table":"111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111"},"smtpPort":465,"smtpServer":"smtp.gmail.com","ssl":1,"userName":"budabudabot@gmail.com"}}}}]' http://192.168.1.253/cgi-bin/api.cgi?cmd=SetEmail&token=b29107d43ea5156
+
+# all
 "antiFlicker" [Outdoor, 50HZ, 60HZ, Off]
 "exposure" [Auto, LowNoise, Anti-Smearing, Manual]
   LowNoise -> gain
@@ -38,9 +55,6 @@ curl -m 1 -d '[{"cmd":"Login","action":0,"param":{"User":{"userName":"admin","pa
 "rotation" [0, 1]
 "mirroring" [0, 1]
 "nr3d" [0, 1]
-
-
-
 
 # color = black & white
 curl -d '[{"cmd":"SetIsp","action":0,"param":{"Isp":{"channel":0,"antiFlicker":"60HZ","exposure":"Auto","gain":{"min":1,"max":66},"shutter":{"min":0,"max":0},"blueGain":128,"redGain":128,"whiteBalance":"Auto","dayNight":"Black&White","backLight":"Off","blc":255,"drc":0,"rotation":0,"mirroring":0,"nr3d":1}}}]' http://192.168.1.253/cgi-bin/api.cgi?cmd=SetIsp&token=e692e7e998d3135
@@ -73,7 +87,6 @@ curl -d '[{"cmd":"SetIrLights","action":0,"param":{"IrLights":{"state":"Off"}}}]
 # default
 curl -d '[{"cmd":"SetIsp","action":0,"param":{"Isp":{"channel":0,"antiFlicker":"Off","exposure":"Auto","gain":{"min":1,"max":62},"shutter":{"min":0,"max":125},"blueGain":128,"redGain":128,"whiteBalance":"Auto","dayNight":"Auto","backLight":"Off","blc":128,"drc":128,"rotation":0,"mirroring":0,"nr3d":1}}}]' http://192.168.1.253/cgi-bin/api.cgi?cmd=SetIsp&token=e692e7e998d3135
 curl -d '[{"cmd":"SetIrLights","action":0,"param":{"IrLights":{"state":"Off"}}}]' http://192.168.1.253/cgi-bin/api.cgi?cmd=SetIrLights&token=e692e7e998d3135
-
 
 # get initial state
 curl -d '[{"cmd":"GetIrLights","action":1,"param":{}},{"cmd":"GetOsd","action":1,"param":{"channel":0}},{"cmd":"GetEnc","action":1,"param":{"channel":0}},{"cmd":"GetImage","action":1,"param":{"channel":0}},{"cmd":"GetIsp","action":1,"param":{"channel":0}},{"cmd":"GetPtzPatrol","action":1,"param":{"channel":0}},{"cmd":"GetPtzPreset","action":1,"param":{"channel":0}}]' http://192.168.1.253/cgi-bin/api.cgi?token=ffa618b51167013

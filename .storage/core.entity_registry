@@ -326,8 +326,8 @@
                 "unique_id": "@17.099390,48.102260,alerts"
             },
             {
-                "config_entry_id": null,
-                "device_id": null,
+                "config_entry_id": "b373b17d98564ef6a2da583bd6d6f7ce",
+                "device_id": "64531a6fe88b4fdebcfa3244d789b690",
                 "disabled_by": null,
                 "entity_id": "zwave.aeotec_zw090_zstick_gen5_eu",
                 "name": null,
@@ -344,8 +344,8 @@
                 "unique_id": "node-3"
             },
             {
-                "config_entry_id": null,
-                "device_id": null,
+                "config_entry_id": "b373b17d98564ef6a2da583bd6d6f7ce",
+                "device_id": "30283abdeff04d3da30bd700ec638af0",
                 "disabled_by": null,
                 "entity_id": "zwave.oko",
                 "name": null,
@@ -407,8 +407,8 @@
                 "unique_id": "6-72057594144636945"
             },
             {
-                "config_entry_id": null,
-                "device_id": null,
+                "config_entry_id": "b373b17d98564ef6a2da583bd6d6f7ce",
+                "device_id": "ae6ec2628eff4917bcc6bb5ebcff6ec3",
                 "disabled_by": null,
                 "entity_id": "zwave.eurotronic_eur_spiritz_wall_radiator_thermostat",
                 "name": null,

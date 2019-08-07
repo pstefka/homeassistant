@@ -45,16 +45,71 @@
                             "type": "vertical-stack"
                         },
                         {
-                            "camera_image": "camera.c1pro_generic",
-                            "entity": "input_boolean.camera_motion",
-                            "hold_action": {
-                                "action": "toggle"
+                            "cards": [
+                                {
+                                    "camera_image": "camera.c1pro_generic",
+                                    "entity": "input_select.camera_mode",
+                                    "tap_action": {
+                                        "action": "navigate",
+                                        "navigation_path": "fullscreen-camera"
+                                    },
+                                    "type": "picture-entity"
+                                },
+                                {
+                                    "entities": [
+                                        {
+                                            "entity": "input_boolean.camera_motion"
+                                        },
+                                        {
+                                            "action_name": "Stream",
+                                            "icon": "mdi:power",
+                                            "name": "Show on TV",
+                                            "service": "camera.play_stream",
+                                            "service_data": {
+                                                "entity_id": "camera.c1pro_generic",
+                                                "media_player": "media_player.shield"
+                                            },
+                                            "type": "call-service"
+                                        }
+                                    ],
+                                    "type": "entities"
+                                }
+                            ],
+                            "type": "vertical-stack"
+                        },
+                        {
+                            "card": {
+                                "cards": [
+                                    {
+                                        "content": "# Current wind warning\n",
+                                        "type": "markdown"
+                                    },
+                                    {
+                                        "entity": "sensor.yr_wind_speed_kph",
+                                        "name": "Wind speed",
+                                        "severity": [
+                                            {
+                                                "green": 0
+                                            },
+                                            {
+                                                "yellow": 40
+                                            },
+                                            {
+                                                "red": 60
+                                            }
+                                        ],
+                                        "type": "gauge"
+                                    }
+                                ],
+                                "type": "vertical-stack"
                             },
-                            "tap_action": {
-                                "action": "navigate",
-                                "navigation_path": "fullscreen-camera"
-                            },
-                            "type": "picture-entity"
+                            "conditions": [
+                                {
+                                    "entity": "input_boolean.current_wind_warning",
+                                    "state": "on"
+                                }
+                            ],
+                            "type": "conditional"
                         },
                         {
                             "entity": "weather.dark_sky",
@@ -121,14 +176,27 @@
                         {
                             "cards": [
                                 {
-                                    "entity": "climate.eurotronic_eur_spiritz_wall_radiator_thermostat_heat",
-                                    "type": "thermostat"
+                                    "card": {
+                                        "entity": "climate.eurotronic_eur_spiritz_wall_radiator_thermostat_heat",
+                                        "type": "thermostat"
+                                    },
+                                    "conditions": [
+                                        {
+                                            "entity": "input_select.heat",
+                                            "state_not": "Off"
+                                        }
+                                    ],
+                                    "type": "conditional"
                                 },
                                 {
                                     "entities": [
                                         "input_select.heat"
                                     ],
                                     "type": "entities"
+                                },
+                                {
+                                    "entity": "climate.ac",
+                                    "type": "thermostat"
                                 }
                             ],
                             "type": "vertical-stack"
@@ -150,10 +218,6 @@
                             ],
                             "title": "Entertainment",
                             "type": "glance"
-                        },
-                        {
-                            "entity": "camera.c1pro_onvif",
-                            "type": "picture-entity"
                         }
                     ],
                     "panel": false,
@@ -165,18 +229,90 @@
                     "badges": [],
                     "cards": [
                         {
+                            "camera_view": "live",
+                            "entity": "camera.c1pro_generic",
+                            "hold_action": {
+                                "action": "call-service",
+                                "service": "camera.play_stream",
+                                "service_data": {
+                                    "entity_id": "camera.c1pro_generic",
+                                    "media_player": "media_player.shield"
+                                }
+                            },
+                            "show_name": false,
+                            "show_state": false,
+                            "type": "picture-entity"
+                        }
+                    ],
+                    "icon": "mdi:cctv",
+                    "panel": true,
+                    "path": "fullscreen-camera",
+                    "title": "Fullscreen camera"
+                },
+                {
+                    "badges": [],
+                    "cards": [
+                        {
+                            "entity": "camera.google_photos",
+                            "show_name": false,
+                            "show_state": false,
+                            "type": "picture-entity"
+                        }
+                    ],
+                    "icon": "mdi:google-photos",
+                    "panel": true,
+                    "path": "fullscreen-photo",
+                    "title": "Fullscreen photo"
+                },
+                {
+                    "badges": [],
+                    "cards": [
+                        {
                             "entities": [
-                                "sensor.presence",
-                                "sensor.presence_nikik",
-                                "sensor.presence_nikik_wifi",
-                                "sensor.presence_nikik_ble_friendly",
-                                "sensor.presence_peto",
-                                "sensor.presence_peto_wifi",
-                                "sensor.presence_peto_ble_friendly",
-                                "input_boolean.presence_debug"
+                                {
+                                    "entity": "sensor.presence"
+                                },
+                                {
+                                    "entity": "sensor.presence_nikik"
+                                },
+                                {
+                                    "entity": "sensor.presence_nikik_wifi"
+                                },
+                                {
+                                    "entity": "sensor.presence_nikik_ble_friendly"
+                                },
+                                {
+                                    "entity": "sensor.presence_peto"
+                                },
+                                {
+                                    "entity": "sensor.presence_peto_wifi"
+                                },
+                                {
+                                    "entity": "sensor.presence_peto_ble_friendly"
+                                }
                             ],
                             "show_header_toggle": false,
                             "title": "Custom presence",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "input_select.presence"
+                                },
+                                {
+                                    "entity": "input_select.presence_nikik"
+                                },
+                                {
+                                    "entity": "input_select.presence_nikik_wifi"
+                                },
+                                {
+                                    "entity": "input_select.presence_peto"
+                                },
+                                {
+                                    "entity": "input_select.presence_peto_wifi"
+                                }
+                            ],
                             "type": "entities"
                         }
                     ],
@@ -211,8 +347,10 @@
                     ],
                     "cards": [
                         {
+                            "detail": 2,
                             "entity": "sensor.yr_temperature",
                             "graph": "line",
+                            "theme": "default",
                             "type": "sensor"
                         },
                         {
@@ -321,40 +459,103 @@
                         {
                             "entities": [
                                 "automation.mqtt_shield_on",
-                                "automation.presence_peto_wifi_to_home",
-                                "automation.presence_nikik_wifi_to_home",
                                 "automation.mqtt_shield_off",
+                                "automation.presence_peto_wifi_to_home",
                                 "automation.presence_peto_wifi_to_not_home",
+                                "automation.presence_nikik_wifi_to_home",
                                 "automation.presence_nikik_wifi_to_not_home"
                             ],
-                            "title": "Automation",
+                            "title": "HA automations - keep enabled!!",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "input_boolean.automation_welcome_message_enabled"
+                                },
+                                {
+                                    "entity": "input_boolean.automation_burglar_enabled"
+                                },
+                                {
+                                    "entity": "input_boolean.automation_presence_notification"
+                                },
+                                {
+                                    "entity": "input_boolean.automation_person_presence_notification"
+                                },
+                                {
+                                    "entity": "input_boolean.automation_wifi_tracking_notification"
+                                },
+                                {
+                                    "entity": "input_boolean.automation_bluetooth_tracking_notification"
+                                }
+                            ],
+                            "show_header_toggle": false,
+                            "title": "Custom presence",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "input_boolean.automation_aquarium_enabled"
+                                },
+                                {
+                                    "entity": "input_boolean.automation_aquarium_notification"
+                                },
+                                {
+                                    "entity": "input_boolean.automation_bowl_enabled"
+                                },
+                                {
+                                    "entity": "input_boolean.automation_bowl_notification"
+                                },
+                                {
+                                    "entity": "input_boolean.automation_christmas_lights_enabled"
+                                },
+                                {
+                                    "entity": "input_boolean.automation_christmas_lights_notification"
+                                },
+                                {
+                                    "entity": "input_boolean.automation_hue_enabled"
+                                },
+                                {
+                                    "entity": "input_boolean.automation_hue_notification"
+                                }
+                            ],
+                            "show_header_toggle": false,
+                            "title": "Lights",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "input_boolean.automation_forecasted_wind_notification"
+                                },
+                                {
+                                    "entity": "input_boolean.automation_current_wind_notification"
+                                }
+                            ],
+                            "show_header_toggle": false,
+                            "title": "Weather",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "input_boolean.automation_heating_notification"
+                                },
+                                {
+                                    "entity": "input_boolean.automation_ac_enabled"
+                                },
+                                {
+                                    "entity": "input_boolean.automation_ac_notification"
+                                }
+                            ],
+                            "show_header_toggle": false,
+                            "title": "Climate",
                             "type": "entities"
                         }
                     ],
                     "icon": "mdi:home-automation",
                     "title": "Automations"
-                },
-                {
-                    "badges": [],
-                    "cards": [
-                        {
-                            "entity": "camera.c1pro_generic",
-                            "hold_action": {
-                                "action": "call-service",
-                                "service": "camera.play_stream",
-                                "service_data": {
-                                    "entity_id": "camera.c1pro_generic",
-                                    "media_player": "media_player.shield"
-                                }
-                            },
-                            "show_name": false,
-                            "show_state": false,
-                            "type": "picture-entity"
-                        }
-                    ],
-                    "panel": true,
-                    "path": "fullscreen-camera",
-                    "title": "Fullscreen camera"
                 },
                 {
                     "badges": [
@@ -364,60 +565,18 @@
                     "cards": [
                         {
                             "entities": [
-                                "sensor.speedtest_ping",
-                                "sensor.speedtest_download",
-                                "sensor.speedtest_upload",
-                                "sensor.googlesk_ping",
-                                "sensor.googlecom_ping",
-                                "sensor.facebook_ping"
-                            ],
-                            "show_header_toggle": true,
-                            "title": "Speedtest",
-                            "type": "entities"
-                        },
-                        {
-                            "entities": [
-                                "zwave.oko",
-                                "binary_sensor.oko_sensor_2",
-                                "sensor.oko_alarm_type_2",
-                                "sensor.oko_alarm_level_2",
-                                "sensor.oko_burglar_2",
-                                "sensor.oko_general_2",
-                                "sensor.oko_luminance_2",
-                                "sensor.oko_seismic_intensity_2",
-                                "sensor.oko_sourcenodeid_2",
-                                "sensor.oko_temperature_2"
-                            ],
-                            "show_header_toggle": false,
-                            "title": "Oko",
-                            "type": "entities"
-                        },
-                        {
-                            "entities": [
                                 {
-                                    "entity": "input_boolean.is_christmas"
-                                },
-                                {
-                                    "entity": "input_boolean.light_christmas"
-                                },
-                                {
-                                    "entity": "switch.guest_wifi"
-                                },
-                                {
-                                    "entity": "input_boolean.timelapse"
+                                    "entity": "input_select.camera_mode"
                                 },
                                 {
                                     "entity": "input_boolean.camera_motion"
+                                },
+                                {
+                                    "entity": "input_boolean.camera_timelapse"
                                 }
                             ],
-                            "title": "Settings",
-                            "type": "entities"
-                        },
-                        {
-                            "entities": [
-                                "zwave.aeotec_zw090_zstick_gen5_eu"
-                            ],
-                            "title": "Z-Wave",
+                            "show_header_toggle": false,
+                            "title": "Camera",
                             "type": "entities"
                         },
                         {
@@ -435,6 +594,10 @@
                             "show_header_toggle": false,
                             "title": "Home",
                             "type": "entities"
+                        },
+                        {
+                            "entity": "climate.ac",
+                            "type": "thermostat"
                         },
                         {
                             "entities": [
@@ -462,9 +625,47 @@
                             "type": "entities"
                         },
                         {
-                            "entity": "sensor.wallpanel_light",
-                            "graph": "line",
-                            "type": "sensor"
+                            "entities": [
+                                {
+                                    "entity": "input_boolean.is_christmas"
+                                },
+                                {
+                                    "entity": "input_boolean.light_christmas"
+                                },
+                                {
+                                    "entity": "light.hue_white_lamp_3"
+                                }
+                            ],
+                            "show_header_toggle": false,
+                            "title": "Mood lighting",
+                            "type": "entities"
+                        },
+                        {
+                            "cards": [
+                                {
+                                    "entities": [
+                                        {
+                                            "entity": "input_text.tts_input"
+                                        }
+                                    ],
+                                    "type": "entities"
+                                }
+                            ],
+                            "type": "horizontal-stack"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "media_player.mini"
+                                },
+                                {
+                                    "entity": "media_player.kodi"
+                                },
+                                {
+                                    "entity": "media_player.shield"
+                                }
+                            ],
+                            "type": "entities"
                         },
                         {
                             "card": {
@@ -475,23 +676,6 @@
                                 {
                                     "entity": "media_player.mini",
                                     "state_not": "off"
-                                }
-                            ],
-                            "type": "conditional"
-                        },
-                        {
-                            "card": {
-                                "entity": "media_player.shield",
-                                "type": "media-control"
-                            },
-                            "conditions": [
-                                {
-                                    "entity": "media_player.shield",
-                                    "state_not": "off"
-                                },
-                                {
-                                    "entity": "media_player.shield",
-                                    "state_not": "idle"
                                 }
                             ],
                             "type": "conditional"
@@ -514,24 +698,63 @@
                             "type": "conditional"
                         },
                         {
-                            "entities": [
+                            "card": {
+                                "entity": "media_player.shield",
+                                "type": "media-control"
+                            },
+                            "conditions": [
                                 {
-                                    "entity": "media_player.mini"
+                                    "entity": "media_player.shield",
+                                    "state_not": "off"
                                 },
                                 {
-                                    "entity": "media_player.kodi"
-                                },
-                                {
-                                    "entity": "media_player.shield"
+                                    "entity": "media_player.shield",
+                                    "state_not": "idle"
                                 }
                             ],
+                            "type": "conditional"
+                        },
+                        {
+                            "entities": [
+                                "sensor.speedtest_ping",
+                                "sensor.speedtest_download",
+                                "sensor.speedtest_upload",
+                                "sensor.googlesk_ping",
+                                "sensor.googlecom_ping",
+                                "sensor.facebook_ping"
+                            ],
+                            "show_header_toggle": true,
+                            "title": "Speedtest",
                             "type": "entities"
                         },
                         {
-                            "entity": "camera.wallpanel_camera",
-                            "show_name": true,
-                            "show_state": true,
-                            "type": "picture-entity"
+                            "entities": [
+                                "zwave.aeotec_zw090_zstick_gen5_eu"
+                            ],
+                            "title": "Z-Wave",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                "zwave.oko",
+                                "binary_sensor.oko_sensor_2",
+                                "sensor.oko_alarm_type_2",
+                                "sensor.oko_alarm_level_2",
+                                "sensor.oko_burglar_2",
+                                "sensor.oko_general_2",
+                                "sensor.oko_luminance_2",
+                                "sensor.oko_seismic_intensity_2",
+                                "sensor.oko_sourcenodeid_2",
+                                "sensor.oko_temperature_2"
+                            ],
+                            "show_header_toggle": false,
+                            "title": "Oko",
+                            "type": "entities"
+                        },
+                        {
+                            "entity": "sensor.wallpanel_light",
+                            "graph": "line",
+                            "type": "sensor"
                         },
                         {
                             "entities": [
@@ -542,38 +765,17 @@
                             "type": "history-graph"
                         },
                         {
-                            "cards": [
-                                {
-                                    "entities": [
-                                        {
-                                            "entity": "input_text.tts_input"
-                                        }
-                                    ],
-                                    "type": "entities"
-                                }
-                            ],
-                            "type": "horizontal-stack"
+                            "entity": "camera.wallpanel_camera",
+                            "show_name": true,
+                            "show_state": true,
+                            "type": "picture-entity"
                         },
                         {
-                            "entity": "climate.ac",
-                            "type": "thermostat"
-                        }
-                    ],
-                    "title": "Other"
-                },
-                {
-                    "badges": [],
-                    "cards": [
-                        {
-                            "entity": "camera.google_photos",
-                            "show_name": false,
-                            "show_state": false,
+                            "entity": "camera.c1pro_onvif",
                             "type": "picture-entity"
                         }
                     ],
-                    "panel": true,
-                    "path": "fullscreen-photo",
-                    "title": "Fullscreen photo"
+                    "title": "Other"
                 }
             ]
         }

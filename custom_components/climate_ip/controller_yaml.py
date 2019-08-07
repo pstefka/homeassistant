@@ -4,7 +4,7 @@ import os
 
 from .yaml_const import (
     CONFIG_DEVICE, CONFIG_DEVICE_CONNECTION, CONFIG_DEVICE_STATUS,
-    CONFIG_DEVICE_OPERATIONS, CONFIG_DEVICE_ATTRIBUTES, CONFIG_DEVICE_FRIENDLY_NAME,
+    CONFIG_DEVICE_OPERATIONS, CONFIG_DEVICE_ATTRIBUTES,
     CONF_CONFIG_FILE, CONFIG_DEVICE_NAME, CONFIG_DEVICE_VALIDATE_PROPS,
     CONFIG_DEVICE_CONNECTION_PARAMS, CONFIG_DEVICE_POLL,
 )
@@ -21,10 +21,6 @@ from .properties import (
 from .connection import (
     create_connection
 )
-
-from homeassistant.components.climate import (
-    ATTR_TARGET_TEMP_HIGH, ATTR_TARGET_TEMP_LOW, ATTR_SWING_MODE, ATTR_FAN_MODE, ATTR_OPERATION_MODE
-    )
 
 from homeassistant.const import (
     TEMP_CELSIUS, ATTR_NAME, ATTR_TEMPERATURE,
@@ -112,7 +108,7 @@ class YamlController(ClimateController):
 
         with open(file, 'r') as stream:
             try:
-                yaml_device = yaml.load(StreamWrapper(stream, self._token, self._ip_address))
+                yaml_device = yaml.load(StreamWrapper(stream, self._token, self._ip_address), Loader=yaml.FullLoader)
             except yaml.YAMLError as exc:
                 if self._logger is not None:
                     self._logger.error("YAML error: {}".format(exc))
@@ -188,10 +184,13 @@ class YamlController(ClimateController):
         
     def update_state(self):
         debug = self._debug
+        self._logger.info("Updating state...")
         if self._state_getter is not None:
             self._attributes = { ATTR_NAME : self.name }
+            self._logger.info("Updating getter...")
             self._state_getter.update_state(self._state_getter.value, debug)
             device_state = self._state_getter.value
+            self._logger.info("Getter updated with value: {}".format(device_state))
             if device_state is None and self._retries_count > 0:
                 --self._retries_count
                 device_state = self._last_device_state
@@ -201,9 +200,11 @@ class YamlController(ClimateController):
                 self._last_device_state = device_state
             if debug:
                 self._attributes.update(self._state_getter.state_attributes)
+            self._logger.info("Updating operations...")
             for op in self._operations.values():
                 op.update_state(device_state, debug)
                 self._attributes.update(op.state_attributes)
+            self._logger.info("Updating properties...")
             for prop in self._properties.values():
                 prop.update_state(device_state, debug)
                 self._attributes.update(prop.state_attributes)
@@ -223,20 +224,18 @@ class YamlController(ClimateController):
             return self._operations[property_name].value
         if property_name in self._properties:
             return self._properties[property_name].value
+        if property_name in self._attributes:
+            return self._attributes[property_name]
         return None
 
     @property
     def state_attributes(self):
+        self._logger.info("Controller::state_attributes")
         return self._attributes
 
     @property
     def temperature_unit(self):
         return self._temp_unit
-
-    @property
-    def is_on(self):
-        state = self.get_property(ATTR_POWER)
-        return state == STATE_ON if state is not None else None
 
     @property
     def service_schema_map(self):

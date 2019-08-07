@@ -7,7 +7,6 @@
                     "8ded91d1ebd94c28b5232a90fda3cb77"
                 ],
                 "connections": [],
-                "hub_device_id": null,
                 "id": "e0cb93d68f764a13afcc1872b0200f9b",
                 "identifiers": [
                     [
@@ -19,7 +18,8 @@
                 "model": "SHIELD Android TV",
                 "name": "Shield",
                 "name_by_user": null,
-                "sw_version": null
+                "sw_version": null,
+                "via_device_id": null
             },
             {
                 "area_id": "7e10682420a944149f4bb03223232bff",
@@ -27,7 +27,6 @@
                     "b373b17d98564ef6a2da583bd6d6f7ce"
                 ],
                 "connections": [],
-                "hub_device_id": null,
                 "id": "30283abdeff04d3da30bd700ec638af0",
                 "identifiers": [
                     [
@@ -39,7 +38,8 @@
                 "model": "FGMS001-ZW5 Motion Sensor",
                 "name": "FIBARO System FGMS001-ZW5 Motion Sensor",
                 "name_by_user": null,
-                "sw_version": null
+                "sw_version": null,
+                "via_device_id": "64531a6fe88b4fdebcfa3244d789b690"
             },
             {
                 "area_id": "7e10682420a944149f4bb03223232bff",
@@ -47,7 +47,6 @@
                     "b373b17d98564ef6a2da583bd6d6f7ce"
                 ],
                 "connections": [],
-                "hub_device_id": null,
                 "id": "ae6ec2628eff4917bcc6bb5ebcff6ec3",
                 "identifiers": [
                     [
@@ -59,7 +58,8 @@
                 "model": "EUR_SPIRITZ Wall Radiator Thermostat",
                 "name": "EUROtronic EUR_SPIRITZ Wall Radiator Thermostat",
                 "name_by_user": null,
-                "sw_version": null
+                "sw_version": null,
+                "via_device_id": "64531a6fe88b4fdebcfa3244d789b690"
             },
             {
                 "area_id": "7e10682420a944149f4bb03223232bff",
@@ -67,7 +67,6 @@
                     "8ded91d1ebd94c28b5232a90fda3cb77"
                 ],
                 "connections": [],
-                "hub_device_id": null,
                 "id": "32e4050acd0e43f8ab75e3433491adce",
                 "identifiers": [
                     [
@@ -75,11 +74,12 @@
                         "8b7a5faf6ca4122f43adf06e1cd602ec"
                     ]
                 ],
-                "manufacturer": "Google Inc.",
+                "manufacturer": "Unknown manufacturer",
                 "model": "Google Home Mini",
                 "name": "Mini",
                 "name_by_user": null,
-                "sw_version": null
+                "sw_version": null,
+                "via_device_id": null
             },
             {
                 "area_id": "7e10682420a944149f4bb03223232bff",
@@ -92,7 +92,6 @@
                         "00:17:88:ae:c3:b7"
                     ]
                 ],
-                "hub_device_id": null,
                 "id": "8a09c40050b249669a6e606cdbd7767c",
                 "identifiers": [
                     [
@@ -104,7 +103,8 @@
                 "model": "BSB002",
                 "name": "Philips hue",
                 "name_by_user": null,
-                "sw_version": "1901181309"
+                "sw_version": "1933087030",
+                "via_device_id": null
             },
             {
                 "area_id": "7e10682420a944149f4bb03223232bff",
@@ -112,7 +112,6 @@
                     "64e9599abb804d87ab2452b8e1064026"
                 ],
                 "connections": [],
-                "hub_device_id": "8a09c40050b249669a6e606cdbd7767c",
                 "id": "326bf84ad2ae4359b4808833026af7ec",
                 "identifiers": [
                     [
@@ -124,7 +123,8 @@
                 "model": "Hue white lamp",
                 "name": "Left Ceiling",
                 "name_by_user": null,
-                "sw_version": "1.46.13_r26312"
+                "sw_version": "1.46.13_r26312",
+                "via_device_id": "8a09c40050b249669a6e606cdbd7767c"
             },
             {
                 "area_id": "7e10682420a944149f4bb03223232bff",
@@ -132,7 +132,6 @@
                     "64e9599abb804d87ab2452b8e1064026"
                 ],
                 "connections": [],
-                "hub_device_id": "8a09c40050b249669a6e606cdbd7767c",
                 "id": "00e93efd86e040399140a50cc57597a1",
                 "identifiers": [
                     [
@@ -144,7 +143,8 @@
                 "model": "Hue white lamp",
                 "name": "some light",
                 "name_by_user": null,
-                "sw_version": "1.46.13_r26312"
+                "sw_version": "1.46.13_r26312",
+                "via_device_id": "8a09c40050b249669a6e606cdbd7767c"
             },
             {
                 "area_id": "7e10682420a944149f4bb03223232bff",
@@ -152,7 +152,6 @@
                     "64e9599abb804d87ab2452b8e1064026"
                 ],
                 "connections": [],
-                "hub_device_id": "8a09c40050b249669a6e606cdbd7767c",
                 "id": "0c2bc9a241da417db2423293668b6caa",
                 "identifiers": [
                     [
@@ -164,7 +163,8 @@
                 "model": "Hue white lamp",
                 "name": "Right Ceiling",
                 "name_by_user": null,
-                "sw_version": "1.46.13_r26312"
+                "sw_version": "1.46.13_r26312",
+                "via_device_id": "8a09c40050b249669a6e606cdbd7767c"
             },
             {
                 "area_id": null,
@@ -177,14 +177,14 @@
                         "b0:4e:26:91:a7:97"
                     ]
                 ],
-                "hub_device_id": null,
                 "id": "8986bde6e3054fd7acd43a8b5cb9ba86",
                 "identifiers": [],
                 "manufacturer": "TP-Link",
                 "model": "HS100(EU)",
                 "name": "switch3",
                 "name_by_user": null,
-                "sw_version": "1.2.5 Build 171213 Rel.101415"
+                "sw_version": "1.2.5 Build 171213 Rel.101415",
+                "via_device_id": null
             },
             {
                 "area_id": null,
@@ -197,14 +197,14 @@
                         "b0:4e:26:54:5a:ce"
                     ]
                 ],
-                "hub_device_id": null,
                 "id": "28fb9644521a4db7abde584a15dfa518",
                 "identifiers": [],
                 "manufacturer": "TP-Link",
                 "model": "HS100(EU)",
                 "name": "switch2",
                 "name_by_user": null,
-                "sw_version": "1.2.5 Build 171213 Rel.101415"
+                "sw_version": "1.2.5 Build 171213 Rel.101415",
+                "via_device_id": null
             },
             {
                 "area_id": null,
@@ -217,14 +217,34 @@
                         "70:4f:57:ff:8d:b1"
                     ]
                 ],
-                "hub_device_id": null,
                 "id": "8ad0487cdfe140378c687cb5b57583a6",
                 "identifiers": [],
                 "manufacturer": "TP-Link",
                 "model": "HS110(EU)",
                 "name": "switch1",
                 "name_by_user": null,
-                "sw_version": "1.2.5 Build 171213 Rel.101523"
+                "sw_version": "1.2.5 Build 171213 Rel.101523",
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "b373b17d98564ef6a2da583bd6d6f7ce"
+                ],
+                "connections": [],
+                "id": "64531a6fe88b4fdebcfa3244d789b690",
+                "identifiers": [
+                    [
+                        "zwave",
+                        1
+                    ]
+                ],
+                "manufacturer": "Aeotec",
+                "model": "ZW090 Z-Stick Gen5 EU",
+                "name": "Aeotec ZW090 Z-Stick Gen5 EU",
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": null
             }
         ]
     },

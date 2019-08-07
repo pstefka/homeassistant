@@ -1,0 +1,85 @@
+  light_bowl:
+    name: Svetielka gula
+    icon: mdi:lightbulb
+  light_christmas:
+    name: Svetielka vianocne
+    icon: mdi:lightbulb
+  is_christmas:
+    name: Vianoce
+    icon: mdi:pine-tree
+  homeoffice:
+    name: Homeoffice
+    icon: mdi:home-account
+  vacation:
+    name: Vacation
+    icon: mdi:home
+  current_wind_warning:
+    name: Wind warning
+    icon: mdi:weather-windy
+#  camera_baby:
+#    name: Baby monitor
+#    icon: mdi:baby
+  camera_timelapse:
+    name: Timelapse
+    icon: mdi:timelapse
+  camera_motion:
+    name: Motion detection
+    icon: mdi:cctv
+  camera_mode_semafor:
+  automation_welcome_message_enabled:
+    name: Welcome Message
+    icon: mdi:speaker-wireless
+  automation_burglar_enabled:
+    name: Burglar Alert
+    icon: mdi:account-alert
+  automation_presence_notification:
+    name: Presence notification
+    icon: mdi:account-group
+  automation_person_presence_notification:
+    name: Person Presence notification
+    icon: mdi:account
+  automation_wifi_tracking_notification:
+    name: Wifi Tracking notification
+    icon: mdi:wifi
+  automation_bluetooth_tracking_notification:
+    name: Bluetooth tracking notification
+    icon: mdi:bluetooth-connect
+  automation_aquarium_enabled:
+    name: Aquarium
+    icon: mdi:fishbowl
+  automation_aquarium_notification:
+    name: Aquarium notification
+    icon: mdi:fishbowl-outline
+  automation_bowl_enabled:
+    name: Bowl
+    icon: mdi:star-circle
+  automation_bowl_notification:
+    name: Bowl notification
+    icon: mdi:star-circle-outline
+  automation_christmas_lights_enabled:
+    name: Christmas Lights
+    icon: mdi:pine-tree
+  automation_christmas_lights_notification:
+    name: Christmas Lights notification
+    icon: mdi:pine-tree
+  automation_hue_enabled:
+    name: Hue
+    icon: mdi:ceiling-light
+  automation_hue_notification:
+    name: Hue notification
+    icon: mdi:ceiling-light
+  automation_forecasted_wind_notification:
+    name: Forecasted Wind notification
+    icon: mdi:weather-windy
+  automation_current_wind_notification:
+    name: Current Wind notification
+    icon: mdi:weather-windy
+  automation_heating_notification:
+    name: Heating notification
+    icon: mdi:radiator
+  automation_ac_enabled:
+    name: AC
+    icon: mdi:air-conditioner
+  automation_ac_notification:
+    name: AC notification
+    icon: mdi:air-conditioner
