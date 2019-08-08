@@ -13,7 +13,10 @@ device:
     hvac: # hvac_mode
       type: modes
       connection:
-        params: { method: 'PUT', url: 'https://__CLIMATE_IP_HOST__:8888/devices/0/mode' }
+#       PSPS - original value commented out -> was not able to turn on / off the ac
+#            - changing modes doesn't work though
+        #params: { method: 'PUT', url: 'https://__CLIMATE_IP_HOST__:8888/devices/0/mode' }
+        params: { method: 'PUT', url: 'https://__CLIMATE_IP_HOST__:8888/devices/0' }
       values: 
         'cool': { value : 'Cool', connection: { params: { json: { "Operation": { "power" : "On" }, "modes": ["Cool"] } } } }
         'heat': { value : 'Heat', connection: { params: { json: { "Operation": { "power" : "On" }, "modes": ["Heat"] } } } }

@@ -1,0 +1,44 @@
+  - platform: miflora
+    mac: '4C:65:A8:D2:01:0D'
+    name: miflora1
+    force_update: true
+    median: 1
+    monitored_conditions:
+      - moisture
+      - light
+      - temperature
+      - conductivity
+      - battery    
+  - platform: miflora
+    mac: '56:4B:85:CD:79:E4'
+    name: miflora2
+    force_update: true
+    median: 1
+    monitored_conditions:
+      - moisture
+      - light
+      - temperature
+      - conductivity
+      - battery    
+  - platform: miflora
+    mac: '88:C6:26:9D:96:0D'
+    name: miflora3
+    force_update: true
+    median: 1
+    monitored_conditions:
+      - moisture
+      - light
+      - temperature
+      - conductivity
+      - battery    
+  - platform: miflora
+    mac: '6C:DA:52:48:25:55'
+    name: miflora4
+    force_update: true
+    median: 1
+    monitored_conditions:
+      - moisture
+      - light
+      - temperature
+      - conductivity
+      - battery    

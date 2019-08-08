@@ -142,6 +142,36 @@ device_tracker: !include_dir_merge_list device_trackers/
 media_player: !include_dir_merge_list media_players/
 switch: !include_dir_merge_list switches/
 
+plant:
+  plant1:
+    sensors:
+      moisture: sensor.miflora1_moisture
+      battery: sensor.miflora1_battery
+      temperature: sensor.miflora1_temperature
+      conductivity: sensor.miflora1_conductivity
+      brightness: sensor.miflora1_brightness
+  plant2:
+    sensors:
+      moisture: sensor.miflora2_moisture
+      battery: sensor.miflora2_battery
+      temperature: sensor.miflora2_temperature
+      conductivity: sensor.miflora2_conductivity
+      brightness: sensor.miflora2_brightness
+  plant3:
+    sensors:
+      moisture: sensor.miflora3_moisture
+      battery: sensor.miflora3_battery
+      temperature: sensor.miflora3_temperature
+      conductivity: sensor.miflora3_conductivity
+      brightness: sensor.miflora3_brightness
+  plant4:
+    sensors:
+      moisture: sensor.miflora4_moisture
+      battery: sensor.miflora4_battery
+      temperature: sensor.miflora4_temperature
+      conductivity: sensor.miflora4_conductivity
+      brightness: sensor.miflora4_brightness
+
 #zwave:
 ## ls -ltr /dev/tty*|tail -n 1
   #  usb_path: /dev/serial/by-id/usb-0658_0200-if00
@@ -248,7 +278,9 @@ climate:
   ip_address: '192.168.1.250'
   token: '3E29WItMSX'
   cert: 'ac14k_m.pem'
-  #  friendly_name: 'AC'
+  name: AC
+  debug: false
+  poll: true
 
 weather:
   - platform: darksky

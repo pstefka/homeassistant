@@ -457,6 +457,110 @@
                     "badges": [],
                     "cards": [
                         {
+                            "entity": "plant.plant1",
+                            "type": "plant-status"
+                        },
+                        {
+                            "entity": "plant.plant2",
+                            "type": "plant-status"
+                        },
+                        {
+                            "entity": "plant.plant3",
+                            "type": "plant-status"
+                        },
+                        {
+                            "entity": "plant.plant4",
+                            "type": "plant-status"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "sensor.miflora1_battery"
+                                },
+                                {
+                                    "entity": "sensor.miflora1_conductivity"
+                                },
+                                {
+                                    "entity": "sensor.miflora1_light_intensity"
+                                },
+                                {
+                                    "entity": "sensor.miflora1_moisture"
+                                },
+                                {
+                                    "entity": "sensor.miflora1_temperature"
+                                }
+                            ],
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "sensor.miflora2_battery"
+                                },
+                                {
+                                    "entity": "sensor.miflora2_conductivity"
+                                },
+                                {
+                                    "entity": "sensor.miflora2_light_intensity"
+                                },
+                                {
+                                    "entity": "sensor.miflora2_moisture"
+                                },
+                                {
+                                    "entity": "sensor.miflora2_temperature"
+                                }
+                            ],
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "sensor.miflora3_battery"
+                                },
+                                {
+                                    "entity": "sensor.miflora3_conductivity"
+                                },
+                                {
+                                    "entity": "sensor.miflora3_light_intensity"
+                                },
+                                {
+                                    "entity": "sensor.miflora3_moisture"
+                                },
+                                {
+                                    "entity": "sensor.miflora3_temperature"
+                                }
+                            ],
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "sensor.miflora4_battery"
+                                },
+                                {
+                                    "entity": "sensor.miflora4_conductivity"
+                                },
+                                {
+                                    "entity": "sensor.miflora4_light_intensity"
+                                },
+                                {
+                                    "entity": "sensor.miflora4_moisture"
+                                },
+                                {
+                                    "entity": "sensor.miflora4_temperature"
+                                }
+                            ],
+                            "type": "entities"
+                        }
+                    ],
+                    "icon": "mdi:flower",
+                    "path": "plants",
+                    "title": "Plants"
+                },
+                {
+                    "badges": [],
+                    "cards": [
+                        {
                             "entities": [
                                 "automation.mqtt_shield_on",
                                 "automation.mqtt_shield_off",
@@ -773,6 +877,19 @@
                         {
                             "entity": "camera.c1pro_onvif",
                             "type": "picture-entity"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "hide_if_unavailable": false,
+                                    "name": "Camera",
+                                    "type": "cast",
+                                    "view": "fullscreen-camera"
+                                }
+                            ],
+                            "show_header_toggle": false,
+                            "title": "Cast",
+                            "type": "entities"
                         }
                     ],
                     "title": "Other"
