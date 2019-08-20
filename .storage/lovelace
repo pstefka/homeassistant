@@ -174,6 +174,57 @@
                             "cards": [
                                 {
                                     "card": {
+                                        "content": "## Turn AC on\nIt's too hot\n",
+                                        "type": "markdown"
+                                    },
+                                    "conditions": [
+                                        {
+                                            "entity": "sensor.livingroom_hotness",
+                                            "state": "hot"
+                                        },
+                                        {
+                                            "entity": "sensor.outside_hotness",
+                                            "state": "hot"
+                                        }
+                                    ],
+                                    "type": "conditional"
+                                },
+                                {
+                                    "card": {
+                                        "content": "## Open windows\nIt's colder outside\n",
+                                        "type": "markdown"
+                                    },
+                                    "conditions": [
+                                        {
+                                            "entity": "sensor.livingroom_hotness",
+                                            "state": "hot"
+                                        },
+                                        {
+                                            "entity": "sensor.outside_hotness",
+                                            "state": "ok"
+                                        }
+                                    ],
+                                    "type": "conditional"
+                                },
+                                {
+                                    "card": {
+                                        "content": "## Close windows\nIt's hotter outside than inside\n",
+                                        "type": "markdown"
+                                    },
+                                    "conditions": [
+                                        {
+                                            "entity": "sensor.livingroom_hotness",
+                                            "state": "ok"
+                                        },
+                                        {
+                                            "entity": "sensor.outside_hotness",
+                                            "state": "hot"
+                                        }
+                                    ],
+                                    "type": "conditional"
+                                },
+                                {
+                                    "card": {
                                         "entity": "climate.eurotronic_eur_spiritz_wall_radiator_thermostat_heat",
                                         "type": "thermostat"
                                     },
@@ -322,10 +373,18 @@
                     "cards": [
                         {
                             "entities": [
-                                "switch.pornonas",
-                                "sensor.volume_used_volume_1",
-                                "sensor.temperature_sda",
-                                "sensor.temperature_sdb"
+                                {
+                                    "entity": "switch.pornonas"
+                                },
+                                {
+                                    "entity": "sensor.synology_dsm_volume_used_volume_1"
+                                },
+                                {
+                                    "entity": "sensor.synology_dsm_temperature_sda"
+                                },
+                                {
+                                    "entity": "sensor.synology_dsm_temperature_sdb"
+                                }
                             ],
                             "show_header_toggle": false,
                             "title": "NAS status",
@@ -351,18 +410,37 @@
                             "type": "sensor"
                         },
                         {
-                            "entities": [
-                                "sensor.oko_temperature_2",
-                                "sensor.teplomer_temperature",
-                                "sensor.eurotronic_eur_spiritz_wall_radiator_thermostat_temperature",
-                                "sensor.yr_temperature",
-                                "sensor.dark_sky_temperature",
-                                "sensor.oko_luminance_2",
-                                "sensor.wallpanel_light"
+                            "cards": [
+                                {
+                                    "entities": [
+                                        "sensor.oko_temperature_2",
+                                        "sensor.teplomer_temperature",
+                                        "sensor.eurotronic_eur_spiritz_wall_radiator_thermostat_temperature"
+                                    ],
+                                    "hours_to_show": 24,
+                                    "title": "Teperature Inside",
+                                    "type": "history-graph"
+                                },
+                                {
+                                    "entities": [
+                                        "sensor.yr_temperature",
+                                        "sensor.dark_sky_temperature"
+                                    ],
+                                    "hours_to_show": 24,
+                                    "title": "Teperature Outside",
+                                    "type": "history-graph"
+                                },
+                                {
+                                    "entities": [
+                                        "sensor.oko_luminance_2",
+                                        "sensor.wallpanel_light"
+                                    ],
+                                    "hours_to_show": 24,
+                                    "title": "Luminance",
+                                    "type": "history-graph"
+                                }
                             ],
-                            "hours_to_show": 24,
-                            "title": "Teperature",
-                            "type": "history-graph"
+                            "type": "vertical-stack"
                         },
                         {
                             "entities": [
@@ -444,6 +522,71 @@
                             "show_header_toggle": false,
                             "title": "Darksky",
                             "type": "entities"
+                        },
+                        {
+                            "cards": [
+                                {
+                                    "entity": "sensor.livingroom_hotness",
+                                    "name": "Living Room hotness",
+                                    "type": "sensor"
+                                },
+                                {
+                                    "entity": "sensor.oko_temperature_2",
+                                    "max": 32,
+                                    "min": 0,
+                                    "severity": {
+                                        "green": 18,
+                                        "red": 25,
+                                        "yellow": 0
+                                    },
+                                    "theme": "default",
+                                    "type": "gauge"
+                                },
+                                {
+                                    "entity": "sensor.outside_hotness",
+                                    "name": "Outside hotness",
+                                    "type": "sensor"
+                                },
+                                {
+                                    "cards": [
+                                        {
+                                            "entity": "sensor.yr_temperature",
+                                            "max": 40,
+                                            "min": -20,
+                                            "name": "YR.no",
+                                            "severity": {
+                                                "green": 18,
+                                                "red": 25,
+                                                "yellow": 0
+                                            },
+                                            "theme": "default",
+                                            "type": "gauge"
+                                        },
+                                        {
+                                            "entity": "sensor.dark_sky_temperature",
+                                            "max": 40,
+                                            "min": -20,
+                                            "name": "Dark Sky",
+                                            "severity": {
+                                                "green": 18,
+                                                "red": 25,
+                                                "yellow": 0
+                                            },
+                                            "theme": "default",
+                                            "type": "gauge"
+                                        }
+                                    ],
+                                    "type": "horizontal-stack"
+                                },
+                                {
+                                    "entities": [
+                                        "input_number.ok_lower_treshold",
+                                        "input_number.ok_upper_treshold"
+                                    ],
+                                    "type": "entities"
+                                }
+                            ],
+                            "type": "vertical-stack"
                         }
                     ],
                     "icon": "mdi:weather-partlycloudy",
@@ -697,10 +840,6 @@
                             "type": "entities"
                         },
                         {
-                            "entity": "climate.ac",
-                            "type": "thermostat"
-                        },
-                        {
                             "entities": [
                                 {
                                     "entity": "remote.living_room"
@@ -817,15 +956,21 @@
                         },
                         {
                             "entities": [
-                                "sensor.speedtest_ping",
-                                "sensor.speedtest_download",
-                                "sensor.speedtest_upload",
-                                "sensor.googlesk_ping",
-                                "sensor.googlecom_ping",
-                                "sensor.facebook_ping"
+                                {
+                                    "entity": "sensor.googlesk_ping",
+                                    "name": "google.sk"
+                                },
+                                {
+                                    "entity": "sensor.googlecom_ping",
+                                    "name": "google.com"
+                                },
+                                {
+                                    "entity": "sensor.facebook_ping",
+                                    "name": "facebook.com"
+                                }
                             ],
                             "show_header_toggle": false,
-                            "title": "Speedtest",
+                            "title": "Internet ping",
                             "type": "entities"
                         },
                         {
@@ -853,19 +998,6 @@
                             "type": "entities"
                         },
                         {
-                            "entity": "sensor.wallpanel_light",
-                            "graph": "line",
-                            "type": "sensor"
-                        },
-                        {
-                            "entities": [
-                                "sensor.wallpanel_light",
-                                "sensor.oko_luminance_2"
-                            ],
-                            "title": "Lux",
-                            "type": "history-graph"
-                        },
-                        {
                             "entity": "camera.wallpanel_camera",
                             "show_name": true,
                             "show_state": true,
@@ -887,22 +1019,6 @@
                             "show_header_toggle": false,
                             "title": "Cast",
                             "type": "entities"
-                        },
-                        {
-                            "entity": "sensor.oko_temperature_2",
-                            "max": 32,
-                            "min": 0,
-                            "severity": {
-                                "green": 18,
-                                "red": 26,
-                                "yellow": 0
-                            },
-                            "theme": "default",
-                            "type": "gauge"
-                        },
-                        {
-                            "entity": "sensor.livingroom_hotness",
-                            "type": "sensor"
                         }
                     ],
                     "title": "Other"

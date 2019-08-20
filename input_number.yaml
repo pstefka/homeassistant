@@ -1,0 +1,12 @@
+  ok_upper_treshold:
+    name: Hotness limit 
+    initial: 25
+    min: 20
+    max: 30
+    step: 1
+  ok_lower_treshold:
+    name: Coldness limit
+    initial: 18
+    min: 15
+    max: 25
+    step: 1

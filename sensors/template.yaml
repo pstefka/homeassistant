@@ -123,11 +123,25 @@
       unit_of_measurement: 'ms'
     livingroom_hotness:
       value_template: >-
-        {% if istates('sensor.oko_temperature_2')|float > 26 %}
+        {% if states('sensor.oko_temperature_2')|float > states('input_number.ok_upper_treshold')|float %}
           hot
-        {% elif istates('sensor.oko_temperature_2')|float > 18 %}
+        {% elif states('sensor.oko_temperature_2')|float > states('input_number.ok_lower_treshold')|float %}
           ok
         {% else %}
           cold
         {% endif %}
-
+      icon_template: mdi:fire
+    outside_hotness:
+      value_template: >-
+        {% if states('sensor.yr_temperature')|float > states('input_number.ok_upper_treshold')|float %}
+          hot
+        {% elif states('sensor.dark_sky_temperature')|float > states('input_number.ok_upper_treshold')|float %}
+          hot
+        {% elif states('sensor.yr_temperature')|float > states('input_number.ok_lower_treshold')|float %}
+          ok
+        {% elif states('sensor.dark_sky_temperature')|float > states('input_number.ok_lower_treshold')|float %}
+          ok
+        {% else %}
+          cold
+        {% endif %}
+      icon_template: mdi:fire
