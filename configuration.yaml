@@ -303,7 +303,7 @@ telegram_bot:
       - -262852350
 
 # Example configuration.yaml entry for the notifier
-notify:
-  - name: peto_telegram
-    platform: telegram
-    chat_id: 698188355
+#notify:
+#  - name: peto_telegram
+#    platform: telegram
+#    chat_id: 698188355

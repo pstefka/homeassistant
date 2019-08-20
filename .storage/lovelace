@@ -58,9 +58,6 @@
                                 {
                                     "entities": [
                                         {
-                                            "entity": "input_boolean.camera_motion"
-                                        },
-                                        {
                                             "action_name": "Stream",
                                             "icon": "mdi:power",
                                             "name": "Show on TV",
@@ -670,22 +667,6 @@
                         {
                             "entities": [
                                 {
-                                    "entity": "input_select.camera_mode"
-                                },
-                                {
-                                    "entity": "input_boolean.camera_motion"
-                                },
-                                {
-                                    "entity": "input_boolean.camera_timelapse"
-                                }
-                            ],
-                            "show_header_toggle": false,
-                            "title": "Camera",
-                            "type": "entities"
-                        },
-                        {
-                            "entities": [
-                                {
                                     "entity": "input_select.heat"
                                 },
                                 {
@@ -697,6 +678,22 @@
                             ],
                             "show_header_toggle": false,
                             "title": "Home",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "input_select.camera_mode"
+                                },
+                                {
+                                    "entity": "input_boolean.camera_motion"
+                                },
+                                {
+                                    "entity": "input_boolean.camera_timelapse"
+                                }
+                            ],
+                            "show_header_toggle": false,
+                            "title": "Camera",
                             "type": "entities"
                         },
                         {
@@ -827,7 +824,7 @@
                                 "sensor.googlecom_ping",
                                 "sensor.facebook_ping"
                             ],
-                            "show_header_toggle": true,
+                            "show_header_toggle": false,
                             "title": "Speedtest",
                             "type": "entities"
                         },
@@ -890,6 +887,22 @@
                             "show_header_toggle": false,
                             "title": "Cast",
                             "type": "entities"
+                        },
+                        {
+                            "entity": "sensor.oko_temperature_2",
+                            "max": 32,
+                            "min": 0,
+                            "severity": {
+                                "green": 18,
+                                "red": 26,
+                                "yellow": 0
+                            },
+                            "theme": "default",
+                            "type": "gauge"
+                        },
+                        {
+                            "entity": "sensor.livingroom_hotness",
+                            "type": "sensor"
                         }
                     ],
                     "title": "Other"

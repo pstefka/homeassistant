@@ -121,3 +121,13 @@
     facebook_ping:
       value_template: "{{ state_attr('binary_sensor.facebook_ping', 'round_trip_time_avg') }}"
       unit_of_measurement: 'ms'
+    livingroom_hotness:
+      value_template: >-
+        {% if istates('sensor.oko_temperature_2')|float > 26 %}
+          hot
+        {% elif istates('sensor.oko_temperature_2')|float > 18 %}
+          ok
+        {% else %}
+          cold
+        {% endif %}
+

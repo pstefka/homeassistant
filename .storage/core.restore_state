@@ -1,28 +1,602 @@
 {
     "data": [
         {
-            "last_seen": "2019-08-08T21:11:24.002522+00:00",
+            "last_seen": "2019-08-20T14:06:13.539361+00:00",
             "state": {
                 "attributes": {
-                    "friendly_name": "Text",
-                    "max": 100,
-                    "min": 0,
-                    "mode": "text",
-                    "pattern": null
+                    "friendly_name": "Christmas Lights",
+                    "icon": "mdi:pine-tree"
                 },
                 "context": {
-                    "id": "c356f5735a324ce092ab77e71f4e586b",
+                    "id": "0a9efa05bd184e8786f380c8558ad7c3",
                     "parent_id": null,
                     "user_id": null
                 },
-                "entity_id": "input_text.tts_input",
-                "last_changed": "2019-08-08T20:56:11.053981+00:00",
-                "last_updated": "2019-08-08T20:56:11.053981+00:00",
-                "state": ""
+                "entity_id": "input_boolean.automation_christmas_lights_enabled",
+                "last_changed": "2019-08-20T14:06:01.351017+00:00",
+                "last_updated": "2019-08-20T14:06:01.351017+00:00",
+                "state": "on"
             }
         },
         {
-            "last_seen": "2019-08-08T21:11:24.002522+00:00",
+            "last_seen": "2019-08-20T14:06:13.539361+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Wind warning",
+                    "icon": "mdi:weather-windy"
+                },
+                "context": {
+                    "id": "059ebfbad512419a9cf52c4451a5b74e",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "input_boolean.current_wind_warning",
+                "last_changed": "2019-08-20T14:06:01.351306+00:00",
+                "last_updated": "2019-08-20T14:06:01.351306+00:00",
+                "state": "off"
+            }
+        },
+        {
+            "last_seen": "2019-08-20T14:06:13.539361+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Christmas Lights notification",
+                    "icon": "mdi:pine-tree"
+                },
+                "context": {
+                    "id": "ffee62f3dcf94dafbf978685f479160d",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "input_boolean.automation_christmas_lights_notification",
+                "last_changed": "2019-08-20T14:06:01.351979+00:00",
+                "last_updated": "2019-08-20T14:06:01.351979+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2019-08-20T14:06:13.539361+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Timelapse",
+                    "icon": "mdi:timelapse"
+                },
+                "context": {
+                    "id": "e328091ab57b479796f997d6a44f2719",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "input_boolean.camera_timelapse",
+                "last_changed": "2019-08-20T14:06:01.352312+00:00",
+                "last_updated": "2019-08-20T14:06:01.352312+00:00",
+                "state": "off"
+            }
+        },
+        {
+            "last_seen": "2019-08-20T14:06:13.539361+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Hue",
+                    "icon": "mdi:ceiling-light"
+                },
+                "context": {
+                    "id": "2d4f01ab385a4a84a13b6332790c993b",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "input_boolean.automation_hue_enabled",
+                "last_changed": "2019-08-20T14:06:01.352623+00:00",
+                "last_updated": "2019-08-20T14:06:01.352623+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2019-08-20T14:06:13.539361+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Motion detection",
+                    "icon": "mdi:cctv"
+                },
+                "context": {
+                    "id": "e8d7893775724afb87e86b8733e437ea",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "input_boolean.camera_motion",
+                "last_changed": "2019-08-20T14:06:01.352916+00:00",
+                "last_updated": "2019-08-20T14:06:01.352916+00:00",
+                "state": "off"
+            }
+        },
+        {
+            "last_seen": "2019-08-20T14:06:13.539361+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Hue notification",
+                    "icon": "mdi:ceiling-light"
+                },
+                "context": {
+                    "id": "62bdbf905702466b99ac19b8eb4a35e7",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "input_boolean.automation_hue_notification",
+                "last_changed": "2019-08-20T14:06:01.353177+00:00",
+                "last_updated": "2019-08-20T14:06:01.353177+00:00",
+                "state": "off"
+            }
+        },
+        {
+            "last_seen": "2019-08-20T14:06:13.539361+00:00",
+            "state": {
+                "attributes": {},
+                "context": {
+                    "id": "cac4ffd653b74489bfdb116663744c44",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "input_boolean.camera_mode_semafor",
+                "last_changed": "2019-08-20T14:06:01.353403+00:00",
+                "last_updated": "2019-08-20T14:06:01.353403+00:00",
+                "state": "off"
+            }
+        },
+        {
+            "last_seen": "2019-08-20T14:06:13.539361+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Forecasted Wind notification",
+                    "icon": "mdi:weather-windy"
+                },
+                "context": {
+                    "id": "ebb48f297f694d00bb996fa0fa210035",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "input_boolean.automation_forecasted_wind_notification",
+                "last_changed": "2019-08-20T14:06:01.353640+00:00",
+                "last_updated": "2019-08-20T14:06:01.353640+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2019-08-20T14:06:13.539361+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Welcome Message",
+                    "icon": "mdi:speaker-wireless"
+                },
+                "context": {
+                    "id": "cba25ae5e47f4c98984524853b81f99e",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "input_boolean.automation_welcome_message_enabled",
+                "last_changed": "2019-08-20T14:06:01.353872+00:00",
+                "last_updated": "2019-08-20T14:06:01.353872+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2019-08-20T14:06:13.539361+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Current Wind notification",
+                    "icon": "mdi:weather-windy"
+                },
+                "context": {
+                    "id": "6ff41b4927fa49188e1699f0a17e13fb",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "input_boolean.automation_current_wind_notification",
+                "last_changed": "2019-08-20T14:06:01.354103+00:00",
+                "last_updated": "2019-08-20T14:06:01.354103+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2019-08-20T14:06:13.539361+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Burglar Alert",
+                    "icon": "mdi:account-alert"
+                },
+                "context": {
+                    "id": "27d1e922300a4b57bba0ba52d6cdfc22",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "input_boolean.automation_burglar_enabled",
+                "last_changed": "2019-08-20T14:06:01.354328+00:00",
+                "last_updated": "2019-08-20T14:06:01.354328+00:00",
+                "state": "off"
+            }
+        },
+        {
+            "last_seen": "2019-08-20T14:06:13.539361+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Heating notification",
+                    "icon": "mdi:radiator"
+                },
+                "context": {
+                    "id": "cb72f2873e1f439a8e7c5c9610255960",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "input_boolean.automation_heating_notification",
+                "last_changed": "2019-08-20T14:06:01.354556+00:00",
+                "last_updated": "2019-08-20T14:06:01.354556+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2019-08-20T14:06:13.539361+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Presence notification",
+                    "icon": "mdi:account-group"
+                },
+                "context": {
+                    "id": "3e2195f3f07b40838eccff67dd52276f",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "input_boolean.automation_presence_notification",
+                "last_changed": "2019-08-20T14:06:01.354784+00:00",
+                "last_updated": "2019-08-20T14:06:01.354784+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2019-08-20T14:06:13.539361+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "AC",
+                    "icon": "mdi:air-conditioner"
+                },
+                "context": {
+                    "id": "7971b24e44bd48cd821665a53bdfbe6c",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "input_boolean.automation_ac_enabled",
+                "last_changed": "2019-08-20T14:06:01.355007+00:00",
+                "last_updated": "2019-08-20T14:06:01.355007+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2019-08-20T14:06:13.539361+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Person Presence notification",
+                    "icon": "mdi:account"
+                },
+                "context": {
+                    "id": "dd1a47b9202343bfb9f6332340aa4628",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "input_boolean.automation_person_presence_notification",
+                "last_changed": "2019-08-20T14:06:01.355238+00:00",
+                "last_updated": "2019-08-20T14:06:01.355238+00:00",
+                "state": "off"
+            }
+        },
+        {
+            "last_seen": "2019-08-20T14:06:13.539361+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "AC notification",
+                    "icon": "mdi:air-conditioner"
+                },
+                "context": {
+                    "id": "5164e65b1e084db8b6bba17f0ccce5e3",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "input_boolean.automation_ac_notification",
+                "last_changed": "2019-08-20T14:06:01.355867+00:00",
+                "last_updated": "2019-08-20T14:06:01.355867+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2019-08-20T14:06:13.539361+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Wifi Tracking notification",
+                    "icon": "mdi:wifi"
+                },
+                "context": {
+                    "id": "4bcc85ca687240dfaaedc7d14e950535",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "input_boolean.automation_wifi_tracking_notification",
+                "last_changed": "2019-08-20T14:06:01.356119+00:00",
+                "last_updated": "2019-08-20T14:06:01.356119+00:00",
+                "state": "off"
+            }
+        },
+        {
+            "last_seen": "2019-08-20T14:06:13.539361+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Svetielka gula",
+                    "icon": "mdi:lightbulb"
+                },
+                "context": {
+                    "id": "ce3663ac46a24cee9b45e6b50ebafdff",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "input_boolean.light_bowl",
+                "last_changed": "2019-08-20T14:06:01.356346+00:00",
+                "last_updated": "2019-08-20T14:06:01.356346+00:00",
+                "state": "off"
+            }
+        },
+        {
+            "last_seen": "2019-08-20T14:06:13.539361+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Bluetooth tracking notification",
+                    "icon": "mdi:bluetooth-connect"
+                },
+                "context": {
+                    "id": "962c1cc010ca46508238e12251223d29",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "input_boolean.automation_bluetooth_tracking_notification",
+                "last_changed": "2019-08-20T14:06:01.356584+00:00",
+                "last_updated": "2019-08-20T14:06:01.356584+00:00",
+                "state": "off"
+            }
+        },
+        {
+            "last_seen": "2019-08-20T14:06:13.539361+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Svetielka vianocne",
+                    "icon": "mdi:lightbulb"
+                },
+                "context": {
+                    "id": "c5e4a093719c47e295263c542994c8b8",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "input_boolean.light_christmas",
+                "last_changed": "2019-08-20T14:06:01.356807+00:00",
+                "last_updated": "2019-08-20T14:06:01.356807+00:00",
+                "state": "off"
+            }
+        },
+        {
+            "last_seen": "2019-08-20T14:06:13.539361+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Aquarium",
+                    "icon": "mdi:fishbowl"
+                },
+                "context": {
+                    "id": "9cb6b660d1be40fda1b8b34a3d10bc95",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "input_boolean.automation_aquarium_enabled",
+                "last_changed": "2019-08-20T14:06:01.357033+00:00",
+                "last_updated": "2019-08-20T14:06:01.357033+00:00",
+                "state": "off"
+            }
+        },
+        {
+            "last_seen": "2019-08-20T14:06:13.539361+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Vianoce",
+                    "icon": "mdi:pine-tree"
+                },
+                "context": {
+                    "id": "10d19a19db5747df94955157612354bd",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "input_boolean.is_christmas",
+                "last_changed": "2019-08-20T14:06:01.357249+00:00",
+                "last_updated": "2019-08-20T14:06:01.357249+00:00",
+                "state": "off"
+            }
+        },
+        {
+            "last_seen": "2019-08-20T14:06:13.539361+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Aquarium notification",
+                    "icon": "mdi:fishbowl-outline"
+                },
+                "context": {
+                    "id": "4a7aa799284a4159aefe602b8a6d90a7",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "input_boolean.automation_aquarium_notification",
+                "last_changed": "2019-08-20T14:06:01.357477+00:00",
+                "last_updated": "2019-08-20T14:06:01.357477+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2019-08-20T14:06:13.539361+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Homeoffice",
+                    "icon": "mdi:home-account"
+                },
+                "context": {
+                    "id": "3feaabd133bf4d72902e722a225c536c",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "input_boolean.homeoffice",
+                "last_changed": "2019-08-20T14:06:01.357690+00:00",
+                "last_updated": "2019-08-20T14:06:01.357690+00:00",
+                "state": "off"
+            }
+        },
+        {
+            "last_seen": "2019-08-20T14:06:13.539361+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Bowl",
+                    "icon": "mdi:star-circle"
+                },
+                "context": {
+                    "id": "80458b5e7ab84e4db3d9d02c9cad4535",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "input_boolean.automation_bowl_enabled",
+                "last_changed": "2019-08-20T14:06:01.357911+00:00",
+                "last_updated": "2019-08-20T14:06:01.357911+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2019-08-20T14:06:13.539361+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Vacation",
+                    "icon": "mdi:home"
+                },
+                "context": {
+                    "id": "59f0dd8a45a14dbf933fa130435dce4a",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "input_boolean.vacation",
+                "last_changed": "2019-08-20T14:06:01.358122+00:00",
+                "last_updated": "2019-08-20T14:06:01.358122+00:00",
+                "state": "off"
+            }
+        },
+        {
+            "last_seen": "2019-08-20T14:06:13.539361+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Bowl notification",
+                    "icon": "mdi:star-circle-outline"
+                },
+                "context": {
+                    "id": "16607600613545c09a0b92122e7a75b4",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "input_boolean.automation_bowl_notification",
+                "last_changed": "2019-08-20T14:06:01.358344+00:00",
+                "last_updated": "2019-08-20T14:06:01.358344+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2019-08-20T14:06:13.539361+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Peto",
+                    "hidden": true,
+                    "options": [
+                        "Home",
+                        "Asleep",
+                        "Just Left",
+                        "Away",
+                        "Extended Away"
+                    ]
+                },
+                "context": {
+                    "id": "e7a44418d43b4280a7c8adb9be16fdf3",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "input_select.presence_peto",
+                "last_changed": "2019-08-20T14:06:01.358572+00:00",
+                "last_updated": "2019-08-20T14:06:01.358572+00:00",
+                "state": "Home"
+            }
+        },
+        {
+            "last_seen": "2019-08-20T14:06:13.539361+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Nikik Wifi",
+                    "hidden": true,
+                    "options": [
+                        "home",
+                        "not_home"
+                    ]
+                },
+                "context": {
+                    "id": "af8a12f8329e4faf846ceaa3f14b7fbb",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "input_select.presence_nikik_wifi",
+                "last_changed": "2019-08-20T14:06:01.358794+00:00",
+                "last_updated": "2019-08-20T14:06:01.358794+00:00",
+                "state": "not_home"
+            }
+        },
+        {
+            "last_seen": "2019-08-20T14:06:13.539361+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Nikik",
+                    "hidden": true,
+                    "options": [
+                        "Home",
+                        "Asleep",
+                        "Just Left",
+                        "Away",
+                        "Extended Away"
+                    ]
+                },
+                "context": {
+                    "id": "a722ff8dbd1c49df8599950046d94673",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "input_select.presence_nikik",
+                "last_changed": "2019-08-20T14:06:01.359012+00:00",
+                "last_updated": "2019-08-20T14:06:01.359012+00:00",
+                "state": "Away"
+            }
+        },
+        {
+            "last_seen": "2019-08-20T14:06:13.539361+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Camera Mode",
+                    "options": [
+                        "Timelapse",
+                        "Baby monitor",
+                        "Off"
+                    ]
+                },
+                "context": {
+                    "id": "3668b49cc93543998f8a61b81790629a",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "input_select.camera_mode",
+                "last_changed": "2019-08-20T14:06:01.359225+00:00",
+                "last_updated": "2019-08-20T14:06:01.359225+00:00",
+                "state": "Off"
+            }
+        },
+        {
+            "last_seen": "2019-08-20T14:06:13.539361+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "People",
@@ -37,18 +611,18 @@
                     ]
                 },
                 "context": {
-                    "id": "b03b7e2a61184fd89e5e0d0f15a525ca",
+                    "id": "045c06926bdb480fbfa2dfbffcdc2af1",
                     "parent_id": null,
                     "user_id": null
                 },
                 "entity_id": "input_select.presence",
-                "last_changed": "2019-08-08T20:56:11.054296+00:00",
-                "last_updated": "2019-08-08T20:56:11.054296+00:00",
+                "last_changed": "2019-08-20T14:06:01.359439+00:00",
+                "last_updated": "2019-08-20T14:06:01.359439+00:00",
                 "state": "Home"
             }
         },
         {
-            "last_seen": "2019-08-08T21:11:24.002522+00:00",
+            "last_seen": "2019-08-20T14:06:13.539361+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "Heating",
@@ -60,18 +634,18 @@
                     ]
                 },
                 "context": {
-                    "id": "638bb76c4169460da6a55c4a75b4b209",
+                    "id": "232ce06c47644333b8803d3ab23f0698",
                     "parent_id": null,
                     "user_id": null
                 },
                 "entity_id": "input_select.heat",
-                "last_changed": "2019-08-08T20:56:11.054571+00:00",
-                "last_updated": "2019-08-08T20:56:11.054571+00:00",
+                "last_changed": "2019-08-20T14:06:01.359683+00:00",
+                "last_updated": "2019-08-20T14:06:01.359683+00:00",
                 "state": "Off"
             }
         },
         {
-            "last_seen": "2019-08-08T21:11:24.002522+00:00",
+            "last_seen": "2019-08-20T14:06:13.539361+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "Peto Wifi",
@@ -82,728 +656,154 @@
                     ]
                 },
                 "context": {
-                    "id": "35e8fd0c29d84d9f9b354c0877a68cad",
+                    "id": "79d6ba0fc5bb496bb8de5afd309cf4ea",
                     "parent_id": null,
                     "user_id": null
                 },
                 "entity_id": "input_select.presence_peto_wifi",
-                "last_changed": "2019-08-08T20:56:11.054867+00:00",
-                "last_updated": "2019-08-08T20:56:11.054867+00:00",
+                "last_changed": "2019-08-20T14:06:01.359908+00:00",
+                "last_updated": "2019-08-20T14:06:01.359908+00:00",
                 "state": "home"
             }
         },
         {
-            "last_seen": "2019-08-08T21:11:24.002522+00:00",
+            "last_seen": "2019-08-20T14:06:13.539361+00:00",
             "state": {
                 "attributes": {
-                    "friendly_name": "Peto",
-                    "hidden": true,
-                    "options": [
-                        "Home",
-                        "Asleep",
-                        "Just Left",
-                        "Away",
-                        "Extended Away"
-                    ]
+                    "friendly_name": "Text",
+                    "max": 100,
+                    "min": 0,
+                    "mode": "text",
+                    "pattern": null
                 },
                 "context": {
-                    "id": "5ae646e452cd494fbb6864686d9c8b53",
+                    "id": "0342cbfa52de4eb88ad1ed89cff575f0",
                     "parent_id": null,
                     "user_id": null
                 },
-                "entity_id": "input_select.presence_peto",
-                "last_changed": "2019-08-08T20:56:11.055108+00:00",
-                "last_updated": "2019-08-08T20:56:11.055108+00:00",
-                "state": "Home"
+                "entity_id": "input_text.tts_input",
+                "last_changed": "2019-08-20T14:06:01.360133+00:00",
+                "last_updated": "2019-08-20T14:06:01.360133+00:00",
+                "state": ""
             }
         },
         {
-            "last_seen": "2019-08-08T21:11:24.002522+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "Nikik Wifi",
-                    "hidden": true,
-                    "options": [
-                        "home",
-                        "not_home"
-                    ]
-                },
-                "context": {
-                    "id": "6fcaed13843c4caebdd9b0f54194b141",
-                    "parent_id": null,
-                    "user_id": null
-                },
-                "entity_id": "input_select.presence_nikik_wifi",
-                "last_changed": "2019-08-08T20:56:11.055334+00:00",
-                "last_updated": "2019-08-08T20:56:11.055334+00:00",
-                "state": "home"
-            }
-        },
-        {
-            "last_seen": "2019-08-08T21:11:24.002522+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "Nikik",
-                    "hidden": true,
-                    "options": [
-                        "Home",
-                        "Asleep",
-                        "Just Left",
-                        "Away",
-                        "Extended Away"
-                    ]
-                },
-                "context": {
-                    "id": "40cd07b6b1d14ed2b258b8b12cece8bb",
-                    "parent_id": null,
-                    "user_id": null
-                },
-                "entity_id": "input_select.presence_nikik",
-                "last_changed": "2019-08-08T20:56:11.055585+00:00",
-                "last_updated": "2019-08-08T20:56:11.055585+00:00",
-                "state": "Home"
-            }
-        },
-        {
-            "last_seen": "2019-08-08T21:11:24.002522+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "Camera Mode",
-                    "options": [
-                        "Timelapse",
-                        "Baby monitor",
-                        "Off"
-                    ]
-                },
-                "context": {
-                    "id": "87b684cf7cf445a8b03abe3ac6f986d3",
-                    "parent_id": null,
-                    "user_id": null
-                },
-                "entity_id": "input_select.camera_mode",
-                "last_changed": "2019-08-08T20:56:11.055857+00:00",
-                "last_updated": "2019-08-08T20:56:11.055857+00:00",
-                "state": "Off"
-            }
-        },
-        {
-            "last_seen": "2019-08-08T21:11:24.002522+00:00",
-            "state": {
-                "attributes": {},
-                "context": {
-                    "id": "fd59a3067dac473ebecad04a323dd679",
-                    "parent_id": null,
-                    "user_id": null
-                },
-                "entity_id": "input_boolean.camera_mode_semafor",
-                "last_changed": "2019-08-08T20:56:11.056087+00:00",
-                "last_updated": "2019-08-08T20:56:11.056087+00:00",
-                "state": "off"
-            }
-        },
-        {
-            "last_seen": "2019-08-08T21:11:24.002522+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "Hue notification",
-                    "icon": "mdi:ceiling-light"
-                },
-                "context": {
-                    "id": "12125151e07a42a787ce0ac90f90fa36",
-                    "parent_id": null,
-                    "user_id": null
-                },
-                "entity_id": "input_boolean.automation_hue_notification",
-                "last_changed": "2019-08-08T20:56:11.056334+00:00",
-                "last_updated": "2019-08-08T20:56:11.056334+00:00",
-                "state": "off"
-            }
-        },
-        {
-            "last_seen": "2019-08-08T21:11:24.002522+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "Welcome Message",
-                    "icon": "mdi:speaker-wireless"
-                },
-                "context": {
-                    "id": "f9875b6ad69546aba74359f2961bb78f",
-                    "parent_id": null,
-                    "user_id": null
-                },
-                "entity_id": "input_boolean.automation_welcome_message_enabled",
-                "last_changed": "2019-08-08T20:56:11.056583+00:00",
-                "last_updated": "2019-08-08T20:56:11.056583+00:00",
-                "state": "off"
-            }
-        },
-        {
-            "last_seen": "2019-08-08T21:11:24.002522+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "Forecasted Wind notification",
-                    "icon": "mdi:weather-windy"
-                },
-                "context": {
-                    "id": "1ff72507ac4b489db8625206d4151593",
-                    "parent_id": null,
-                    "user_id": null
-                },
-                "entity_id": "input_boolean.automation_forecasted_wind_notification",
-                "last_changed": "2019-08-08T20:56:11.056815+00:00",
-                "last_updated": "2019-08-08T20:56:11.056815+00:00",
-                "state": "on"
-            }
-        },
-        {
-            "last_seen": "2019-08-08T21:11:24.002522+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "Burglar Alert",
-                    "icon": "mdi:account-alert"
-                },
-                "context": {
-                    "id": "fda81473bd2144d79b193ad1bbbdcc4e",
-                    "parent_id": null,
-                    "user_id": null
-                },
-                "entity_id": "input_boolean.automation_burglar_enabled",
-                "last_changed": "2019-08-08T20:56:11.057078+00:00",
-                "last_updated": "2019-08-08T20:56:11.057078+00:00",
-                "state": "off"
-            }
-        },
-        {
-            "last_seen": "2019-08-08T21:11:24.002522+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "Current Wind notification",
-                    "icon": "mdi:weather-windy"
-                },
-                "context": {
-                    "id": "57135f1abd8048c1a5c2e4abe99ed680",
-                    "parent_id": null,
-                    "user_id": null
-                },
-                "entity_id": "input_boolean.automation_current_wind_notification",
-                "last_changed": "2019-08-08T20:56:11.057495+00:00",
-                "last_updated": "2019-08-08T20:56:11.057495+00:00",
-                "state": "on"
-            }
-        },
-        {
-            "last_seen": "2019-08-08T21:11:24.002522+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "Presence notification",
-                    "icon": "mdi:account-group"
-                },
-                "context": {
-                    "id": "840bfa1e71e54cab98dcd3aa3cbcf616",
-                    "parent_id": null,
-                    "user_id": null
-                },
-                "entity_id": "input_boolean.automation_presence_notification",
-                "last_changed": "2019-08-08T20:56:11.057735+00:00",
-                "last_updated": "2019-08-08T20:56:11.057735+00:00",
-                "state": "on"
-            }
-        },
-        {
-            "last_seen": "2019-08-08T21:11:24.002522+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "Heating notification",
-                    "icon": "mdi:radiator"
-                },
-                "context": {
-                    "id": "55ba0bafb9be4c918c91245ccdbfdd22",
-                    "parent_id": null,
-                    "user_id": null
-                },
-                "entity_id": "input_boolean.automation_heating_notification",
-                "last_changed": "2019-08-08T20:56:11.057998+00:00",
-                "last_updated": "2019-08-08T20:56:11.057998+00:00",
-                "state": "on"
-            }
-        },
-        {
-            "last_seen": "2019-08-08T21:11:24.002522+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "Person Presence notification",
-                    "icon": "mdi:account"
-                },
-                "context": {
-                    "id": "88030733a07145589b7140281202c983",
-                    "parent_id": null,
-                    "user_id": null
-                },
-                "entity_id": "input_boolean.automation_person_presence_notification",
-                "last_changed": "2019-08-08T20:56:11.058256+00:00",
-                "last_updated": "2019-08-08T20:56:11.058256+00:00",
-                "state": "off"
-            }
-        },
-        {
-            "last_seen": "2019-08-08T21:11:24.002522+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "AC",
-                    "icon": "mdi:air-conditioner"
-                },
-                "context": {
-                    "id": "831a34583c284f928096b9bb1f8fce10",
-                    "parent_id": null,
-                    "user_id": null
-                },
-                "entity_id": "input_boolean.automation_ac_enabled",
-                "last_changed": "2019-08-08T20:56:11.058479+00:00",
-                "last_updated": "2019-08-08T20:56:11.058479+00:00",
-                "state": "on"
-            }
-        },
-        {
-            "last_seen": "2019-08-08T21:11:24.002522+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "Wifi Tracking notification",
-                    "icon": "mdi:wifi"
-                },
-                "context": {
-                    "id": "418c214b1f9c4618a1a266417d625c53",
-                    "parent_id": null,
-                    "user_id": null
-                },
-                "entity_id": "input_boolean.automation_wifi_tracking_notification",
-                "last_changed": "2019-08-08T20:56:11.058732+00:00",
-                "last_updated": "2019-08-08T20:56:11.058732+00:00",
-                "state": "off"
-            }
-        },
-        {
-            "last_seen": "2019-08-08T21:11:24.002522+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "AC notification",
-                    "icon": "mdi:air-conditioner"
-                },
-                "context": {
-                    "id": "2a3f82fa1e3d4f469d967526d1a92049",
-                    "parent_id": null,
-                    "user_id": null
-                },
-                "entity_id": "input_boolean.automation_ac_notification",
-                "last_changed": "2019-08-08T20:56:11.058978+00:00",
-                "last_updated": "2019-08-08T20:56:11.058978+00:00",
-                "state": "on"
-            }
-        },
-        {
-            "last_seen": "2019-08-08T21:11:24.002522+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "Bluetooth tracking notification",
-                    "icon": "mdi:bluetooth-connect"
-                },
-                "context": {
-                    "id": "ad1486e8ca0147e9baf7c8d2379d3322",
-                    "parent_id": null,
-                    "user_id": null
-                },
-                "entity_id": "input_boolean.automation_bluetooth_tracking_notification",
-                "last_changed": "2019-08-08T20:56:11.059214+00:00",
-                "last_updated": "2019-08-08T20:56:11.059214+00:00",
-                "state": "off"
-            }
-        },
-        {
-            "last_seen": "2019-08-08T21:11:24.002522+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "Svetielka gula",
-                    "icon": "mdi:lightbulb"
-                },
-                "context": {
-                    "id": "2cacaeaa9ac54cc2af3be7075ed6fe37",
-                    "parent_id": null,
-                    "user_id": null
-                },
-                "entity_id": "input_boolean.light_bowl",
-                "last_changed": "2019-08-08T20:56:11.059447+00:00",
-                "last_updated": "2019-08-08T20:56:11.059447+00:00",
-                "state": "off"
-            }
-        },
-        {
-            "last_seen": "2019-08-08T21:11:24.002522+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "Aquarium",
-                    "icon": "mdi:fishbowl"
-                },
-                "context": {
-                    "id": "1f5599e7201b4f8baa881e2a7c1ae0ae",
-                    "parent_id": null,
-                    "user_id": null
-                },
-                "entity_id": "input_boolean.automation_aquarium_enabled",
-                "last_changed": "2019-08-08T20:56:11.059745+00:00",
-                "last_updated": "2019-08-08T20:56:11.059745+00:00",
-                "state": "off"
-            }
-        },
-        {
-            "last_seen": "2019-08-08T21:11:24.002522+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "Svetielka vianocne",
-                    "icon": "mdi:lightbulb"
-                },
-                "context": {
-                    "id": "ffaada595da5471aa082894b2ae3856a",
-                    "parent_id": null,
-                    "user_id": null
-                },
-                "entity_id": "input_boolean.light_christmas",
-                "last_changed": "2019-08-08T20:56:11.059966+00:00",
-                "last_updated": "2019-08-08T20:56:11.059966+00:00",
-                "state": "off"
-            }
-        },
-        {
-            "last_seen": "2019-08-08T21:11:24.002522+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "Aquarium notification",
-                    "icon": "mdi:fishbowl-outline"
-                },
-                "context": {
-                    "id": "e264deca4ebd43278bae4b2e753c78a5",
-                    "parent_id": null,
-                    "user_id": null
-                },
-                "entity_id": "input_boolean.automation_aquarium_notification",
-                "last_changed": "2019-08-08T20:56:11.060219+00:00",
-                "last_updated": "2019-08-08T20:56:11.060219+00:00",
-                "state": "on"
-            }
-        },
-        {
-            "last_seen": "2019-08-08T21:11:24.002522+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "Vianoce",
-                    "icon": "mdi:pine-tree"
-                },
-                "context": {
-                    "id": "1a46a52590b947029991f2f4b82574d5",
-                    "parent_id": null,
-                    "user_id": null
-                },
-                "entity_id": "input_boolean.is_christmas",
-                "last_changed": "2019-08-08T20:56:11.060458+00:00",
-                "last_updated": "2019-08-08T20:56:11.060458+00:00",
-                "state": "off"
-            }
-        },
-        {
-            "last_seen": "2019-08-08T21:11:24.002522+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "Bowl",
-                    "icon": "mdi:star-circle"
-                },
-                "context": {
-                    "id": "ad44e171a74d4cd3b595dacac8bdb644",
-                    "parent_id": null,
-                    "user_id": null
-                },
-                "entity_id": "input_boolean.automation_bowl_enabled",
-                "last_changed": "2019-08-08T20:56:11.060691+00:00",
-                "last_updated": "2019-08-08T20:56:11.060691+00:00",
-                "state": "on"
-            }
-        },
-        {
-            "last_seen": "2019-08-08T21:11:24.002522+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "Homeoffice",
-                    "icon": "mdi:home-account"
-                },
-                "context": {
-                    "id": "329dbca2d92f4e90b13d4d046d2f4090",
-                    "parent_id": null,
-                    "user_id": "d68ec883bb4d49fdae913b84e1e20672"
-                },
-                "entity_id": "input_boolean.homeoffice",
-                "last_changed": "2019-08-08T21:09:30.686998+00:00",
-                "last_updated": "2019-08-08T21:09:30.686998+00:00",
-                "state": "off"
-            }
-        },
-        {
-            "last_seen": "2019-08-08T21:11:24.002522+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "Bowl notification",
-                    "icon": "mdi:star-circle-outline"
-                },
-                "context": {
-                    "id": "6776efb3c243462ea3d122dcda8570d5",
-                    "parent_id": null,
-                    "user_id": null
-                },
-                "entity_id": "input_boolean.automation_bowl_notification",
-                "last_changed": "2019-08-08T20:56:11.061173+00:00",
-                "last_updated": "2019-08-08T20:56:11.061173+00:00",
-                "state": "on"
-            }
-        },
-        {
-            "last_seen": "2019-08-08T21:11:24.002522+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "Vacation",
-                    "icon": "mdi:home"
-                },
-                "context": {
-                    "id": "a55c26348bde4aaca86d9e155a07c5c5",
-                    "parent_id": null,
-                    "user_id": null
-                },
-                "entity_id": "input_boolean.vacation",
-                "last_changed": "2019-08-08T20:56:11.061386+00:00",
-                "last_updated": "2019-08-08T20:56:11.061386+00:00",
-                "state": "off"
-            }
-        },
-        {
-            "last_seen": "2019-08-08T21:11:24.002522+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "Christmas Lights",
-                    "icon": "mdi:pine-tree"
-                },
-                "context": {
-                    "id": "8b667bd517ac4ca38c90b658824112f2",
-                    "parent_id": null,
-                    "user_id": null
-                },
-                "entity_id": "input_boolean.automation_christmas_lights_enabled",
-                "last_changed": "2019-08-08T20:56:11.061644+00:00",
-                "last_updated": "2019-08-08T20:56:11.061644+00:00",
-                "state": "on"
-            }
-        },
-        {
-            "last_seen": "2019-08-08T21:11:24.002522+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "Wind warning",
-                    "icon": "mdi:weather-windy"
-                },
-                "context": {
-                    "id": "c9cc0d1683514bce8739cc6bdd4e9354",
-                    "parent_id": null,
-                    "user_id": null
-                },
-                "entity_id": "input_boolean.current_wind_warning",
-                "last_changed": "2019-08-08T20:56:11.061887+00:00",
-                "last_updated": "2019-08-08T20:56:11.061887+00:00",
-                "state": "off"
-            }
-        },
-        {
-            "last_seen": "2019-08-08T21:11:24.002522+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "Christmas Lights notification",
-                    "icon": "mdi:pine-tree"
-                },
-                "context": {
-                    "id": "5312f7c44de74ae691ae0486366839b6",
-                    "parent_id": null,
-                    "user_id": null
-                },
-                "entity_id": "input_boolean.automation_christmas_lights_notification",
-                "last_changed": "2019-08-08T20:56:11.062116+00:00",
-                "last_updated": "2019-08-08T20:56:11.062116+00:00",
-                "state": "on"
-            }
-        },
-        {
-            "last_seen": "2019-08-08T21:11:24.002522+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "Timelapse",
-                    "icon": "mdi:timelapse"
-                },
-                "context": {
-                    "id": "85d93a4c09ec41d6baf5e0a5b787f29e",
-                    "parent_id": null,
-                    "user_id": null
-                },
-                "entity_id": "input_boolean.camera_timelapse",
-                "last_changed": "2019-08-08T20:56:11.062356+00:00",
-                "last_updated": "2019-08-08T20:56:11.062356+00:00",
-                "state": "off"
-            }
-        },
-        {
-            "last_seen": "2019-08-08T21:11:24.002522+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "Hue",
-                    "icon": "mdi:ceiling-light"
-                },
-                "context": {
-                    "id": "3df147eb8593409d8f571d5e94cb4bf5",
-                    "parent_id": null,
-                    "user_id": null
-                },
-                "entity_id": "input_boolean.automation_hue_enabled",
-                "last_changed": "2019-08-08T20:56:11.062593+00:00",
-                "last_updated": "2019-08-08T20:56:11.062593+00:00",
-                "state": "on"
-            }
-        },
-        {
-            "last_seen": "2019-08-08T21:11:24.002522+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "Motion detection",
-                    "icon": "mdi:cctv"
-                },
-                "context": {
-                    "id": "9846cbb025f044be9cdf4e6de537b344",
-                    "parent_id": null,
-                    "user_id": null
-                },
-                "entity_id": "input_boolean.camera_motion",
-                "last_changed": "2019-08-08T20:56:11.064386+00:00",
-                "last_updated": "2019-08-08T20:56:11.064386+00:00",
-                "state": "off"
-            }
-        },
-        {
-            "last_seen": "2019-08-08T21:11:24.002522+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "MQTT Shield off",
-                    "hidden": false,
-                    "id": "1519561541052",
-                    "last_triggered": "2019-07-31T20:16:28.404826+00:00"
-                },
-                "context": {
-                    "id": "0a53cd92049a445b92e522667678933a",
-                    "parent_id": null,
-                    "user_id": null
-                },
-                "entity_id": "automation.mqtt_shield_off",
-                "last_changed": "2019-08-08T20:56:11.731094+00:00",
-                "last_updated": "2019-08-08T20:56:11.731094+00:00",
-                "state": "on"
-            }
-        },
-        {
-            "last_seen": "2019-08-08T21:11:24.002522+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "Presence Nikik Wifi - to home",
-                    "hidden": false,
-                    "id": "1551386998548",
-                    "last_triggered": "2019-08-08T21:00:01.869428+00:00"
-                },
-                "context": {
-                    "id": "740e5f510704476e9da492eb146c36fe",
-                    "parent_id": "055f2a781202438cb772ddd69f2aa00c",
-                    "user_id": null
-                },
-                "entity_id": "automation.presence_nikik_wifi_to_home",
-                "last_changed": "2019-08-08T20:56:11.731691+00:00",
-                "last_updated": "2019-08-08T21:00:01.869560+00:00",
-                "state": "on"
-            }
-        },
-        {
-            "last_seen": "2019-08-08T21:11:24.002522+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "MQTT Shield on",
-                    "hidden": false,
-                    "id": "1519561583777",
-                    "last_triggered": "2019-07-31T19:17:03.245267+00:00"
-                },
-                "context": {
-                    "id": "f6c92b0491ab4608ba3cbdcdeed52dbc",
-                    "parent_id": null,
-                    "user_id": null
-                },
-                "entity_id": "automation.mqtt_shield_on",
-                "last_changed": "2019-08-08T20:56:11.732123+00:00",
-                "last_updated": "2019-08-08T20:56:11.732123+00:00",
-                "state": "on"
-            }
-        },
-        {
-            "last_seen": "2019-08-08T21:11:24.002522+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "Presence Peto Wifi - to home",
-                    "hidden": false,
-                    "id": "1551386746983",
-                    "last_triggered": "2019-08-08T21:00:01.868215+00:00"
-                },
-                "context": {
-                    "id": "970c91583fe34c5eb9142705cb26f382",
-                    "parent_id": "957ededac3524c78973642590328aa76",
-                    "user_id": null
-                },
-                "entity_id": "automation.presence_peto_wifi_to_home",
-                "last_changed": "2019-08-08T20:56:11.732550+00:00",
-                "last_updated": "2019-08-08T21:00:01.868365+00:00",
-                "state": "on"
-            }
-        },
-        {
-            "last_seen": "2019-08-08T21:11:24.002522+00:00",
+            "last_seen": "2019-08-20T14:06:13.539361+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "Presence Nikik Wifi - to not home",
                     "hidden": false,
                     "id": "1551387048129",
-                    "last_triggered": "2019-08-08T11:10:50.020811+00:00"
+                    "last_triggered": "2019-08-20T04:54:40.017271+00:00"
                 },
                 "context": {
-                    "id": "15ed9b7324fc44d986966cf55b73090e",
+                    "id": "be70cf9fa627473882bf1cd8faed4f2d",
                     "parent_id": null,
                     "user_id": null
                 },
                 "entity_id": "automation.presence_nikik_wifi_to_not_home",
-                "last_changed": "2019-08-08T20:56:11.732982+00:00",
-                "last_updated": "2019-08-08T20:56:11.732982+00:00",
+                "last_changed": "2019-08-20T14:06:01.919310+00:00",
+                "last_updated": "2019-08-20T14:06:01.919310+00:00",
                 "state": "on"
             }
         },
         {
-            "last_seen": "2019-08-08T21:11:24.002522+00:00",
+            "last_seen": "2019-08-20T14:06:13.539361+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Presence Nikik Wifi - to home",
+                    "hidden": false,
+                    "id": "1551386998548",
+                    "last_triggered": "2019-08-20T01:19:36.541684+00:00"
+                },
+                "context": {
+                    "id": "a1c1505d4360416f8e37661832b48020",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "automation.presence_nikik_wifi_to_home",
+                "last_changed": "2019-08-20T14:06:01.919797+00:00",
+                "last_updated": "2019-08-20T14:06:01.919797+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2019-08-20T14:06:13.539361+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "MQTT Shield off",
+                    "hidden": false,
+                    "id": "1519561541052",
+                    "last_triggered": "2019-08-19T20:15:30.435811+00:00"
+                },
+                "context": {
+                    "id": "dfe7f1eb20244141bbb6a418d42fb48f",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "automation.mqtt_shield_off",
+                "last_changed": "2019-08-20T14:06:01.920245+00:00",
+                "last_updated": "2019-08-20T14:06:01.920245+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2019-08-20T14:06:13.539361+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "MQTT Shield on",
+                    "hidden": false,
+                    "id": "1519561583777",
+                    "last_triggered": "2019-08-19T20:05:04.742149+00:00"
+                },
+                "context": {
+                    "id": "53e851d828ef4a34ba8fe5a4bb1dde89",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "automation.mqtt_shield_on",
+                "last_changed": "2019-08-20T14:06:01.920681+00:00",
+                "last_updated": "2019-08-20T14:06:01.920681+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2019-08-20T14:06:13.539361+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "Presence Peto Wifi - to not_home",
                     "hidden": false,
                     "id": "1551386850844",
-                    "last_triggered": "2019-08-08T18:25:35.017175+00:00"
+                    "last_triggered": "2019-08-20T12:35:25.022873+00:00"
                 },
                 "context": {
-                    "id": "74fdcb925e0641679f630bef7a9ca5f8",
+                    "id": "d458c8adcf5147f49b4bcea3ff20c498",
                     "parent_id": null,
                     "user_id": null
                 },
                 "entity_id": "automation.presence_peto_wifi_to_not_home",
-                "last_changed": "2019-08-08T20:56:11.733414+00:00",
-                "last_updated": "2019-08-08T20:56:11.733414+00:00",
+                "last_changed": "2019-08-20T14:06:01.921136+00:00",
+                "last_updated": "2019-08-20T14:06:01.921136+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2019-08-20T14:06:13.539361+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Presence Peto Wifi - to home",
+                    "hidden": false,
+                    "id": "1551386746983",
+                    "last_triggered": "2019-08-20T13:50:01.361627+00:00"
+                },
+                "context": {
+                    "id": "250e052a4aba4696928e68ec2b99ae70",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "automation.presence_peto_wifi_to_home",
+                "last_changed": "2019-08-20T14:06:01.921577+00:00",
+                "last_updated": "2019-08-20T14:06:01.921577+00:00",
                 "state": "on"
             }
         }
