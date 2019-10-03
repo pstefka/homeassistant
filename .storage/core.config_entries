@@ -2,16 +2,6 @@
     "data": {
         "entries": [
             {
-                "connection_class": "unknown",
-                "data": {},
-                "domain": "cast",
-                "entry_id": "8ded91d1ebd94c28b5232a90fda3cb77",
-                "options": {},
-                "source": "import",
-                "title": "Google Cast",
-                "version": 1
-            },
-            {
                 "connection_class": "local_push",
                 "data": {
                     "network_key": "0x22, 0x50, 0xA1, 0xBC, 0x62, 0x87, 0xBD, 0x00, 0xFC, 0x9D, 0x5C, 0xCC, 0xAC, 0xA8, 0x2D, 0xFA",
@@ -21,6 +11,9 @@
                 "entry_id": "b373b17d98564ef6a2da583bd6d6f7ce",
                 "options": {},
                 "source": "user",
+                "system_options": {
+                    "disable_new_entities": false
+                },
                 "title": "Z-Wave",
                 "version": 1
             },
@@ -35,6 +28,9 @@
                 "entry_id": "57557f98f6ca4dc18dfb58b76cd0b8da",
                 "options": {},
                 "source": "user",
+                "system_options": {
+                    "disable_new_entities": false
+                },
                 "title": "192.168.1.6",
                 "version": 1
             },
@@ -49,6 +45,9 @@
                 "entry_id": "64e9599abb804d87ab2452b8e1064026",
                 "options": {},
                 "source": "user",
+                "system_options": {
+                    "disable_new_entities": false
+                },
                 "title": "Philips hue",
                 "version": 1
             },
@@ -59,7 +58,25 @@
                 "entry_id": "e0233d8e576b41298a67b994507dbc7a",
                 "options": {},
                 "source": "import",
+                "system_options": {
+                    "disable_new_entities": false
+                },
                 "title": "TP-Link Smart Home",
+                "version": 1
+            },
+            {
+                "connection_class": "local_push",
+                "data": {
+                    "user_id": "65c97e5910254c428411b7cbb556341b"
+                },
+                "domain": "cast",
+                "entry_id": "ec8581ddaabc4ff4b68fc137714cb629",
+                "options": {},
+                "source": "user",
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "title": "Google Cast",
                 "version": 1
             }
         ]

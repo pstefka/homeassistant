@@ -4,26 +4,6 @@
             {
                 "area_id": "7e10682420a944149f4bb03223232bff",
                 "config_entries": [
-                    "8ded91d1ebd94c28b5232a90fda3cb77"
-                ],
-                "connections": [],
-                "id": "e0cb93d68f764a13afcc1872b0200f9b",
-                "identifiers": [
-                    [
-                        "cast",
-                        "d4baa6f2b602ab1516b0a7085666ee27"
-                    ]
-                ],
-                "manufacturer": "NVIDIA",
-                "model": "SHIELD Android TV",
-                "name": "Shield",
-                "name_by_user": null,
-                "sw_version": null,
-                "via_device_id": null
-            },
-            {
-                "area_id": "7e10682420a944149f4bb03223232bff",
-                "config_entries": [
                     "b373b17d98564ef6a2da583bd6d6f7ce"
                 ],
                 "connections": [],
@@ -64,26 +44,6 @@
             {
                 "area_id": "7e10682420a944149f4bb03223232bff",
                 "config_entries": [
-                    "8ded91d1ebd94c28b5232a90fda3cb77"
-                ],
-                "connections": [],
-                "id": "32e4050acd0e43f8ab75e3433491adce",
-                "identifiers": [
-                    [
-                        "cast",
-                        "8b7a5faf6ca4122f43adf06e1cd602ec"
-                    ]
-                ],
-                "manufacturer": "Unknown manufacturer",
-                "model": "Google Home Mini",
-                "name": "Mini",
-                "name_by_user": null,
-                "sw_version": null,
-                "via_device_id": null
-            },
-            {
-                "area_id": "7e10682420a944149f4bb03223232bff",
-                "config_entries": [
                     "64e9599abb804d87ab2452b8e1064026"
                 ],
                 "connections": [
@@ -103,7 +63,7 @@
                 "model": "BSB002",
                 "name": "Philips hue",
                 "name_by_user": null,
-                "sw_version": "1933087030",
+                "sw_version": "1934058060",
                 "via_device_id": null
             },
             {
@@ -242,6 +202,46 @@
                 "manufacturer": "Aeotec",
                 "model": "ZW090 Z-Stick Gen5 EU",
                 "name": "Aeotec ZW090 Z-Stick Gen5 EU",
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": null
+            },
+            {
+                "area_id": "7e10682420a944149f4bb03223232bff",
+                "config_entries": [
+                    "ec8581ddaabc4ff4b68fc137714cb629"
+                ],
+                "connections": [],
+                "id": "005fabb1434c40e2ba7556fa6e5c72d1",
+                "identifiers": [
+                    [
+                        "cast",
+                        "2adcbd015915fad29398b90c1f0e3a52"
+                    ]
+                ],
+                "manufacturer": "NVIDIA",
+                "model": "SHIELD Android TV",
+                "name": "Shield",
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": null
+            },
+            {
+                "area_id": "7e10682420a944149f4bb03223232bff",
+                "config_entries": [
+                    "ec8581ddaabc4ff4b68fc137714cb629"
+                ],
+                "connections": [],
+                "id": "79ca1df8a33e4eccb4c4e7bc53484cb4",
+                "identifiers": [
+                    [
+                        "cast",
+                        "fd4328c55af1249245b9a5b6b96f70af"
+                    ]
+                ],
+                "manufacturer": "Unknown manufacturer",
+                "model": "Google Home Mini",
+                "name": "Living Room speaker",
                 "name_by_user": null,
                 "sw_version": null,
                 "via_device_id": null

@@ -325,14 +325,6 @@ e4e4ab4e70b3:
   picture:
   track: false
 
-google_home_mini:
-  hide_if_away: false
-  icon:
-  mac: 20:DF:B9:72:62:4D
-  name: Home mini
-  picture:
-  track: false
-
 74_eb_80_b1_95_da:
   hide_if_away: false
   icon:
@@ -387,5 +379,21 @@ reolink_c1pro:
   icon:
   mac: 58:FB:84:4F:BD:02
   name: 58 fb 84 4f bd 02
+  picture:
+  track: true
+
+20_df_b9_72_62_4d:
+  hide_if_away: false
+  icon:
+  mac: 20:DF:B9:72:62:4D
+  name: 20 df b9 72 62 4d
+  picture:
+  track: true
+
+50_ec_50_05_5e_43:
+  hide_if_away: false
+  icon:
+  mac: 50:EC:50:05:5E:43
+  name: 50 ec 50 05 5e 43
   picture:
   track: true

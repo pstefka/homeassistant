@@ -533,22 +533,31 @@
                 "unique_id": "70:4F:57:FF:8D:B1"
             },
             {
-                "config_entry_id": "8ded91d1ebd94c28b5232a90fda3cb77",
-                "device_id": "e0cb93d68f764a13afcc1872b0200f9b",
+                "config_entry_id": "ec8581ddaabc4ff4b68fc137714cb629",
+                "device_id": "005fabb1434c40e2ba7556fa6e5c72d1",
                 "disabled_by": null,
                 "entity_id": "media_player.shield",
                 "name": null,
                 "platform": "cast",
-                "unique_id": "d4baa6f2-b602-ab15-16b0-a7085666ee27"
+                "unique_id": "2adcbd01-5915-fad2-9398-b90c1f0e3a52"
             },
             {
-                "config_entry_id": "8ded91d1ebd94c28b5232a90fda3cb77",
-                "device_id": "32e4050acd0e43f8ab75e3433491adce",
+                "config_entry_id": "ec8581ddaabc4ff4b68fc137714cb629",
+                "device_id": "79ca1df8a33e4eccb4c4e7bc53484cb4",
                 "disabled_by": null,
-                "entity_id": "media_player.mini",
+                "entity_id": "media_player.living_room_speaker",
                 "name": null,
                 "platform": "cast",
-                "unique_id": "8b7a5faf-6ca4-122f-43ad-f06e1cd602ec"
+                "unique_id": "fd4328c5-5af1-2492-45b9-a5b6b96f70af"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "binary_sensor.updater",
+                "name": null,
+                "platform": "updater",
+                "unique_id": "updater"
             }
         ]
     },

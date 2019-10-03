@@ -173,21 +173,90 @@
                         {
                             "cards": [
                                 {
-                                    "card": {
-                                        "content": "## Turn AC on\nIt's too hot\n",
-                                        "type": "markdown"
-                                    },
-                                    "conditions": [
+                                    "cards": [
                                         {
-                                            "entity": "sensor.livingroom_hotness",
-                                            "state": "hot"
+                                            "card": {
+                                                "content": "## Use AC\nIt's too hot\n",
+                                                "type": "markdown"
+                                            },
+                                            "conditions": [
+                                                {
+                                                    "entity": "sensor.livingroom_hotness",
+                                                    "state": "hot"
+                                                },
+                                                {
+                                                    "entity": "sensor.outside_hotness",
+                                                    "state": "hot"
+                                                }
+                                            ],
+                                            "type": "conditional"
                                         },
                                         {
-                                            "entity": "sensor.outside_hotness",
-                                            "state": "hot"
+                                            "card": {
+                                                "entity": "climate.ac",
+                                                "icon_height": "53px",
+                                                "name": "turn AC OFF",
+                                                "show_icon": true,
+                                                "show_name": true,
+                                                "tap_action": {
+                                                    "action": "call-service",
+                                                    "service": "climate.set_hvac_mode",
+                                                    "service_data": {
+                                                        "hvac_mode": "off"
+                                                    }
+                                                },
+                                                "type": "entity-button"
+                                            },
+                                            "conditions": [
+                                                {
+                                                    "entity": "sensor.livingroom_hotness",
+                                                    "state": "hot"
+                                                },
+                                                {
+                                                    "entity": "sensor.outside_hotness",
+                                                    "state": "hot"
+                                                },
+                                                {
+                                                    "entity": "climate.ac",
+                                                    "state_not": "off"
+                                                }
+                                            ],
+                                            "type": "conditional"
+                                        },
+                                        {
+                                            "card": {
+                                                "entity": "climate.ac",
+                                                "icon_height": "53px",
+                                                "name": "turn AC ON",
+                                                "show_icon": true,
+                                                "show_name": true,
+                                                "tap_action": {
+                                                    "action": "call-service",
+                                                    "service": "climate.set_hvac_mode",
+                                                    "service_data": {
+                                                        "hvac_mode": "cool"
+                                                    }
+                                                },
+                                                "type": "entity-button"
+                                            },
+                                            "conditions": [
+                                                {
+                                                    "entity": "sensor.livingroom_hotness",
+                                                    "state": "hot"
+                                                },
+                                                {
+                                                    "entity": "sensor.outside_hotness",
+                                                    "state": "hot"
+                                                },
+                                                {
+                                                    "entity": "climate.ac",
+                                                    "state": "off"
+                                                }
+                                            ],
+                                            "type": "conditional"
                                         }
                                     ],
-                                    "type": "conditional"
+                                    "type": "horizontal-stack"
                                 },
                                 {
                                     "card": {
@@ -225,6 +294,34 @@
                                 },
                                 {
                                     "card": {
+                                        "content": "## Turn heating on\nIt's too cold\n",
+                                        "type": "markdown"
+                                    },
+                                    "conditions": [
+                                        {
+                                            "entity": "sensor.livingroom_hotness",
+                                            "state": "cold"
+                                        },
+                                        {
+                                            "entity": "sensor.outside_hotness",
+                                            "state": "cold"
+                                        }
+                                    ],
+                                    "type": "conditional"
+                                }
+                            ],
+                            "type": "vertical-stack"
+                        },
+                        {
+                            "cards": [
+                                {
+                                    "entities": [
+                                        "input_select.heat"
+                                    ],
+                                    "type": "entities"
+                                },
+                                {
+                                    "card": {
                                         "entity": "climate.eurotronic_eur_spiritz_wall_radiator_thermostat_heat",
                                         "type": "thermostat"
                                     },
@@ -235,16 +332,6 @@
                                         }
                                     ],
                                     "type": "conditional"
-                                },
-                                {
-                                    "entities": [
-                                        "input_select.heat"
-                                    ],
-                                    "type": "entities"
-                                },
-                                {
-                                    "entity": "climate.ac",
-                                    "type": "thermostat"
                                 }
                             ],
                             "type": "vertical-stack"
@@ -367,33 +454,6 @@
                     "icon": "mdi:account-multiple",
                     "path": "people_view",
                     "title": "People view"
-                },
-                {
-                    "badges": [],
-                    "cards": [
-                        {
-                            "entities": [
-                                {
-                                    "entity": "switch.pornonas"
-                                },
-                                {
-                                    "entity": "sensor.synology_dsm_volume_used_volume_1"
-                                },
-                                {
-                                    "entity": "sensor.synology_dsm_temperature_sda"
-                                },
-                                {
-                                    "entity": "sensor.synology_dsm_temperature_sdb"
-                                }
-                            ],
-                            "show_header_toggle": false,
-                            "title": "NAS status",
-                            "type": "entities"
-                        }
-                    ],
-                    "icon": "mdi:sd",
-                    "path": "nas_status_view",
-                    "title": "NAS status view"
                 },
                 {
                     "badges": [
@@ -587,11 +647,42 @@
                                 }
                             ],
                             "type": "vertical-stack"
+                        },
+                        {
+                            "entity": "climate.ac",
+                            "type": "thermostat"
                         }
                     ],
                     "icon": "mdi:weather-partlycloudy",
                     "path": "weather_view",
                     "title": "Climate"
+                },
+                {
+                    "badges": [],
+                    "cards": [
+                        {
+                            "entities": [
+                                {
+                                    "entity": "switch.pornonas"
+                                },
+                                {
+                                    "entity": "sensor.synology_dsm_volume_used_volume_1"
+                                },
+                                {
+                                    "entity": "sensor.synology_dsm_temperature_sda"
+                                },
+                                {
+                                    "entity": "sensor.synology_dsm_temperature_sdb"
+                                }
+                            ],
+                            "show_header_toggle": false,
+                            "title": "NAS status",
+                            "type": "entities"
+                        }
+                    ],
+                    "icon": "mdi:sd",
+                    "path": "nas_status_view",
+                    "title": "NAS status view"
                 },
                 {
                     "badges": [],
@@ -896,7 +987,7 @@
                         {
                             "entities": [
                                 {
-                                    "entity": "media_player.mini"
+                                    "entity": "media_player.living_room_speaker"
                                 },
                                 {
                                     "entity": "media_player.kodi"
@@ -909,12 +1000,12 @@
                         },
                         {
                             "card": {
-                                "entity": "media_player.mini",
+                                "entity": "media_player.living_room_speaker",
                                 "type": "media-control"
                             },
                             "conditions": [
                                 {
-                                    "entity": "media_player.mini",
+                                    "entity": "media_player.living_room_speaker",
                                     "state_not": "off"
                                 }
                             ],
