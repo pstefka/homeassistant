@@ -26,8 +26,11 @@
     name: Motion detection
     icon: mdi:cctv
   camera_mode_semafor:
-  automation_welcome_message_enabled:
-    name: Welcome Message
+  automation_welcome_message_enabled_peto:
+    name: Welcome Message Peto
+    icon: mdi:speaker-wireless
+  automation_welcome_message_enabled_nikik:
+    name: Welcome Message Nikik
     icon: mdi:speaker-wireless
   automation_burglar_enabled:
     name: Burglar Alert

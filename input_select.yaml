@@ -4,6 +4,7 @@
      - Auto
      - 'Off'
      - 'On'
+     - 'Cool'
     icon: mdi:air-conditioner
   presence_peto:
     name: Peto
@@ -46,4 +47,11 @@
      - 'Timelapse'
      - 'Baby monitor'
      - 'Off'
-
+  vacuum_fan_speed:
+    name: Fan Speed
+    initial: 'Turbo'
+    options:
+    - 'Quiet'
+    - 'Balanced'
+    - 'Turbo'
+    - 'Max'

@@ -397,3 +397,35 @@ reolink_c1pro:
   name: 50 ec 50 05 5e 43
   picture:
   track: true
+
+18_1d_ea_48_be_df:
+  hide_if_away: false
+  icon:
+  mac: 18:1D:EA:48:BE:DF
+  name: 18 1d ea 48 be df
+  picture:
+  track: true
+
+d4_ab_82_5a_e1_26:
+  hide_if_away: false
+  icon:
+  mac: D4:AB:82:5A:E1:26
+  name: d4 ab 82 5a e1 26
+  picture:
+  track: true
+
+a8_7d_12_30_32_7e:
+  hide_if_away: false
+  icon:
+  mac: A8:7D:12:30:32:7E
+  name: a8 7d 12 30 32 7e
+  picture:
+  track: true
+
+78_e4_00_b3_97_80:
+  hide_if_away: false
+  icon:
+  mac: 78:E4:00:B3:97:80
+  name: 78 e4 00 b3 97 80
+  picture:
+  track: true

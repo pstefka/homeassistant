@@ -63,7 +63,7 @@
                 "model": "BSB002",
                 "name": "Philips hue",
                 "name_by_user": null,
-                "sw_version": "1934058060",
+                "sw_version": "1935074050",
                 "via_device_id": null
             },
             {
@@ -127,7 +127,7 @@
                 "via_device_id": "8a09c40050b249669a6e606cdbd7767c"
             },
             {
-                "area_id": null,
+                "area_id": "7e10682420a944149f4bb03223232bff",
                 "config_entries": [
                     "e0233d8e576b41298a67b994507dbc7a"
                 ],
@@ -147,7 +147,7 @@
                 "via_device_id": null
             },
             {
-                "area_id": null,
+                "area_id": "7e10682420a944149f4bb03223232bff",
                 "config_entries": [
                     "e0233d8e576b41298a67b994507dbc7a"
                 ],
@@ -167,7 +167,7 @@
                 "via_device_id": null
             },
             {
-                "area_id": null,
+                "area_id": "7e10682420a944149f4bb03223232bff",
                 "config_entries": [
                     "e0233d8e576b41298a67b994507dbc7a"
                 ],
@@ -187,7 +187,7 @@
                 "via_device_id": null
             },
             {
-                "area_id": null,
+                "area_id": "7e10682420a944149f4bb03223232bff",
                 "config_entries": [
                     "b373b17d98564ef6a2da583bd6d6f7ce"
                 ],
@@ -241,7 +241,7 @@
                 ],
                 "manufacturer": "Unknown manufacturer",
                 "model": "Google Home Mini",
-                "name": "Living Room speaker",
+                "name": "Mini",
                 "name_by_user": null,
                 "sw_version": null,
                 "via_device_id": null

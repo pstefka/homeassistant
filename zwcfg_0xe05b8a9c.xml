@@ -33,8 +33,8 @@
 			</CommandClass>
 			<CommandClass id="49" name="COMMAND_CLASS_SENSOR_MULTILEVEL" version="8" innif="true">
 				<Instance index="1" />
-				<Value type="decimal" genre="user" instance="1" index="1" label="Temperature" units="C" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="22.7" />
-				<Value type="decimal" genre="user" instance="1" index="3" label="Luminance" units="lux" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="63" />
+				<Value type="decimal" genre="user" instance="1" index="1" label="Temperature" units="C" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="23.4" />
+				<Value type="decimal" genre="user" instance="1" index="3" label="Luminance" units="lux" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="30" />
 				<Value type="decimal" genre="user" instance="1" index="25" label="Seismic Intensity" units="" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="0.0" />
 			</CommandClass>
 			<CommandClass id="86" name="COMMAND_CLASS_CRC_16_ENCAP" version="1" request_flags="4" innif="true">
@@ -245,7 +245,7 @@
 			</CommandClass>
 			<CommandClass id="128" name="COMMAND_CLASS_BATTERY" version="1" request_flags="4" innif="true">
 				<Instance index="1" />
-				<Value type="byte" genre="user" instance="1" index="0" label="Battery Level" units="%" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="255" value="59" />
+				<Value type="byte" genre="user" instance="1" index="0" label="Battery Level" units="%" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="255" value="33" />
 			</CommandClass>
 			<CommandClass id="132" name="COMMAND_CLASS_WAKE_UP" version="2" request_flags="2" innif="true">
 				<Instance index="1" />
@@ -321,7 +321,7 @@
 			</CommandClass>
 			<CommandClass id="49" name="COMMAND_CLASS_SENSOR_MULTILEVEL" version="5" innif="true">
 				<Instance index="1" />
-				<Value type="decimal" genre="user" instance="1" index="1" label="Temperature" units="C" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="19.99" />
+				<Value type="decimal" genre="user" instance="1" index="1" label="Temperature" units="C" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="20.78" />
 			</CommandClass>
 			<CommandClass id="64" name="COMMAND_CLASS_THERMOSTAT_MODE" version="1" request_flags="4" innif="true">
 				<Instance index="1" />
@@ -343,7 +343,7 @@
 			</CommandClass>
 			<CommandClass id="67" name="COMMAND_CLASS_THERMOSTAT_SETPOINT" version="1" request_flags="4" innif="true" base="0">
 				<Instance index="1" />
-				<Value type="decimal" genre="user" instance="1" index="1" label="Heat" units="C" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="8" max="28" value="21.0" />
+				<Value type="decimal" genre="user" instance="1" index="1" label="Heat" units="C" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="8" max="28" value="20.5" />
 				<Value type="decimal" genre="user" instance="1" index="7" label="Furnace" units="C" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="0.0" />
 				<Value type="decimal" genre="user" instance="1" index="11" label="Heat Eco" units="C" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="8" max="28" value="18.0" />
 			</CommandClass>
@@ -453,7 +453,7 @@
 			</CommandClass>
 			<CommandClass id="128" name="COMMAND_CLASS_BATTERY" version="1" request_flags="4" innif="true">
 				<Instance index="1" />
-				<Value type="byte" genre="user" instance="1" index="0" label="Battery Level" units="%" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="255" value="0" />
+				<Value type="byte" genre="user" instance="1" index="0" label="Battery Level" units="%" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="255" value="100" />
 			</CommandClass>
 			<CommandClass id="133" name="COMMAND_CLASS_ASSOCIATION" version="1" request_flags="4" innif="true">
 				<Instance index="1" />

@@ -1,0 +1,19 @@
+# get token using mi home 5.4.54
+# -> /SmartHome/logs/Plug_Devicemanager/xxxxx.txt
+# token
+# coordinates from FloleVac app
+
+# carpet
+[[21890,24187,24390,25737,1]]
+# kitchen
+[[20117,27009,21667,29609,1]]
+# livingroom
+[[19660,22805,26210,27055,1]]
+# Hallway
+[[15209,23512,19609,27012,1]]
+# master bedroom
+[[22338,27098,25988,30748,1]]
+# restroom
+[[17647,27035,19447,29535,1]]
+# toilet
+[[17647,22732,19597,23932,1]]

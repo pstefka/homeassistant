@@ -45,36 +45,6 @@
                             "type": "vertical-stack"
                         },
                         {
-                            "cards": [
-                                {
-                                    "camera_image": "camera.c1pro_generic",
-                                    "entity": "input_select.camera_mode",
-                                    "tap_action": {
-                                        "action": "navigate",
-                                        "navigation_path": "fullscreen-camera"
-                                    },
-                                    "type": "picture-entity"
-                                },
-                                {
-                                    "entities": [
-                                        {
-                                            "action_name": "Stream",
-                                            "icon": "mdi:power",
-                                            "name": "Show on TV",
-                                            "service": "camera.play_stream",
-                                            "service_data": {
-                                                "entity_id": "camera.c1pro_generic",
-                                                "media_player": "media_player.shield"
-                                            },
-                                            "type": "call-service"
-                                        }
-                                    ],
-                                    "type": "entities"
-                                }
-                            ],
-                            "type": "vertical-stack"
-                        },
-                        {
                             "card": {
                                 "cards": [
                                     {
@@ -109,8 +79,21 @@
                             "type": "conditional"
                         },
                         {
-                            "entity": "weather.dark_sky",
-                            "type": "weather-forecast"
+                            "camera_view": "live",
+                            "entity": "camera.c1pro_onvif",
+                            "hold_action": {
+                                "action": "call-service",
+                                "service": "camera.play_stream",
+                                "service_data": {
+                                    "entity_id": "camera.c1pro_generic",
+                                    "media_player": "media_player.shield"
+                                }
+                            },
+                            "tap_action": {
+                                "action": "navigate",
+                                "navigation_path": "fullscreen-camera"
+                            },
+                            "type": "picture-entity"
                         },
                         {
                             "columns": 5,
@@ -146,9 +129,7 @@
                                     }
                                 }
                             ],
-                            "show_icon": true,
-                            "show_name": true,
-                            "show_state": true,
+                            "show_state": false,
                             "title": "Lights",
                             "type": "glance"
                         },
@@ -329,6 +310,23 @@
                                         {
                                             "entity": "input_select.heat",
                                             "state_not": "Off"
+                                        },
+                                        {
+                                            "entity": "input_select.heat",
+                                            "state_not": "Cool"
+                                        }
+                                    ],
+                                    "type": "conditional"
+                                },
+                                {
+                                    "card": {
+                                        "entity": "climate.ac",
+                                        "type": "thermostat"
+                                    },
+                                    "conditions": [
+                                        {
+                                            "entity": "input_select.heat",
+                                            "state": "Cool"
                                         }
                                     ],
                                     "type": "conditional"
@@ -365,12 +363,12 @@
                     "cards": [
                         {
                             "camera_view": "live",
-                            "entity": "camera.c1pro_generic",
+                            "entity": "camera.c1pro_onvif",
                             "hold_action": {
                                 "action": "call-service",
                                 "service": "camera.play_stream",
                                 "service_data": {
-                                    "entity_id": "camera.c1pro_generic",
+                                    "entity_id": "camera.C1pro-onvif",
                                     "media_player": "media_player.shield"
                                 }
                             },
@@ -400,13 +398,19 @@
                     "title": "Fullscreen photo"
                 },
                 {
-                    "badges": [],
+                    "badges": [
+                        "device_tracker.presence_nikik",
+                        "device_tracker.presence_peto",
+                        "device_tracker.18_1d_ea_48_be_df",
+                        "device_tracker.20_df_b9_72_62_4d",
+                        "device_tracker.50_ec_50_05_5e_43",
+                        "device_tracker.58_fb_84_4f_bd_02",
+                        "device_tracker.94_65_2d_a5_41_db",
+                        "device_tracker.d4_ab_82_5a_e1_26"
+                    ],
                     "cards": [
                         {
                             "entities": [
-                                {
-                                    "entity": "sensor.presence"
-                                },
                                 {
                                     "entity": "sensor.presence_nikik"
                                 },
@@ -417,6 +421,19 @@
                                     "entity": "sensor.presence_nikik_ble_friendly"
                                 },
                                 {
+                                    "entity": "input_select.presence_nikik"
+                                },
+                                {
+                                    "entity": "input_select.presence_nikik_wifi"
+                                }
+                            ],
+                            "show_header_toggle": false,
+                            "title": "Presence Nikik",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                {
                                     "entity": "sensor.presence_peto"
                                 },
                                 {
@@ -424,6 +441,12 @@
                                 },
                                 {
                                     "entity": "sensor.presence_peto_ble_friendly"
+                                },
+                                {
+                                    "entity": "input_select.presence_peto"
+                                },
+                                {
+                                    "entity": "input_select.presence_peto_wifi"
                                 }
                             ],
                             "show_header_toggle": false,
@@ -433,21 +456,14 @@
                         {
                             "entities": [
                                 {
+                                    "entity": "sensor.presence"
+                                },
+                                {
                                     "entity": "input_select.presence"
-                                },
-                                {
-                                    "entity": "input_select.presence_nikik"
-                                },
-                                {
-                                    "entity": "input_select.presence_nikik_wifi"
-                                },
-                                {
-                                    "entity": "input_select.presence_peto"
-                                },
-                                {
-                                    "entity": "input_select.presence_peto_wifi"
                                 }
                             ],
+                            "show_header_toggle": false,
+                            "title": "Custom presence",
                             "type": "entities"
                         }
                     ],
@@ -462,6 +478,10 @@
                         "binary_sensor.sun_up"
                     ],
                     "cards": [
+                        {
+                            "entity": "weather.dark_sky",
+                            "type": "weather-forecast"
+                        },
                         {
                             "detail": 2,
                             "entity": "sensor.yr_temperature",
@@ -533,6 +553,34 @@
                         },
                         {
                             "entities": [
+                                {
+                                    "entity": "sensor.dark_sky_temperature"
+                                },
+                                {
+                                    "entity": "sensor.dark_sky_apparent_temperature"
+                                },
+                                {
+                                    "entity": "sensor.dark_sky_cloud_coverage"
+                                },
+                                {
+                                    "entity": "sensor.dark_sky_wind_speed"
+                                },
+                                {
+                                    "entity": "sensor.dark_sky_wind_gust"
+                                },
+                                {
+                                    "entity": "sensor.dark_sky_precip_probability"
+                                },
+                                {
+                                    "entity": "sensor.dark_sky_precip_intensity"
+                                }
+                            ],
+                            "show_header_toggle": false,
+                            "title": "Darksky",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
                                 "sensor.teplomer_temperature",
                                 "sensor.teplomer_humidity",
                                 "sensor.teplomer_battery"
@@ -558,29 +606,38 @@
                         {
                             "entities": [
                                 {
-                                    "entity": "sensor.dark_sky_temperature"
+                                    "entity": "binary_sensor.oko_sensor_2"
                                 },
                                 {
-                                    "entity": "sensor.dark_sky_apparent_temperature"
+                                    "entity": "sensor.oko_alarm_level_2"
                                 },
                                 {
-                                    "entity": "sensor.dark_sky_cloud_coverage"
+                                    "entity": "sensor.oko_alarm_type_2"
                                 },
                                 {
-                                    "entity": "sensor.dark_sky_wind_speed"
+                                    "entity": "sensor.oko_burglar_2"
                                 },
                                 {
-                                    "entity": "sensor.dark_sky_wind_gust"
+                                    "entity": "sensor.oko_general_2"
                                 },
                                 {
-                                    "entity": "sensor.dark_sky_precip_probability"
+                                    "entity": "sensor.oko_luminance_2"
                                 },
                                 {
-                                    "entity": "sensor.dark_sky_precip_intensity"
+                                    "entity": "sensor.oko_seismic_intensity_2"
+                                },
+                                {
+                                    "entity": "sensor.oko_sourcenodeid_2"
+                                },
+                                {
+                                    "entity": "sensor.oko_temperature_2"
+                                },
+                                {
+                                    "entity": "zwave.oko"
                                 }
                             ],
                             "show_header_toggle": false,
-                            "title": "Darksky",
+                            "title": "Oko",
                             "type": "entities"
                         },
                         {
@@ -651,9 +708,13 @@
                         {
                             "entity": "climate.ac",
                             "type": "thermostat"
+                        },
+                        {
+                            "entity": "climate.eurotronic_eur_spiritz_wall_radiator_thermostat_heat",
+                            "type": "thermostat"
                         }
                     ],
-                    "icon": "mdi:weather-partlycloudy",
+                    "icon": "mdi:weather-partly-cloudy",
                     "path": "weather_view",
                     "title": "Climate"
                 },
@@ -688,110 +749,6 @@
                     "badges": [],
                     "cards": [
                         {
-                            "entity": "plant.plant1",
-                            "type": "plant-status"
-                        },
-                        {
-                            "entity": "plant.plant2",
-                            "type": "plant-status"
-                        },
-                        {
-                            "entity": "plant.plant3",
-                            "type": "plant-status"
-                        },
-                        {
-                            "entity": "plant.plant4",
-                            "type": "plant-status"
-                        },
-                        {
-                            "entities": [
-                                {
-                                    "entity": "sensor.miflora1_battery"
-                                },
-                                {
-                                    "entity": "sensor.miflora1_conductivity"
-                                },
-                                {
-                                    "entity": "sensor.miflora1_light_intensity"
-                                },
-                                {
-                                    "entity": "sensor.miflora1_moisture"
-                                },
-                                {
-                                    "entity": "sensor.miflora1_temperature"
-                                }
-                            ],
-                            "type": "entities"
-                        },
-                        {
-                            "entities": [
-                                {
-                                    "entity": "sensor.miflora2_battery"
-                                },
-                                {
-                                    "entity": "sensor.miflora2_conductivity"
-                                },
-                                {
-                                    "entity": "sensor.miflora2_light_intensity"
-                                },
-                                {
-                                    "entity": "sensor.miflora2_moisture"
-                                },
-                                {
-                                    "entity": "sensor.miflora2_temperature"
-                                }
-                            ],
-                            "type": "entities"
-                        },
-                        {
-                            "entities": [
-                                {
-                                    "entity": "sensor.miflora3_battery"
-                                },
-                                {
-                                    "entity": "sensor.miflora3_conductivity"
-                                },
-                                {
-                                    "entity": "sensor.miflora3_light_intensity"
-                                },
-                                {
-                                    "entity": "sensor.miflora3_moisture"
-                                },
-                                {
-                                    "entity": "sensor.miflora3_temperature"
-                                }
-                            ],
-                            "type": "entities"
-                        },
-                        {
-                            "entities": [
-                                {
-                                    "entity": "sensor.miflora4_battery"
-                                },
-                                {
-                                    "entity": "sensor.miflora4_conductivity"
-                                },
-                                {
-                                    "entity": "sensor.miflora4_light_intensity"
-                                },
-                                {
-                                    "entity": "sensor.miflora4_moisture"
-                                },
-                                {
-                                    "entity": "sensor.miflora4_temperature"
-                                }
-                            ],
-                            "type": "entities"
-                        }
-                    ],
-                    "icon": "mdi:flower",
-                    "path": "plants",
-                    "title": "Plants"
-                },
-                {
-                    "badges": [],
-                    "cards": [
-                        {
                             "entities": [
                                 "automation.mqtt_shield_on",
                                 "automation.mqtt_shield_off",
@@ -806,7 +763,10 @@
                         {
                             "entities": [
                                 {
-                                    "entity": "input_boolean.automation_welcome_message_enabled"
+                                    "entity": "input_boolean.automation_welcome_message_enabled_peto"
+                                },
+                                {
+                                    "entity": "input_boolean.automation_welcome_message_enabled_nikik"
                                 },
                                 {
                                     "entity": "input_boolean.automation_burglar_enabled"
@@ -900,9 +860,6 @@
                     "cards": [
                         {
                             "entities": [
-                                {
-                                    "entity": "input_select.heat"
-                                },
                                 {
                                     "entity": "input_boolean.vacation"
                                 },
@@ -1066,40 +1023,30 @@
                         },
                         {
                             "entities": [
-                                "zwave.aeotec_zw090_zstick_gen5_eu"
-                            ],
-                            "title": "Z-Wave",
-                            "type": "entities"
-                        },
-                        {
-                            "entities": [
-                                "zwave.oko",
-                                "binary_sensor.oko_sensor_2",
-                                "sensor.oko_alarm_type_2",
-                                "sensor.oko_alarm_level_2",
-                                "sensor.oko_burglar_2",
-                                "sensor.oko_general_2",
-                                "sensor.oko_luminance_2",
-                                "sensor.oko_seismic_intensity_2",
-                                "sensor.oko_sourcenodeid_2",
-                                "sensor.oko_temperature_2"
-                            ],
-                            "show_header_toggle": false,
-                            "title": "Oko",
-                            "type": "entities"
-                        },
-                        {
-                            "entity": "camera.wallpanel_camera",
-                            "show_name": true,
-                            "show_state": true,
-                            "type": "picture-entity"
-                        },
-                        {
-                            "entity": "camera.c1pro_onvif",
-                            "type": "picture-entity"
-                        },
-                        {
-                            "entities": [
+                                {
+                                    "action_name": "Stream",
+                                    "icon": "mdi:power",
+                                    "name": "Show to Shield",
+                                    "service": "camera.play_stream",
+                                    "service_data": {
+                                        "entity_id": "camera.c1pro_onvif",
+                                        "format": "hls",
+                                        "media_player": "media_player.shield"
+                                    },
+                                    "type": "call-service"
+                                },
+                                {
+                                    "action_name": "Stream",
+                                    "icon": "mdi:power",
+                                    "name": "Show to Kodi",
+                                    "service": "camera.play_stream",
+                                    "service_data": {
+                                        "entity_id": "camera.c1pro_onvif",
+                                        "format": "hls",
+                                        "media_player": "media_player.kodi"
+                                    },
+                                    "type": "call-service"
+                                },
                                 {
                                     "hide_if_unavailable": false,
                                     "name": "Camera",
@@ -1110,6 +1057,177 @@
                             "show_header_toggle": false,
                             "title": "Cast",
                             "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                "zwave.aeotec_zw090_zstick_gen5_eu"
+                            ],
+                            "title": "Z-Wave",
+                            "type": "entities"
+                        },
+                        {
+                            "cards": [
+                                {
+                                    "entities": [
+                                        "vacuum.roborock",
+                                        "input_select.vacuum_fan_speed"
+                                    ],
+                                    "show_header_toggle": false,
+                                    "title": "Robocop",
+                                    "type": "entities"
+                                },
+                                {
+                                    "columns": 4,
+                                    "entities": [
+                                        {
+                                            "entity": "vacuum.roborock",
+                                            "icon": "mdi:floor-plan",
+                                            "name": "All",
+                                            "tap_action": {
+                                                "action": "call-service",
+                                                "service": "vacuum.start",
+                                                "service_data": {
+                                                    "entity_id": "vacuum.roborock"
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "entity": "vacuum.roborock",
+                                            "icon": "mdi:rectangle",
+                                            "name": "Carpet",
+                                            "tap_action": {
+                                                "action": "call-service",
+                                                "service": "vacuum.xiaomi_clean_zone",
+                                                "service_data": {
+                                                    "entity_id": "vacuum.roborock",
+                                                    "repeats": 1,
+                                                    "zone": [
+                                                        [
+                                                            21890,
+                                                            24187,
+                                                            24390,
+                                                            25737
+                                                        ]
+                                                    ]
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "entity": "vacuum.roborock",
+                                            "icon": "mdi:sofa",
+                                            "name": "Livingroom",
+                                            "tap_action": {
+                                                "action": "call-service",
+                                                "service": "vacuum.xiaomi_clean_zone",
+                                                "service_data": {
+                                                    "entity_id": "vacuum.roborock",
+                                                    "repeats": 1,
+                                                    "zone": [
+                                                        [
+                                                            19660,
+                                                            22805,
+                                                            26210,
+                                                            27055
+                                                        ]
+                                                    ]
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "entity": "vacuum.roborock",
+                                            "icon": "mdi:exit-run",
+                                            "name": "Hallway",
+                                            "tap_action": {
+                                                "action": "call-service",
+                                                "service": "vacuum.xiaomi_clean_zone",
+                                                "service_data": {
+                                                    "entity_id": "vacuum.roborock",
+                                                    "repeats": 1,
+                                                    "zone": [
+                                                        [
+                                                            15209,
+                                                            23512,
+                                                            19609,
+                                                            27012
+                                                        ]
+                                                    ]
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "entity": "vacuum.roborock",
+                                            "icon": "mdi:hotel",
+                                            "name": "Bedroom",
+                                            "tap_action": {
+                                                "action": "call-service",
+                                                "service": "vacuum.xiaomi_clean_zone",
+                                                "service_data": {
+                                                    "entity_id": "vacuum.roborock",
+                                                    "repeats": 1,
+                                                    "zone": [
+                                                        [
+                                                            22338,
+                                                            27098,
+                                                            25988,
+                                                            30748
+                                                        ]
+                                                    ]
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "entity": "vacuum.roborock",
+                                            "icon": "mdi:table-chair",
+                                            "name": "Kitchen",
+                                            "tap_action": {
+                                                "action": "call-service",
+                                                "service": "vacuum.xiaomi_clean_zone",
+                                                "service_data": {
+                                                    "entity_id": "vacuum.roborock",
+                                                    "repeats": 1,
+                                                    "zone": [
+                                                        [
+                                                            20117,
+                                                            27009,
+                                                            21667,
+                                                            29609
+                                                        ]
+                                                    ]
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "entity": "vacuum.roborock",
+                                            "icon": "mdi:pause",
+                                            "name": "Pause",
+                                            "tap_action": {
+                                                "action": "call-service",
+                                                "service": "vacuum.pause",
+                                                "service_data": {
+                                                    "entity_id": "vacuum.roborock"
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "entity": "vacuum.roborock",
+                                            "icon": "mdi:keyboard-return",
+                                            "name": "Return",
+                                            "tap_action": {
+                                                "action": "call-service",
+                                                "service": "vacuum.return_to_base",
+                                                "service_data": {
+                                                    "entity_id": "vacuum.roborock"
+                                                }
+                                            }
+                                        }
+                                    ],
+                                    "show_icon": true,
+                                    "show_state": false,
+                                    "title": "Robocop Clean",
+                                    "type": "glance"
+                                }
+                            ],
+                            "type": "vertical-stack"
                         }
                     ],
                     "title": "Other"

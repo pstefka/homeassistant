@@ -236,96 +236,6 @@
                 "unique_id": "3-72057594094305473"
             },
             {
-                "config_entry_id": null,
-                "device_id": null,
-                "disabled_by": null,
-                "entity_id": "sensor.pws_temp_high_record_c",
-                "name": null,
-                "platform": "wunderground",
-                "unique_id": "@17.099390,48.102260,temp_high_record_c"
-            },
-            {
-                "config_entry_id": null,
-                "device_id": null,
-                "disabled_by": null,
-                "entity_id": "sensor.pws_temp_low_record_c",
-                "name": null,
-                "platform": "wunderground",
-                "unique_id": "@17.099390,48.102260,temp_low_record_c"
-            },
-            {
-                "config_entry_id": null,
-                "device_id": null,
-                "disabled_by": null,
-                "entity_id": "sensor.pws_temp_c",
-                "name": null,
-                "platform": "wunderground",
-                "unique_id": "@17.099390,48.102260,temp_c"
-            },
-            {
-                "config_entry_id": null,
-                "device_id": null,
-                "disabled_by": null,
-                "entity_id": "sensor.pws_feelslike_c",
-                "name": null,
-                "platform": "wunderground",
-                "unique_id": "@17.099390,48.102260,feelslike_c"
-            },
-            {
-                "config_entry_id": null,
-                "device_id": null,
-                "disabled_by": null,
-                "entity_id": "sensor.pws_relative_humidity",
-                "name": null,
-                "platform": "wunderground",
-                "unique_id": "@17.099390,48.102260,relative_humidity"
-            },
-            {
-                "config_entry_id": null,
-                "device_id": null,
-                "disabled_by": null,
-                "entity_id": "sensor.pws_wind_kph",
-                "name": null,
-                "platform": "wunderground",
-                "unique_id": "@17.099390,48.102260,wind_kph"
-            },
-            {
-                "config_entry_id": null,
-                "device_id": null,
-                "disabled_by": null,
-                "entity_id": "sensor.pws_wind_degrees",
-                "name": null,
-                "platform": "wunderground",
-                "unique_id": "@17.099390,48.102260,wind_degrees"
-            },
-            {
-                "config_entry_id": null,
-                "device_id": null,
-                "disabled_by": null,
-                "entity_id": "sensor.pws_pressure_mb",
-                "name": null,
-                "platform": "wunderground",
-                "unique_id": "@17.099390,48.102260,pressure_mb"
-            },
-            {
-                "config_entry_id": null,
-                "device_id": null,
-                "disabled_by": null,
-                "entity_id": "sensor.pws_precip_today_metric",
-                "name": null,
-                "platform": "wunderground",
-                "unique_id": "@17.099390,48.102260,precip_today_metric"
-            },
-            {
-                "config_entry_id": null,
-                "device_id": null,
-                "disabled_by": null,
-                "entity_id": "sensor.pws_alerts",
-                "name": null,
-                "platform": "wunderground",
-                "unique_id": "@17.099390,48.102260,alerts"
-            },
-            {
                 "config_entry_id": "b373b17d98564ef6a2da583bd6d6f7ce",
                 "device_id": "64531a6fe88b4fdebcfa3244d789b690",
                 "disabled_by": null,
@@ -351,42 +261,6 @@
                 "name": null,
                 "platform": "zwave",
                 "unique_id": "node-5"
-            },
-            {
-                "config_entry_id": null,
-                "device_id": null,
-                "disabled_by": null,
-                "entity_id": "sensor.pws_wind_gust_1d_kph",
-                "name": null,
-                "platform": "wunderground",
-                "unique_id": "@17.099390,48.102260,wind_gust_1d_kph"
-            },
-            {
-                "config_entry_id": null,
-                "device_id": null,
-                "disabled_by": null,
-                "entity_id": "sensor.pws_wind_1d_kph",
-                "name": null,
-                "platform": "wunderground",
-                "unique_id": "@17.099390,48.102260,wind_1d_kph"
-            },
-            {
-                "config_entry_id": null,
-                "device_id": null,
-                "disabled_by": null,
-                "entity_id": "sensor.pws_wind_gust_2d_kph",
-                "name": null,
-                "platform": "wunderground",
-                "unique_id": "@17.099390,48.102260,wind_gust_2d_kph"
-            },
-            {
-                "config_entry_id": null,
-                "device_id": null,
-                "disabled_by": null,
-                "entity_id": "sensor.pws_wind_2d_kph",
-                "name": null,
-                "platform": "wunderground",
-                "unique_id": "@17.099390,48.102260,wind_2d_kph"
             },
             {
                 "config_entry_id": "b373b17d98564ef6a2da583bd6d6f7ce",
@@ -558,6 +432,33 @@
                 "name": null,
                 "platform": "updater",
                 "unique_id": "updater"
+            },
+            {
+                "config_entry_id": "ec8581ddaabc4ff4b68fc137714cb629",
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "media_player.speakers",
+                "name": null,
+                "platform": "cast",
+                "unique_id": "23393d3d-acb1-4e73-8d81-14059eeed422"
+            },
+            {
+                "config_entry_id": "b373b17d98564ef6a2da583bd6d6f7ce",
+                "device_id": "30283abdeff04d3da30bd700ec638af0",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgms001_zw5_motion_sensor_battery_level",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "5-72057594128105473"
+            },
+            {
+                "config_entry_id": "b373b17d98564ef6a2da583bd6d6f7ce",
+                "device_id": "ae6ec2628eff4917bcc6bb5ebcff6ec3",
+                "disabled_by": null,
+                "entity_id": "sensor.eurotronic_eur_spiritz_wall_radiator_thermostat_battery_level",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "6-72057594144882689"
             }
         ]
     },

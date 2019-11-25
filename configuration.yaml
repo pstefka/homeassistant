@@ -142,36 +142,6 @@ device_tracker: !include_dir_merge_list device_trackers/
 media_player: !include_dir_merge_list media_players/
 switch: !include_dir_merge_list switches/
 
-plant:
-  plant1:
-    sensors:
-      moisture: sensor.miflora1_moisture
-      battery: sensor.miflora1_battery
-      temperature: sensor.miflora1_temperature
-      conductivity: sensor.miflora1_conductivity
-      brightness: sensor.miflora1_brightness
-  plant2:
-    sensors:
-      moisture: sensor.miflora2_moisture
-      battery: sensor.miflora2_battery
-      temperature: sensor.miflora2_temperature
-      conductivity: sensor.miflora2_conductivity
-      brightness: sensor.miflora2_brightness
-  plant3:
-    sensors:
-      moisture: sensor.miflora3_moisture
-      battery: sensor.miflora3_battery
-      temperature: sensor.miflora3_temperature
-      conductivity: sensor.miflora3_conductivity
-      brightness: sensor.miflora3_brightness
-  plant4:
-    sensors:
-      moisture: sensor.miflora4_moisture
-      battery: sensor.miflora4_battery
-      temperature: sensor.miflora4_temperature
-      conductivity: sensor.miflora4_conductivity
-      brightness: sensor.miflora4_brightness
-
 #zwave:
 ## ls -ltr /dev/tty*|tail -n 1
   #  usb_path: /dev/serial/by-id/usb-0658_0200-if00
@@ -221,18 +191,18 @@ camera:
 #    name: C1pro-ffmpeg-rtsp
 #    #extra_arguments: -q:v 2
 #    extra_arguments: -pred 1
-  - platform: generic
-    still_image_url: !secret camera_generic
-    stream_source: !secret camera_generic_stream
-    name: C1pro-generic
+#  - platform: generic
+#    still_image_url: !secret camera_generic
+#    stream_source: !secret camera_generic_stream
+#    name: C1pro-generic
 # 400 - bad request! Unauthorized -> potrebna zmena onvif.py (existuje PR)
-#  - platform: onvif
-#    host: 192.168.1.253
-#    name: C1pro-onvif
-#    username: !secret camera_username
-#    password: !secret camera_password
-#    port: 8000
-#    profile: 0
+  - platform: onvif
+    host: 192.168.1.253
+    name: C1pro-onvif
+    username: !secret camera_username
+    password: !secret camera_password
+    port: 8000
+    profile: 0
 #  - platform: mjpeg
 #    mjpeg_url: http://192.168.1.36:2971/camera/stream
 #    name: WallPanel Camera
@@ -303,6 +273,18 @@ telegram_bot:
       - 698188355
       - -262852350
 
+#device_tracker:
+#  - platform: huawei_router
+#    host: 192.168.10.1
+#    username: !secret huawei_router_username
+#    password: !secret huawei_router_password
+
+vacuum:
+  - platform: xiaomi_miio
+    host: 192.168.1.249
+    token: 49366f314a6e4770434d5a69766d7061 
+    name: Roborock    
+        
 # Example configuration.yaml entry for the notifier
 #notify:
 #  - name: peto_telegram
