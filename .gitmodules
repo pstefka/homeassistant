@@ -1,0 +1,3 @@
+[submodule "custom_components/SebuZet-samsungrac"]
+	path = custom_components/SebuZet-samsungrac
+	url = https://github.com/SebuZet/samsungrac.git
